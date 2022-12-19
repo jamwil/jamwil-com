@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+    <url>
+        <loc>https://jamwil.com/</loc>
+    </url>
+    <url>
+        <loc>https://jamwil.com/about/</loc>
+    </url>
+    <url>
+        <loc>https://jamwil.com/categories/</loc>
+    </url>
+    <url>
+        <loc>https://jamwil.com/hello-world/</loc>
+        <lastmod>2022-12-26</lastmod>
+    </url>
+    <url>
+        <loc>https://jamwil.com/page/1/</loc>
+    </url>
+    <url>
+        <loc>https://jamwil.com/tags/</loc>
+    </url>
+    <url>
+        <loc>https://jamwil.com/tags/meta/</loc>
+    </url>
+</urlset>

@@ -1,0 +1,25 @@
+base_url = "https://jamwil.com"
+title = "James Williams"
+description = "Ramblings of a half-witted software developer and licensed pleasure craft operator."
+compile_sass = true
+build_search_index = false
+generate_feed = true
+feed_filename = "rss.xml"
+theme = "anpu"
+taxonomies = [
+    { name = "categories", feed = true },
+    { name = "tags", feed = true },
+]
+
+[markdown]
+highlight_code = true
+highlight_theme = "visual-studio-dark"
+render_emoji = true
+
+[extra]
+katex_enable = true
+anpu_menu_links = [
+    { url = "$BASE_URL/about/", name = "About" },
+    { url = "$BASE_URL/tags/", name = "Tags" },
+]
+anpu_date_format = "%Y-%m-%d"
