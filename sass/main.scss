@@ -1,7 +1,17 @@
+$font-stack: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', Arial, sans-serif;
+
+$background: white;
+$primary-text: #333;
+$secondary-text: #666;
+$link-color: #1d60a3;
+$hover-link-color: #a31d1d;
+$link-underline: rgba(163, 29, 29, .5);
+$accent-background: lightgrey;
+
 /* Basic */
 @import url('https://fonts.googleapis.com/css2?family=Vollkorn&display=swap');
 html {
-    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-family: $font-stack;
     /* 1 */
     -ms-text-size-adjust: 100%;
     /* 2 */
@@ -11,8 +21,8 @@ html {
 
 body {
     margin: 0;
-    background: white;
-    color: #333;
+    background: $background;
+    color: $primary-text;
     font-size: 18px;
     line-height: 1.5;
     -webkit-font-smoothing: antialiased;
@@ -59,7 +69,7 @@ h3 {
 /* Links */
 
 a {
-    color: #1d60a3;
+    color: $link-color;
     text-decoration: none;
 }
 
@@ -70,18 +80,18 @@ a:hover {
 
 a:hover,
 a:focus {
-    color: #a31d1d;
-    border-bottom: 1px solid rgba(163, 29, 29, .5);
+    color: $hover-link-color;
+    border-bottom: 1px solid $link-underline;
 }
 
 a:active {
-    color: #a31d1d;
+    color: $hover-link-color;
     opacity: 0.9;
-    border-bottom: 1px solid rgba(163, 29, 29, .5);
+    border-bottom: 1px solid $link-underline;
 }
 
 a.active {
-    color: #a31d1d;
+    color: $hover-link-color;
 }
 
 a.skip-main {
@@ -118,18 +128,18 @@ table {
 }
 
 thead {
-    background: lightgrey;
+    background: $accent-background;
 }
 
 th, td {
     padding: 0.5em 1em;
-    border: 1px double lightgrey;
+    border: 1px double $accent-background;
 }
 
 /* Code */
 pre {
     padding: 1em;
-    background-color: #f1f1f1;
+    background-color: $accent-background;
     max-width: 100%;
     overflow: auto;
 }
@@ -145,7 +155,7 @@ kbd {
 /* Styles */
 
 blockquote {
-    border-left: 2px solid #cccccc;
+    border-left: 2px solid $accent-background;
     padding: 0.1em 1em;
     margin-left: 0.75em;
 }
@@ -158,7 +168,7 @@ p {
 hr {
     height: 1px;
     border: 0;
-    border-top: 1px solid #cccccc;
+    border-top: 1px solid $accent-background;
 }
 
 ul ol, ol ol, ul ul {
@@ -198,7 +208,7 @@ header nav a {
 }
 
 header a {
-    color: #333;
+    color: $primary-text;
 }
 
 .site-header {
@@ -222,7 +232,7 @@ main h1 {
 
 
 article:not(:last-of-type) {
-    border-bottom: thin solid #f1f1f1;
+    border-bottom: thin solid $accent-background;
     padding-bottom: 2em;
 }
 
@@ -231,27 +241,27 @@ article header h1 {
     line-height: 1.1em;
     margin-bottom: 0.5em;
     font-weight: 600;
-    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-family: $font-stack;
 }
 
 article header h1 a {
     border: none;
     text-decoration: none;
-    color: #333;
+    color: $primary-text;
 }
 
 .article-info {
     font-size: 0.75em;
-    color: grey;
+    color: $secondary-text;
     margin-top: 1em;
 }
 
 .article-info a {
-    color: grey;
+    color: $secondary-text;
 }
 
 .article-info a:hover {
-    color: #a31d1d;
+    color: $hover-link-color;
 }
 
 .post-short-list .article-info {
@@ -305,7 +315,7 @@ article img {
     display: block;
     height: 1px;
     border: 0;
-    border-top: thin solid #f1f1f1;
+    border-top: thin solid $accent-background;
     width: 25%;
     margin: 1em auto;
 }
@@ -339,7 +349,7 @@ article img {
 }
 
 .pagination-item {
-    background: #fafafa;
+    background: $accent-background;
     padding: 0.75em 0.75em;
 }
 
@@ -348,18 +358,18 @@ article img {
 }
 
 .pagination-item a {
-    color: #333333;
+    color: $primary-text;
 }
 
 .pagination-item a:hover, .pagination-item   a:focus {
-    color: #a31d1d;
+    color: $hover-link-color;
     border-bottom: 0;
 }
 
 /* Footer */
 
 footer {
-    border-top: thin solid #f1f1f1;
+    border-top: thin solid $accent-background;
     margin-top: 3em;
     font-size: 16px;
 }
@@ -407,7 +417,7 @@ ul.language-select > li {
         margin-top: 1em;
         max-width: 100%;
         text-align: center;
-        background: #fafafa;
+        background: $accent-background;
         padding: 0.5em 0;
     }
 
