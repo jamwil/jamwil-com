@@ -7,6 +7,10 @@
         <loc>https://jamwil.com/about/</loc>
     </url>
     <url>
+        <loc>https://jamwil.com/aldente/</loc>
+        <lastmod>2022-12-28T21:31:00Z</lastmod>
+    </url>
+    <url>
         <loc>https://jamwil.com/categories/</loc>
     </url>
     <url>
@@ -21,5 +25,11 @@
     </url>
     <url>
         <loc>https://jamwil.com/tags/jamwil-com/</loc>
+    </url>
+    <url>
+        <loc>https://jamwil.com/tags/macos/</loc>
+    </url>
+    <url>
+        <loc>https://jamwil.com/tags/til/</loc>
     </url>
 </urlset>
