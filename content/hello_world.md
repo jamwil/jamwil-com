@@ -1,8 +1,8 @@
 +++
 title = "Hello World"
-date = "2022-12-26"
+date = "2022-12-26T15:45:00Z"
 [taxonomies]
-tags = ["meta"]
+tags = ["jamwil-com"]
 +++
 
 Welcome to my shiny new blog.
