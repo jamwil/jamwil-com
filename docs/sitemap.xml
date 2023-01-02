@@ -18,10 +18,17 @@
         <lastmod>2022-12-26T15:45:00Z</lastmod>
     </url>
     <url>
+        <loc>https://jamwil.com/introducing-bulletproof-python/</loc>
+        <lastmod>2023-01-02T19:58:00Z</lastmod>
+    </url>
+    <url>
         <loc>https://jamwil.com/page/1/</loc>
     </url>
     <url>
         <loc>https://jamwil.com/tags/</loc>
+    </url>
+    <url>
+        <loc>https://jamwil.com/tags/bulletproof-python/</loc>
     </url>
     <url>
         <loc>https://jamwil.com/tags/jamwil-com/</loc>
@@ -30,6 +37,12 @@
         <loc>https://jamwil.com/tags/macos/</loc>
     </url>
     <url>
+        <loc>https://jamwil.com/tags/python/</loc>
+    </url>
+    <url>
         <loc>https://jamwil.com/tags/til/</loc>
+    </url>
+    <url>
+        <loc>https://jamwil.com/tags/tooling/</loc>
     </url>
 </urlset>

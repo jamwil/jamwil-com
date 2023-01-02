@@ -24,7 +24,7 @@ body {
   margin: 0;
   background: $background;
   color: $primary-text;
-  font-size: 18px;
+  font-size: 16px;
   line-height: 1.5;
   -webkit-font-smoothing: antialiased;
 }
@@ -163,7 +163,7 @@ blockquote {
 }
 
 p {
-  margin-top: 0.5em;
+  margin-top: 1em;
   margin-bottom: 0.5em;
 }
 
@@ -254,7 +254,7 @@ article header h1 a {
 }
 
 .article-info {
-  font-size: 0.75em;
+  font-size: 0.85em;
   color: $secondary-text;
   margin-top: 1em;
 }
@@ -375,7 +375,7 @@ article img {
 footer {
   border-top: thin solid $accent-background;
   margin-top: 3em;
-  font-size: 16px;
+  font-size: 0.85em;
 }
 
 ul.language-select {

@@ -9,7 +9,7 @@ body {
   margin: 0;
   background: #fff;
   color: #333;
-  font-size: 18px;
+  font-size: 16px;
   line-height: 1.5;
   -webkit-font-smoothing: antialiased;
 }
@@ -120,7 +120,7 @@ blockquote {
   margin-left: 0.75em;
 }
 p {
-  margin-top: 0.5em;
+  margin-top: 1em;
   margin-bottom: 0.5em;
 }
 hr {
@@ -192,7 +192,7 @@ article header h1 a {
   color: #333;
 }
 .article-info {
-  font-size: 0.75em;
+  font-size: 0.85em;
   color: #666;
   margin-top: 1em;
 }
@@ -286,7 +286,7 @@ article img {
 footer {
   border-top: thin solid #d3d3d3;
   margin-top: 3em;
-  font-size: 16px;
+  font-size: 0.85em;
 }
 ul.language-select {
   padding-left: 0;
