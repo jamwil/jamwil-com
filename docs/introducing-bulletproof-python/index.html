@@ -75,11 +75,7 @@
             </ul>
             <p>
               I decided to throw together a simple template that uses tox and
-              pip-tools. Poetry's <code>pyproject.toml</code> file doesn't play
-              nicely with pip+git source installs, and hatch doesn't lock
-              dependencies, so I prefer to manage my own
-              <code>pyproject.toml</code> and virtual environment. The template
-              employes:
+              pip-tools. The template uses:
             </p>
             <ul>
               <li>
@@ -111,6 +107,14 @@
                   >bulletproof-python</a
                 ></strong
               >.
+            </p>
+            <hr />
+            <p>
+              Note: The original version of this post incorrectly stated that
+              Poetry does not play nice with pip-installs from git source. This
+              is not the case; I simply had my <code>pyproject.toml</code> file
+              incorrectly configured to use setuptools instead of poetry-core as
+              the build backend.
             </p>
           </div>
 

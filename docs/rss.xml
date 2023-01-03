@@ -7,7 +7,7 @@
         <generator>Zola</generator>
         <language>en</language>
         <atom:link href="https://jamwil.com/rss.xml" rel="self" type="application/rss+xml"/>
-        <lastBuildDate>Mon, 02 Jan 2023 19:58:00 +0000</lastBuildDate>
+        <lastBuildDate>Tue, 03 Jan 2023 00:13:00 +0000</lastBuildDate>
         <item>
             <title>Introducing bulletproof-python</title>
             <pubDate>Mon, 02 Jan 2023 19:58:00 +0000</pubDate>
@@ -25,10 +25,8 @@ scripts instead of configuration files.&lt;&#x2F;li&gt;
 &lt;li&gt;It&#x27;s very powerful, but since I&#x27;m not particularly clever, I find the
 hypermodern stack difficult to understand.&lt;&#x2F;li&gt;
 &lt;&#x2F;ul&gt;
-&lt;p&gt;I decided to throw together a simple template that uses tox and pip-tools.
-Poetry&#x27;s &lt;code&gt;pyproject.toml&lt;&#x2F;code&gt; file doesn&#x27;t play nicely with pip+git source installs,
-and hatch doesn&#x27;t lock dependencies, so I prefer to manage my own
-&lt;code&gt;pyproject.toml&lt;&#x2F;code&gt; and virtual environment. The template employes:&lt;&#x2F;p&gt;
+&lt;p&gt;I decided to throw together a simple template that uses tox and pip-tools. The
+template uses:&lt;&#x2F;p&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;a href=&quot;https:&#x2F;&#x2F;docs.pytest.org&#x2F;en&#x2F;7.2.x&#x2F;&quot;&gt;pytest&lt;&#x2F;a&gt; and
 &lt;a href=&quot;https:&#x2F;&#x2F;coverage.readthedocs.io&#x2F;en&#x2F;latest&#x2F;&quot;&gt;coverage.py&lt;&#x2F;a&gt; for testing,&lt;&#x2F;li&gt;
@@ -39,6 +37,11 @@ and hatch doesn&#x27;t lock dependencies, so I prefer to manage my own
 suitable only for small libraries without broad distribution.&lt;&#x2F;p&gt;
 &lt;p&gt;🌱 &lt;strong&gt;The template is available here:
 &lt;a href=&quot;https:&#x2F;&#x2F;github.com&#x2F;jamwil&#x2F;bulletproof-python&quot;&gt;bulletproof-python&lt;&#x2F;a&gt;&lt;&#x2F;strong&gt;.&lt;&#x2F;p&gt;
+&lt;hr &#x2F;&gt;
+&lt;p&gt;Note: The original version of this post incorrectly stated that Poetry does not
+play nice with pip-installs from git source. This is not the case; I simply had
+my &lt;code&gt;pyproject.toml&lt;&#x2F;code&gt; file incorrectly configured to use setuptools instead of
+poetry-core as the build backend.&lt;&#x2F;p&gt;
 </description>
         </item>
         <item>
