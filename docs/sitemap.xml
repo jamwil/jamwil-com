@@ -25,10 +25,17 @@
         <loc>https://jamwil.com/page/1/</loc>
     </url>
     <url>
+        <loc>https://jamwil.com/python-vscode-build-task/</loc>
+        <lastmod>2023-01-03T22:42:00Z</lastmod>
+    </url>
+    <url>
         <loc>https://jamwil.com/tags/</loc>
     </url>
     <url>
         <loc>https://jamwil.com/tags/bulletproof-python/</loc>
+    </url>
+    <url>
+        <loc>https://jamwil.com/tags/howto/</loc>
     </url>
     <url>
         <loc>https://jamwil.com/tags/jamwil-com/</loc>
@@ -44,5 +51,8 @@
     </url>
     <url>
         <loc>https://jamwil.com/tags/tooling/</loc>
+    </url>
+    <url>
+        <loc>https://jamwil.com/tags/vscode/</loc>
     </url>
 </urlset>
