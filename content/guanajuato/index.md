@@ -2,7 +2,7 @@
 title = "I'm in love with Guanajuato"
 date = "2023-01-04T17:34:00Z"
 [taxonomies]
-tags = ["travel", "mexico"]
+tags = ["travel", "mexico", "photo"]
 +++
 
 {{ resize_image(path="content/guanajuato/guanajuato_skyline.jpeg", width=370, height=370, op="fit_width") }}
