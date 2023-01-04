@@ -5,7 +5,7 @@ date = "2023-01-04T17:34:00Z"
 tags = ["travel", "mexico", "photo"]
 +++
 
-{{ resize_image(path="content/guanajuato/guanajuato_skyline.jpeg", width=370, height=370, op="fit_width") }}
+{{ resize_image(path="content/guanajuato/guanajuato_skyline.jpeg", width=370, height=370, op="fit_width", alt="Guanajuato City facing south from Centro") }}
 
 <!-- content/guanajuato/guanajuato_skyline.jpeg -->
 <table>
