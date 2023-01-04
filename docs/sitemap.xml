@@ -14,6 +14,10 @@
         <loc>https://jamwil.com/categories/</loc>
     </url>
     <url>
+        <loc>https://jamwil.com/guanajuato/</loc>
+        <lastmod>2023-01-04T17:34:00Z</lastmod>
+    </url>
+    <url>
         <loc>https://jamwil.com/hello-world/</loc>
         <lastmod>2022-12-26T15:45:00Z</lastmod>
     </url>
@@ -44,6 +48,9 @@
         <loc>https://jamwil.com/tags/macos/</loc>
     </url>
     <url>
+        <loc>https://jamwil.com/tags/mexico/</loc>
+    </url>
+    <url>
         <loc>https://jamwil.com/tags/python/</loc>
     </url>
     <url>
@@ -51,6 +58,9 @@
     </url>
     <url>
         <loc>https://jamwil.com/tags/tooling/</loc>
+    </url>
+    <url>
+        <loc>https://jamwil.com/tags/travel/</loc>
     </url>
     <url>
         <loc>https://jamwil.com/tags/vscode/</loc>

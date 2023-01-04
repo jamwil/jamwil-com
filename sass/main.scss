@@ -264,6 +264,7 @@ article header h1 a {
 }
 
 .article-info {
+  clear: both;
   font-size: 0.85em;
   color: $secondary-text;
   margin-top: 1.5em;
@@ -325,6 +326,23 @@ article img {
   display: block;
   height: auto;
   margin: 0 auto 0.5em;
+}
+
+article .content table {
+  font-size: 0.75em;
+  color: $secondary-text;
+}
+
+article .content td {
+  border: none;
+  border-bottom: thin solid $accent-background;
+  padding: 0 1em 0.25em 0;
+  vertical-align: top;
+}
+
+article .content td:first-child {
+  /* don't break lines in the first column */
+  white-space: nowrap;
 }
 
 .read-more {

@@ -200,6 +200,7 @@ article header h1 a {
   color: #333;
 }
 .article-info {
+  clear: both;
   font-size: 0.85em;
   color: #666;
   margin-top: 1.5em;
@@ -250,6 +251,19 @@ article img {
   display: block;
   height: auto;
   margin: 0 auto 0.5em;
+}
+article .content table {
+  font-size: 0.75em;
+  color: #666;
+}
+article .content td {
+  border: none;
+  border-bottom: thin solid #d3d3d3;
+  padding: 0 1em 0.25em 0;
+  vertical-align: top;
+}
+article .content td:first-child {
+  white-space: nowrap;
 }
 .read-more {
   font-size: 0.85em;
