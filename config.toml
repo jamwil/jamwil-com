@@ -16,6 +16,7 @@ taxonomies = [
 highlight_code = true
 highlight_theme = "visual-studio-dark"
 render_emoji = true
+smart_punctuation = true
 
 [extra]
 katex_enable = true

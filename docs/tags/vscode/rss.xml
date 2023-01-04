@@ -22,7 +22,7 @@ workspace settings.&lt;&#x2F;li&gt;
 &lt;li&gt;&lt;code&gt;presentation:focus&lt;&#x2F;code&gt; will focus the terminal window when the task is run.&lt;&#x2F;li&gt;
 &lt;li&gt;&lt;code&gt;presentation:reveal&lt;&#x2F;code&gt; will reveal the terminal window when the task is run.&lt;&#x2F;li&gt;
 &lt;&#x2F;ul&gt;
-&lt;p&gt;Change &lt;code&gt;args&lt;&#x2F;code&gt; to any python file if you&#x27;d like to run the same file each time.&lt;&#x2F;p&gt;
+&lt;p&gt;Change &lt;code&gt;args&lt;&#x2F;code&gt; to any python file if you’d like to run the same file each time.&lt;&#x2F;p&gt;
 &lt;pre data-lang=&quot;json&quot; style=&quot;background-color:#1e1e1e;color:#dcdcdc;&quot; class=&quot;language-json &quot;&gt;&lt;code class=&quot;language-json&quot; data-lang=&quot;json&quot;&gt;&lt;span&gt;{
 &lt;&#x2F;span&gt;&lt;span&gt;  &lt;&#x2F;span&gt;&lt;span style=&quot;color:#608b4e;&quot;&gt;&#x2F;&#x2F; See https:&#x2F;&#x2F;go.microsoft.com&#x2F;fwlink&#x2F;?LinkId=733558
 &lt;&#x2F;span&gt;&lt;span&gt;  &lt;&#x2F;span&gt;&lt;span style=&quot;color:#608b4e;&quot;&gt;&#x2F;&#x2F; for the documentation about the tasks.json format

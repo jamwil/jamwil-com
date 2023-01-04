@@ -14,12 +14,9 @@
             <link>https://jamwil.com/hello-world/</link>
             <guid>https://jamwil.com/hello-world/</guid>
             <description>&lt;p&gt;Welcome to my shiny new blog.&lt;&#x2F;p&gt;
-&lt;p&gt;*slaps roof* This baby can hold so many posts. Check out &lt;a href=&quot;&#x2F;about&quot;&gt;&#x2F;about&lt;&#x2F;a&gt; for
-more information about me, and expect more meaningful content in 2023 as I
-embark on my open source journey.&lt;&#x2F;p&gt;
-&lt;pre data-lang=&quot;python&quot; style=&quot;background-color:#1e1e1e;color:#dcdcdc;&quot; class=&quot;language-python &quot;&gt;&lt;code class=&quot;language-python&quot; data-lang=&quot;python&quot;&gt;&lt;span style=&quot;color:#608b4e;&quot;&gt;# Here&amp;#39;s some code
-&lt;&#x2F;span&gt;&lt;span&gt;print(&lt;&#x2F;span&gt;&lt;span style=&quot;color:#d69d85;&quot;&gt;&amp;quot;Hello World&amp;quot;&lt;&#x2F;span&gt;&lt;span&gt;)
-&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;p&gt;*slaps roof* This baby can hold so many posts. Check out
+&lt;a href=&quot;https:&#x2F;&#x2F;jamwil.com&#x2F;about&#x2F;&quot;&gt;&#x2F;about&lt;&#x2F;a&gt; for more information about me, and expect more
+meaningful content in 2023 as I embark on my open source journey.&lt;&#x2F;p&gt;
 </description>
         </item>
     </channel>

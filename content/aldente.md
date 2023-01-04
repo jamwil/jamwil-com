@@ -16,3 +16,5 @@ apps that I like and use.
 I've been using it for a few days now and it's been working great. If you're
 similarly annoyed by macOS's battery charging behavior, I highly recommend it.
 Not a sponsored post, just a (so far) happy user.
+
+<!-- more -->

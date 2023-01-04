@@ -22,7 +22,7 @@ workspace settings.&lt;&#x2F;li&gt;
 &lt;li&gt;&lt;code&gt;presentation:focus&lt;&#x2F;code&gt; will focus the terminal window when the task is run.&lt;&#x2F;li&gt;
 &lt;li&gt;&lt;code&gt;presentation:reveal&lt;&#x2F;code&gt; will reveal the terminal window when the task is run.&lt;&#x2F;li&gt;
 &lt;&#x2F;ul&gt;
-&lt;p&gt;Change &lt;code&gt;args&lt;&#x2F;code&gt; to any python file if you&#x27;d like to run the same file each time.&lt;&#x2F;p&gt;
+&lt;p&gt;Change &lt;code&gt;args&lt;&#x2F;code&gt; to any python file if you’d like to run the same file each time.&lt;&#x2F;p&gt;
 &lt;pre data-lang=&quot;json&quot; style=&quot;background-color:#1e1e1e;color:#dcdcdc;&quot; class=&quot;language-json &quot;&gt;&lt;code class=&quot;language-json&quot; data-lang=&quot;json&quot;&gt;&lt;span&gt;{
 &lt;&#x2F;span&gt;&lt;span&gt;  &lt;&#x2F;span&gt;&lt;span style=&quot;color:#608b4e;&quot;&gt;&#x2F;&#x2F; See https:&#x2F;&#x2F;go.microsoft.com&#x2F;fwlink&#x2F;?LinkId=733558
 &lt;&#x2F;span&gt;&lt;span&gt;  &lt;&#x2F;span&gt;&lt;span style=&quot;color:#608b4e;&quot;&gt;&#x2F;&#x2F; for the documentation about the tasks.json format
@@ -65,7 +65,7 @@ and &lt;a href=&quot;https:&#x2F;&#x2F;python-poetry.org&quot;&gt;poetry&lt;&#x2
 &lt;ul&gt;
 &lt;li&gt;nox is similar in spirit to &lt;a href=&quot;https:&#x2F;&#x2F;tox.wiki&#x2F;en&#x2F;latest&#x2F;&quot;&gt;tox&lt;&#x2F;a&gt; but uses python
 scripts instead of configuration files.&lt;&#x2F;li&gt;
-&lt;li&gt;It&#x27;s very powerful, but since I&#x27;m not particularly clever, I find the
+&lt;li&gt;It’s very powerful, but since I’m not particularly clever, I find the
 hypermodern stack difficult to understand.&lt;&#x2F;li&gt;
 &lt;&#x2F;ul&gt;
 &lt;p&gt;I decided to throw together a simple template that uses tox and pip-tools. The
@@ -80,11 +80,6 @@ template uses:&lt;&#x2F;p&gt;
 suitable only for small libraries without broad distribution.&lt;&#x2F;p&gt;
 &lt;p&gt;🌱 &lt;strong&gt;The template is available here:
 &lt;a href=&quot;https:&#x2F;&#x2F;github.com&#x2F;jamwil&#x2F;bulletproof-python&quot;&gt;bulletproof-python&lt;&#x2F;a&gt;&lt;&#x2F;strong&gt;.&lt;&#x2F;p&gt;
-&lt;hr &#x2F;&gt;
-&lt;p&gt;Note: The original version of this post incorrectly stated that Poetry does not
-play nice with pip-installs from git source. This is not the case; I simply had
-my &lt;code&gt;pyproject.toml&lt;&#x2F;code&gt; file incorrectly configured to use setuptools instead of
-poetry-core as the build backend.&lt;&#x2F;p&gt;
 </description>
         </item>
     </channel>

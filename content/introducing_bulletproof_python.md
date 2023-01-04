@@ -33,6 +33,8 @@ suitable only for small libraries without broad distribution.
 🌱 **The template is available here:
 [bulletproof-python](https://github.com/jamwil/bulletproof-python)**.
 
+<!-- more -->
+
 ---
 
 Note: The original version of this post incorrectly stated that Poetry does not

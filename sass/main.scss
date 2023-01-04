@@ -151,7 +151,6 @@ pre,
 kbd {
   font-family: monospace;
   font-size: 0.9em;
-  line-height: 154%;
 }
 
 /* Styles */
@@ -179,6 +178,17 @@ ul ul {
   margin: 0em 2em;
 }
 
+ul {
+  list-style-type: none;
+  padding-inline-start: 2em;
+}
+
+ul li:before {
+  content: "–";
+  position: absolute;
+  margin-left: -1.5em;
+}
+
 /* Header */
 
 header {
@@ -189,7 +199,7 @@ header {
 header h1 {
   font-size: 1.2em;
   margin-top: 1em;
-  margin-bottom: 0;
+  margin-bottom: 1em;
   font-weight: bold;
   font-family: Vollkorn, serif;
 }
@@ -240,8 +250,8 @@ article:not(:last-of-type) {
 }
 
 article header h1 {
-  font-size: 1em;
-  line-height: 1.1em;
+  font-size: 1.1em;
+  line-height: 1.3em;
   margin-bottom: 0.5em;
   font-weight: 600;
   font-family: $font-stack;
@@ -256,7 +266,7 @@ article header h1 a {
 .article-info {
   font-size: 0.85em;
   color: $secondary-text;
-  margin-top: 1em;
+  margin-top: 1.5em;
 }
 
 .article-info a {
@@ -296,11 +306,18 @@ article header h1 a {
   list-style-type: none;
   padding: 0;
   margin: 0;
+  padding-inline-start: unset;
 }
 
 .article-tags li {
   display: inline;
   margin-right: 1em;
+}
+
+.article-tags li:before {
+  content: unset;
+  position: unset;
+  margin-left: unset;
 }
 
 article img {
@@ -337,6 +354,12 @@ article img {
   list-style-type: none;
   padding: 0;
   line-height: 2em;
+}
+
+.terms li:before {
+  content: unset;
+  position: unset;
+  margin-left: unset;
 }
 
 /* Pagination */

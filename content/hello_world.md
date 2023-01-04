@@ -7,9 +7,11 @@ tags = ["jamwil-com"]
 
 Welcome to my shiny new blog.
 
-\*slaps roof\* This baby can hold so many posts. Check out [/about](/about) for
-more information about me, and expect more meaningful content in 2023 as I
-embark on my open source journey.
+\*slaps roof\* This baby can hold so many posts. Check out
+[/about](@/pages/about.md) for more information about me, and expect more
+meaningful content in 2023 as I embark on my open source journey.
+
+<!-- more -->
 
 ```python
 # Here's some code
