@@ -30,6 +30,6 @@ The city has a spooky vibe and I absolutely love it.
 
 ---
 
-## Full-Resolution Image
+📷 **Full resolution image:**
 
 <img src="guanajuato_skyline.jpeg" />

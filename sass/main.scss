@@ -345,6 +345,12 @@ article .content td:first-child {
   white-space: nowrap;
 }
 
+img.thumbnail {
+  float: left;
+  margin-right: 1em;
+  margin-bottom: 1em;
+}
+
 .read-more {
   font-size: 0.85em;
 }

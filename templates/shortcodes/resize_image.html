@@ -1,2 +1,8 @@
-{% set image = resize_image(path=path, width=width, height=height, op=op) %}
-<img src="{{ image.url }}" style="float: left; margin: 0 1em 1em 0" />
+{% set image = resize_image(path=path, width=width * 2, height=height * 2,
+op=op) %}
+<img
+  src="{{ image.url }}"
+  width="{{ width }}"
+  height="{{ height }}"
+  class="thumbnail"
+/>
