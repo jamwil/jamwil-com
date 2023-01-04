@@ -49,91 +49,14 @@
           <a href="https://jamwil.com/tags">To all tags</a>
         </div>
 
-        <article class="post-list">
-          <header>
-            <h1>
-              <a
-                href="https:&#x2F;&#x2F;jamwil.com&#x2F;python-vscode-build-task&#x2F;"
-                >How to configure a python script as the default build task in
-                VS Code</a
-              >
-            </h1>
-          </header>
-
-          <div class="content post-summary">
-            <p>
-              This snippet goes in your <code>.vscode/tasks.json</code> file. It
-              will run the current python file as the default build task.
-            </p>
-            <ul>
-              <li>
-                <code>command</code> will invoke the python interpreter that is
-                configured in your workspace settings.
-              </li>
-              <li>
-                <code>group</code> will make this task the default build task.
-              </li>
-              <li>
-                <code>presentation:focus</code> will focus the terminal window
-                when the task is run.
-              </li>
-              <li>
-                <code>presentation:reveal</code> will reveal the terminal window
-                when the task is run.
-              </li>
-            </ul>
-            <p>
-              Change <code>args</code> to any python file if you’d like to run
-              the same file each time.
-            </p>
-            <pre
-              data-lang="json"
-              style="background-color: #1e1e1e; color: #dcdcdc"
-              class="language-json"
-            ><code class="language-json" data-lang="json"><span>{
-</span><span>  </span><span style="color:#608b4e;">// See https://go.microsoft.com/fwlink/?LinkId=733558
-</span><span>  </span><span style="color:#608b4e;">// for the documentation about the tasks.json format
-</span><span>  </span><span style="color:#d69d85;">&quot;version&quot;</span><span>: </span><span style="color:#d69d85;">&quot;2.0.0&quot;</span><span>,
-</span><span>  </span><span style="color:#d69d85;">&quot;tasks&quot;</span><span>: [
-</span><span>    {
-</span><span>      </span><span style="color:#d69d85;">&quot;label&quot;</span><span>: </span><span style="color:#d69d85;">&quot;Python: current file&quot;</span><span>,
-</span><span>      </span><span style="color:#d69d85;">&quot;type&quot;</span><span>: </span><span style="color:#d69d85;">&quot;shell&quot;</span><span>,
-</span><span>      </span><span style="color:#d69d85;">&quot;command&quot;</span><span>: </span><span style="color:#d69d85;">&quot;${command:python.interpreterPath}&quot;</span><span>,
-</span><span>      </span><span style="color:#d69d85;">&quot;args&quot;</span><span>: [</span><span style="color:#d69d85;">&quot;${file}&quot;</span><span>],
-</span><span>      </span><span style="color:#d69d85;">&quot;problemMatcher&quot;</span><span>: [],
-</span><span>      </span><span style="color:#d69d85;">&quot;group&quot;</span><span>: {
-</span><span>        </span><span style="color:#d69d85;">&quot;kind&quot;</span><span>: </span><span style="color:#d69d85;">&quot;build&quot;</span><span>,
-</span><span>        </span><span style="color:#d69d85;">&quot;isDefault&quot;</span><span>: </span><span style="color:#569cd6;">true
-</span><span>      },
-</span><span>      </span><span style="color:#d69d85;">&quot;presentation&quot;</span><span>: {
-</span><span>        </span><span style="color:#d69d85;">&quot;focus&quot;</span><span>: </span><span style="color:#569cd6;">true</span><span>,
-</span><span>        </span><span style="color:#d69d85;">&quot;reveal&quot;</span><span>: </span><span style="color:#d69d85;">&quot;always&quot;
-</span><span>      },
-</span><span>      </span><span style="color:#d69d85;">&quot;options&quot;</span><span>: {
-</span><span>        </span><span style="color:#d69d85;">&quot;cwd&quot;</span><span>: </span><span style="color:#d69d85;">&quot;${workspaceFolder}&quot;
-</span><span>      }
-</span><span>    }
-</span><span>  ]
-</span><span>}
-</span></code></pre>
-          </div>
-
-          <div class="article-info">
-            <div class="article-date">2023-01-03</div>
-
-            <div class="article-taxonomies">
-              <ul class="article-tags">
-                <li><a href="https://jamwil.com/tags/python/">#python</a></li>
-
-                <li><a href="https://jamwil.com/tags/vscode/">#vscode</a></li>
-
-                <li><a href="https://jamwil.com/tags/tooling/">#tooling</a></li>
-
-                <li><a href="https://jamwil.com/tags/howto/">#howto</a></li>
-              </ul>
-            </div>
-          </div>
-        </article>
+        <p>
+          2023-01-03:
+          <a
+            href="https:&#x2F;&#x2F;jamwil.com&#x2F;python-vscode-build-task&#x2F;"
+            >How to configure a python script as the default build task in VS
+            Code</a
+          >
+        </p>
       </main>
       <footer>
         <p>
