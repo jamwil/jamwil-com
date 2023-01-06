@@ -7,7 +7,22 @@
         <generator>Zola</generator>
         <language>en</language>
         <atom:link href="https://jamwil.com/tags/howto/rss.xml" rel="self" type="application/rss+xml"/>
-        <lastBuildDate>Tue, 03 Jan 2023 22:42:00 +0000</lastBuildDate>
+        <lastBuildDate>Fri, 06 Jan 2023 02:10:00 +0000</lastBuildDate>
+        <item>
+            <title>GPG Field Guide</title>
+            <pubDate>Fri, 06 Jan 2023 02:10:00 +0000</pubDate>
+            <link>https://jamwil.com/gpg-field-guide/</link>
+            <guid>https://jamwil.com/gpg-field-guide/</guid>
+            <description>&lt;p&gt;Jürgen Gmach on his personal blog:&lt;&#x2F;p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;While I need to use GPG pretty regularly, I always have to look up the
+commands - they just don’t stick :-)&lt;&#x2F;p&gt;
+&lt;p&gt;Over the last couple of months I collected every command I had to use. Enjoy!&lt;&#x2F;p&gt;
+&lt;&#x2F;blockquote&gt;
+&lt;p&gt;&lt;strong&gt;🔖 One for the bookmarks:
+&lt;a href=&quot;https:&#x2F;&#x2F;jugmac00.github.io&#x2F;blog&#x2F;gpg-all-i-need-to-know&#x2F;&quot;&gt;GPG - All I Need to Know&lt;&#x2F;a&gt;&lt;&#x2F;strong&gt;&lt;&#x2F;p&gt;
+</description>
+        </item>
         <item>
             <title>How to configure a python script as the default build task in VS Code</title>
             <pubDate>Tue, 03 Jan 2023 22:42:00 +0000</pubDate>

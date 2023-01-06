@@ -14,6 +14,10 @@
         <loc>https://jamwil.com/categories/</loc>
     </url>
     <url>
+        <loc>https://jamwil.com/gpg-field-guide/</loc>
+        <lastmod>2023-01-06T02:10:00Z</lastmod>
+    </url>
+    <url>
         <loc>https://jamwil.com/guanajuato/</loc>
         <lastmod>2023-01-04T17:34:00Z</lastmod>
     </url>
@@ -29,6 +33,9 @@
         <loc>https://jamwil.com/page/1/</loc>
     </url>
     <url>
+        <loc>https://jamwil.com/page/2/</loc>
+    </url>
+    <url>
         <loc>https://jamwil.com/python-vscode-build-task/</loc>
         <lastmod>2023-01-03T22:42:00Z</lastmod>
     </url>
@@ -37,6 +44,9 @@
     </url>
     <url>
         <loc>https://jamwil.com/tags/bulletproof-python/</loc>
+    </url>
+    <url>
+        <loc>https://jamwil.com/tags/gpg/</loc>
     </url>
     <url>
         <loc>https://jamwil.com/tags/howto/</loc>
