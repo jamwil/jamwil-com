@@ -16,3 +16,5 @@ Jürgen Gmach on his personal blog:
 [GPG - All I Need to Know](https://jugmac00.github.io/blog/gpg-all-i-need-to-know/)**
 
 <!-- more -->
+
+For posterity: [archive.today webpage capture](https://archive.ph/9S2YM)
