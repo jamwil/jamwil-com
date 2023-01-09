@@ -7,7 +7,7 @@ $secondary-text: #666;
 $link-color: #1d60a3;
 $hover-link-color: #a31d1d;
 $link-underline: rgba(163, 29, 29, 0.5);
-$accent-background: lightgrey;
+$accent-background: #eee;
 
 $background-dark: black;
 $primary-text-dark: #ddd;
@@ -15,7 +15,7 @@ $secondary-text-dark: #aaa;
 $link-color-dark: #58aafd;
 $hover-link-color-dark: rgb(249, 64, 64);
 $link-underline-dark: rgba(249, 64, 64, 0.5);
-$accent-background-dark: #333;
+$accent-background-dark: #222;
 
 /* Basic */
 @import url("https://fonts.googleapis.com/css2?family=Vollkorn&display=swap");
@@ -159,6 +159,15 @@ pre,
 kbd {
   font-family: monospace;
   font-size: 0.9em;
+}
+code {
+  font-size: 0.8em;
+  border-radius: 0.25em;
+  padding: 0.2em 0.4em 0.3em 0.4em;
+  background-color: $accent-background;
+}
+pre code {
+  background-color: unset;
 }
 
 /* Styles */
@@ -409,6 +418,7 @@ img.thumbnail {
 .pagination-item {
   background: $accent-background;
   padding: 0.75em 0.75em;
+  border-radius: 0.3em;
 }
 
 .disabled {
@@ -478,6 +488,7 @@ ul.language-select > li {
     text-align: center;
     background: $accent-background;
     padding: 0.5em 0;
+    border-radius: 0.3em;
   }
 
   header nav a:first-of-type {
@@ -486,6 +497,12 @@ ul.language-select > li {
 
   header nav a {
     margin-left: 5%;
+  }
+}
+
+@media (max-width: 840px) and (prefers-color-scheme: dark) {
+  header nav {
+    background: $accent-background-dark;
   }
 }
 
@@ -518,6 +535,9 @@ ul.language-select > li {
   article header h1 a {
     color: $primary-text-dark;
   }
+  article .content td {
+    border-bottom: thin solid $accent-background-dark;
+  }
   .article-info {
     color: $secondary-text-dark;
   }
@@ -539,5 +559,8 @@ ul.language-select > li {
   .patigation-item a:hover,
   .pagination-item a:focus {
     color: $hover-link-color-dark;
+  }
+  code {
+    background-color: $accent-background-dark;
   }
 }
