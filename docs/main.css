@@ -259,7 +259,7 @@ article .content table {
 article .content td {
   border: none;
   border-bottom: thin solid #d3d3d3;
-  padding: 0 1em 0.25em 0;
+  padding: 0.35em 1em 0.35em 0;
   vertical-align: top;
 }
 article .content td:first-child {
@@ -368,5 +368,56 @@ ul.language-select > li {
   }
   header nav a {
     margin-left: 5%;
+  }
+}
+@media (prefers-color-scheme: dark) {
+  body {
+    background-color: #000;
+    color: #ddd;
+  }
+  a {
+    color: #58aafd;
+  }
+  a:hover,
+  a:focus,
+  a:active {
+    color: #f94040;
+    border-bottom: 1px solid rgba(249, 64, 64, 0.5);
+  }
+  a:active {
+    color: #f94040;
+    opacity: 0.9;
+    border-bottom: 1px solid rgba(249, 64, 64, 0.5);
+  }
+  pre {
+    background-color: #333;
+  }
+  header a {
+    color: #ddd;
+  }
+  article header h1 a {
+    color: #ddd;
+  }
+  .article-info {
+    color: #aaa;
+  }
+  .article-info a {
+    color: #aaa;
+  }
+  .article-info a:hover {
+    color: #f94040;
+  }
+  article .content table {
+    color: #aaa;
+  }
+  .pagination-item {
+    background: #333;
+  }
+  .pagination-item a {
+    color: #ddd;
+  }
+  .patigation-item a:hover,
+  .pagination-item a:focus {
+    color: #f94040;
   }
 }

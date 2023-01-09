@@ -9,6 +9,14 @@ $hover-link-color: #a31d1d;
 $link-underline: rgba(163, 29, 29, 0.5);
 $accent-background: lightgrey;
 
+$background-dark: black;
+$primary-text-dark: #ddd;
+$secondary-text-dark: #aaa;
+$link-color-dark: #58aafd;
+$hover-link-color-dark: rgb(249, 64, 64);
+$link-underline-dark: rgba(249, 64, 64, 0.5);
+$accent-background-dark: #333;
+
 /* Basic */
 @import url("https://fonts.googleapis.com/css2?family=Vollkorn&display=swap");
 html {
@@ -336,7 +344,7 @@ article .content table {
 article .content td {
   border: none;
   border-bottom: thin solid $accent-background;
-  padding: 0 1em 0.25em 0;
+  padding: 0.35em 1em 0.35em 0;
   vertical-align: top;
 }
 
@@ -478,5 +486,58 @@ ul.language-select > li {
 
   header nav a {
     margin-left: 5%;
+  }
+}
+
+@media (prefers-color-scheme: dark) {
+  /* Override each colored element with its dark-mode equivalent */
+  body {
+    background-color: $background-dark;
+    color: $primary-text-dark;
+  }
+  a {
+    color: $link-color-dark;
+  }
+  a:hover,
+  a:focus,
+  a:active {
+    color: $hover-link-color-dark;
+    border-bottom: 1px solid $link-underline-dark;
+  }
+  a:active {
+    color: $hover-link-color-dark;
+    opacity: 0.9;
+    border-bottom: 1px solid $link-underline-dark;
+  }
+  pre {
+    background-color: $accent-background-dark;
+  }
+  header a {
+    color: $primary-text-dark;
+  }
+  article header h1 a {
+    color: $primary-text-dark;
+  }
+  .article-info {
+    color: $secondary-text-dark;
+  }
+  .article-info a {
+    color: $secondary-text-dark;
+  }
+  .article-info a:hover {
+    color: $hover-link-color-dark;
+  }
+  article .content table {
+    color: $secondary-text-dark;
+  }
+  .pagination-item {
+    background: $accent-background-dark;
+  }
+  .pagination-item a {
+    color: $primary-text-dark;
+  }
+  .patigation-item a:hover,
+  .pagination-item a:focus {
+    color: $hover-link-color-dark;
   }
 }
