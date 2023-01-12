@@ -14,6 +14,10 @@
         <loc>https://jamwil.com/categories/</loc>
     </url>
     <url>
+        <loc>https://jamwil.com/git-submodule/</loc>
+        <lastmod>2023-01-12T15:53:00Z</lastmod>
+    </url>
+    <url>
         <loc>https://jamwil.com/gpg-field-guide/</loc>
         <lastmod>2023-01-06T02:10:00Z</lastmod>
     </url>
@@ -44,6 +48,9 @@
     </url>
     <url>
         <loc>https://jamwil.com/tags/bulletproof-python/</loc>
+    </url>
+    <url>
+        <loc>https://jamwil.com/tags/git/</loc>
     </url>
     <url>
         <loc>https://jamwil.com/tags/gpg/</loc>

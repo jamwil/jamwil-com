@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="HandheldFriendly" content="True" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="referrer" content="no-referrer-when-downgrade" />
+
+    <title>
+      How to convert a subdirectory to its own git repository&#x2F;submodule
+    </title>
+    <meta
+      name="description"
+      content="Ramblings of a half-witted software developer and licensed pleasure craft operator."
+    />
+
+    <link rel="stylesheet" href="https://jamwil.com/main.css" />
+
+    <link
+      rel="alternate"
+      type="application/rss+xml"
+      title="RSS"
+      href="https://jamwil.com/rss.xml"
+    />
+
+    <link rel="me" href="https://fosstodon.org/@jamwil" />
+    <link
+      rel="shortcut icon"
+      type="image/x-icon"
+      href="https://jamwil.com/favicon.ico"
+    />
+  </head>
+  <body>
+    <a class="skip-main" href="#main">Skip to content</a>
+    <div class="container">
+      <header>
+        <h1 class="site-header">
+          <a href="https:&#x2F;&#x2F;jamwil.com">James Williams</a>
+        </h1>
+        <nav>
+          <a href="https:&#x2F;&#x2F;jamwil.com&#x2F;about&#x2F;">About</a>
+
+          <a href="https:&#x2F;&#x2F;jamwil.com&#x2F;tags&#x2F;">Tags</a>
+        </nav>
+      </header>
+      <main id="main" tabindex="-1">
+        <article class="post">
+          <header>
+            <h1>
+              How to convert a subdirectory to its own git
+              repository&#x2F;submodule
+            </h1>
+          </header>
+          <div class="content">
+            <pre
+              data-lang="bash"
+              style="background-color: #1e1e1e; color: #dcdcdc"
+              class="language-bash"
+            ><code class="language-bash" data-lang="bash"><span style="color:#608b4e;"># Make a clone of the repository
+</span><span>git clone &lt;your_project&gt; &lt;new_submodule&gt;
+</span><span>
+</span><span style="color:#608b4e;"># CD into the new repository
+</span><span>cd &lt;new_submodule&gt;
+</span><span>
+</span><span style="color:#608b4e;"># Use filter-branch to isolate the subdirectory
+</span><span>git filter-branch --subdirectory-filter </span><span style="color:#d69d85;">&#39;path/to/subdirectory&#39;</span><span> --prune-empty</span><span style="color:#569cd6;"> --</span><span> --all
+</span><span>
+</span><span style="color:#608b4e;"># Remove the old remote
+</span><span>git remote rm &lt;remote_name&gt;
+</span></code></pre>
+            <p>
+              <code>git filter-branch</code> lets you rewrite Git revision
+              history and apply custom filters on each revision.
+              <strong>It should be used with caution!</strong> From the Git
+              Manual (emphasis mine):
+            </p>
+            <blockquote>
+              <p>
+                git filter-branch has a plethora of pitfalls that can produce
+                non-obvious manglings of the intended history rewrite (and can
+                leave you with little time to investigate such problems since it
+                has such abysmal performance). These safety and performance
+                issues cannot be backward compatibly fixed and as such,
+                <strong>its use is not recommended</strong>.
+              </p>
+            </blockquote>
+            <p>
+              Nevertheless, since we live dangerously around these parts, here’s
+              what’s happening with the filter-branch command should you choose
+              to use it:
+            </p>
+            <ul>
+              <li>
+                <code>--subdirectory-filter</code> is the main command. It takes
+                a path to a subdirectory and filters the repository to only
+                include that subdirectory.
+              </li>
+              <li>
+                <code>--prune-empty</code> removes commits that don’t change
+                anything.
+              </li>
+              <li>
+                <code>-- --all</code> is a way to pass arguments to the internal
+                <code>git rev-list</code> command. In this case, it’s telling
+                git to run the command on all branches.
+              </li>
+            </ul>
+            <p>
+              Once the operation is done, you’ll have a new repository with only
+              the subdirectory you specified. You can then push it to a new
+              remote and add it as a submodule to your original repository.
+            </p>
+            <p>
+              <code>git filter-branch</code> is a destructive operation. While
+              I’ve used the above command with success on my own repositories,
+              your mileage may vary and I probably can’t help you if something
+              goes wrong.
+            </p>
+            <span id="continue-reading"></span>
+          </div>
+
+          <div class="article-info">
+            <div class="article-date">2023-01-12</div>
+
+            <div class="article-taxonomies">
+              <ul class="article-tags">
+                <li>
+                  <a href="https://jamwil.com/tags/git/">#git</a>
+                </li>
+
+                <li>
+                  <a href="https://jamwil.com/tags/howto/">#howto</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </article>
+      </main>
+      <footer>
+        <p>
+          © James Williams 2023<br />
+          Powered by <a target="_blank" href="https://getzola.org/">Zola</a>,
+          Theme
+          <a target="_blank" href="https://github.com/zbrox/anpu-zola-theme"
+            >Anpu</a
+          >.
+        </p>
+        <p></p>
+      </footer>
+    </div>
+  </body>
+</html>

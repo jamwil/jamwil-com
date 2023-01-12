@@ -45,6 +45,100 @@
         <article class="post-list">
           <header>
             <h1>
+              <a href="https:&#x2F;&#x2F;jamwil.com&#x2F;git-submodule&#x2F;"
+                >How to convert a subdirectory to its own git
+                repository&#x2F;submodule</a
+              >
+            </h1>
+          </header>
+
+          <div class="content post-summary">
+            <pre
+              data-lang="bash"
+              style="background-color: #1e1e1e; color: #dcdcdc"
+              class="language-bash"
+            ><code class="language-bash" data-lang="bash"><span style="color:#608b4e;"># Make a clone of the repository
+</span><span>git clone &lt;your_project&gt; &lt;new_submodule&gt;
+</span><span>
+</span><span style="color:#608b4e;"># CD into the new repository
+</span><span>cd &lt;new_submodule&gt;
+</span><span>
+</span><span style="color:#608b4e;"># Use filter-branch to isolate the subdirectory
+</span><span>git filter-branch --subdirectory-filter </span><span style="color:#d69d85;">&#39;path/to/subdirectory&#39;</span><span> --prune-empty</span><span style="color:#569cd6;"> --</span><span> --all
+</span><span>
+</span><span style="color:#608b4e;"># Remove the old remote
+</span><span>git remote rm &lt;remote_name&gt;
+</span></code></pre>
+            <p>
+              <code>git filter-branch</code> lets you rewrite Git revision
+              history and apply custom filters on each revision.
+              <strong>It should be used with caution!</strong> From the Git
+              Manual (emphasis mine):
+            </p>
+            <blockquote>
+              <p>
+                git filter-branch has a plethora of pitfalls that can produce
+                non-obvious manglings of the intended history rewrite (and can
+                leave you with little time to investigate such problems since it
+                has such abysmal performance). These safety and performance
+                issues cannot be backward compatibly fixed and as such,
+                <strong>its use is not recommended</strong>.
+              </p>
+            </blockquote>
+            <p>
+              Nevertheless, since we live dangerously around these parts, here’s
+              what’s happening with the filter-branch command should you choose
+              to use it:
+            </p>
+            <ul>
+              <li>
+                <code>--subdirectory-filter</code> is the main command. It takes
+                a path to a subdirectory and filters the repository to only
+                include that subdirectory.
+              </li>
+              <li>
+                <code>--prune-empty</code> removes commits that don’t change
+                anything.
+              </li>
+              <li>
+                <code>-- --all</code> is a way to pass arguments to the internal
+                <code>git rev-list</code> command. In this case, it’s telling
+                git to run the command on all branches.
+              </li>
+            </ul>
+            <p>
+              Once the operation is done, you’ll have a new repository with only
+              the subdirectory you specified. You can then push it to a new
+              remote and add it as a submodule to your original repository.
+            </p>
+            <p>
+              <code>git filter-branch</code> is a destructive operation. While
+              I’ve used the above command with success on my own repositories,
+              your mileage may vary and I probably can’t help you if something
+              goes wrong.
+            </p>
+          </div>
+
+          <div class="article-info">
+            <div class="article-date">2023-01-12</div>
+
+            <div class="article-taxonomies">
+              <ul class="article-tags">
+                <li>
+                  <a href="https://jamwil.com/tags/git/">#git</a>
+                </li>
+
+                <li>
+                  <a href="https://jamwil.com/tags/howto/">#howto</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </article>
+
+        <article class="post-list">
+          <header>
+            <h1>
               <a href="https:&#x2F;&#x2F;jamwil.com&#x2F;gpg-field-guide&#x2F;"
                 >GPG Field Guide</a
               >
@@ -361,53 +455,6 @@
 
                 <li>
                   <a href="https://jamwil.com/tags/tooling/">#tooling</a>
-                </li>
-              </ul>
-            </div>
-          </div>
-        </article>
-
-        <article class="post-list">
-          <header>
-            <h1>
-              <a href="https:&#x2F;&#x2F;jamwil.com&#x2F;aldente&#x2F;"
-                >TIL about AlDente by AppHouseKitchen</a
-              >
-            </h1>
-          </header>
-
-          <div class="content post-summary">
-            <p>
-              The ‘optimize battery charging’ feature in macOS has never worked
-              well for me. It tends to stay at 100%, which is not great for my
-              battery.
-            </p>
-            <p>
-              I recently discovered
-              <a href="https://apphousekitchen.com">AlDente</a> by
-              AppHouseKitchen. It’s a paid app that allows you to set a maximum
-              charge level for your battery. There is a free tier I believe, but
-              I almost always eat the paid versions of apps that I like and use.
-            </p>
-            <p>
-              I’ve been using it for a few days now and it’s been working great.
-              If you’re similarly annoyed by macOS’s battery charging behavior,
-              I highly recommend it. Not a sponsored post, just a (so far) happy
-              user.
-            </p>
-          </div>
-
-          <div class="article-info">
-            <div class="article-date">2022-12-28</div>
-
-            <div class="article-taxonomies">
-              <ul class="article-tags">
-                <li>
-                  <a href="https://jamwil.com/tags/macos/">#macOS</a>
-                </li>
-
-                <li>
-                  <a href="https://jamwil.com/tags/til/">#TIL</a>
                 </li>
               </ul>
             </div>

@@ -7,7 +7,51 @@
         <generator>Zola</generator>
         <language>en</language>
         <atom:link href="https://jamwil.com/tags/howto/rss.xml" rel="self" type="application/rss+xml"/>
-        <lastBuildDate>Fri, 06 Jan 2023 02:10:00 +0000</lastBuildDate>
+        <lastBuildDate>Thu, 12 Jan 2023 15:53:00 +0000</lastBuildDate>
+        <item>
+            <title>How to convert a subdirectory to its own git repository&#x2F;submodule</title>
+            <pubDate>Thu, 12 Jan 2023 15:53:00 +0000</pubDate>
+            <link>https://jamwil.com/git-submodule/</link>
+            <guid>https://jamwil.com/git-submodule/</guid>
+            <description>&lt;pre data-lang=&quot;bash&quot; style=&quot;background-color:#1e1e1e;color:#dcdcdc;&quot; class=&quot;language-bash &quot;&gt;&lt;code class=&quot;language-bash&quot; data-lang=&quot;bash&quot;&gt;&lt;span style=&quot;color:#608b4e;&quot;&gt;# Make a clone of the repository
+&lt;&#x2F;span&gt;&lt;span&gt;git clone &amp;lt;your_project&amp;gt; &amp;lt;new_submodule&amp;gt;
+&lt;&#x2F;span&gt;&lt;span&gt;
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#608b4e;&quot;&gt;# CD into the new repository
+&lt;&#x2F;span&gt;&lt;span&gt;cd &amp;lt;new_submodule&amp;gt;
+&lt;&#x2F;span&gt;&lt;span&gt;
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#608b4e;&quot;&gt;# Use filter-branch to isolate the subdirectory
+&lt;&#x2F;span&gt;&lt;span&gt;git filter-branch --subdirectory-filter &lt;&#x2F;span&gt;&lt;span style=&quot;color:#d69d85;&quot;&gt;&amp;#39;path&#x2F;to&#x2F;subdirectory&amp;#39;&lt;&#x2F;span&gt;&lt;span&gt; --prune-empty&lt;&#x2F;span&gt;&lt;span style=&quot;color:#569cd6;&quot;&gt; --&lt;&#x2F;span&gt;&lt;span&gt; --all
+&lt;&#x2F;span&gt;&lt;span&gt;
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#608b4e;&quot;&gt;# Remove the old remote
+&lt;&#x2F;span&gt;&lt;span&gt;git remote rm &amp;lt;remote_name&amp;gt;
+&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;p&gt;&lt;code&gt;git filter-branch&lt;&#x2F;code&gt; lets you rewrite Git revision history and apply custom
+filters on each revision. &lt;strong&gt;It should be used with caution!&lt;&#x2F;strong&gt; From the Git
+Manual (emphasis mine):&lt;&#x2F;p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;git filter-branch has a plethora of pitfalls that can produce non-obvious
+manglings of the intended history rewrite (and can leave you with little time
+to investigate such problems since it has such abysmal performance). These
+safety and performance issues cannot be backward compatibly fixed and as such,
+&lt;strong&gt;its use is not recommended&lt;&#x2F;strong&gt;.&lt;&#x2F;p&gt;
+&lt;&#x2F;blockquote&gt;
+&lt;p&gt;Nevertheless, since we live dangerously around these parts, here’s what’s
+happening with the filter-branch command should you choose to use it:&lt;&#x2F;p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;--subdirectory-filter&lt;&#x2F;code&gt; is the main command. It takes a path to a subdirectory
+and filters the repository to only include that subdirectory.&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;code&gt;--prune-empty&lt;&#x2F;code&gt; removes commits that don’t change anything.&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;code&gt;-- --all&lt;&#x2F;code&gt; is a way to pass arguments to the internal &lt;code&gt;git rev-list&lt;&#x2F;code&gt; command.
+In this case, it’s telling git to run the command on all branches.&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;p&gt;Once the operation is done, you’ll have a new repository with only the
+subdirectory you specified. You can then push it to a new remote and add it as a
+submodule to your original repository.&lt;&#x2F;p&gt;
+&lt;p&gt;&lt;code&gt;git filter-branch&lt;&#x2F;code&gt; is a destructive operation. While I’ve used the above
+command with success on my own repositories, your mileage may vary and I
+probably can’t help you if something goes wrong.&lt;&#x2F;p&gt;
+</description>
+        </item>
         <item>
             <title>GPG Field Guide</title>
             <pubDate>Fri, 06 Jan 2023 02:10:00 +0000</pubDate>

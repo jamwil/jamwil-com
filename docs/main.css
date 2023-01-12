@@ -111,7 +111,7 @@ code,
 pre,
 kbd {
   font-family: monospace;
-  font-size: 0.9em;
+  font-size: 1em;
 }
 code {
   font-size: 0.8em;
@@ -123,9 +123,9 @@ pre code {
   background-color: unset;
 }
 blockquote {
-  border-left: 2px solid #eee;
-  padding: 0.1em 1em;
-  margin-left: 0.75em;
+  border-left: 4px solid #eee;
+  padding: 0.05em 0.05em 0.05em 1em;
+  margin-left: 0;
 }
 p {
   margin-top: 1em;
@@ -370,7 +370,7 @@ ul.language-select > li {
     margin-top: 1em;
     max-width: 100%;
     text-align: center;
-    background: #eee;
+    border: solid 1px #eee;
     padding: 0.5em 0;
     border-radius: 0.3em;
   }
@@ -383,13 +383,16 @@ ul.language-select > li {
 }
 @media (max-width: 840px) and (prefers-color-scheme: dark) {
   header nav {
-    background: #222;
+    border: solid 1px #222;
   }
 }
 @media (prefers-color-scheme: dark) {
   body {
     background-color: #000;
     color: #ddd;
+  }
+  blockquote {
+    border-left: 4px solid #222;
   }
   a {
     color: #58aafd;
