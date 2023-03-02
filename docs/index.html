@@ -45,6 +45,98 @@
         <article class="post-list">
           <header>
             <h1>
+              <a href="https:&#x2F;&#x2F;jamwil.com&#x2F;llm-roundup&#x2F;"
+                >LLM Round-up</a
+              >
+            </h1>
+          </header>
+
+          <div class="content post-summary">
+            <p>
+              When I asked ChatGPT what type of AI it is, this is what it said:
+            </p>
+            <blockquote>
+              <p>
+                ChatGPT is a type of language model, specifically a variant of a
+                transformer model called the Generative Pretrained Transformer
+                (GPT). It is an example of artificial general intelligence
+                (AGI), which means that it is capable of performing a wide range
+                of natural language processing tasks, such as text generation,
+                summarization, translation, and question answering, among
+                others.
+              </p>
+            </blockquote>
+            <p>I know some of these words 🤦‍♂️.</p>
+            <p>
+              I’ll never be an AI researcher, but I do want to have a laymen’s
+              understanding of what the tool is capable of and how it works.
+              I’ve been searching for educational resources that lie somewhere
+              in the sweet spot of accessibility and depth. I want to understand
+              the basic terminology, like what a transformer is, and also
+              understand a large language model’s shortcomings. And I want to
+              understand where a language model fits into the broader landscape
+              of AI.
+            </p>
+            <p>
+              To that end, I’m compiling a few resources that seem to be well
+              regarded. I’ll treat this post as a digital bookshelf, and will
+              update it with my thoughts and notes as I work through the
+              material.
+            </p>
+            <p>
+              We’ll start with 35,000 words from Stephen Wolfram as a primer,
+              then move into Andrej Karpathy’s Zero to Hero lecture series.
+            </p>
+            <ul>
+              <li>
+                Stephen Wolfram:
+                <a
+                  href="https://writings.stephenwolfram.com/2023/02/what-is-chatgpt-doing-and-why-does-it-work/"
+                  >What Is ChatGPT Doing … and Why Does It Work?</a
+                >
+                (2023-02-14)
+              </li>
+              <li>
+                Andrej Karpathy:
+                <a href="https://karpathy.ai/zero-to-hero.html"
+                  >Neural Networks: Zero to Hero</a
+                >
+              </li>
+              <li>
+                <a href="https://platform.openai.com/docs/introduction/overview"
+                  >OpenAI Documentation</a
+                >
+              </li>
+              <li>
+                Rodrigo Girão Serrão:
+                <a
+                  href="https://mathspp.com/blog/your-first-recurrent-neural-network"
+                  >Your first recurrent neural network (RNN)</a
+                >
+              </li>
+            </ul>
+          </div>
+
+          <div class="article-info">
+            <div class="article-date">2023-03-02</div>
+
+            <div class="article-taxonomies">
+              <ul class="article-tags">
+                <li>
+                  <a href="https://jamwil.com/tags/ai/">#ai</a>
+                </li>
+
+                <li>
+                  <a href="https://jamwil.com/tags/bookmarks/">#bookmarks</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </article>
+
+        <article class="post-list">
+          <header>
+            <h1>
               <a
                 href="https:&#x2F;&#x2F;jamwil.com&#x2F;restaurant-principles&#x2F;"
                 >Three managerial principles I wrote down in 2015</a
@@ -373,100 +465,6 @@
 
                 <li>
                   <a href="https://jamwil.com/tags/photo/">#photo</a>
-                </li>
-              </ul>
-            </div>
-          </div>
-        </article>
-
-        <article class="post-list">
-          <header>
-            <h1>
-              <a
-                href="https:&#x2F;&#x2F;jamwil.com&#x2F;python-vscode-build-task&#x2F;"
-                >How to configure a python script as the default build task in
-                VS Code</a
-              >
-            </h1>
-          </header>
-
-          <div class="content post-summary">
-            <p>
-              This snippet goes in your <code>.vscode/tasks.json</code> file. It
-              will run the current python file as the default build task.
-            </p>
-            <ul>
-              <li>
-                <code>command</code> will invoke the python interpreter that is
-                configured in your workspace settings.
-              </li>
-              <li>
-                <code>group</code> will make this task the default build task.
-              </li>
-              <li>
-                <code>presentation:focus</code> will focus the terminal window
-                when the task is run.
-              </li>
-              <li>
-                <code>presentation:reveal</code> will reveal the terminal window
-                when the task is run.
-              </li>
-            </ul>
-            <p>
-              Change <code>args</code> to any python file if you’d like to run
-              the same file each time.
-            </p>
-            <pre
-              data-lang="json"
-              style="background-color: #1e1e1e; color: #dcdcdc"
-              class="language-json"
-            ><code class="language-json" data-lang="json"><span>{
-</span><span>  </span><span style="color:#608b4e;">// See https://go.microsoft.com/fwlink/?LinkId=733558
-</span><span>  </span><span style="color:#608b4e;">// for the documentation about the tasks.json format
-</span><span>  </span><span style="color:#d69d85;">&quot;version&quot;</span><span>: </span><span style="color:#d69d85;">&quot;2.0.0&quot;</span><span>,
-</span><span>  </span><span style="color:#d69d85;">&quot;tasks&quot;</span><span>: [
-</span><span>    {
-</span><span>      </span><span style="color:#d69d85;">&quot;label&quot;</span><span>: </span><span style="color:#d69d85;">&quot;Python: current file&quot;</span><span>,
-</span><span>      </span><span style="color:#d69d85;">&quot;type&quot;</span><span>: </span><span style="color:#d69d85;">&quot;shell&quot;</span><span>,
-</span><span>      </span><span style="color:#d69d85;">&quot;command&quot;</span><span>: </span><span style="color:#d69d85;">&quot;${command:python.interpreterPath}&quot;</span><span>,
-</span><span>      </span><span style="color:#d69d85;">&quot;args&quot;</span><span>: [</span><span style="color:#d69d85;">&quot;${file}&quot;</span><span>],
-</span><span>      </span><span style="color:#d69d85;">&quot;problemMatcher&quot;</span><span>: [],
-</span><span>      </span><span style="color:#d69d85;">&quot;group&quot;</span><span>: {
-</span><span>        </span><span style="color:#d69d85;">&quot;kind&quot;</span><span>: </span><span style="color:#d69d85;">&quot;build&quot;</span><span>,
-</span><span>        </span><span style="color:#d69d85;">&quot;isDefault&quot;</span><span>: </span><span style="color:#569cd6;">true
-</span><span>      },
-</span><span>      </span><span style="color:#d69d85;">&quot;presentation&quot;</span><span>: {
-</span><span>        </span><span style="color:#d69d85;">&quot;focus&quot;</span><span>: </span><span style="color:#569cd6;">true</span><span>,
-</span><span>        </span><span style="color:#d69d85;">&quot;reveal&quot;</span><span>: </span><span style="color:#d69d85;">&quot;always&quot;
-</span><span>      },
-</span><span>      </span><span style="color:#d69d85;">&quot;options&quot;</span><span>: {
-</span><span>        </span><span style="color:#d69d85;">&quot;cwd&quot;</span><span>: </span><span style="color:#d69d85;">&quot;${workspaceFolder}&quot;
-</span><span>      }
-</span><span>    }
-</span><span>  ]
-</span><span>}
-</span></code></pre>
-          </div>
-
-          <div class="article-info">
-            <div class="article-date">2023-01-03</div>
-
-            <div class="article-taxonomies">
-              <ul class="article-tags">
-                <li>
-                  <a href="https://jamwil.com/tags/python/">#python</a>
-                </li>
-
-                <li>
-                  <a href="https://jamwil.com/tags/vscode/">#vscode</a>
-                </li>
-
-                <li>
-                  <a href="https://jamwil.com/tags/tooling/">#tooling</a>
-                </li>
-
-                <li>
-                  <a href="https://jamwil.com/tags/howto/">#howto</a>
                 </li>
               </ul>
             </div>
