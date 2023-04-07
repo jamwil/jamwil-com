@@ -187,6 +187,8 @@ hr {
   height: 1px;
   border: 0;
   border-top: 1px solid $accent-background;
+  margin-top: 1em;
+  margin-bottom: 0.5em;
 }
 
 ul ol,
@@ -263,12 +265,12 @@ main h1 {
 /* Articles */
 
 article:not(:last-of-type) {
-  border-bottom: thin solid $accent-background;
+  border-bottom: thick solid $accent-background;
   padding-bottom: 2em;
 }
 
 article header h1 {
-  font-size: 1.1em;
+  font-size: 1.2em;
   line-height: 1.3em;
   margin-bottom: 0.5em;
   font-weight: 600;
@@ -535,6 +537,10 @@ ul.language-select > li {
   }
   header a {
     color: $primary-text-dark;
+  }
+  article:not(:last-of-type) {
+    border-bottom: thick solid $accent-background-dark;
+    padding-bottom: 2em;
   }
   article header h1 a {
     color: $primary-text-dark;

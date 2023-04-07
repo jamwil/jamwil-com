@@ -2,18 +2,19 @@
 <rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
     <channel>
       <title>James Williams - git</title>
-        <link>https://jamwil.com</link>
-        <description>Ramblings of a half-witted software developer and licensed pleasure craft operator.</description>
-        <generator>Zola</generator>
-        <language>en</language>
-        <atom:link href="https://jamwil.com/tags/git/rss.xml" rel="self" type="application/rss+xml"/>
-        <lastBuildDate>Thu, 12 Jan 2023 15:53:00 +0000</lastBuildDate>
-        <item>
-            <title>How to convert a subdirectory to its own git repository&#x2F;submodule</title>
-            <pubDate>Thu, 12 Jan 2023 15:53:00 +0000</pubDate>
-            <link>https://jamwil.com/git-submodule/</link>
-            <guid>https://jamwil.com/git-submodule/</guid>
-            <description>&lt;pre data-lang=&quot;bash&quot; style=&quot;background-color:#1e1e1e;color:#dcdcdc;&quot; class=&quot;language-bash &quot;&gt;&lt;code class=&quot;language-bash&quot; data-lang=&quot;bash&quot;&gt;&lt;span style=&quot;color:#608b4e;&quot;&gt;# Make a clone of the repository
+      <link>https://jamwil.com</link>
+      <description>Ramblings of a half-witted software developer and licensed pleasure craft operator.</description>
+      <generator>Zola</generator>
+      <language>en</language>
+      <atom:link href="https://jamwil.com/tags/git/rss.xml" rel="self" type="application/rss+xml"/>
+      <lastBuildDate>Thu, 12 Jan 2023 15:53:00 +0000</lastBuildDate>
+      <item>
+          <title>How to convert a subdirectory to its own git repository&#x2F;submodule</title>
+          <pubDate>Thu, 12 Jan 2023 15:53:00 +0000</pubDate>
+          <author>Unknown</author>
+          <link>https://jamwil.com/git-submodule/</link>
+          <guid>https://jamwil.com/git-submodule/</guid>
+          <description>&lt;pre data-lang=&quot;bash&quot; style=&quot;background-color:#1e1e1e;color:#dcdcdc;&quot; class=&quot;language-bash &quot;&gt;&lt;code class=&quot;language-bash&quot; data-lang=&quot;bash&quot;&gt;&lt;span style=&quot;color:#608b4e;&quot;&gt;# Make a clone of the repository
 &lt;&#x2F;span&gt;&lt;span&gt;git clone &amp;lt;your_project&amp;gt; &amp;lt;new_submodule&amp;gt;
 &lt;&#x2F;span&gt;&lt;span&gt;
 &lt;&#x2F;span&gt;&lt;span style=&quot;color:#608b4e;&quot;&gt;# CD into the new repository
@@ -51,6 +52,6 @@ submodule to your original repository.&lt;&#x2F;p&gt;
 command with success on my own repositories, your mileage may vary and I
 probably can’t help you if something goes wrong.&lt;&#x2F;p&gt;
 </description>
-        </item>
+      </item>
     </channel>
 </rss>

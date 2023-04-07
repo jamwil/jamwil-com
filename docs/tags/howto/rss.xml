@@ -2,18 +2,19 @@
 <rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
     <channel>
       <title>James Williams - howto</title>
-        <link>https://jamwil.com</link>
-        <description>Ramblings of a half-witted software developer and licensed pleasure craft operator.</description>
-        <generator>Zola</generator>
-        <language>en</language>
-        <atom:link href="https://jamwil.com/tags/howto/rss.xml" rel="self" type="application/rss+xml"/>
-        <lastBuildDate>Thu, 12 Jan 2023 15:53:00 +0000</lastBuildDate>
-        <item>
-            <title>How to convert a subdirectory to its own git repository&#x2F;submodule</title>
-            <pubDate>Thu, 12 Jan 2023 15:53:00 +0000</pubDate>
-            <link>https://jamwil.com/git-submodule/</link>
-            <guid>https://jamwil.com/git-submodule/</guid>
-            <description>&lt;pre data-lang=&quot;bash&quot; style=&quot;background-color:#1e1e1e;color:#dcdcdc;&quot; class=&quot;language-bash &quot;&gt;&lt;code class=&quot;language-bash&quot; data-lang=&quot;bash&quot;&gt;&lt;span style=&quot;color:#608b4e;&quot;&gt;# Make a clone of the repository
+      <link>https://jamwil.com</link>
+      <description>Ramblings of a half-witted software developer and licensed pleasure craft operator.</description>
+      <generator>Zola</generator>
+      <language>en</language>
+      <atom:link href="https://jamwil.com/tags/howto/rss.xml" rel="self" type="application/rss+xml"/>
+      <lastBuildDate>Thu, 12 Jan 2023 15:53:00 +0000</lastBuildDate>
+      <item>
+          <title>How to convert a subdirectory to its own git repository&#x2F;submodule</title>
+          <pubDate>Thu, 12 Jan 2023 15:53:00 +0000</pubDate>
+          <author>Unknown</author>
+          <link>https://jamwil.com/git-submodule/</link>
+          <guid>https://jamwil.com/git-submodule/</guid>
+          <description>&lt;pre data-lang=&quot;bash&quot; style=&quot;background-color:#1e1e1e;color:#dcdcdc;&quot; class=&quot;language-bash &quot;&gt;&lt;code class=&quot;language-bash&quot; data-lang=&quot;bash&quot;&gt;&lt;span style=&quot;color:#608b4e;&quot;&gt;# Make a clone of the repository
 &lt;&#x2F;span&gt;&lt;span&gt;git clone &amp;lt;your_project&amp;gt; &amp;lt;new_submodule&amp;gt;
 &lt;&#x2F;span&gt;&lt;span&gt;
 &lt;&#x2F;span&gt;&lt;span style=&quot;color:#608b4e;&quot;&gt;# CD into the new repository
@@ -51,13 +52,14 @@ submodule to your original repository.&lt;&#x2F;p&gt;
 command with success on my own repositories, your mileage may vary and I
 probably can’t help you if something goes wrong.&lt;&#x2F;p&gt;
 </description>
-        </item>
-        <item>
-            <title>GPG Field Guide</title>
-            <pubDate>Fri, 06 Jan 2023 02:10:00 +0000</pubDate>
-            <link>https://jamwil.com/gpg-field-guide/</link>
-            <guid>https://jamwil.com/gpg-field-guide/</guid>
-            <description>&lt;p&gt;Jürgen Gmach on his personal blog:&lt;&#x2F;p&gt;
+      </item>
+      <item>
+          <title>GPG Field Guide</title>
+          <pubDate>Fri, 06 Jan 2023 02:10:00 +0000</pubDate>
+          <author>Unknown</author>
+          <link>https://jamwil.com/gpg-field-guide/</link>
+          <guid>https://jamwil.com/gpg-field-guide/</guid>
+          <description>&lt;p&gt;Jürgen Gmach on his personal blog:&lt;&#x2F;p&gt;
 &lt;blockquote&gt;
 &lt;p&gt;While I need to use GPG pretty regularly, I always have to look up the
 commands - they just don’t stick :-)&lt;&#x2F;p&gt;
@@ -66,13 +68,14 @@ commands - they just don’t stick :-)&lt;&#x2F;p&gt;
 &lt;p&gt;&lt;strong&gt;🔖 One for the bookmarks:
 &lt;a href=&quot;https:&#x2F;&#x2F;jugmac00.github.io&#x2F;blog&#x2F;gpg-all-i-need-to-know&#x2F;&quot;&gt;GPG - All I Need to Know&lt;&#x2F;a&gt;&lt;&#x2F;strong&gt;&lt;&#x2F;p&gt;
 </description>
-        </item>
-        <item>
-            <title>How to configure a python script as the default build task in VS Code</title>
-            <pubDate>Tue, 03 Jan 2023 22:42:00 +0000</pubDate>
-            <link>https://jamwil.com/python-vscode-build-task/</link>
-            <guid>https://jamwil.com/python-vscode-build-task/</guid>
-            <description>&lt;p&gt;This snippet goes in your &lt;code&gt;.vscode&#x2F;tasks.json&lt;&#x2F;code&gt; file. It will run the current
+      </item>
+      <item>
+          <title>How to configure a python script as the default build task in VS Code</title>
+          <pubDate>Tue, 03 Jan 2023 22:42:00 +0000</pubDate>
+          <author>Unknown</author>
+          <link>https://jamwil.com/python-vscode-build-task/</link>
+          <guid>https://jamwil.com/python-vscode-build-task/</guid>
+          <description>&lt;p&gt;This snippet goes in your &lt;code&gt;.vscode&#x2F;tasks.json&lt;&#x2F;code&gt; file. It will run the current
 python file as the default build task.&lt;&#x2F;p&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;code&gt;command&lt;&#x2F;code&gt; will invoke the python interpreter that is configured in your
@@ -109,6 +112,6 @@ workspace settings.&lt;&#x2F;li&gt;
 &lt;&#x2F;span&gt;&lt;span&gt;}
 &lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
 </description>
-        </item>
+      </item>
     </channel>
 </rss>

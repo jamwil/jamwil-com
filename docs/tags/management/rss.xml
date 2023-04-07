@@ -2,18 +2,19 @@
 <rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
     <channel>
       <title>James Williams - management</title>
-        <link>https://jamwil.com</link>
-        <description>Ramblings of a half-witted software developer and licensed pleasure craft operator.</description>
-        <generator>Zola</generator>
-        <language>en</language>
-        <atom:link href="https://jamwil.com/tags/management/rss.xml" rel="self" type="application/rss+xml"/>
-        <lastBuildDate>Tue, 31 Jan 2023 02:49:00 +0000</lastBuildDate>
-        <item>
-            <title>Three managerial principles I wrote down in 2015</title>
-            <pubDate>Tue, 31 Jan 2023 02:49:00 +0000</pubDate>
-            <link>https://jamwil.com/restaurant-principles/</link>
-            <guid>https://jamwil.com/restaurant-principles/</guid>
-            <description>&lt;p&gt;In my mid-20s—okay, mid- to late-20s—I worked as the Assistant Manager of a
+      <link>https://jamwil.com</link>
+      <description>Ramblings of a half-witted software developer and licensed pleasure craft operator.</description>
+      <generator>Zola</generator>
+      <language>en</language>
+      <atom:link href="https://jamwil.com/tags/management/rss.xml" rel="self" type="application/rss+xml"/>
+      <lastBuildDate>Tue, 31 Jan 2023 02:49:00 +0000</lastBuildDate>
+      <item>
+          <title>Three managerial principles I wrote down in 2015</title>
+          <pubDate>Tue, 31 Jan 2023 02:49:00 +0000</pubDate>
+          <author>Unknown</author>
+          <link>https://jamwil.com/restaurant-principles/</link>
+          <guid>https://jamwil.com/restaurant-principles/</guid>
+          <description>&lt;p&gt;In my mid-20s—okay, mid- to late-20s—I worked as the Assistant Manager of a
 restaurant. It was a formative time for me, though I didn’t fully realize it
 then.&lt;&#x2F;p&gt;
 &lt;p&gt;In 2015 I jotted down three managerial principles on Medium that had been
@@ -66,6 +67,6 @@ acceptance, they reach upon their mobile devices and tap.&lt;&#x2F;p&gt;
 &lt;p&gt;For the negative reviews cometh.&lt;&#x2F;p&gt;
 &lt;&#x2F;blockquote&gt;
 </description>
-        </item>
+      </item>
     </channel>
 </rss>

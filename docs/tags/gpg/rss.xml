@@ -2,18 +2,19 @@
 <rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
     <channel>
       <title>James Williams - gpg</title>
-        <link>https://jamwil.com</link>
-        <description>Ramblings of a half-witted software developer and licensed pleasure craft operator.</description>
-        <generator>Zola</generator>
-        <language>en</language>
-        <atom:link href="https://jamwil.com/tags/gpg/rss.xml" rel="self" type="application/rss+xml"/>
-        <lastBuildDate>Fri, 06 Jan 2023 02:10:00 +0000</lastBuildDate>
-        <item>
-            <title>GPG Field Guide</title>
-            <pubDate>Fri, 06 Jan 2023 02:10:00 +0000</pubDate>
-            <link>https://jamwil.com/gpg-field-guide/</link>
-            <guid>https://jamwil.com/gpg-field-guide/</guid>
-            <description>&lt;p&gt;Jürgen Gmach on his personal blog:&lt;&#x2F;p&gt;
+      <link>https://jamwil.com</link>
+      <description>Ramblings of a half-witted software developer and licensed pleasure craft operator.</description>
+      <generator>Zola</generator>
+      <language>en</language>
+      <atom:link href="https://jamwil.com/tags/gpg/rss.xml" rel="self" type="application/rss+xml"/>
+      <lastBuildDate>Fri, 06 Jan 2023 02:10:00 +0000</lastBuildDate>
+      <item>
+          <title>GPG Field Guide</title>
+          <pubDate>Fri, 06 Jan 2023 02:10:00 +0000</pubDate>
+          <author>Unknown</author>
+          <link>https://jamwil.com/gpg-field-guide/</link>
+          <guid>https://jamwil.com/gpg-field-guide/</guid>
+          <description>&lt;p&gt;Jürgen Gmach on his personal blog:&lt;&#x2F;p&gt;
 &lt;blockquote&gt;
 &lt;p&gt;While I need to use GPG pretty regularly, I always have to look up the
 commands - they just don’t stick :-)&lt;&#x2F;p&gt;
@@ -22,6 +23,6 @@ commands - they just don’t stick :-)&lt;&#x2F;p&gt;
 &lt;p&gt;&lt;strong&gt;🔖 One for the bookmarks:
 &lt;a href=&quot;https:&#x2F;&#x2F;jugmac00.github.io&#x2F;blog&#x2F;gpg-all-i-need-to-know&#x2F;&quot;&gt;GPG - All I Need to Know&lt;&#x2F;a&gt;&lt;&#x2F;strong&gt;&lt;&#x2F;p&gt;
 </description>
-        </item>
+      </item>
     </channel>
 </rss>

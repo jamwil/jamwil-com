@@ -2,18 +2,19 @@
 <rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
     <channel>
       <title>James Williams - bulletproof-python</title>
-        <link>https://jamwil.com</link>
-        <description>Ramblings of a half-witted software developer and licensed pleasure craft operator.</description>
-        <generator>Zola</generator>
-        <language>en</language>
-        <atom:link href="https://jamwil.com/tags/bulletproof-python/rss.xml" rel="self" type="application/rss+xml"/>
-        <lastBuildDate>Tue, 03 Jan 2023 00:13:00 +0000</lastBuildDate>
-        <item>
-            <title>Introducing bulletproof-python</title>
-            <pubDate>Mon, 02 Jan 2023 19:58:00 +0000</pubDate>
-            <link>https://jamwil.com/introducing-bulletproof-python/</link>
-            <guid>https://jamwil.com/introducing-bulletproof-python/</guid>
-            <description>&lt;p&gt;I owe a debt of gratitude to &lt;a href=&quot;https:&#x2F;&#x2F;github.com&#x2F;cjolowicz&#x2F;&quot;&gt;Claudio Jolowicz&lt;&#x2F;a&gt;
+      <link>https://jamwil.com</link>
+      <description>Ramblings of a half-witted software developer and licensed pleasure craft operator.</description>
+      <generator>Zola</generator>
+      <language>en</language>
+      <atom:link href="https://jamwil.com/tags/bulletproof-python/rss.xml" rel="self" type="application/rss+xml"/>
+      <lastBuildDate>Tue, 03 Jan 2023 00:13:00 +0000</lastBuildDate>
+      <item>
+          <title>Introducing bulletproof-python</title>
+          <pubDate>Mon, 02 Jan 2023 19:58:00 +0000</pubDate>
+          <author>Unknown</author>
+          <link>https://jamwil.com/introducing-bulletproof-python/</link>
+          <guid>https://jamwil.com/introducing-bulletproof-python/</guid>
+          <description>&lt;p&gt;I owe a debt of gratitude to &lt;a href=&quot;https:&#x2F;&#x2F;github.com&#x2F;cjolowicz&#x2F;&quot;&gt;Claudio Jolowicz&lt;&#x2F;a&gt;
 for introducing me to modern python tooling. His
 &lt;a href=&quot;https:&#x2F;&#x2F;github.com&#x2F;cjolowicz&#x2F;cookiecutter-hypermodern-python&quot;&gt;Hypermodern Python&lt;&#x2F;a&gt;
 template and associated blog series are a great resource.&lt;&#x2F;p&gt;
@@ -38,6 +39,6 @@ suitable only for small libraries without broad distribution.&lt;&#x2F;p&gt;
 &lt;p&gt;🌱 &lt;strong&gt;The template is available here:
 &lt;a href=&quot;https:&#x2F;&#x2F;github.com&#x2F;jamwil&#x2F;bulletproof-python&quot;&gt;bulletproof-python&lt;&#x2F;a&gt;&lt;&#x2F;strong&gt;.&lt;&#x2F;p&gt;
 </description>
-        </item>
+      </item>
     </channel>
 </rss>
