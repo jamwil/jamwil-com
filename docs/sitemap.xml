@@ -30,6 +30,10 @@
         <lastmod>2023-01-04T17:34:00Z</lastmod>
     </url>
     <url>
+        <loc>https://jamwil.com/hello-k8s/</loc>
+        <lastmod>2023-06-20T02:36:00Z</lastmod>
+    </url>
+    <url>
         <loc>https://jamwil.com/hello-world/</loc>
         <lastmod>2022-12-26T15:45:00Z</lastmod>
     </url>
@@ -46,6 +50,9 @@
     </url>
     <url>
         <loc>https://jamwil.com/page/2/</loc>
+    </url>
+    <url>
+        <loc>https://jamwil.com/page/3/</loc>
     </url>
     <url>
         <loc>https://jamwil.com/python-vscode-build-task/</loc>
@@ -68,6 +75,9 @@
         <loc>https://jamwil.com/tags/bulletproof-python/</loc>
     </url>
     <url>
+        <loc>https://jamwil.com/tags/docker/</loc>
+    </url>
+    <url>
         <loc>https://jamwil.com/tags/git/</loc>
     </url>
     <url>
@@ -78,6 +88,9 @@
     </url>
     <url>
         <loc>https://jamwil.com/tags/jamwil-com/</loc>
+    </url>
+    <url>
+        <loc>https://jamwil.com/tags/kubernetes/</loc>
     </url>
     <url>
         <loc>https://jamwil.com/tags/macos/</loc>
