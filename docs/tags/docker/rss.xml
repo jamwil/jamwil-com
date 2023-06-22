@@ -9,7 +9,7 @@
       <atom:link href="https://jamwil.com/tags/docker/rss.xml" rel="self" type="application/rss+xml"/>
       <lastBuildDate>Tue, 20 Jun 2023 02:36:00 +0000</lastBuildDate>
       <item>
-          <title>Running a Local Kubernetes Cluster with Kind: A Step-by-Step Guide</title>
+          <title>Running a local Kubernetes cluster with Kind: A step-by-step guide</title>
           <pubDate>Tue, 20 Jun 2023 02:36:00 +0000</pubDate>
           <author>Unknown</author>
           <link>https://jamwil.com/hello-k8s/</link>

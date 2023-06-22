@@ -1,5 +1,5 @@
 +++
-title = "Running a Local Kubernetes Cluster with Kind: A Step-by-Step Guide"
+title = "Running a local Kubernetes cluster with Kind: A step-by-step guide"
 date = "2023-06-20T02:36:00Z"
 [taxonomies]
 tags = ["macOS", "kubernetes", "docker", "howto"]
