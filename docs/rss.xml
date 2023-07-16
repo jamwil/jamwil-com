@@ -7,7 +7,42 @@
       <generator>Zola</generator>
       <language>en</language>
       <atom:link href="https://jamwil.com/rss.xml" rel="self" type="application/rss+xml"/>
-      <lastBuildDate>Tue, 20 Jun 2023 02:36:00 +0000</lastBuildDate>
+      <lastBuildDate>Sun, 16 Jul 2023 16:18:00 +0000</lastBuildDate>
+      <item>
+          <title>How to checkout and edit a pull request locally</title>
+          <pubDate>Sun, 16 Jul 2023 16:18:00 +0000</pubDate>
+          <author>Unknown</author>
+          <link>https://jamwil.com/refine-pull-request/</link>
+          <guid>https://jamwil.com/refine-pull-request/</guid>
+          <description>&lt;p&gt;Let’s say you have a dependabot pull request and Charlie Marsh has added a new
+check to &lt;a href=&quot;https:&#x2F;&#x2F;github.com&#x2F;astral-sh&#x2F;ruff&quot;&gt;Ruff&lt;&#x2F;a&gt; that causes your lint check
+to fail. You can fix the lint error and push the changes back to the pull
+request branch!&lt;&#x2F;p&gt;
+&lt;p&gt;First, checkout the pull request locally:&lt;&#x2F;p&gt;
+&lt;pre data-lang=&quot;bash&quot; style=&quot;background-color:#1e1e1e;color:#dcdcdc;&quot; class=&quot;language-bash &quot;&gt;&lt;code class=&quot;language-bash&quot; data-lang=&quot;bash&quot;&gt;&lt;span style=&quot;color:#608b4e;&quot;&gt;# In this case, I&amp;#39;m updating ruff to v0.0.278
+&lt;&#x2F;span&gt;&lt;span&gt;git fetch origin dependabot&#x2F;pip&#x2F;ruff-0.0.278
+&lt;&#x2F;span&gt;&lt;span&gt;git switch --track origin&#x2F;dependabot&#x2F;pip&#x2F;ruff-0.0.278
+&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;p&gt;We’ve now checked out the PR branch and set it to track the remote. We can use
+this pattern to keep tabs on long-running PRs, or as in this case, simply push
+an additional patch before merging. If you’d like a more friendly local branch
+name, you can append the &lt;code&gt;:my-branch-name&lt;&#x2F;code&gt; to the end of the git fetch call, and
+then call &lt;code&gt;git switch my-branch-name&lt;&#x2F;code&gt; to check it out; just keep in mind that
+this won’t set the local branch to track the remote.&lt;&#x2F;p&gt;
+&lt;p&gt;In my case, this ruff release does not provide any new rule categories and my
+lints still pass, however I’d like to update the ruff version in my
+&lt;code&gt;.pre-commit-config.yaml&lt;&#x2F;code&gt; file so that it’s consistent with my
+&lt;code&gt;requirements.txt&lt;&#x2F;code&gt;. I’ll make that change, commit and push back to the remote.&lt;&#x2F;p&gt;
+&lt;pre data-lang=&quot;bash&quot; style=&quot;background-color:#1e1e1e;color:#dcdcdc;&quot; class=&quot;language-bash &quot;&gt;&lt;code class=&quot;language-bash&quot; data-lang=&quot;bash&quot;&gt;&lt;span&gt;git add .pre-commit-config.yaml
+&lt;&#x2F;span&gt;&lt;span&gt;git commit -m &lt;&#x2F;span&gt;&lt;span style=&quot;color:#d69d85;&quot;&gt;&amp;quot;Update pre-commit config.&amp;quot;
+&lt;&#x2F;span&gt;&lt;span&gt;git push
+&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;p&gt;At this point, your checks should fire again and you can merge using your
+preferred merge method into your trunk. Check out
+&lt;a href=&quot;https:&#x2F;&#x2F;github.com&#x2F;jamwil&#x2F;bulletproof-python&#x2F;pull&#x2F;129&quot;&gt;real pull request&lt;&#x2F;a&gt; to
+see how this looks server side.&lt;&#x2F;p&gt;
+</description>
+      </item>
       <item>
           <title>Running a local Kubernetes cluster with Kind: A step-by-step guide</title>
           <pubDate>Tue, 20 Jun 2023 02:36:00 +0000</pubDate>

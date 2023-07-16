@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="HandheldFriendly" content="True" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="referrer" content="no-referrer-when-downgrade" />
+
+    <title>How to checkout and edit a pull request locally</title>
+    <meta
+      name="description"
+      content="Ramblings of a half-witted software developer and licensed pleasure craft operator."
+    />
+
+    <link rel="stylesheet" href="https://jamwil.com/main.css" />
+
+    <link
+      rel="alternate"
+      type="application/rss+xml"
+      title="RSS"
+      href="https://jamwil.com/rss.xml"
+    />
+
+    <link rel="me" href="https://fosstodon.org/@jamwil" />
+    <link
+      rel="shortcut icon"
+      type="image/x-icon"
+      href="https://jamwil.com/favicon.ico"
+    />
+  </head>
+  <body>
+    <a class="skip-main" href="#main">Skip to content</a>
+    <div class="container">
+      <header>
+        <h1 class="site-header">
+          <a href="https:&#x2F;&#x2F;jamwil.com">James Williams</a>
+        </h1>
+        <nav>
+          <a href="https:&#x2F;&#x2F;jamwil.com&#x2F;about&#x2F;">About</a>
+
+          <a href="https:&#x2F;&#x2F;jamwil.com&#x2F;tags&#x2F;">Tags</a>
+        </nav>
+      </header>
+      <main id="main" tabindex="-1">
+        <article class="post">
+          <header>
+            <h1>How to checkout and edit a pull request locally</h1>
+          </header>
+          <div class="content">
+            <p>
+              Let’s say you have a dependabot pull request and Charlie Marsh has
+              added a new check to
+              <a href="https://github.com/astral-sh/ruff">Ruff</a> that causes
+              your lint check to fail. You can fix the lint error and push the
+              changes back to the pull request branch!
+            </p>
+            <p>First, checkout the pull request locally:</p>
+            <pre
+              data-lang="bash"
+              style="background-color: #1e1e1e; color: #dcdcdc"
+              class="language-bash"
+            ><code class="language-bash" data-lang="bash"><span style="color:#608b4e;"># In this case, I&#39;m updating ruff to v0.0.278
+</span><span>git fetch origin dependabot/pip/ruff-0.0.278
+</span><span>git switch --track origin/dependabot/pip/ruff-0.0.278
+</span></code></pre>
+            <p>
+              We’ve now checked out the PR branch and set it to track the
+              remote. We can use this pattern to keep tabs on long-running PRs,
+              or as in this case, simply push an additional patch before
+              merging. If you’d like a more friendly local branch name, you can
+              append the <code>:my-branch-name</code> to the end of the git
+              fetch call, and then call
+              <code>git switch my-branch-name</code> to check it out; just keep
+              in mind that this won’t set the local branch to track the remote.
+            </p>
+            <p>
+              In my case, this ruff release does not provide any new rule
+              categories and my lints still pass, however I’d like to update the
+              ruff version in my <code>.pre-commit-config.yaml</code> file so
+              that it’s consistent with my <code>requirements.txt</code>. I’ll
+              make that change, commit and push back to the remote.
+            </p>
+            <pre
+              data-lang="bash"
+              style="background-color: #1e1e1e; color: #dcdcdc"
+              class="language-bash"
+            ><code class="language-bash" data-lang="bash"><span>git add .pre-commit-config.yaml
+</span><span>git commit -m </span><span style="color:#d69d85;">&quot;Update pre-commit config.&quot;
+</span><span>git push
+</span></code></pre>
+            <p>
+              At this point, your checks should fire again and you can merge
+              using your preferred merge method into your trunk. Check out
+              <a href="https://github.com/jamwil/bulletproof-python/pull/129"
+                >real pull request</a
+              >
+              to see how this looks server side.
+            </p>
+            <span id="continue-reading"></span>
+          </div>
+
+          <div class="article-info">
+            <div class="article-date">2023-07-16</div>
+
+            <div class="article-taxonomies">
+              <ul class="article-tags">
+                <li>
+                  <a href="https://jamwil.com/tags/git/">#git</a>
+                </li>
+
+                <li>
+                  <a href="https://jamwil.com/tags/howto/">#howto</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </article>
+      </main>
+      <footer>
+        <p>
+          © James Williams 2023<br />
+          Powered by <a target="_blank" href="https://getzola.org/">Zola</a>,
+          Theme
+          <a target="_blank" href="https://github.com/zbrox/anpu-zola-theme"
+            >Anpu</a
+          >.
+        </p>
+        <p></p>
+      </footer>
+    </div>
+  </body>
+</html>
