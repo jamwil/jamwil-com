@@ -14,7 +14,7 @@
           <author>Unknown</author>
           <link>https://jamwil.com/guanajuato/</link>
           <guid>https://jamwil.com/guanajuato/</guid>
-          <description>
+          <description xml:base="https://jamwil.com/guanajuato/">
 &lt;img
   src=&quot;https:&amp;#x2F;&amp;#x2F;jamwil.com&amp;#x2F;processed_images&amp;#x2F;guanajuato_skyline.cbec6cc2f1527247.jpg&quot;
   alt=&quot;Guanajuato City facing south from Centro&quot;

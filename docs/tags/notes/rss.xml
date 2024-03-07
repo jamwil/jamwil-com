@@ -14,7 +14,7 @@
           <author>Unknown</author>
           <link>https://jamwil.com/chat-gpt-wolfram-notes/</link>
           <guid>https://jamwil.com/chat-gpt-wolfram-notes/</guid>
-          <description>&lt;p&gt;&lt;strong&gt;Source Material:&lt;&#x2F;strong&gt;
+          <description xml:base="https://jamwil.com/chat-gpt-wolfram-notes/">&lt;p&gt;&lt;strong&gt;Source Material:&lt;&#x2F;strong&gt;
 &lt;a href=&quot;https:&#x2F;&#x2F;writings.stephenwolfram.com&#x2F;2023&#x2F;02&#x2F;what-is-chatgpt-doing-and-why-does-it-work&#x2F;&quot;&gt;Stephen Wolfram, 2023-02-14&lt;&#x2F;a&gt;&lt;&#x2F;p&gt;
 &lt;p&gt;ChatGPT is a large-scale transformer-based language model that is designed to
 predict the next word in a sentence given the context of what has been said. It

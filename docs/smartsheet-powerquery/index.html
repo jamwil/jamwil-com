@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="HandheldFriendly" content="True" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="referrer" content="no-referrer-when-downgrade" />
+
+    <title>
+      Pulling a Smartsheet table into Microsoft Excel using Power Query
+    </title>
+    <meta
+      name="description"
+      content="Ramblings of a half-witted software developer and licensed pleasure craft operator."
+    />
+
+    <link rel="stylesheet" href="https://jamwil.com/main.css" />
+
+    <link
+      rel="alternate"
+      type="application/rss+xml"
+      title="RSS"
+      href="https://jamwil.com/rss.xml"
+    />
+
+    <link rel="me" href="https://fosstodon.org/@jamwil" />
+    <link
+      rel="shortcut icon"
+      type="image/x-icon"
+      href="https://jamwil.com/favicon.ico"
+    />
+  </head>
+  <body>
+    <a class="skip-main" href="#main">Skip to content</a>
+    <div class="container">
+      <header>
+        <h1 class="site-header">
+          <a href="https:&#x2F;&#x2F;jamwil.com">James Williams</a>
+        </h1>
+        <nav>
+          <a href="https:&#x2F;&#x2F;jamwil.com&#x2F;about&#x2F;">About</a>
+
+          <a href="https:&#x2F;&#x2F;jamwil.com&#x2F;tags&#x2F;">Tags</a>
+        </nav>
+      </header>
+      <main id="main" tabindex="-1">
+        <article class="post">
+          <header>
+            <h1>
+              Pulling a Smartsheet table into Microsoft Excel using Power Query
+            </h1>
+          </header>
+          <div class="content">
+            <p>
+              Well if you thought my first post in eight months would be exotic,
+              go ahead and smash that back button.
+            </p>
+            <p>
+              I use this technique when we have one-off assignments at work
+              where I need a quick and dirty web-based data store that several
+              people can collaborate on, and that can be easily queried in Excel
+              without any intermediate infrastructure or processing. This would
+              be quite trivial if not for Smartsheet’s intractible API format.
+            </p>
+            <p>
+              Assuming you have a Smartsheet grid you want to mirror in Excel
+              and that can be refreshed on the fly, you’ll need the sheet’s ID
+              and an API bearer token for a user with viewer permissions.
+            </p>
+            <p>
+              In Excel, open Power Query and create a new query using the
+              advanced editor.
+              <strong
+                >Make sure to replace <code>$SHEET_ID</code> and
+                <code>$BEARER_TOKEN</code></strong
+              >. The query will bring in both your data and column headers.
+            </p>
+            <pre
+              data-lang="powerquery"
+              style="background-color: #1e1e1e; color: #dcdcdc"
+              class="language-powerquery"
+            ><code class="language-powerquery" data-lang="powerquery"><span>let
+</span><span>    Source = Json.Document(
+</span><span>        Web.Contents(&quot;https://api.smartsheet.com/2.0/sheets/$SHEET_ID&quot;, [
+</span><span>            Headers=[
+</span><span>                #&quot;Content-Type&quot;=&quot;application/json&quot;,
+</span><span>                Authorization=&quot;Bearer $BEARER_TOKEN&quot;
+</span><span>            ]
+</span><span>        ])
+</span><span>    ),
+</span><span>
+</span><span>    // Process rows
+</span><span>    RowsData = Source[rows],
+</span><span>    RowsTable = Table.FromList(RowsData, Splitter.SplitByNothing()),
+</span><span>    ExpandedRows = Table.ExpandRecordColumn(
+</span><span>        RowsTable,
+</span><span>        &quot;Column1&quot;,
+</span><span>        {&quot;id&quot;, &quot;rowNumber&quot;, &quot;expanded&quot;, &quot;createdAt&quot;, &quot;modifiedAt&quot;, &quot;cells&quot;, &quot;siblingId&quot;},
+</span><span>        {&quot;ID&quot;, &quot;RowNumber&quot;, &quot;Expanded&quot;, &quot;CreatedAt&quot;, &quot;ModifiedAt&quot;, &quot;Cells&quot;, &quot;SiblingId&quot;}
+</span><span>    ),
+</span><span>    ExpandCells = Table.ExpandListColumn(ExpandedRows, &quot;Cells&quot;),
+</span><span>    ExpandedCellsDetails = Table.ExpandRecordColumn(
+</span><span>        ExpandCells,
+</span><span>        &quot;Cells&quot;,
+</span><span>        {&quot;columnId&quot;, &quot;value&quot;, &quot;displayValue&quot;},
+</span><span>        {&quot;ColumnID&quot;, &quot;CellValue&quot;, &quot;CellDisplayValue&quot;}
+</span><span>    ),
+</span><span>    RemovedCellsMetaColumns = Table.RemoveColumns(
+</span><span>        ExpandedCellsDetails,
+</span><span>        {&quot;ID&quot;, &quot;Expanded&quot;, &quot;CreatedAt&quot;, &quot;ModifiedAt&quot;, &quot;CellDisplayValue&quot;, &quot;SiblingId&quot;}
+</span><span>    ),
+</span><span>    PivotedCellsByColumnId = Table.Pivot(
+</span><span>        Table.TransformColumnTypes(RemovedCellsMetaColumns, {{&quot;ColumnID&quot;, type text}}),
+</span><span>        List.Distinct(Table.TransformColumnTypes(RemovedCellsMetaColumns, {{&quot;ColumnID&quot;, type text}})[ColumnID]),
+</span><span>        &quot;ColumnID&quot;,
+</span><span>        &quot;CellValue&quot;
+</span><span>    ),
+</span><span>    CleanRowData = Table.RemoveColumns(PivotedCellsByColumnId, {&quot;RowNumber&quot;}),
+</span><span>
+</span><span>    // Process columns
+</span><span>    ColumnsData = Source[columns],
+</span><span>    ColumnsTable = Table.FromList(ColumnsData, Splitter.SplitByNothing()),
+</span><span>    ExpandedColumns = Table.ExpandRecordColumn(
+</span><span>        ColumnsTable,
+</span><span>        &quot;Column1&quot;,
+</span><span>        {&quot;id&quot;, &quot;title&quot;},
+</span><span>        {&quot;ColumnID&quot;, &quot;ColumnTitle&quot;}
+</span><span>    ),
+</span><span>    ColumnTitlesMapped = Table.Pivot(
+</span><span>        Table.TransformColumnTypes(ExpandedColumns, {{&quot;ColumnID&quot;, type text}}),
+</span><span>        List.Distinct(Table.TransformColumnTypes(ExpandedColumns, {{&quot;ColumnID&quot;, type text}})[ColumnID]),
+</span><span>        &quot;ColumnID&quot;,
+</span><span>        &quot;ColumnTitle&quot;
+</span><span>    ),
+</span><span>
+</span><span>    // Add headers
+</span><span>    CombinedDataTable = Table.Combine({ColumnTitlesMapped, CleanRowData}),
+</span><span>    FinalData = Table.PromoteHeaders(CombinedDataTable)
+</span><span>
+</span><span>in
+</span><span>    FinalData
+</span></code></pre>
+            <span id="continue-reading"></span>
+          </div>
+
+          <div class="article-info">
+            <div class="article-date">2024-03-07</div>
+
+            <div class="article-taxonomies">
+              <ul class="article-tags">
+                <li>
+                  <a href="https://jamwil.com/tags/howto/">#howto</a>
+                </li>
+
+                <li>
+                  <a href="https://jamwil.com/tags/excel/">#excel</a>
+                </li>
+
+                <li>
+                  <a href="https://jamwil.com/tags/smartsheet/">#smartsheet</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </article>
+      </main>
+      <footer>
+        <p>
+          © James Williams 2024<br />
+          Powered by <a target="_blank" href="https://getzola.org/">Zola</a>,
+          Theme
+          <a target="_blank" href="https://github.com/zbrox/anpu-zola-theme"
+            >Anpu</a
+          >.
+        </p>
+        <p></p>
+      </footer>
+    </div>
+  </body>
+</html>

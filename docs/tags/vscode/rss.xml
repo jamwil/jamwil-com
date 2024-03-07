@@ -14,7 +14,7 @@
           <author>Unknown</author>
           <link>https://jamwil.com/python-vscode-build-task/</link>
           <guid>https://jamwil.com/python-vscode-build-task/</guid>
-          <description>&lt;p&gt;This snippet goes in your &lt;code&gt;.vscode&#x2F;tasks.json&lt;&#x2F;code&gt; file. It will run the current
+          <description xml:base="https://jamwil.com/python-vscode-build-task/">&lt;p&gt;This snippet goes in your &lt;code&gt;.vscode&#x2F;tasks.json&lt;&#x2F;code&gt; file. It will run the current
 python file as the default build task.&lt;&#x2F;p&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;code&gt;command&lt;&#x2F;code&gt; will invoke the python interpreter that is configured in your

@@ -14,7 +14,7 @@
           <author>Unknown</author>
           <link>https://jamwil.com/introducing-bulletproof-python/</link>
           <guid>https://jamwil.com/introducing-bulletproof-python/</guid>
-          <description>&lt;p&gt;I owe a debt of gratitude to &lt;a href=&quot;https:&#x2F;&#x2F;github.com&#x2F;cjolowicz&#x2F;&quot;&gt;Claudio Jolowicz&lt;&#x2F;a&gt;
+          <description xml:base="https://jamwil.com/introducing-bulletproof-python/">&lt;p&gt;I owe a debt of gratitude to &lt;a href=&quot;https:&#x2F;&#x2F;github.com&#x2F;cjolowicz&#x2F;&quot;&gt;Claudio Jolowicz&lt;&#x2F;a&gt;
 for introducing me to modern python tooling. His
 &lt;a href=&quot;https:&#x2F;&#x2F;github.com&#x2F;cjolowicz&#x2F;cookiecutter-hypermodern-python&quot;&gt;Hypermodern Python&lt;&#x2F;a&gt;
 template and associated blog series are a great resource.&lt;&#x2F;p&gt;
