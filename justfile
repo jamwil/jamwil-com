@@ -4,6 +4,7 @@ new-post slug:
     echo "date = \"$(date -u +"%Y-%m-%dT%H:%M:%SZ")\"" >> "content/{{slug}}.md"
     echo '[taxonomies]' >> "content/{{slug}}.md"
     echo 'tags = []' >> "content/{{slug}}.md"
+    echo 'categories = []' >> "content/{{slug}}.md"
     echo '+++' >> "content/{{slug}}.md"
 
 fix:
@@ -12,4 +13,4 @@ fix:
 prepare-image img:
     exiftool -c "%.6f" -LensModel -ISO -ExposureTime -ImageSize -GPSPosition \
         -GPSAltitude -GPSImgDirection -CreateDate -h {{img}}
-    exiftool -all= {{img}}
+    exiftool -overwrite_original -All= -TagsFromFile @ -ColorSpaceTags {{img}}

@@ -2,7 +2,8 @@
 title = "TIL about AlDente by AppHouseKitchen"
 date = "2022-12-28T21:31:00Z"
 [taxonomies]
-tags = ["macOS", "TIL"]
+tags = ["macOS"]
+categories = ["Technology"]
 +++
 
 The 'optimize battery charging' feature in macOS has never worked well for me.

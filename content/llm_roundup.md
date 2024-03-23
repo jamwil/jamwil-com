@@ -2,7 +2,8 @@
 title = "LLM Round-up"
 date = "2023-03-02T16:45:00Z"
 [taxonomies]
-tags = ["ai", "bookmarks"]
+tags = ["ai"]
+categories = ["Technology"]
 +++
 
 When I asked ChatGPT what type of AI it is, this is what it said:

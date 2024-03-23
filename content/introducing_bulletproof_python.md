@@ -4,6 +4,7 @@ date = "2023-01-02T19:58:00Z"
 updated = "2023-01-03T00:13:00Z"
 [taxonomies]
 tags = ["bulletproof-python", "python", "tooling"]
+categories = ["Technology"]
 +++
 
 I owe a debt of gratitude to [Claudio Jolowicz](https://github.com/cjolowicz/)

@@ -2,7 +2,8 @@
 title = "How to checkout and edit a pull request locally"
 date = "2023-07-16T16:18:00Z"
 [taxonomies]
-tags = ["git", "howto"]
+tags = ["git"]
+categories = ["Technology"]
 +++
 
 Let's say you have a dependabot pull request and Charlie Marsh has added a new

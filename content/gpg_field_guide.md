@@ -2,7 +2,8 @@
 title = "GPG Field Guide"
 date = "2023-01-06T02:10:00Z"
 [taxonomies]
-tags = ["gpg", "howto"]
+tags = ["gpg"]
+categories = ["Technology"]
 +++
 
 Jürgen Gmach on his personal blog:

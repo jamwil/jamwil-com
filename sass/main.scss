@@ -7,7 +7,7 @@ $secondary-text: #666;
 $link-color: #1d60a3;
 $hover-link-color: #a31d1d;
 $link-underline: rgba(163, 29, 29, 0.5);
-$accent-background: #eee;
+$accent-background: #ddd;
 
 $background-dark: black;
 $primary-text-dark: #ddd;
@@ -15,7 +15,7 @@ $secondary-text-dark: #aaa;
 $link-color-dark: #58aafd;
 $hover-link-color-dark: rgb(249, 64, 64);
 $link-underline-dark: rgba(249, 64, 64, 0.5);
-$accent-background-dark: #222;
+$accent-background-dark: #333;
 
 /* Basic */
 @import url("https://fonts.googleapis.com/css2?family=Vollkorn&display=swap");
@@ -206,6 +206,12 @@ ul li:before {
   content: "–";
   position: absolute;
   margin-left: -1.5em;
+}
+
+ul.article-categories li:before {
+  content: unset;
+  position: unset;
+  margin-left: unset;
 }
 
 /* Header */
@@ -574,3 +580,4 @@ ul.language-select > li {
     background-color: $accent-background-dark;
   }
 }
+

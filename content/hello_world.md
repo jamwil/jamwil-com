@@ -2,7 +2,7 @@
 title = "Hello World"
 date = "2022-12-26T15:45:00Z"
 [taxonomies]
-tags = ["jamwil-com"]
+tags = ["meta"]
 +++
 
 Welcome to my shiny new blog.

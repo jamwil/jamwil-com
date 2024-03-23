@@ -1,6 +1,6 @@
 base_url = "https://jamwil.com"
 title = "James Williams"
-description = "Ramblings of a half-witted software developer and licensed pleasure craft operator."
+description = "Ramblings of a half-witted software developer."
 output_dir = "docs"
 compile_sass = true
 build_search_index = false
@@ -22,6 +22,7 @@ smart_punctuation = true
 katex_enable = true
 anpu_menu_links = [
     { url = "$BASE_URL/about/", name = "About" },
+    { url = "$BASE_URL/categories/", name="Categories" },
     { url = "$BASE_URL/tags/", name = "Tags" },
 ]
 anpu_date_format = "%Y-%m-%d"

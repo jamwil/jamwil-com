@@ -2,7 +2,8 @@
 title = "Pulling a Smartsheet table into Microsoft Excel using Power Query"
 date = "2024-03-07T05:04:34Z"
 [taxonomies]
-tags = ["howto", "excel", "smartsheet"]
+tags = ["excel", "smartsheet"]
+categories = ["Technology"]
 +++
 
 Well if you thought my first post in eight months would be exotic, go ahead and
@@ -22,7 +23,7 @@ In Excel, open Power Query and create a new query using the advanced editor.
 **Make sure to replace `$SHEET_ID` and `$BEARER_TOKEN`**. The query will bring
 in both your data and column headers.
 
-```powerquery
+```
 let
     Source = Json.Document(
         Web.Contents("https://api.smartsheet.com/2.0/sheets/$SHEET_ID", [

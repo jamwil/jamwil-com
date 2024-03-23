@@ -2,7 +2,8 @@
 title = "Running a local Kubernetes cluster with Kind: A step-by-step guide"
 date = "2023-06-20T02:36:00Z"
 [taxonomies]
-tags = ["macOS", "kubernetes", "docker", "howto"]
+tags = ["macOS", "kubernetes", "docker"]
+categories = ["Technology"]
 +++
 
 It has happened. I thought I could avoid it, but here we are. As if getting your

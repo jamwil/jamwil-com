@@ -2,7 +2,8 @@
 title = "Notes from Stephen Wolfram's ChatGPT primer"
 date = "2023-04-07T02:15:00Z"
 [taxonomies]
-tags = ["ai", "notes"]
+tags = ["ai"]
+categories = ["Technology"]
 +++
 
 **Source Material:**
