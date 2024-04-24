@@ -7,21 +7,24 @@
       <generator>Zola</generator>
       <language>en</language>
       <atom:link href="https://jamwil.com/rss.xml" rel="self" type="application/rss+xml"/>
-      <lastBuildDate>Sat, 23 Mar 2024 05:11:00 +0000</lastBuildDate>
+      <lastBuildDate>Wed, 24 Apr 2024 02:20:00 +0000</lastBuildDate>
       <item>
           <title>I&#x27;m in love with Guanajuato</title>
           <pubDate>Sat, 23 Mar 2024 05:11:00 +0000</pubDate>
-          <author>Unknown</author>
+          <author>James Williams</author>
           <link>https://jamwil.com/guanajuato/</link>
           <guid>https://jamwil.com/guanajuato/</guid>
-          <description xml:base="https://jamwil.com/guanajuato/">
-&lt;img
-  src=&quot;https:&amp;#x2F;&amp;#x2F;jamwil.com&amp;#x2F;processed_images&amp;#x2F;guanajuato_skyline.87acee564912f7ba.jpg&quot;
-  alt=&quot;Guanajuato City facing south from Centro&quot;
-  width=&quot;365&quot;
-  height=&quot;365&quot;
-  class=&quot;thumbnail&quot;
-&#x2F;&gt;
+          <description xml:base="https://jamwil.com/guanajuato/">&lt;p&gt;Guanajuato is my favourite city in Mexico. The centro historico is built into a
+valley, and many of the roads are tunneled through the mountains that surround
+it. The city itself has been built and rebuilt upon its former self, with a
+subterranean level comprised of the haciendas that once lined the Guanajatu
+River.&lt;&#x2F;p&gt;
+
+&lt;img src=&quot;https:&amp;#x2F;&amp;#x2F;jamwil.com&amp;#x2F;processed_images&amp;#x2F;guanajuato_skyline.f9b8e4a20918266d.webp&quot;
+     alt=&quot;Guanajuato City facing south from Centro&quot;
+     width=&quot;500&quot;
+     height=&quot;500&quot;
+     class=&quot;thumbnail&quot; &#x2F;&gt;
 &lt;table&gt;
 &lt;tr&gt;&lt;td&gt;Lens Model&lt;&#x2F;td&gt;&lt;td&gt;iPhone 14 Pro back triple camera 6.86mm f&#x2F;1.78&lt;&#x2F;td&gt;&lt;&#x2F;tr&gt;
 &lt;tr&gt;&lt;td&gt;ISO&lt;&#x2F;td&gt;&lt;td&gt;80&lt;&#x2F;td&gt;&lt;&#x2F;tr&gt;
@@ -33,11 +36,6 @@
 &lt;tr&gt;&lt;td&gt;Create Date&lt;&#x2F;td&gt;&lt;td&gt;2023:01:03 18:22:08&lt;&#x2F;td&gt;&lt;&#x2F;tr&gt;
 &lt;&#x2F;table&gt;
 &lt;div style=&quot;clear:both;&quot;&gt;&lt;&#x2F;div&gt;
-&lt;p&gt;Guanajuato is my favourite city in Mexico. The centro historico is built into a
-valley, and many of the roads are tunneled through the mountains that surround
-it. The city itself has been built and rebuilt upon its former self, with a
-subterranean level comprised of the haciendas that once lined the Guanajatu
-River.&lt;&#x2F;p&gt;
 &lt;p&gt;My first thought when I got here was, why? Why tunnel through three kilometers
 of mountain to build a town &lt;em&gt;here&lt;&#x2F;em&gt;? The answer is silver. The area around
 Guanajuato accounted for more than two-thirds of the world’s silver production
@@ -51,13 +49,11 @@ trip. It’s also a very reasonable day trip (and beautiful drive) from San
 Miguele de Allende.&lt;&#x2F;p&gt;
 &lt;hr &#x2F;&gt;
 
-&lt;img
-  src=&quot;https:&amp;#x2F;&amp;#x2F;jamwil.com&amp;#x2F;processed_images&amp;#x2F;guanajuato_iglesa.2ab92d5f7c13d856.jpg&quot;
-  alt=&quot;Guanajuato City church in main plaza&quot;
-  width=&quot;365&quot;
-  height=&quot;365&quot;
-  class=&quot;thumbnail&quot;
-&#x2F;&gt;
+&lt;img src=&quot;https:&amp;#x2F;&amp;#x2F;jamwil.com&amp;#x2F;processed_images&amp;#x2F;guanajuato_iglesa.fdb9965be3c5bc7f.webp&quot;
+     alt=&quot;Guanajuato City church in main plaza&quot;
+     width=&quot;500&quot;
+     height=&quot;500&quot;
+     class=&quot;thumbnail&quot; &#x2F;&gt;
 &lt;table&gt;
 &lt;tr&gt;&lt;td&gt;Lens Model&lt;&#x2F;td&gt;&lt;td&gt;iPhone 14 Pro back triple camera 6.86mm f&#x2F;1.78&lt;&#x2F;td&gt;&lt;&#x2F;tr&gt;
 &lt;tr&gt;&lt;td&gt;ISO&lt;&#x2F;td&gt;&lt;td&gt;80&lt;&#x2F;td&gt;&lt;&#x2F;tr&gt;
@@ -71,13 +67,11 @@ Miguele de Allende.&lt;&#x2F;p&gt;
 &lt;div style=&quot;clear:both;&quot;&gt;&lt;&#x2F;div&gt;
 &lt;hr &#x2F;&gt;
 
-&lt;img
-  src=&quot;https:&amp;#x2F;&amp;#x2F;jamwil.com&amp;#x2F;processed_images&amp;#x2F;guanajuato_bug.2c7d7f5fccc47e2f.jpg&quot;
-  alt=&quot;Volkswagen Beetle at sunset in Guanajuato City&quot;
-  width=&quot;365&quot;
-  height=&quot;365&quot;
-  class=&quot;thumbnail&quot;
-&#x2F;&gt;
+&lt;img src=&quot;https:&amp;#x2F;&amp;#x2F;jamwil.com&amp;#x2F;processed_images&amp;#x2F;guanajuato_bug.8421fccf1cbdca4e.webp&quot;
+     alt=&quot;Volkswagen Beetle at sunset in Guanajuato City&quot;
+     width=&quot;500&quot;
+     height=&quot;500&quot;
+     class=&quot;thumbnail&quot; &#x2F;&gt;
 &lt;table&gt;
 &lt;tr&gt;&lt;td&gt;Lens Model&lt;&#x2F;td&gt;&lt;td&gt;iPhone 14 Pro back triple camera 6.86mm f&#x2F;1.78&lt;&#x2F;td&gt;&lt;&#x2F;tr&gt;
 &lt;tr&gt;&lt;td&gt;ISO&lt;&#x2F;td&gt;&lt;td&gt;80&lt;&#x2F;td&gt;&lt;&#x2F;tr&gt;
@@ -91,13 +85,11 @@ Miguele de Allende.&lt;&#x2F;p&gt;
 &lt;div style=&quot;clear:both;&quot;&gt;&lt;&#x2F;div&gt;
 &lt;hr &#x2F;&gt;
 
-&lt;img
-  src=&quot;https:&amp;#x2F;&amp;#x2F;jamwil.com&amp;#x2F;processed_images&amp;#x2F;guanajuato_skyline_two.782fcde96e7829a4.jpg&quot;
-  alt=&quot;Guanajuato skyline facing northeast&quot;
-  width=&quot;365&quot;
-  height=&quot;365&quot;
-  class=&quot;thumbnail&quot;
-&#x2F;&gt;
+&lt;img src=&quot;https:&amp;#x2F;&amp;#x2F;jamwil.com&amp;#x2F;processed_images&amp;#x2F;guanajuato_skyline_two.6726f6bd251026a4.webp&quot;
+     alt=&quot;Guanajuato skyline facing northeast&quot;
+     width=&quot;500&quot;
+     height=&quot;500&quot;
+     class=&quot;thumbnail&quot; &#x2F;&gt;
 &lt;table&gt;
 &lt;tr&gt;&lt;td&gt;Lens Model&lt;&#x2F;td&gt;&lt;td&gt;iPhone 14 Pro back triple camera 6.86mm f&#x2F;1.78&lt;&#x2F;td&gt;&lt;&#x2F;tr&gt;
 &lt;tr&gt;&lt;td&gt;ISO&lt;&#x2F;td&gt;&lt;td&gt;80&lt;&#x2F;td&gt;&lt;&#x2F;tr&gt;
@@ -111,13 +103,11 @@ Miguele de Allende.&lt;&#x2F;p&gt;
 &lt;div style=&quot;clear:both;&quot;&gt;&lt;&#x2F;div&gt;
 &lt;hr &#x2F;&gt;
 
-&lt;img
-  src=&quot;https:&amp;#x2F;&amp;#x2F;jamwil.com&amp;#x2F;processed_images&amp;#x2F;guanajuato_tunnel.3e8876d03d53a75a.jpg&quot;
-  alt=&quot;Subterranean intersection in Guanajuato&quot;
-  width=&quot;365&quot;
-  height=&quot;365&quot;
-  class=&quot;thumbnail&quot;
-&#x2F;&gt;
+&lt;img src=&quot;https:&amp;#x2F;&amp;#x2F;jamwil.com&amp;#x2F;processed_images&amp;#x2F;guanajuato_tunnel.a10a4801f88a3496.webp&quot;
+     alt=&quot;Subterranean intersection in Guanajuato&quot;
+     width=&quot;500&quot;
+     height=&quot;500&quot;
+     class=&quot;thumbnail&quot; &#x2F;&gt;
 &lt;table&gt;
 &lt;tr&gt;&lt;td&gt;Lens Model&lt;&#x2F;td&gt;&lt;td&gt;iPhone 14 Pro back triple camera 6.86mm f&#x2F;1.78&lt;&#x2F;td&gt;&lt;&#x2F;tr&gt;
 &lt;tr&gt;&lt;td&gt;ISO&lt;&#x2F;td&gt;&lt;td&gt;80&lt;&#x2F;td&gt;&lt;&#x2F;tr&gt;
@@ -142,7 +132,7 @@ on March 23, 2024 and the text is my own.&lt;&#x2F;em&gt;&lt;&#x2F;p&gt;
       <item>
           <title>Pulling a Smartsheet table into Microsoft Excel using Power Query</title>
           <pubDate>Thu, 07 Mar 2024 05:04:34 +0000</pubDate>
-          <author>Unknown</author>
+          <author>James Williams</author>
           <link>https://jamwil.com/smartsheet-powerquery/</link>
           <guid>https://jamwil.com/smartsheet-powerquery/</guid>
           <description xml:base="https://jamwil.com/smartsheet-powerquery/">&lt;p&gt;Well if you thought my first post in eight months would be exotic, go ahead and
@@ -224,7 +214,7 @@ in both your data and column headers.&lt;&#x2F;p&gt;
       <item>
           <title>How to checkout and edit a pull request locally</title>
           <pubDate>Sun, 16 Jul 2023 16:18:00 +0000</pubDate>
-          <author>Unknown</author>
+          <author>James Williams</author>
           <link>https://jamwil.com/refine-pull-request/</link>
           <guid>https://jamwil.com/refine-pull-request/</guid>
           <description xml:base="https://jamwil.com/refine-pull-request/">&lt;p&gt;Let’s say you have a dependabot pull request and Charlie Marsh has added a new
@@ -259,7 +249,7 @@ see how this looks server side.&lt;&#x2F;p&gt;
       <item>
           <title>Running a local Kubernetes cluster with Kind: A step-by-step guide</title>
           <pubDate>Tue, 20 Jun 2023 02:36:00 +0000</pubDate>
-          <author>Unknown</author>
+          <author>James Williams</author>
           <link>https://jamwil.com/hello-k8s/</link>
           <guid>https://jamwil.com/hello-k8s/</guid>
           <description xml:base="https://jamwil.com/hello-k8s/">&lt;p&gt;It has happened. I thought I could avoid it, but here we are. As if getting your
@@ -357,7 +347,7 @@ otherwise.&lt;&#x2F;p&gt;
       <item>
           <title>Notes from Stephen Wolfram&#x27;s ChatGPT primer</title>
           <pubDate>Fri, 07 Apr 2023 02:15:00 +0000</pubDate>
-          <author>Unknown</author>
+          <author>James Williams</author>
           <link>https://jamwil.com/chat-gpt-wolfram-notes/</link>
           <guid>https://jamwil.com/chat-gpt-wolfram-notes/</guid>
           <description xml:base="https://jamwil.com/chat-gpt-wolfram-notes/">&lt;p&gt;&lt;strong&gt;Source Material:&lt;&#x2F;strong&gt;
@@ -417,7 +407,7 @@ uses could help deepen our own understanding of human language.&lt;&#x2F;p&gt;
       <item>
           <title>LLM Round-up</title>
           <pubDate>Thu, 02 Mar 2023 16:45:00 +0000</pubDate>
-          <author>Unknown</author>
+          <author>James Williams</author>
           <link>https://jamwil.com/llm-roundup/</link>
           <guid>https://jamwil.com/llm-roundup/</guid>
           <description xml:base="https://jamwil.com/llm-roundup/">&lt;p&gt;When I asked ChatGPT what type of AI it is, this is what it said:&lt;&#x2F;p&gt;
@@ -455,7 +445,7 @@ Andrej Karpathy’s Zero to Hero lecture series.&lt;&#x2F;p&gt;
       <item>
           <title>Three managerial principles I wrote down in 2015</title>
           <pubDate>Tue, 31 Jan 2023 02:49:00 +0000</pubDate>
-          <author>Unknown</author>
+          <author>James Williams</author>
           <link>https://jamwil.com/restaurant-principles/</link>
           <guid>https://jamwil.com/restaurant-principles/</guid>
           <description xml:base="https://jamwil.com/restaurant-principles/">&lt;p&gt;In my mid-20s—okay, mid- to late-20s—I worked as the Assistant Manager of a
@@ -515,7 +505,7 @@ acceptance, they reach upon their mobile devices and tap.&lt;&#x2F;p&gt;
       <item>
           <title>How to convert a subdirectory to its own git repository&#x2F;submodule</title>
           <pubDate>Thu, 12 Jan 2023 15:53:00 +0000</pubDate>
-          <author>Unknown</author>
+          <author>James Williams</author>
           <link>https://jamwil.com/git-submodule/</link>
           <guid>https://jamwil.com/git-submodule/</guid>
           <description xml:base="https://jamwil.com/git-submodule/">&lt;pre data-lang=&quot;bash&quot; style=&quot;background-color:#1e1e1e;color:#dcdcdc;&quot; class=&quot;language-bash &quot;&gt;&lt;code class=&quot;language-bash&quot; data-lang=&quot;bash&quot;&gt;&lt;span style=&quot;color:#608b4e;&quot;&gt;# Make a clone of the repository
@@ -560,7 +550,7 @@ probably can’t help you if something goes wrong.&lt;&#x2F;p&gt;
       <item>
           <title>GPG Field Guide</title>
           <pubDate>Fri, 06 Jan 2023 02:10:00 +0000</pubDate>
-          <author>Unknown</author>
+          <author>James Williams</author>
           <link>https://jamwil.com/gpg-field-guide/</link>
           <guid>https://jamwil.com/gpg-field-guide/</guid>
           <description xml:base="https://jamwil.com/gpg-field-guide/">&lt;p&gt;Jürgen Gmach on his personal blog:&lt;&#x2F;p&gt;
@@ -576,7 +566,7 @@ commands - they just don’t stick :-)&lt;&#x2F;p&gt;
       <item>
           <title>How to configure a python script as the default build task in VS Code</title>
           <pubDate>Tue, 03 Jan 2023 22:42:00 +0000</pubDate>
-          <author>Unknown</author>
+          <author>James Williams</author>
           <link>https://jamwil.com/python-vscode-build-task/</link>
           <guid>https://jamwil.com/python-vscode-build-task/</guid>
           <description xml:base="https://jamwil.com/python-vscode-build-task/">&lt;p&gt;This snippet goes in your &lt;code&gt;.vscode&#x2F;tasks.json&lt;&#x2F;code&gt; file. It will run the current
@@ -620,7 +610,7 @@ workspace settings.&lt;&#x2F;li&gt;
       <item>
           <title>Introducing bulletproof-python</title>
           <pubDate>Mon, 02 Jan 2023 19:58:00 +0000</pubDate>
-          <author>Unknown</author>
+          <author>James Williams</author>
           <link>https://jamwil.com/introducing-bulletproof-python/</link>
           <guid>https://jamwil.com/introducing-bulletproof-python/</guid>
           <description xml:base="https://jamwil.com/introducing-bulletproof-python/">&lt;p&gt;I owe a debt of gratitude to &lt;a href=&quot;https:&#x2F;&#x2F;github.com&#x2F;cjolowicz&#x2F;&quot;&gt;Claudio Jolowicz&lt;&#x2F;a&gt;
@@ -652,7 +642,7 @@ suitable only for small libraries without broad distribution.&lt;&#x2F;p&gt;
       <item>
           <title>TIL about AlDente by AppHouseKitchen</title>
           <pubDate>Wed, 28 Dec 2022 21:31:00 +0000</pubDate>
-          <author>Unknown</author>
+          <author>James Williams</author>
           <link>https://jamwil.com/aldente/</link>
           <guid>https://jamwil.com/aldente/</guid>
           <description xml:base="https://jamwil.com/aldente/">&lt;p&gt;The ‘optimize battery charging’ feature in macOS has never worked well for me.
@@ -669,7 +659,7 @@ Not a sponsored post, just a (so far) happy user.&lt;&#x2F;p&gt;
       <item>
           <title>Hello World</title>
           <pubDate>Mon, 26 Dec 2022 15:45:00 +0000</pubDate>
-          <author>Unknown</author>
+          <author>James Williams</author>
           <link>https://jamwil.com/hello-world/</link>
           <guid>https://jamwil.com/hello-world/</guid>
           <description xml:base="https://jamwil.com/hello-world/">&lt;p&gt;Welcome to my shiny new blog.&lt;&#x2F;p&gt;

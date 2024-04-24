@@ -1,12 +1,19 @@
 +++
 title = "I'm in love with Guanajuato"
 date = "2024-03-23T05:11:00Z"
+updated = "2024-04-24T02:20:00Z"
 [taxonomies]
 tags = []
 categories = ["Mexico 2021-2023"]
 +++
 
-{{ resize_image(path="content/guanajuato/guanajuato_skyline.jpeg", width=365, height=365, op="fit_width", alt="Guanajuato City facing south from Centro") }}
+Guanajuato is my favourite city in Mexico. The centro historico is built into a
+valley, and many of the roads are tunneled through the mountains that surround
+it. The city itself has been built and rebuilt upon its former self, with a
+subterranean level comprised of the haciendas that once lined the Guanajatu
+River.
+
+{{ resize_image(path="content/guanajuato/guanajuato_skyline.jpeg", width=500, height=500, op="fit_width", alt="Guanajuato City facing south from Centro") }}
 
 <table>
 <tr><td>Lens Model</td><td>iPhone 14 Pro back triple camera 6.86mm f/1.78</td></tr>
@@ -20,12 +27,6 @@ categories = ["Mexico 2021-2023"]
 </table>
 
 <div style="clear:both;"></div>
-
-Guanajuato is my favourite city in Mexico. The centro historico is built into a
-valley, and many of the roads are tunneled through the mountains that surround
-it. The city itself has been built and rebuilt upon its former self, with a
-subterranean level comprised of the haciendas that once lined the Guanajatu
-River.
 
 My first thought when I got here was, why? Why tunnel through three kilometers
 of mountain to build a town _here_? The answer is silver. The area around
@@ -43,7 +44,7 @@ Miguele de Allende.
 
 ---
 
-{{ resize_image(path="content/guanajuato/guanajuato_iglesa.jpeg", width=365, height=365, op="fit_width", alt="Guanajuato City church in main plaza") }}
+{{ resize_image(path="content/guanajuato/guanajuato_iglesa.jpeg", width=500, height=500, op="fit_width", alt="Guanajuato City church in main plaza") }}
 
 <table>
 <tr><td>Lens Model</td><td>iPhone 14 Pro back triple camera 6.86mm f/1.78</td></tr>
@@ -60,7 +61,7 @@ Miguele de Allende.
 
 ---
 
-{{ resize_image(path="content/guanajuato/guanajuato_bug.jpeg", width=365, height=365, op="fit_width", alt="Volkswagen Beetle at sunset in Guanajuato City") }}
+{{ resize_image(path="content/guanajuato/guanajuato_bug.jpeg", width=500, height=500, op="fit_width", alt="Volkswagen Beetle at sunset in Guanajuato City") }}
 
 <table>
 <tr><td>Lens Model</td><td>iPhone 14 Pro back triple camera 6.86mm f/1.78</td></tr>
@@ -77,7 +78,7 @@ Miguele de Allende.
 
 ---
 
-{{ resize_image(path="content/guanajuato/guanajuato_skyline_two.jpeg", width=365, height=365, op="fit_width", alt="Guanajuato skyline facing northeast") }}
+{{ resize_image(path="content/guanajuato/guanajuato_skyline_two.jpeg", width=500, height=500, op="fit_width", alt="Guanajuato skyline facing northeast") }}
 
 <table>
 <tr><td>Lens Model</td><td>iPhone 14 Pro back triple camera 6.86mm f/1.78</td></tr>
@@ -94,7 +95,7 @@ Miguele de Allende.
 
 ---
 
-{{ resize_image(path="content/guanajuato/guanajuato_tunnel.jpeg", width=365, height=365, op="fit_width", alt="Subterranean intersection in Guanajuato") }}
+{{ resize_image(path="content/guanajuato/guanajuato_tunnel.jpeg", width=500, height=500, op="fit_width", alt="Subterranean intersection in Guanajuato") }}
 
 <table>
 <tr><td>Lens Model</td><td>iPhone 14 Pro back triple camera 6.86mm f/1.78</td></tr>

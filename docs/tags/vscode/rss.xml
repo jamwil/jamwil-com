@@ -11,7 +11,7 @@
       <item>
           <title>How to configure a python script as the default build task in VS Code</title>
           <pubDate>Tue, 03 Jan 2023 22:42:00 +0000</pubDate>
-          <author>Unknown</author>
+          <author>James Williams</author>
           <link>https://jamwil.com/python-vscode-build-task/</link>
           <guid>https://jamwil.com/python-vscode-build-task/</guid>
           <description xml:base="https://jamwil.com/python-vscode-build-task/">&lt;p&gt;This snippet goes in your &lt;code&gt;.vscode&#x2F;tasks.json&lt;&#x2F;code&gt; file. It will run the current

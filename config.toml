@@ -1,6 +1,7 @@
 base_url = "https://jamwil.com"
 title = "James Williams"
 description = "Ramblings of a half-witted software developer."
+author = "James Williams"
 output_dir = "docs"
 compile_sass = true
 build_search_index = false

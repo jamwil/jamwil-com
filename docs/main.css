@@ -29,7 +29,7 @@ summary {
   display: block;
 }
 .container {
-  max-width: 42em;
+  max-width: 840px;
   margin: 1em auto;
 }
 main {

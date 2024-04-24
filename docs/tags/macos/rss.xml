@@ -11,7 +11,7 @@
       <item>
           <title>Running a local Kubernetes cluster with Kind: A step-by-step guide</title>
           <pubDate>Tue, 20 Jun 2023 02:36:00 +0000</pubDate>
-          <author>Unknown</author>
+          <author>James Williams</author>
           <link>https://jamwil.com/hello-k8s/</link>
           <guid>https://jamwil.com/hello-k8s/</guid>
           <description xml:base="https://jamwil.com/hello-k8s/">&lt;p&gt;It has happened. I thought I could avoid it, but here we are. As if getting your
@@ -109,7 +109,7 @@ otherwise.&lt;&#x2F;p&gt;
       <item>
           <title>TIL about AlDente by AppHouseKitchen</title>
           <pubDate>Wed, 28 Dec 2022 21:31:00 +0000</pubDate>
-          <author>Unknown</author>
+          <author>James Williams</author>
           <link>https://jamwil.com/aldente/</link>
           <guid>https://jamwil.com/aldente/</guid>
           <description xml:base="https://jamwil.com/aldente/">&lt;p&gt;The ‘optimize battery charging’ feature in macOS has never worked well for me.
