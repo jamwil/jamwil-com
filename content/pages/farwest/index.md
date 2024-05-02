@@ -4,7 +4,7 @@ path = "farwest"
 template = "farwest.html"
 +++
 
-Last known location: Vancouver, BC on May 1, 2024
+Last known location: Vancouver, BC on May 1, 2024 (departure date May 8, 2024)
 
 Distance traveled: 0 kilometres
 

@@ -17,6 +17,12 @@ block title %}{{ page.title }}{% endblock %} {% block extra_head %}
   integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo="
   crossorigin=""
 ></script>
+<link
+  rel="stylesheet"
+  href="//unpkg.com/leaflet-gesture-handling/dist/leaflet-gesture-handling.min.css"
+  type="text/css"
+/>
+<script src="//unpkg.com/leaflet-gesture-handling"></script>
 {% endblock %} {% block content %}
 
 <article class="post">
@@ -27,7 +33,7 @@ block title %}{{ page.title }}{% endblock %} {% block extra_head %}
   <div id="map"></div>
 
   <script>
-    const map = L.map("map").setView([42, -117], 4);
+    const map = L.map("map", { gestureHandling: true }).setView([42, -117], 4);
 
     const tiles = L.tileLayer(
       "https://server.arcgisonline.com/ArcGIS/rest/services/NatGeo_World_Map/MapServer/tile/{z}/{y}/{x}",
