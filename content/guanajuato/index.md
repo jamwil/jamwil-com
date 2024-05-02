@@ -24,6 +24,8 @@ River.
 <tr><td>GPS Altitude</td><td>2058.7 m Above Sea Level</td></tr>
 <tr><td>GPS Img Direction</td><td>159.2975464</td></tr>
 <tr><td>Create Date</td><td>2023:01:03 18:22:08</td></tr>
+<tr><td colspan=2>{{ image_link(path='guanajuato/guanajuato_skyline.jpeg',
+        text='View full resolution') }}</td></tr>
 </table>
 
 <div style="clear:both;"></div>
@@ -42,8 +44,6 @@ Guanajuato is about 4 to 5 hours by bus from Mexico City and well worth the
 trip. It's also a very reasonable day trip (and beautiful drive) from San
 Miguele de Allende.
 
----
-
 {{ resize_image(path="content/guanajuato/guanajuato_iglesa.jpeg", width=500, height=500, op="fit_width", alt="Guanajuato City church in main plaza") }}
 
 <table>
@@ -55,11 +55,11 @@ Miguele de Allende.
 <tr><td>GPS Altitude</td><td>2024 m Above Sea Level</td></tr>
 <tr><td>GPS Img Direction</td><td>116.5262318</td></tr>
 <tr><td>Create Date</td><td>2023:01:03 12:41:27</td></tr>
+<tr><td colspan=2>{{ image_link(path='guanajuato/guanajuato_iglesa.jpeg',
+        text='View full resolution') }}</td></tr>
 </table>
 
 <div style="clear:both;"></div>
-
----
 
 {{ resize_image(path="content/guanajuato/guanajuato_bug.jpeg", width=500, height=500, op="fit_width", alt="Volkswagen Beetle at sunset in Guanajuato City") }}
 
@@ -72,11 +72,11 @@ Miguele de Allende.
 <tr><td>GPS Altitude</td><td>2076.3 m Above Sea Level</td></tr>
 <tr><td>GPS Img Direction</td><td>260.5706482</td></tr>
 <tr><td>Create Date</td><td>2023:01:03 18:07:53</td></tr>
+<tr><td colspan=2>{{ image_link(path='guanajuato/guanajuato_bug.jpeg',
+        text='View full resolution') }}</td></tr>
 </table>
 
 <div style="clear:both;"></div>
-
----
 
 {{ resize_image(path="content/guanajuato/guanajuato_skyline_two.jpeg", width=500, height=500, op="fit_width", alt="Guanajuato skyline facing northeast") }}
 
@@ -89,11 +89,11 @@ Miguele de Allende.
 <tr><td>GPS Altitude</td><td>2085.6 m Above Sea Level</td></tr>
 <tr><td>GPS Img Direction</td><td>40.99349974</td></tr>
 <tr><td>Create Date</td><td>2023:01:04 17:57:19</td></tr>
+<tr><td colspan=2>{{ image_link(path='guanajuato/guanajuato_skyline_two.jpeg',
+        text='View full resolution') }}</td></tr>
 </table>
 
 <div style="clear:both;"></div>
-
----
 
 {{ resize_image(path="content/guanajuato/guanajuato_tunnel.jpeg", width=500, height=500, op="fit_width", alt="Subterranean intersection in Guanajuato") }}
 
@@ -106,6 +106,8 @@ Miguele de Allende.
 <tr><td>GPS Altitude</td><td>2014.6 m Above Sea Level</td></tr>
 <tr><td>GPS Img Direction</td><td>104.9418297</td></tr>
 <tr><td>Create Date</td><td>2023:01:05 11:05:21</td></tr>
+<tr><td colspan=2>{{ image_link(path='guanajuato/guanajuato_tunnel.jpeg',
+        text='View full resolution') }}</td></tr>
 </table>
 
 <div style="clear:both;"></div>

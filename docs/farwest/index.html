@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="HandheldFriendly" content="True" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="referrer" content="no-referrer-when-downgrade" />
+
+    <title>Far West 2024</title>
+    <meta
+      name="description"
+      content="Ramblings of a half-witted software developer."
+    />
+
+    <link rel="stylesheet" href="https://jamwil.com/main.css" />
+
+    <link
+      rel="alternate"
+      type="application/rss+xml"
+      title="RSS"
+      href="https://jamwil.com/rss.xml"
+    />
+
+    <link rel="me" href="https://mastodon.sdf.org/@jamwil" />
+    <link
+      rel="shortcut icon"
+      type="image/x-icon"
+      href="https://jamwil.com/favicon.ico"
+    />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+      integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY="
+      crossorigin=""
+    />
+    <script
+      src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
+      integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo="
+      crossorigin=""
+    ></script>
+  </head>
+  <body>
+    <a class="skip-main" href="#main">Skip to content</a>
+    <div class="container">
+      <header>
+        <h1 class="site-header">
+          <a href="https:&#x2F;&#x2F;jamwil.com">James Williams</a>
+        </h1>
+        <nav>
+          <a href="https:&#x2F;&#x2F;jamwil.com&#x2F;about&#x2F;">About</a>
+
+          <a href="https:&#x2F;&#x2F;jamwil.com&#x2F;categories&#x2F;"
+            >Categories</a
+          >
+
+          <a href="https:&#x2F;&#x2F;jamwil.com&#x2F;tags&#x2F;">Tags</a>
+        </nav>
+      </header>
+      <main id="main" tabindex="-1">
+        <article class="post">
+          <header>
+            <h1>Far West 2024</h1>
+          </header>
+
+          <div id="map"></div>
+
+          <script>
+            const map = L.map("map").setView([42, -117], 4);
+
+            const tiles = L.tileLayer(
+              "https://server.arcgisonline.com/ArcGIS/rest/services/NatGeo_World_Map/MapServer/tile/{z}/{y}/{x}",
+              {
+                attribution:
+                  "Tiles &copy; Esri &mdash; National Geographic, Esri, DeLorme, NAVTEQ, UNEP-WCMC, USGS, NASA, ESA, METI, NRCAN, GEBCO, NOAA, iPC",
+                maxZoom: 16,
+              }
+            ).addTo(map);
+
+            async function addGeoJson() {
+              const response = await fetch(
+                "https://jamwil.com/pages/farwest/test.geojson"
+              );
+              const data = await response.json();
+              var myStyle = {
+                color: "pink",
+                weight: 4,
+              };
+              // L.geoJson(data, {style: myStyle}).addTo(map);
+            }
+
+            addGeoJson();
+          </script>
+
+          <div class="content">
+            <p>Last known location: Vancouver, BC on May 1, 2024</p>
+            <p>Distance traveled: 0 kilometres</p>
+            <hr />
+            <p>
+              I’m embarking on an epic adventure. Me and Lucia, my Ducati
+              Scrambler Desert Sled, are travelling 7,500 kilometres down the
+              Pacific Coast to Southern California and back up to Calgary
+              through the expansive canyons and national parks of the American
+              Rocky Mountains.
+            </p>
+            <p>
+              The three-week trip will take me through two Provinces, nine
+              States, and four seasons. I’ll be camping along the ocean on the
+              southbound leg and riding through snow-lined mountain passes on
+              the return.
+            </p>
+            <p>
+              I’ll be learning a lot as I go, and my plan is to document as much
+              as I can about the preparation, process, and spirit of overland
+              motorcycle travel. I hope it’s useful and interesting.
+            </p>
+            <h2 id="the-bike">The Bike</h2>
+            <p>
+              Lucia is a 2022 Ducati Scrambler Desert Sled. Despite her looks
+              she is a little heavier than your typical dual-sport bike. With an
+              803cc twin air-cooled engine, she is a road bike that is fitted
+              with a suspension and tires to handle herself respectably
+              off-road.
+            </p>
+            <p>
+              For solo overland travel like this, Lucia is near perfect. She is
+              big enough to take care of business on the highway but small
+              enough to pick up on your own if you drop her (don’t ask me how I
+              know). She has a respectable service interval of 12,000 kilometres
+              which is on par with the leading bikes in this domain like the
+              Yamaha Tenere or Honda CBR Rally. My only gripe is the small fuel
+              tank which allows for only ~225 kilometres between fuel ups, but
+              such is the price to pay for that sweet retro profile.
+            </p>
+            <p>
+              <img
+                src="https:&#x2F;&#x2F;jamwil.com&#x2F;processed_images&#x2F;lucia1.5bf06a27c5e8fff2.webp"
+                alt="Lucia and I the day I bought her"
+                width="840"
+                height="840"
+                class="thumbnail"
+              />
+
+              <figcaption>
+                Lucia and I the day I bought her in June 2022
+              </figcaption>
+            </p>
+            <h2 id="the-route">The Route</h2>
+            <p>
+              The route can be generally divided into three stints. The
+              southbound leg will take around seven days and conclude in Palm
+              Springs, CA where I’m meeting friends for what will be a welcome
+              rest.
+            </p>
+            <p>
+              After a few days off, I’ll venture westbound into Arizona, Utah
+              and Colorado. I’ll take a brief rest in Durango, CO before setting
+              out for the final northbound leg to Canada.
+            </p>
+            <p>
+              Not shown is the return trip from Calgary to Vancouver to complete
+              the loop, as that will be a week or so removed from the larger
+              voyage.
+            </p>
+            <p>
+              <video autoplay muted playsinline loop>
+                <source src="farwest/farwest_route.mov" type="video/mp4" />
+              </video>
+              <figcaption>The general route split out by day</figcaption>
+            </p>
+          </div>
+
+          <div class="article-info">
+            <div class="article-taxonomies"></div>
+          </div>
+        </article>
+      </main>
+      <footer>
+        <p>
+          © James Williams 2024<br />
+          Powered by <a target="_blank" href="https://getzola.org/">Zola</a>,
+          Theme
+          <a target="_blank" href="https://github.com/zbrox/anpu-zola-theme"
+            >Anpu</a
+          >.
+        </p>
+        <p></p>
+      </footer>
+    </div>
+  </body>
+</html>
