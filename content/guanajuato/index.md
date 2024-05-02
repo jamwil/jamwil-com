@@ -3,8 +3,8 @@ title = "I'm in love with Guanajuato"
 date = "2024-03-23T05:11:00Z"
 updated = "2024-04-24T02:20:00Z"
 [taxonomies]
-tags = []
-categories = ["Mexico 2021-2023"]
+tags = ["mexico-2021-2023"]
+categories = ["Travel"]
 +++
 
 Guanajuato is my favourite city in Mexico. The centro historico is built into a
