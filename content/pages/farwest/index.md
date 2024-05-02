@@ -59,7 +59,7 @@ that will be a week or so removed from the larger voyage.
 
 <p>
 <video autoplay muted playsinline loop>
-    <source src="farwest/farwest_route.mov" type="video/mp4">
+    <source src="farwest_route.mov" type="video/mp4">
 </video>
 <figcaption>The general route split out by day</figcaption>
 </p>

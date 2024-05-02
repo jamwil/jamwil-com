@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
   <head>
     <meta charset="utf-8" />
@@ -73,12 +73,12 @@
                 attribution:
                   "Tiles &copy; Esri &mdash; National Geographic, Esri, DeLorme, NAVTEQ, UNEP-WCMC, USGS, NASA, ESA, METI, NRCAN, GEBCO, NOAA, iPC",
                 maxZoom: 16,
-              }
+              },
             ).addTo(map);
 
             async function addGeoJson() {
               const response = await fetch(
-                "https://jamwil.com/pages/farwest/test.geojson"
+                "https://jamwil.com/farwest/test.geojson",
               );
               const data = await response.json();
               var myStyle = {
@@ -163,7 +163,7 @@
             </p>
             <p>
               <video autoplay muted playsinline loop>
-                <source src="farwest/farwest_route.mov" type="video/mp4" />
+                <source src="farwest_route.mov" type="video/mp4" />
               </video>
               <figcaption>The general route split out by day</figcaption>
             </p>

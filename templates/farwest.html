@@ -35,12 +35,12 @@ block title %}{{ page.title }}{% endblock %} {% block extra_head %}
         attribution:
           "Tiles &copy; Esri &mdash; National Geographic, Esri, DeLorme, NAVTEQ, UNEP-WCMC, USGS, NASA, ESA, METI, NRCAN, GEBCO, NOAA, iPC",
         maxZoom: 16,
-      }
+      },
     ).addTo(map);
 
     async function addGeoJson() {
       const response = await fetch(
-        "{{ get_url(path='pages/farwest/test.geojson') }}"
+        "{{ get_url(path='farwest/test.geojson') }}",
       );
       const data = await response.json();
       var myStyle = {
