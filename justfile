@@ -13,4 +13,4 @@ fix:
 prepare-image img:
     exiftool -c "%.6f" -LensModel -ISO -ExposureTime -ImageSize -GPSPosition \
         -GPSAltitude -GPSImgDirection -CreateDate -h {{img}}
-    exiftool -overwrite_original -All= -TagsFromFile @ -ColorSpaceTags {{img}}
+    exiftool -overwrite_original -All= -IPTC:CopyrightNotice="© James Williams" -TagsFromFile @ -ColorSpaceTags -Orientation {{img}}
