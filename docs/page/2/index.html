@@ -47,7 +47,7 @@
       </header>
       <main id="main" tabindex="-1">
         <aside id="trip-map">
-          <p><strong>I'm (about to be) on a motorcycle trip!</strong></p>
+          <p><strong>I'm on a motorcycle trip!</strong></p>
           <p>
             Follow along as I travel 7,500 kilometres from Vancouver down the
             west coast of the United States to Southern California, then back up
@@ -55,6 +55,124 @@
           </p>
           <p><a href="farwest/">📍 Check out the map</a></p>
         </aside>
+
+        <article class="post-list">
+          <header>
+            <h1>
+              <a
+                href="https:&#x2F;&#x2F;jamwil.com&#x2F;chat-gpt-wolfram-notes&#x2F;"
+                >Notes from Stephen Wolfram&#x27;s ChatGPT primer</a
+              >
+            </h1>
+          </header>
+
+          <div class="content post-summary">
+            <p>
+              <strong>Source Material:</strong>
+              <a
+                href="https://writings.stephenwolfram.com/2023/02/what-is-chatgpt-doing-and-why-does-it-work/"
+                >Stephen Wolfram, 2023-02-14</a
+              >
+            </p>
+            <p>
+              ChatGPT is a large-scale transformer-based language model that is
+              designed to predict the next word in a sentence given the context
+              of what has been said. It is a neural network with 175 billion
+              parameters that has been trained on a vast corpus of text,
+              enabling it to form and apply a semantic structure to human
+              language.
+            </p>
+            <p>
+              The name ChatGPT stands for Generative Pre-trained Transformer.
+              <strong>Generative</strong> means that the model is capable of
+              generating new text rather than just recognizing patterns in
+              existing text. <strong>Pre-trained</strong> means that the model
+              has been trained on a large corpus of text before being fine-tuned
+              for a specific task. <strong>Transformer</strong> refers to the
+              specific type of neural network architecture which is designed to
+              better handle long-term dependencies between words in a sentence.
+            </p>
+            <p>
+              To accomplish its task, ChatGPT uses a technique known as
+              <strong>unsupervised learning</strong>, which allows it to learn
+              patterns in the data without being explicitly taught. Instead of
+              being trained on explicit examples of inputs and their associated
+              outputs like in <strong>supervised learning</strong>, the model is
+              given a large corpus of text and is trained to predict the next
+              word in a sentence by masking the latter part of the sentence and
+              having it predict what should come next. It then compares what it
+              generated with the masked text, and iteratively adjusts its
+              parameters to minimize the error.
+            </p>
+            <p>
+              To evaluate how well the model performs on each iteration, a
+              <strong>loss function</strong> is used. The loss function
+              calculates how far away the model’s predictions are from the
+              desired outcome, and the neural net weights are adjusted in a way
+              that minimizes the result of the loss function.
+            </p>
+            <p>
+              Training the model both optimizes the neural net weights and
+              produces <strong>embeddings</strong>, which are a way of
+              representing the meaning of words as arrays of numbers (in the
+              vague, undefinable sense of ‘meaning’). Nearby words are
+              represented by nearby numbers. ChatGPT takes this concept further
+              by generating embeddings not just for individual words, but for
+              entire sequences of words.
+            </p>
+            <p>
+              These embeddings are then used to predict the probabilities of
+              different words that might come next in a sentence. This is
+              accomplished using a <strong>transformer</strong>
+              architecture, which is designed to better handle dependencies
+              between tokens in the input and output even when they are far from
+              each other in the input sequence. One of the defining features of
+              the transformer is its use of an
+              <strong>attention mechanism</strong>, which involves certain
+              neurons focusing more on relevant parts of the sequence than
+              others. This allows ChatGPT to take into account the context of
+              the conversation that’s taken place, which can inform the next
+              token that’s generated. The attention mechanism also allows
+              ChatGPT to capture context from the prior conversation even when
+              that context is not adjacent to the token being generated. This is
+              the main reason ChatGPT comes across as a coherent entity.
+            </p>
+            <p>
+              Finally, ChatGPT uses a <strong>temperature</strong> setting to
+              introduce a degree of randomness into its predictions, which can
+              make the output more diverse and interesting.
+            </p>
+            <hr />
+            <p>
+              What strikes me as the most profound point Stephen makes is the
+              success of ChatGPT as a scientific <em>discovery</em> in that it
+              shows that there may be simple rules that describe how the
+              semantics of human language can be arranged that we ourselves
+              don’t yet understand. Studying the pathways and structures ChatGPT
+              uses could help deepen our own understanding of human language.
+            </p>
+          </div>
+
+          <div class="article-info">
+            <div class="article-date">2023-04-07</div>
+
+            <div class="article-taxonomies">
+              <ul class="article-categories">
+                <li>
+                  <a href="https://jamwil.com/categories/technology/"
+                    >Technology</a
+                  >
+                </li>
+              </ul>
+
+              <ul class="article-tags">
+                <li>
+                  <a href="https://jamwil.com/tags/ai/">#ai</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </article>
 
         <article class="post-list">
           <header>
@@ -414,104 +532,6 @@
               <ul class="article-tags">
                 <li>
                   <a href="https://jamwil.com/tags/gpg/">#gpg</a>
-                </li>
-              </ul>
-            </div>
-          </div>
-        </article>
-
-        <article class="post-list">
-          <header>
-            <h1>
-              <a
-                href="https:&#x2F;&#x2F;jamwil.com&#x2F;python-vscode-build-task&#x2F;"
-                >How to configure a python script as the default build task in
-                VS Code</a
-              >
-            </h1>
-          </header>
-
-          <div class="content post-summary">
-            <p>
-              This snippet goes in your <code>.vscode/tasks.json</code> file. It
-              will run the current python file as the default build task.
-            </p>
-            <ul>
-              <li>
-                <code>command</code> will invoke the python interpreter that is
-                configured in your workspace settings.
-              </li>
-              <li>
-                <code>group</code> will make this task the default build task.
-              </li>
-              <li>
-                <code>presentation:focus</code> will focus the terminal window
-                when the task is run.
-              </li>
-              <li>
-                <code>presentation:reveal</code> will reveal the terminal window
-                when the task is run.
-              </li>
-            </ul>
-            <p>
-              Change <code>args</code> to any python file if you’d like to run
-              the same file each time.
-            </p>
-            <pre
-              data-lang="json"
-              style="background-color: #1e1e1e; color: #dcdcdc"
-              class="language-json"
-            ><code class="language-json" data-lang="json"><span>{
-</span><span>  </span><span style="color:#608b4e;">// See https://go.microsoft.com/fwlink/?LinkId=733558
-</span><span>  </span><span style="color:#608b4e;">// for the documentation about the tasks.json format
-</span><span>  </span><span style="color:#d69d85;">&quot;version&quot;</span><span>: </span><span style="color:#d69d85;">&quot;2.0.0&quot;</span><span>,
-</span><span>  </span><span style="color:#d69d85;">&quot;tasks&quot;</span><span>: [
-</span><span>    {
-</span><span>      </span><span style="color:#d69d85;">&quot;label&quot;</span><span>: </span><span style="color:#d69d85;">&quot;Python: current file&quot;</span><span>,
-</span><span>      </span><span style="color:#d69d85;">&quot;type&quot;</span><span>: </span><span style="color:#d69d85;">&quot;shell&quot;</span><span>,
-</span><span>      </span><span style="color:#d69d85;">&quot;command&quot;</span><span>: </span><span style="color:#d69d85;">&quot;${command:python.interpreterPath}&quot;</span><span>,
-</span><span>      </span><span style="color:#d69d85;">&quot;args&quot;</span><span>: [</span><span style="color:#d69d85;">&quot;${file}&quot;</span><span>],
-</span><span>      </span><span style="color:#d69d85;">&quot;problemMatcher&quot;</span><span>: [],
-</span><span>      </span><span style="color:#d69d85;">&quot;group&quot;</span><span>: {
-</span><span>        </span><span style="color:#d69d85;">&quot;kind&quot;</span><span>: </span><span style="color:#d69d85;">&quot;build&quot;</span><span>,
-</span><span>        </span><span style="color:#d69d85;">&quot;isDefault&quot;</span><span>: </span><span style="color:#569cd6;">true
-</span><span>      },
-</span><span>      </span><span style="color:#d69d85;">&quot;presentation&quot;</span><span>: {
-</span><span>        </span><span style="color:#d69d85;">&quot;focus&quot;</span><span>: </span><span style="color:#569cd6;">true</span><span>,
-</span><span>        </span><span style="color:#d69d85;">&quot;reveal&quot;</span><span>: </span><span style="color:#d69d85;">&quot;always&quot;
-</span><span>      },
-</span><span>      </span><span style="color:#d69d85;">&quot;options&quot;</span><span>: {
-</span><span>        </span><span style="color:#d69d85;">&quot;cwd&quot;</span><span>: </span><span style="color:#d69d85;">&quot;${workspaceFolder}&quot;
-</span><span>      }
-</span><span>    }
-</span><span>  ]
-</span><span>}
-</span></code></pre>
-          </div>
-
-          <div class="article-info">
-            <div class="article-date">2023-01-03</div>
-
-            <div class="article-taxonomies">
-              <ul class="article-categories">
-                <li>
-                  <a href="https://jamwil.com/categories/technology/"
-                    >Technology</a
-                  >
-                </li>
-              </ul>
-
-              <ul class="article-tags">
-                <li>
-                  <a href="https://jamwil.com/tags/python/">#python</a>
-                </li>
-
-                <li>
-                  <a href="https://jamwil.com/tags/vscode/">#vscode</a>
-                </li>
-
-                <li>
-                  <a href="https://jamwil.com/tags/tooling/">#tooling</a>
                 </li>
               </ul>
             </div>

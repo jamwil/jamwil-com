@@ -4,11 +4,19 @@ path = "farwest"
 template = "farwest.html"
 +++
 
-Last known location: Vancouver, BC on May 1, 2024 (departure date May 8, 2024)
+Last known location: Vancouver, BC on May 7, 2024 (departure date May 8, 2024)
 
 Distance traveled: 0 kilometres
 
+Posts: {{ link(path='/tags/far-west-2024', text='#far-west-2024') }}
+
+RSS: {{ link(path='/tags/far-west-2024/rss.xml',
+text='Open in default RSS reader') }} (For Apple devices I recommend the free and
+excellent [NetNewsWire](https://netnewswire.com))
+
 ---
+
+## About
 
 I'm embarking on an epic adventure. Me and Lucia, my Ducati Scrambler Desert
 Sled, are travelling 7,500 kilometres down the Pacific Coast to Southern
@@ -23,7 +31,7 @@ I'll be learning a lot as I go, and my plan is to document as much as I can
 about the preparation, process, and spirit of overland motorcycle travel. I hope
 it's useful and interesting.
 
-## The Bike
+### The Bike
 
 Lucia is a 2022 Ducati Scrambler Desert Sled. Despite her looks she is a little
 heavier than your typical dual-sport bike. With an 803cc twin air-cooled engine,
@@ -39,12 +47,18 @@ allows for only ~225 kilometres between fuel ups, but such is the price to pay
 for that sweet retro profile.
 
 <p>
-{{ resize_image(path="content/pages/farwest/lucia1.jpg", width=840, height=840, op="fit_width", alt="Lucia and I the day I bought her") }}
+{{ resize_image(path="content/pages/farwest/lucia1.jpg", width=840, height=840, op="fit_width", alt="Lucia and I the day I bought her.") }}
 
-<figcaption>Lucia and I the day I bought her in June 2022</figcaption>
+<figcaption>Lucia and I the day I bought her in June 2022.</figcaption>
 </p>
 
-## The Route
+<p>
+{{ resize_image(path="content/pages/farwest/lucia2.jpg", width=840, height=840, op="fit_width", alt="Lucia with her lil' bike backpack in July 2023. Since then I've added saddlebags to bring my total waterproofed luggage capacity to 84 litres.") }}
+
+<figcaption>Lucia with her lil' bike backpack in July 2023. Since then I've added saddlebags to bring my total waterproofed luggage capacity to 84 litres.</figcaption>
+</p>
+
+### The Route
 
 The route can be generally divided into three stints. The southbound leg will
 take around seven days and conclude in Palm Springs, CA where I'm meeting
@@ -61,5 +75,5 @@ that will be a week or so removed from the larger voyage.
 <video autoplay muted playsinline loop>
     <source src="farwest_route.mov" type="video/mp4">
 </video>
-<figcaption>The general route split out by day</figcaption>
+<figcaption>The general route split out by day.</figcaption>
 </p>

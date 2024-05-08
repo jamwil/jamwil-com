@@ -477,6 +477,9 @@ ul.language-select > li {
   article .content table {
     color: #aaa;
   }
+  figcaption {
+    color: #aaa;
+  }
   .pagination-item {
     background: #333;
   }
