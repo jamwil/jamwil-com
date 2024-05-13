@@ -85,27 +85,29 @@
               },
             ).addTo(map);
 
-            async function addGeoJson() {
-              const response = await fetch(
-                "https://jamwil.com/farwest/test.geojson",
-              );
+            async function addGeoJson(file, color) {
+              const response = await fetch("https://jamwil.com/" + file + "");
               const data = await response.json();
               var myStyle = {
-                color: "pink",
+                color: color,
                 weight: 4,
               };
-              // L.geoJson(data, {style: myStyle}).addTo(map);
+              L.geoJson(data, { style: myStyle }).addTo(map);
             }
 
-            addGeoJson();
+            addGeoJson("farwest/2024-05-08.geojson", "hotpink");
+            addGeoJson("farwest/2024-05-09.geojson", "coral");
+            addGeoJson("farwest/2024-05-10.geojson", "hotpink");
+            addGeoJson("farwest/2024-05-11.geojson", "coral");
+            addGeoJson("farwest/2024-05-12.geojson", "hotpink");
           </script>
 
           <div class="content">
             <p>
-              Last known location: Vancouver, BC on May 7, 2024 (departure date
-              May 8, 2024)
+              Last known location: San Rafael, CA on May 12, 2024 (departure
+              date May 8, 2024)
             </p>
-            <p>Distance traveled: 0 kilometres</p>
+            <p>Distance traveled: 2,094 kilometres</p>
             <p>
               Posts:
               <a href="https://jamwil.com/tags/far-west-2024">#far-west-2024</a>

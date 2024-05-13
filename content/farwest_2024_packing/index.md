@@ -72,8 +72,9 @@ access.
 - Headlamp
 - Flashlight
 - Rope
-- 6 ft. webbing strap/tie-down Giant Loop Armadillo spare fuel bag, 2 gallon
-  (Lucia has a small tank, especially for an 803 cc twin)
+- 6 ft. webbing strap/tie-down
+- Giant Loop Armadillo spare fuel bag, 2 gallon (Lucia has a small tank,
+  especially for an 803 cc twin)
 - Ducati user manual
 - Summer riding gloves
 - Toque
