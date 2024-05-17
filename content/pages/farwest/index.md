@@ -4,9 +4,10 @@ path = "farwest"
 template = "farwest.html"
 +++
 
-Last known location: San Rafael, CA on May 12, 2024 (departure date May 8, 2024)
+Last known location: Palm Springs, CA on May 17, 2024 (departure date May
+8, 2024)
 
-Distance traveled: 2,094 kilometres
+Distance traveled: 3,045 kilometres
 
 Posts: {{ link(path='/tags/far-west-2024', text='#far-west-2024') }}
 
