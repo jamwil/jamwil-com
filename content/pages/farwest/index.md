@@ -4,10 +4,11 @@ path = "farwest"
 template = "farwest.html"
 +++
 
-Last known location: Palm Springs, CA on May 17, 2024 (departure date May
-8, 2024)
+Last known location: Scottsdale, AZ on May 21, 2024 (departure date May 8,
+2024). My chain gave out at the Grand Canyon, so I needed to tow the bike to the
+nearest Ducati dealer.
 
-Distance traveled: 3,045 kilometres
+Distance traveled: 3,896 kilometres
 
 Posts: {{ link(path='/tags/far-west-2024', text='#far-west-2024') }}
 
