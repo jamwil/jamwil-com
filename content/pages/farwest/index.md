@@ -4,11 +4,11 @@ path = "farwest"
 template = "farwest.html"
 +++
 
-Last known location: Scottsdale, AZ on May 21, 2024 (departure date May 8,
-2024). My chain gave out at the Grand Canyon, so I needed to tow the bike to the
-nearest Ducati dealer.
+Last known location: Vernal, UT on May 24, 2024 (departure date May 8, 2024). My
+chain gave out at the Grand Canyon, so I needed to tow the bike to the nearest
+Ducati dealer in Scottsdale, AZ, represented by the grey line on the map.
 
-Distance traveled: 3,896 kilometres
+Distance traveled: 5,135 kilometres
 
 Posts: {{ link(path='/tags/far-west-2024', text='#far-west-2024') }}
 
