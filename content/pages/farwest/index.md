@@ -4,11 +4,10 @@ path = "farwest"
 template = "farwest.html"
 +++
 
-Last known location: Driggs, ID on May 25, 2024 (departure date May 8, 2024). My
-chain gave out at the Grand Canyon, so I needed to tow the bike to the nearest
-Ducati dealer in Scottsdale, AZ, represented by the grey line on the map.
+Last known location: North Fork, ID on May 26, 2024 (departure date May 8,
+2024).
 
-Distance traveled: 5,671 kilometres
+Distance traveled: 6,032 kilometres
 
 Posts: {{ link(path='/tags/far-west-2024', text='#far-west-2024') }}
 
