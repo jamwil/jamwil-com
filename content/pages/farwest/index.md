@@ -4,9 +4,9 @@ path = "farwest"
 template = "farwest.html"
 +++
 
-Last known location: Whitefish, MT on May 27, 2024 (departure date May 8, 2024).
+Last known location: Okotoks, AB on May 28, 2024. Mission complete.
 
-Distance traveled: 6,441 kilometres
+Distance traveled: 6,846 kilometres
 
 Posts: {{ link(path='/tags/far-west-2024', text='#far-west-2024') }}
 
