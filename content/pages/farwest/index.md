@@ -4,10 +4,9 @@ path = "farwest"
 template = "farwest.html"
 +++
 
-Last known location: North Fork, ID on May 26, 2024 (departure date May 8,
-2024).
+Last known location: Whitefish, MT on May 27, 2024 (departure date May 8, 2024).
 
-Distance traveled: 6,032 kilometres
+Distance traveled: 6,441 kilometres
 
 Posts: {{ link(path='/tags/far-west-2024', text='#far-west-2024') }}
 
