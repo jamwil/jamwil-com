@@ -5,20 +5,8 @@
   type="image/x-icon"
   href="{{ get_url(path='favicon.ico') }}"
 />
-{% endblock %} {% block content %}
-
-<aside id="trip-map">
-  <p><strong>I'm on a motorcycle trip!</strong></p>
-  <p>
-    Follow along as I travel 7,500 kilometres from Vancouver down the west coast
-    of the United States to Southern California, then back up through the
-    canyons and mountains to Calgary.
-  </p>
-  <p><a href="farwest/">📍 Check out the map</a></p>
-</aside>
-
-{% if paginator.pages %} {% for page in paginator.pages %} {{
-page_macros::page_listing(page=page) }} {% endfor %} {{
+{% endblock %} {% block content %} {% if paginator.pages %} {% for page in
+paginator.pages %} {{ page_macros::page_listing(page=page) }} {% endfor %} {{
 page_macros::page_pagination(paginator=paginator) }} {% else %} {% for page in
 section.pages %} {{ page_macros::page_listing(page=page) }} {% endfor %} {%
 endif %} {% endblock %}
