@@ -12,7 +12,7 @@ still on the fence about javascript as a hard dependency, but I like the look of
 these long-form galleries and a 35 mb initial payload is downright rude.
 
 In other news, I've migrated my primary social media presence from mastodon over
-to [bluesky](https://bsky.app/profile/jamwil.bsky.social). A lot of ink has been
+to [bluesky](https://bsky.app/profile/jamwil.com). A lot of ink has been
 spilled on this topic, especially in the wake of the election, and I don't have
 much new to add. I believe they are two fundamentally different tools, with
 mastodon best suited for small, niche communities and bluesky a suitable
