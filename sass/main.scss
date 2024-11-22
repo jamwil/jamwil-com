@@ -377,6 +377,8 @@ article .content table {
   font-size: 0.75em;
   color: $secondary-text;
   margin-bottom: 3em;
+  overflow: auto;
+  margin-left: 500px;
 }
 
 article .content td {
@@ -540,6 +542,13 @@ ul.language-select > li {
 
   header nav a {
     margin-left: 5%;
+  }
+
+  article .content table {
+    width: 100%;
+    max-width: 500px;
+    margin-left: 0;
+    font-size: 0.7em;
   }
 
   aside#trip-map {

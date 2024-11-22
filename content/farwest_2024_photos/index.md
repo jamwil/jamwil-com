@@ -6,7 +6,7 @@ tags = ["far-west-2024"]
 categories = ["Travel"]
 +++
 
-_Part of the [Far West 2024](@/pages/farwest/index.md) series._
+_Part of the [Far West 2024](@/pages/farwest/index.md) feature._
 
 A few days before I departed, I purchased a used FUJIFILM X-T10 camera to try to
 learn some photography basics and document the trip. The slower pace this

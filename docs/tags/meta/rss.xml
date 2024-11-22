@@ -7,7 +7,29 @@
       <generator>Zola</generator>
       <language>en</language>
       <atom:link href="https://jamwil.com/tags/meta/rss.xml" rel="self" type="application/rss+xml"/>
-      <lastBuildDate>Mon, 26 Dec 2022 15:45:00 +0000</lastBuildDate>
+      <lastBuildDate>Fri, 22 Nov 2024 05:33:28 +0000</lastBuildDate>
+      <item>
+          <title>Proof of Life</title>
+          <pubDate>Fri, 22 Nov 2024 05:33:28 +0000</pubDate>
+          <author>James Williams</author>
+          <link>https://jamwil.com/proof-of-life/</link>
+          <guid>https://jamwil.com/proof-of-life/</guid>
+          <description xml:base="https://jamwil.com/proof-of-life/">&lt;p&gt;I’m still here! Made a few updates to the website, including adding (for the
+first time) a little bit of javascript to lazy load the image gallery posts. I’m
+still on the fence about javascript as a hard dependency, but I like the look of
+these long-form galleries and a 35 mb initial payload is downright rude.&lt;&#x2F;p&gt;
+&lt;p&gt;In other news, I’ve migrated my primary social media presence from mastodon over
+to &lt;a href=&quot;https:&#x2F;&#x2F;bsky.app&#x2F;profile&#x2F;jamwil.bsky.social&quot;&gt;bluesky&lt;&#x2F;a&gt;. A lot of ink has been
+spilled on this topic, especially in the wake of the election, and I don’t have
+much new to add. I believe they are two fundamentally different tools, with
+mastodon best suited for small, niche communities and bluesky a suitable
+successor to twitter as a general-purpose network. Sensible, top-down moderation
+of any social network at scale is extremely difficult, and they’ve acknowledged
+that by building incredible tools for community-first moderation and
+community-first algorithms. It’s a great community full of kind people and I
+hope to see you there.&lt;&#x2F;p&gt;
+</description>
+      </item>
       <item>
           <title>Hello World</title>
           <pubDate>Mon, 26 Dec 2022 15:45:00 +0000</pubDate>

@@ -48,6 +48,90 @@
         <article class="post-list">
           <header>
             <h1>
+              <a
+                href="https:&#x2F;&#x2F;jamwil.com&#x2F;refine-pull-request&#x2F;"
+                >How to checkout and edit a pull request locally</a
+              >
+            </h1>
+          </header>
+
+          <div class="content post-summary">
+            <p>
+              Let’s say you have a dependabot pull request and Charlie Marsh has
+              added a new check to
+              <a href="https://github.com/astral-sh/ruff">Ruff</a> that causes
+              your lint check to fail. You can fix the lint error and push the
+              changes back to the pull request branch!
+            </p>
+            <p>First, checkout the pull request locally:</p>
+            <pre
+              data-lang="bash"
+              style="background-color: #1e1e1e; color: #dcdcdc"
+              class="language-bash"
+            ><code class="language-bash" data-lang="bash"><span style="color:#608b4e;"># In this case, I&#39;m updating ruff to v0.0.278
+</span><span>git fetch origin dependabot/pip/ruff-0.0.278
+</span><span>git switch --track origin/dependabot/pip/ruff-0.0.278
+</span></code></pre>
+            <p>
+              We’ve now checked out the PR branch and set it to track the
+              remote. We can use this pattern to keep tabs on long-running PRs,
+              or as in this case, simply push an additional patch before
+              merging. If you’d like a more friendly local branch name, you can
+              append the <code>:my-branch-name</code> to the end of the git
+              fetch call, and then call
+              <code>git switch my-branch-name</code> to check it out; just keep
+              in mind that this won’t set the local branch to track the remote.
+            </p>
+            <p>
+              In my case, this ruff release does not provide any new rule
+              categories and my lints still pass, however I’d like to update the
+              ruff version in my <code>.pre-commit-config.yaml</code> file so
+              that it’s consistent with my <code>requirements.txt</code>. I’ll
+              make that change, commit and push back to the remote.
+            </p>
+            <pre
+              data-lang="bash"
+              style="background-color: #1e1e1e; color: #dcdcdc"
+              class="language-bash"
+            ><code class="language-bash" data-lang="bash"><span>git add .pre-commit-config.yaml
+</span><span>git commit -m </span><span style="color:#d69d85;">&quot;Update pre-commit config.&quot;
+</span><span>git push
+</span></code></pre>
+            <p>
+              At this point, your checks should fire again and you can merge
+              using your preferred merge method into your trunk. Check out
+              <a href="https://github.com/jamwil/bulletproof-python/pull/129"
+                >real pull request</a
+              >
+              to see how this looks server side.
+            </p>
+            <span id="continue-reading"></span>
+          </div>
+
+          <div class="article-info">
+            <div class="article-date">2023-07-16</div>
+
+            <div class="article-taxonomies">
+              <ul class="article-categories">
+                <li>
+                  <a href="https://jamwil.com/categories/technology/"
+                    >Technology</a
+                  >
+                </li>
+              </ul>
+
+              <ul class="article-tags">
+                <li>
+                  <a href="https://jamwil.com/tags/git/">#git</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </article>
+
+        <article class="post-list">
+          <header>
+            <h1>
               <a href="https:&#x2F;&#x2F;jamwil.com&#x2F;hello-k8s&#x2F;"
                 >Running a local Kubernetes cluster with Kind: A step-by-step
                 guide</a
@@ -571,105 +655,6 @@
               <ul class="article-tags">
                 <li>
                   <a href="https://jamwil.com/tags/management/">#management</a>
-                </li>
-              </ul>
-            </div>
-          </div>
-        </article>
-
-        <article class="post-list">
-          <header>
-            <h1>
-              <a href="https:&#x2F;&#x2F;jamwil.com&#x2F;git-submodule&#x2F;"
-                >How to convert a subdirectory to its own git
-                repository&#x2F;submodule</a
-              >
-            </h1>
-          </header>
-
-          <div class="content post-summary">
-            <pre
-              data-lang="bash"
-              style="background-color: #1e1e1e; color: #dcdcdc"
-              class="language-bash"
-            ><code class="language-bash" data-lang="bash"><span style="color:#608b4e;"># Make a clone of the repository
-</span><span>git clone &lt;your_project&gt; &lt;new_submodule&gt;
-</span><span>
-</span><span style="color:#608b4e;"># CD into the new repository
-</span><span>cd &lt;new_submodule&gt;
-</span><span>
-</span><span style="color:#608b4e;"># Use filter-branch to isolate the subdirectory
-</span><span>git filter-branch --subdirectory-filter </span><span style="color:#d69d85;">&#39;path/to/subdirectory&#39;</span><span> --prune-empty</span><span style="color:#569cd6;"> --</span><span> --all
-</span><span>
-</span><span style="color:#608b4e;"># Remove the old remote
-</span><span>git remote rm &lt;remote_name&gt;
-</span></code></pre>
-            <p>
-              <code>git filter-branch</code> lets you rewrite Git revision
-              history and apply custom filters on each revision.
-              <strong>It should be used with caution!</strong> From the Git
-              Manual (emphasis mine):
-            </p>
-            <blockquote>
-              <p>
-                git filter-branch has a plethora of pitfalls that can produce
-                non-obvious manglings of the intended history rewrite (and can
-                leave you with little time to investigate such problems since it
-                has such abysmal performance). These safety and performance
-                issues cannot be backward compatibly fixed and as such,
-                <strong>its use is not recommended</strong>.
-              </p>
-            </blockquote>
-            <p>
-              Nevertheless, since we live dangerously around these parts, here’s
-              what’s happening with the filter-branch command should you choose
-              to use it:
-            </p>
-            <ul>
-              <li>
-                <code>--subdirectory-filter</code> is the main command. It takes
-                a path to a subdirectory and filters the repository to only
-                include that subdirectory.
-              </li>
-              <li>
-                <code>--prune-empty</code> removes commits that don’t change
-                anything.
-              </li>
-              <li>
-                <code>-- --all</code> is a way to pass arguments to the internal
-                <code>git rev-list</code> command. In this case, it’s telling
-                git to run the command on all branches.
-              </li>
-            </ul>
-            <p>
-              Once the operation is done, you’ll have a new repository with only
-              the subdirectory you specified. You can then push it to a new
-              remote and add it as a submodule to your original repository.
-            </p>
-            <p>
-              <code>git filter-branch</code> is a destructive operation. While
-              I’ve used the above command with success on my own repositories,
-              your mileage may vary and I probably can’t help you if something
-              goes wrong.
-            </p>
-            <span id="continue-reading"></span>
-          </div>
-
-          <div class="article-info">
-            <div class="article-date">2023-01-12</div>
-
-            <div class="article-taxonomies">
-              <ul class="article-categories">
-                <li>
-                  <a href="https://jamwil.com/categories/technology/"
-                    >Technology</a
-                  >
-                </li>
-              </ul>
-
-              <ul class="article-tags">
-                <li>
-                  <a href="https://jamwil.com/tags/git/">#git</a>
                 </li>
               </ul>
             </div>

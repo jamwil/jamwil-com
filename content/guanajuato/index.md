@@ -114,8 +114,6 @@ Miguele de Allende.
 
 <div style="clear:both;"></div>
 
-Full resolution photos are available [below the fold](.).
-
 _Note: I've edited this post. It was first posted on January 4, 2023 with only
 the leading image. When I first posted the picture, it was in the early days of
 ChatGPT and I was of course excited to try to generate some text with it. I did
@@ -123,15 +121,3 @@ so with a short description of Guanajuato City as a caption, and with the
 benefit of hindsight I'm no longer comfortable polluting the internet with
 content I didn't write myself. All of the photos beyond the first were published
 on March 23, 2024 and the text is my own._
-
-📷 **Full resolution images:**
-
-<img src="guanajuato_skyline.jpeg" />
-
-<img src="guanajuato_iglesa.jpeg" />
-
-<img src="guanajuato_bug.jpeg" />
-
-<img src="guanajuato_skyline_two.jpeg" />
-
-<img src="guanajuato_tunnel.jpeg" />
