@@ -37,9 +37,9 @@
         <nav>
           <a href="https:&#x2F;&#x2F;jamwil.com&#x2F;about&#x2F;">About</a>
 
-          <a href="https:&#x2F;&#x2F;jamwil.com&#x2F;categories&#x2F;"
-            >Categories</a
-          >
+          <a href="https:&#x2F;&#x2F;jamwil.com&#x2F;categories&#x2F;">
+            Categories
+          </a>
 
           <a href="https:&#x2F;&#x2F;jamwil.com&#x2F;tags&#x2F;">Tags</a>
         </nav>
@@ -50,8 +50,9 @@
             <h1>
               <a
                 href="https:&#x2F;&#x2F;jamwil.com&#x2F;refine-pull-request&#x2F;"
-                >How to checkout and edit a pull request locally</a
               >
+                How to checkout and edit a pull request locally
+              </a>
             </h1>
           </header>
 
@@ -59,9 +60,9 @@
             <p>
               Let’s say you have a dependabot pull request and Charlie Marsh has
               added a new check to
-              <a href="https://github.com/astral-sh/ruff">Ruff</a> that causes
-              your lint check to fail. You can fix the lint error and push the
-              changes back to the pull request branch!
+              <a href="https://github.com/astral-sh/ruff">Ruff</a>
+              that causes your lint check to fail. You can fix the lint error
+              and push the changes back to the pull request branch!
             </p>
             <p>First, checkout the pull request locally:</p>
             <pre
@@ -77,17 +78,21 @@
               remote. We can use this pattern to keep tabs on long-running PRs,
               or as in this case, simply push an additional patch before
               merging. If you’d like a more friendly local branch name, you can
-              append the <code>:my-branch-name</code> to the end of the git
-              fetch call, and then call
-              <code>git switch my-branch-name</code> to check it out; just keep
-              in mind that this won’t set the local branch to track the remote.
+              append the
+              <code>:my-branch-name</code>
+              to the end of the git fetch call, and then call
+              <code>git switch my-branch-name</code>
+              to check it out; just keep in mind that this won’t set the local
+              branch to track the remote.
             </p>
             <p>
               In my case, this ruff release does not provide any new rule
               categories and my lints still pass, however I’d like to update the
-              ruff version in my <code>.pre-commit-config.yaml</code> file so
-              that it’s consistent with my <code>requirements.txt</code>. I’ll
-              make that change, commit and push back to the remote.
+              ruff version in my
+              <code>.pre-commit-config.yaml</code>
+              file so that it’s consistent with my
+              <code>requirements.txt</code>
+              . I’ll make that change, commit and push back to the remote.
             </p>
             <pre
               data-lang="bash"
@@ -100,9 +105,9 @@
             <p>
               At this point, your checks should fire again and you can merge
               using your preferred merge method into your trunk. Check out
-              <a href="https://github.com/jamwil/bulletproof-python/pull/129"
-                >real pull request</a
-              >
+              <a href="https://github.com/jamwil/bulletproof-python/pull/129">
+                real pull request
+              </a>
               to see how this looks server side.
             </p>
             <span id="continue-reading"></span>
@@ -114,9 +119,9 @@
             <div class="article-taxonomies">
               <ul class="article-categories">
                 <li>
-                  <a href="https://jamwil.com/categories/technology/"
-                    >Technology</a
-                  >
+                  <a href="https://jamwil.com/categories/technology/">
+                    Technology
+                  </a>
                 </li>
               </ul>
 
@@ -132,10 +137,10 @@
         <article class="post-list">
           <header>
             <h1>
-              <a href="https:&#x2F;&#x2F;jamwil.com&#x2F;hello-k8s&#x2F;"
-                >Running a local Kubernetes cluster with Kind: A step-by-step
-                guide</a
-              >
+              <a href="https:&#x2F;&#x2F;jamwil.com&#x2F;hello-k8s&#x2F;">
+                Running a local Kubernetes cluster with Kind: A step-by-step
+                guide
+              </a>
             </h1>
           </header>
 
@@ -152,32 +157,37 @@
             </p>
             <ul>
               <li>
-                A <strong>Pod</strong> is the smallest deployable unit in
-                Kubernetes, often a single instance of an application. As I
-                understand it, a pod is the logical equivalent of a container.
+                A
+                <strong>Pod</strong>
+                is the smallest deployable unit in Kubernetes, often a single
+                instance of an application. As I understand it, a pod is the
+                logical equivalent of a container.
               </li>
               <li>
-                <strong>Nodes</strong> are the machines that host these pods.
-                More nodes allow for more redundancy.
+                <strong>Nodes</strong>
+                are the machines that host these pods. More nodes allow for more
+                redundancy.
               </li>
               <li>
-                A <strong>Cluster</strong> is a set of nodes with the same job.
-                A cluster can run multiple nodes, and a node can run multiple
-                pods, and a pod typically consists of between two and fifteen
-                orca whales.
+                A
+                <strong>Cluster</strong>
+                is a set of nodes with the same job. A cluster can run multiple
+                nodes, and a node can run multiple pods, and a pod typically
+                consists of between two and fifteen orca whales.
               </li>
               <li>
-                A <strong>Service</strong> is an abstraction which provides a
-                single network entry point to distribute traffic across the
-                cluster.
+                A
+                <strong>Service</strong>
+                is an abstraction which provides a single network entry point to
+                distribute traffic across the cluster.
               </li>
             </ul>
             <p>
               For local development I am using
-              <a href="https://kind.sigs.k8s.io">Kind</a>, a tool which allows
-              you to run Kubernetes clusters in Docker containers. It is a
-              lightweight way to run docker containers inside kubernetes inside
-              a docker container (pause for effect).
+              <a href="https://kind.sigs.k8s.io">Kind</a>
+              , a tool which allows you to run Kubernetes clusters in Docker
+              containers. It is a lightweight way to run docker containers
+              inside kubernetes inside a docker container (pause for effect).
             </p>
             <p>
               The command to create a cluster is:
@@ -228,12 +238,16 @@
 </span><span>            - </span><span style="background-color:#282828;color:#569cd6;">containerPort</span><span>: </span><span style="color:#b5cea8;">8000 </span><span style="color:#608b4e;"># Use the port your application runs on
 </span></code></pre>
             <p>
-              Note that the <code>imagePullPolicy</code> is set to
-              <code>Never</code> because we are using a local image with the
-              implied tag <code>latest</code>. Specifying a specific tag should
-              make this unnecessary, otherwise the default behaviour is to try
-              to pull the image from Docker Hub, which will fail each time (or
-              worse, deploy something unexpected).
+              Note that the
+              <code>imagePullPolicy</code>
+              is set to
+              <code>Never</code>
+              because we are using a local image with the implied tag
+              <code>latest</code>
+              . Specifying a specific tag should make this unnecessary,
+              otherwise the default behaviour is to try to pull the image from
+              Docker Hub, which will fail each time (or worse, deploy something
+              unexpected).
             </p>
             <p>
               In addition to matching the exposed port of the container, your
@@ -260,20 +274,28 @@
             <p>
               With these files in place, we can create the deployment and
               service respectively using
-              <code>kubectl apply -f &lt;file-name&gt;</code> for each. They can
-              be verified using: <code>kubectl get deployments</code> and
-              <code>kubectl get services</code>.
+              <code>kubectl apply -f &lt;file-name&gt;</code>
+              for each. They can be verified using:
+              <code>kubectl get deployments</code>
+              and
+              <code>kubectl get services</code>
+              .
             </p>
             <p>
               If there are any issues, logs can be checked using:
-              <code>kubectl logs &lt;pod-name&gt;</code>, and the pod name can
-              be found using <code>kubectl get pods</code>.
+              <code>kubectl logs &lt;pod-name&gt;</code>
+              , and the pod name can be found using
+              <code>kubectl get pods</code>
+              .
             </p>
             <p>
               Remember to specify environment variables in the
-              <code>deployment.yaml</code> file under <code>env</code> in the
-              <code>containers</code> specification if your application requires
-              them.
+              <code>deployment.yaml</code>
+              file under
+              <code>env</code>
+              in the
+              <code>containers</code>
+              specification if your application requires them.
             </p>
             <p>
               If you’re running docker inside a linux virtual machine, port
@@ -282,15 +304,15 @@
               port to the service port. This can be done using:
             </p>
             <p>
-              <code
-                >kubectl port-forward service/my-image-name-service
-                30080:8000</code
-              >
+              <code>
+                kubectl port-forward service/my-image-name-service 30080:8000
+              </code>
             </p>
             <p>
-              This will map the service to <code>localhost:30080</code> on your
-              local machine. Launch it in tmux or append the command with an
-              ampersand as it will block the terminal otherwise.
+              This will map the service to
+              <code>localhost:30080</code>
+              on your local machine. Launch it in tmux or append the command
+              with an ampersand as it will block the terminal otherwise.
             </p>
             <p>
               Fin. Now deploy to prod on a Friday afternoon and you’re done!
@@ -304,9 +326,9 @@
             <div class="article-taxonomies">
               <ul class="article-categories">
                 <li>
-                  <a href="https://jamwil.com/categories/technology/"
-                    >Technology</a
-                  >
+                  <a href="https://jamwil.com/categories/technology/">
+                    Technology
+                  </a>
                 </li>
               </ul>
 
@@ -332,8 +354,9 @@
             <h1>
               <a
                 href="https:&#x2F;&#x2F;jamwil.com&#x2F;chat-gpt-wolfram-notes&#x2F;"
-                >Notes from Stephen Wolfram&#x27;s ChatGPT primer</a
               >
+                Notes from Stephen Wolfram&#x27;s ChatGPT primer
+              </a>
             </h1>
           </header>
 
@@ -342,8 +365,9 @@
               <strong>Source Material:</strong>
               <a
                 href="https://writings.stephenwolfram.com/2023/02/what-is-chatgpt-doing-and-why-does-it-work/"
-                >Stephen Wolfram, 2023-02-14</a
               >
+                Stephen Wolfram, 2023-02-14
+              </a>
             </p>
             <p>
               ChatGPT is a large-scale transformer-based language model that is
@@ -355,70 +379,80 @@
             </p>
             <p>
               The name ChatGPT stands for Generative Pre-trained Transformer.
-              <strong>Generative</strong> means that the model is capable of
-              generating new text rather than just recognizing patterns in
-              existing text. <strong>Pre-trained</strong> means that the model
-              has been trained on a large corpus of text before being fine-tuned
-              for a specific task. <strong>Transformer</strong> refers to the
-              specific type of neural network architecture which is designed to
-              better handle long-term dependencies between words in a sentence.
+              <strong>Generative</strong>
+              means that the model is capable of generating new text rather than
+              just recognizing patterns in existing text.
+              <strong>Pre-trained</strong>
+              means that the model has been trained on a large corpus of text
+              before being fine-tuned for a specific task.
+              <strong>Transformer</strong>
+              refers to the specific type of neural network architecture which
+              is designed to better handle long-term dependencies between words
+              in a sentence.
             </p>
             <p>
               To accomplish its task, ChatGPT uses a technique known as
-              <strong>unsupervised learning</strong>, which allows it to learn
-              patterns in the data without being explicitly taught. Instead of
-              being trained on explicit examples of inputs and their associated
-              outputs like in <strong>supervised learning</strong>, the model is
-              given a large corpus of text and is trained to predict the next
-              word in a sentence by masking the latter part of the sentence and
-              having it predict what should come next. It then compares what it
-              generated with the masked text, and iteratively adjusts its
-              parameters to minimize the error.
+              <strong>unsupervised learning</strong>
+              , which allows it to learn patterns in the data without being
+              explicitly taught. Instead of being trained on explicit examples
+              of inputs and their associated outputs like in
+              <strong>supervised learning</strong>
+              , the model is given a large corpus of text and is trained to
+              predict the next word in a sentence by masking the latter part of
+              the sentence and having it predict what should come next. It then
+              compares what it generated with the masked text, and iteratively
+              adjusts its parameters to minimize the error.
             </p>
             <p>
               To evaluate how well the model performs on each iteration, a
-              <strong>loss function</strong> is used. The loss function
-              calculates how far away the model’s predictions are from the
-              desired outcome, and the neural net weights are adjusted in a way
-              that minimizes the result of the loss function.
+              <strong>loss function</strong>
+              is used. The loss function calculates how far away the model’s
+              predictions are from the desired outcome, and the neural net
+              weights are adjusted in a way that minimizes the result of the
+              loss function.
             </p>
             <p>
               Training the model both optimizes the neural net weights and
-              produces <strong>embeddings</strong>, which are a way of
-              representing the meaning of words as arrays of numbers (in the
-              vague, undefinable sense of ‘meaning’). Nearby words are
-              represented by nearby numbers. ChatGPT takes this concept further
-              by generating embeddings not just for individual words, but for
-              entire sequences of words.
+              produces
+              <strong>embeddings</strong>
+              , which are a way of representing the meaning of words as arrays
+              of numbers (in the vague, undefinable sense of ‘meaning’). Nearby
+              words are represented by nearby numbers. ChatGPT takes this
+              concept further by generating embeddings not just for individual
+              words, but for entire sequences of words.
             </p>
             <p>
               These embeddings are then used to predict the probabilities of
               different words that might come next in a sentence. This is
-              accomplished using a <strong>transformer</strong>
+              accomplished using a
+              <strong>transformer</strong>
               architecture, which is designed to better handle dependencies
               between tokens in the input and output even when they are far from
               each other in the input sequence. One of the defining features of
               the transformer is its use of an
-              <strong>attention mechanism</strong>, which involves certain
-              neurons focusing more on relevant parts of the sequence than
-              others. This allows ChatGPT to take into account the context of
-              the conversation that’s taken place, which can inform the next
-              token that’s generated. The attention mechanism also allows
-              ChatGPT to capture context from the prior conversation even when
-              that context is not adjacent to the token being generated. This is
-              the main reason ChatGPT comes across as a coherent entity.
+              <strong>attention mechanism</strong>
+              , which involves certain neurons focusing more on relevant parts
+              of the sequence than others. This allows ChatGPT to take into
+              account the context of the conversation that’s taken place, which
+              can inform the next token that’s generated. The attention
+              mechanism also allows ChatGPT to capture context from the prior
+              conversation even when that context is not adjacent to the token
+              being generated. This is the main reason ChatGPT comes across as a
+              coherent entity.
             </p>
             <p>
-              Finally, ChatGPT uses a <strong>temperature</strong> setting to
-              introduce a degree of randomness into its predictions, which can
-              make the output more diverse and interesting.
+              Finally, ChatGPT uses a
+              <strong>temperature</strong>
+              setting to introduce a degree of randomness into its predictions,
+              which can make the output more diverse and interesting.
             </p>
             <hr />
             <p>
               What strikes me as the most profound point Stephen makes is the
-              success of ChatGPT as a scientific <em>discovery</em> in that it
-              shows that there may be simple rules that describe how the
-              semantics of human language can be arranged that we ourselves
+              success of ChatGPT as a scientific
+              <em>discovery</em>
+              in that it shows that there may be simple rules that describe how
+              the semantics of human language can be arranged that we ourselves
               don’t yet understand. Studying the pathways and structures ChatGPT
               uses could help deepen our own understanding of human language.
             </p>
@@ -431,9 +465,9 @@
             <div class="article-taxonomies">
               <ul class="article-categories">
                 <li>
-                  <a href="https://jamwil.com/categories/technology/"
-                    >Technology</a
-                  >
+                  <a href="https://jamwil.com/categories/technology/">
+                    Technology
+                  </a>
                 </li>
               </ul>
 
@@ -449,9 +483,9 @@
         <article class="post-list">
           <header>
             <h1>
-              <a href="https:&#x2F;&#x2F;jamwil.com&#x2F;llm-roundup&#x2F;"
-                >LLM Round-up</a
-              >
+              <a href="https:&#x2F;&#x2F;jamwil.com&#x2F;llm-roundup&#x2F;">
+                LLM Round-up
+              </a>
             </h1>
           </header>
 
@@ -496,27 +530,31 @@
                 Stephen Wolfram:
                 <a
                   href="https://writings.stephenwolfram.com/2023/02/what-is-chatgpt-doing-and-why-does-it-work/"
-                  >What Is ChatGPT Doing … and Why Does It Work?</a
                 >
+                  What Is ChatGPT Doing … and Why Does It Work?
+                </a>
                 (2023-02-14)
               </li>
               <li>
                 Andrej Karpathy:
-                <a href="https://karpathy.ai/zero-to-hero.html"
-                  >Neural Networks: Zero to Hero</a
-                >
+                <a href="https://karpathy.ai/zero-to-hero.html">
+                  Neural Networks: Zero to Hero
+                </a>
               </li>
               <li>
-                <a href="https://platform.openai.com/docs/introduction/overview"
-                  >OpenAI Documentation</a
+                <a
+                  href="https://platform.openai.com/docs/introduction/overview"
                 >
+                  OpenAI Documentation
+                </a>
               </li>
               <li>
                 Rodrigo Girão Serrão:
                 <a
                   href="https://mathspp.com/blog/your-first-recurrent-neural-network"
-                  >Your first recurrent neural network (RNN)</a
                 >
+                  Your first recurrent neural network (RNN)
+                </a>
               </li>
             </ul>
             <span id="continue-reading"></span>
@@ -528,9 +566,9 @@
             <div class="article-taxonomies">
               <ul class="article-categories">
                 <li>
-                  <a href="https://jamwil.com/categories/technology/"
-                    >Technology</a
-                  >
+                  <a href="https://jamwil.com/categories/technology/">
+                    Technology
+                  </a>
                 </li>
               </ul>
 
@@ -548,8 +586,9 @@
             <h1>
               <a
                 href="https:&#x2F;&#x2F;jamwil.com&#x2F;restaurant-principles&#x2F;"
-                >Three managerial principles I wrote down in 2015</a
               >
+                Three managerial principles I wrote down in 2015
+              </a>
             </h1>
           </header>
 
@@ -576,10 +615,10 @@
               </p>
               <ol>
                 <li>
-                  <strong
-                    >As a leader, your most critical function is teaching and
-                    supporting your people.</strong
-                  >
+                  <strong>
+                    As a leader, your most critical function is teaching and
+                    supporting your people.
+                  </strong>
                   You are not your business — your employees are, and your job
                   is to develop them into strong ambassadors of the brand. The
                   quality of your product, the happiness of your customers, the
@@ -590,23 +629,23 @@
                   manager. Positive feedback is important.
                 </li>
                 <li>
-                  <strong>Organization and prioritization.</strong> Simply find
-                  a way to ensure that no details are missed and nothing slips
-                  through the cracks. Do what you can to minimize surprises; be
-                  flexible and adaptable when they do occur.
+                  <strong>Organization and prioritization.</strong>
+                  Simply find a way to ensure that no details are missed and
+                  nothing slips through the cracks. Do what you can to minimize
+                  surprises; be flexible and adaptable when they do occur.
                 </li>
                 <li>
-                  <strong>Managing your own attitude.</strong> You set the tone
-                  and energy. I work in a fast-paced, high stress business where
-                  this is particularly important. Letting small incidents send
-                  you into an outwardly visible tailspin is a quick and sure way
-                  of crashing a complex or time-sensitive operation. Your staff
-                  feed off your energy and positivity, and being mindful of that
-                  is critically important. A friend once told me, “head to work
-                  each day as if you were going to war.” — Expect and anticipate
-                  problems in a manner such that they won’t ruin your day when
-                  they occur. Keep it light and save the over reactions for
-                  incidents that warrant it.
+                  <strong>Managing your own attitude.</strong>
+                  You set the tone and energy. I work in a fast-paced, high
+                  stress business where this is particularly important. Letting
+                  small incidents send you into an outwardly visible tailspin is
+                  a quick and sure way of crashing a complex or time-sensitive
+                  operation. Your staff feed off your energy and positivity, and
+                  being mindful of that is critically important. A friend once
+                  told me, “head to work each day as if you were going to war.”
+                  — Expect and anticipate problems in a manner such that they
+                  won’t ruin your day when they occur. Keep it light and save
+                  the over reactions for incidents that warrant it.
                 </li>
               </ol>
               <p>
@@ -618,7 +657,9 @@
             </blockquote>
             <hr />
             <p>
-              Bonus: I also wrote this, titled <code>reviews_cometh.txt</code>:
+              Bonus: I also wrote this, titled
+              <code>reviews_cometh.txt</code>
+              :
             </p>
             <blockquote>
               <p>
@@ -646,9 +687,9 @@
             <div class="article-taxonomies">
               <ul class="article-categories">
                 <li>
-                  <a href="https://jamwil.com/categories/technology/"
-                    >Technology</a
-                  >
+                  <a href="https://jamwil.com/categories/technology/">
+                    Technology
+                  </a>
                 </li>
               </ul>
 
@@ -666,20 +707,23 @@
             <a href="https:&#x2F;&#x2F;jamwil.com&#x2F;">To newer posts</a>
           </div>
           <div class="right pagination-item">
-            <a href="https:&#x2F;&#x2F;jamwil.com&#x2F;page&#x2F;3&#x2F;"
-              >To older posts</a
-            >
+            <a href="https:&#x2F;&#x2F;jamwil.com&#x2F;page&#x2F;3&#x2F;">
+              To older posts
+            </a>
           </div>
         </div>
       </main>
       <footer>
         <p>
-          © James Williams 2024<br />
-          Powered by <a target="_blank" href="https://getzola.org/">Zola</a>,
-          Theme
-          <a target="_blank" href="https://github.com/zbrox/anpu-zola-theme"
-            >Anpu</a
-          >.
+          © James Williams 2024
+          <br />
+          Powered by
+          <a target="_blank" href="https://getzola.org/">Zola</a>
+          , Theme
+          <a target="_blank" href="https://github.com/zbrox/anpu-zola-theme">
+            Anpu
+          </a>
+          .
         </p>
         <p>
           <script src="https://cdn.jsdelivr.net/npm/vanilla-lazyload@19.1.3/dist/lazyload.min.js"></script>

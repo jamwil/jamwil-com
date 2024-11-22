@@ -10,9 +10,9 @@
     <ul class="article-categories">
       {% for cat in page.taxonomies.categories %}
       <li>
-        <a href="{{ get_taxonomy_url(kind='categories', name=cat) | safe }}"
-          >{{ cat }}</a
-        >
+        <a href="{{ get_taxonomy_url(kind='categories', name=cat) | safe }}">
+          {{ cat }}
+        </a>
       </li>
       {% endfor %}
     </ul>
@@ -20,9 +20,9 @@
     <ul class="article-tags">
       {% for tag in page.taxonomies.tags %}
       <li>
-        <a href="{{ get_taxonomy_url(kind='tags', name=tag) | safe }}"
-          >#{{ tag }}</a
-        >
+        <a href="{{ get_taxonomy_url(kind='tags', name=tag) | safe }}">
+          #{{ tag }}
+        </a>
       </li>
       {% endfor %}
     </ul>
