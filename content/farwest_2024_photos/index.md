@@ -15,7 +15,7 @@ afforded as I occasionally stopped to compose a scene was worth it alone.
 Here are a few of my favourite photos from my three-week motorcycle adventure
 through the American west.
 
-## <!-- more -->
+<!-- more -->
 
 ## British Columbia
 
