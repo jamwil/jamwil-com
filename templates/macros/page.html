@@ -37,9 +37,8 @@
     </h1>
   </header>
 
-  {% if page.summary %}
-  <div class="content post-summary">{{ page.summary | markdown | safe }}</div>
-  {% endif %} {{ self::page_info(page=page) }}
+  <div class="content post-summary">{{ page.content | safe }}</div>
+  {{ self::page_info(page=page) }}
 </article>
 {% endmacro page_listing %} {% macro page_brief(page) %}
 <p>

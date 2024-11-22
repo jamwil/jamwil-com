@@ -13,6 +13,8 @@ it. The city itself has been built and rebuilt upon its former self, with a
 subterranean level comprised of the haciendas that once lined the Guanajatu
 River.
 
+<!-- more -->
+
 {{ resize_image(path="content/guanajuato/guanajuato_skyline.jpeg", width=500, height=500, op="fit_width", alt="Guanajuato City facing south from Centro") }}
 
 <table>
@@ -121,8 +123,6 @@ so with a short description of Guanajuato City as a caption, and with the
 benefit of hindsight I'm no longer comfortable polluting the internet with
 content I didn't write myself. All of the photos beyond the first were published
 on March 23, 2024 and the text is my own._
-
-<!-- more -->
 
 📷 **Full resolution images:**
 

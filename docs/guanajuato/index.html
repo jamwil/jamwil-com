@@ -20,7 +20,6 @@
       title="RSS"
       href="https://jamwil.com/rss.xml"
     />
-
     <link rel="me" href="https://mastodon.sdf.org/@jamwil" />
     <link
       rel="shortcut icon"
@@ -58,13 +57,13 @@
               rebuilt upon its former self, with a subterranean level comprised
               of the haciendas that once lined the Guanajatu River.
             </p>
-
+            <span id="continue-reading"></span>
             <img
-              src="https:&#x2F;&#x2F;jamwil.com&#x2F;processed_images&#x2F;guanajuato_skyline.f9b8e4a20918266d.webp"
+              data-src="https:&#x2F;&#x2F;jamwil.com&#x2F;processed_images&#x2F;guanajuato_skyline.f9b8e4a20918266d.webp"
               alt="Guanajuato City facing south from Centro"
               width="500"
               height="500"
-              class="thumbnail"
+              class="thumbnail lazy"
             />
             <table>
               <tr>
@@ -130,11 +129,11 @@
             </p>
 
             <img
-              src="https:&#x2F;&#x2F;jamwil.com&#x2F;processed_images&#x2F;guanajuato_iglesa.fdb9965be3c5bc7f.webp"
+              data-src="https:&#x2F;&#x2F;jamwil.com&#x2F;processed_images&#x2F;guanajuato_iglesa.fdb9965be3c5bc7f.webp"
               alt="Guanajuato City church in main plaza"
               width="500"
               height="500"
-              class="thumbnail"
+              class="thumbnail lazy"
             />
             <table>
               <tr>
@@ -182,11 +181,11 @@
             <div style="clear: both"></div>
 
             <img
-              src="https:&#x2F;&#x2F;jamwil.com&#x2F;processed_images&#x2F;guanajuato_bug.8421fccf1cbdca4e.webp"
+              data-src="https:&#x2F;&#x2F;jamwil.com&#x2F;processed_images&#x2F;guanajuato_bug.8421fccf1cbdca4e.webp"
               alt="Volkswagen Beetle at sunset in Guanajuato City"
               width="500"
               height="500"
-              class="thumbnail"
+              class="thumbnail lazy"
             />
             <table>
               <tr>
@@ -234,11 +233,11 @@
             <div style="clear: both"></div>
 
             <img
-              src="https:&#x2F;&#x2F;jamwil.com&#x2F;processed_images&#x2F;guanajuato_skyline_two.6726f6bd251026a4.webp"
+              data-src="https:&#x2F;&#x2F;jamwil.com&#x2F;processed_images&#x2F;guanajuato_skyline_two.6726f6bd251026a4.webp"
               alt="Guanajuato skyline facing northeast"
               width="500"
               height="500"
-              class="thumbnail"
+              class="thumbnail lazy"
             />
             <table>
               <tr>
@@ -286,11 +285,11 @@
             <div style="clear: both"></div>
 
             <img
-              src="https:&#x2F;&#x2F;jamwil.com&#x2F;processed_images&#x2F;guanajuato_tunnel.a10a4801f88a3496.webp"
+              data-src="https:&#x2F;&#x2F;jamwil.com&#x2F;processed_images&#x2F;guanajuato_tunnel.a10a4801f88a3496.webp"
               alt="Subterranean intersection in Guanajuato"
               width="500"
               height="500"
-              class="thumbnail"
+              class="thumbnail lazy"
             />
             <table>
               <tr>
@@ -353,7 +352,6 @@
                 is my own.</em
               >
             </p>
-            <span id="continue-reading"></span>
             <p>📷 <strong>Full resolution images:</strong></p>
             <img src="guanajuato_skyline.jpeg" />
             <img src="guanajuato_iglesa.jpeg" />
@@ -392,7 +390,14 @@
             >Anpu</a
           >.
         </p>
-        <p></p>
+        <p>
+          <script src="https://cdn.jsdelivr.net/npm/vanilla-lazyload@19.1.3/dist/lazyload.min.js"></script>
+          <script>
+            var lazyLoadInstance = new LazyLoad({
+              // Your custom settings go here
+            });
+          </script>
+        </p>
       </footer>
     </div>
   </body>
