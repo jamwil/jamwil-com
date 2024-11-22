@@ -14,6 +14,9 @@
         <loc>https://jamwil.com/categories/</loc>
     </url>
     <url>
+        <loc>https://jamwil.com/categories/guides/</loc>
+    </url>
+    <url>
         <loc>https://jamwil.com/categories/technology/</loc>
     </url>
     <url>
@@ -59,6 +62,10 @@
         <lastmod>2023-01-03T00:13:00Z</lastmod>
     </url>
     <url>
+        <loc>https://jamwil.com/learning-spanish/</loc>
+        <lastmod>2024-11-22T18:02:02Z</lastmod>
+    </url>
+    <url>
         <loc>https://jamwil.com/llm-roundup/</loc>
         <lastmod>2023-03-02T16:45:00Z</lastmod>
     </url>
@@ -98,13 +105,22 @@
         <loc>https://jamwil.com/tags/</loc>
     </url>
     <url>
-        <loc>https://jamwil.com/tags/ai/</loc>
+        <loc>https://jamwil.com/tags/anki/</loc>
+    </url>
+    <url>
+        <loc>https://jamwil.com/tags/bluesky/</loc>
     </url>
     <url>
         <loc>https://jamwil.com/tags/bulletproof-python/</loc>
     </url>
     <url>
+        <loc>https://jamwil.com/tags/chat-gpt/</loc>
+    </url>
+    <url>
         <loc>https://jamwil.com/tags/docker/</loc>
+    </url>
+    <url>
+        <loc>https://jamwil.com/tags/education/</loc>
     </url>
     <url>
         <loc>https://jamwil.com/tags/excel/</loc>
@@ -122,22 +138,46 @@
         <loc>https://jamwil.com/tags/kubernetes/</loc>
     </url>
     <url>
+        <loc>https://jamwil.com/tags/llm/</loc>
+    </url>
+    <url>
+        <loc>https://jamwil.com/tags/lucia/</loc>
+    </url>
+    <url>
         <loc>https://jamwil.com/tags/macos/</loc>
     </url>
     <url>
         <loc>https://jamwil.com/tags/management/</loc>
     </url>
     <url>
+        <loc>https://jamwil.com/tags/mastodon/</loc>
+    </url>
+    <url>
         <loc>https://jamwil.com/tags/meta/</loc>
     </url>
     <url>
-        <loc>https://jamwil.com/tags/mexico-2021-2023/</loc>
+        <loc>https://jamwil.com/tags/mexico/</loc>
+    </url>
+    <url>
+        <loc>https://jamwil.com/tags/motorcycle/</loc>
+    </url>
+    <url>
+        <loc>https://jamwil.com/tags/photos/</loc>
+    </url>
+    <url>
+        <loc>https://jamwil.com/tags/pimsleur/</loc>
     </url>
     <url>
         <loc>https://jamwil.com/tags/python/</loc>
     </url>
     <url>
         <loc>https://jamwil.com/tags/smartsheet/</loc>
+    </url>
+    <url>
+        <loc>https://jamwil.com/tags/spaced-repetition/</loc>
+    </url>
+    <url>
+        <loc>https://jamwil.com/tags/spanish/</loc>
     </url>
     <url>
         <loc>https://jamwil.com/tags/tooling/</loc>

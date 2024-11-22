@@ -3,7 +3,7 @@ title = "I'm in love with Guanajuato"
 date = "2024-03-23T05:11:00Z"
 updated = "2024-04-24T02:20:00Z"
 [taxonomies]
-tags = ["mexico-2021-2023"]
+tags = ["mexico", "photos"]
 categories = ["Travel"]
 +++
 

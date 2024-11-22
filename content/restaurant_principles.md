@@ -3,7 +3,6 @@ title = "Three managerial principles I wrote down in 2015"
 date = "2023-01-31T02:49:00Z"
 [taxonomies]
 tags = ["management"]
-categories = ["Technology"]
 +++
 
 In my mid-20s—okay, mid- to late-20s—I worked as the Assistant Manager of a

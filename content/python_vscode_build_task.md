@@ -7,7 +7,7 @@ tags = [
     "vscode",
     "tooling",
 ]
-categories = ["Technology"]
+categories = ["Guides", "Technology"]
 +++
 
 This snippet goes in your `.vscode/tasks.json` file. It will run the current

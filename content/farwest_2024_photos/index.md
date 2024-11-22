@@ -2,7 +2,7 @@
 title = "Far West 2024 Photo Drop"
 date = "2024-06-26T16:40:00Z"
 [taxonomies]
-tags = ["far-west-2024"]
+tags = ["far-west-2024", "motorcycle", "lucia", "photos"]
 categories = ["Travel"]
 +++
 

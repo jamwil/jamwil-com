@@ -1,8 +1,8 @@
 +++
-title = "Proof of Life"
+title = "Proof of life"
 date = "2024-11-22T05:33:28Z"
 [taxonomies]
-tags = ["meta"]
+tags = ["meta", "bluesky", "mastodon"]
 categories = ["Technology"]
 +++
 
