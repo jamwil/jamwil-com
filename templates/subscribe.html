@@ -1,0 +1,32 @@
+{% import "macros/page.html" as page_macros %} {% extends "index.html" %} {% block title %}{{
+page.title }}{% endblock %} {% block extra_head %} {% endblock %} {% block content %}
+
+<article class="post">
+  <div class="content">{{ page.content | safe }}</div>
+
+  {{ page_macros::page_info(page=page) }}
+
+  <form
+    action="https://buttondown.com/api/emails/embed-subscribe/jamwil"
+    method="post"
+    target="popupwindow"
+    onsubmit="window.open('https://buttondown.com/jamwil', 'popupwindow')"
+    class="embeddable-buttondown-form"
+  >
+    <label for="bd-email">Enter your email</label>
+    <input type="email" name="email" id="bd-email" required />
+
+    <div class="checkbox-group">
+      <input type="checkbox" name="tag" id="bd-tag" value="Technology" />
+      <label for="bd-tag">Include technology content</label>
+    </div>
+
+    <input type="submit" value="Subscribe" />
+
+    <p>
+      <a href="https://buttondown.com/refer/jamwil" target="_blank">Powered by Buttondown.</a>
+    </p>
+  </form>
+</article>
+
+{% endblock content %}

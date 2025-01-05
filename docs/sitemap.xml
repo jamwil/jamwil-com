@@ -14,9 +14,6 @@
         <loc>https://jamwil.com/categories/</loc>
     </url>
     <url>
-        <loc>https://jamwil.com/categories/guides/</loc>
-    </url>
-    <url>
         <loc>https://jamwil.com/categories/technology/</loc>
     </url>
     <url>
@@ -100,6 +97,9 @@
     <url>
         <loc>https://jamwil.com/smartsheet-powerquery/</loc>
         <lastmod>2024-03-07T05:04:34Z</lastmod>
+    </url>
+    <url>
+        <loc>https://jamwil.com/subscribe/</loc>
     </url>
     <url>
         <loc>https://jamwil.com/tags/</loc>

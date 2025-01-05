@@ -383,6 +383,55 @@ ul.language-select {
 ul.language-select > li {
   margin-right: 1em;
 }
+.embeddable-buttondown-form {
+  max-width: 300px;
+  margin: 20px auto;
+  padding: 15px;
+  font-family: Arial, sans-serif;
+}
+.embeddable-buttondown-form label {
+  display: block;
+  font-size: 1.2em;
+  margin-bottom: 10px;
+}
+.embeddable-buttondown-form input[type="email"] {
+  width: 100%;
+  padding: 8px;
+  font-size: 1em;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+.embeddable-buttondown-form .checkbox-group {
+  display: flex;
+  align-items: baseline;
+  font-size: 0.9em;
+  margin-bottom: 15px;
+}
+.embeddable-buttondown-form .checkbox-group input[type="checkbox"] {
+  margin-right: 10px;
+  width: 16px;
+  height: 16px;
+}
+.embeddable-buttondown-form input[type="submit"] {
+  width: 100%;
+  padding: 10px;
+  font-size: 1em;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+.embeddable-buttondown-form input[type="submit"]:hover {
+  background-color: #0056b3;
+}
+.embeddable-buttondown-form p {
+  text-align: center;
+  font-size: 0.9em;
+  color: #555;
+  margin-top: 10px;
+}
 @media (max-width: 840px) {
   .main-wrapper {
     margin: 0;

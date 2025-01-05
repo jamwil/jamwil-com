@@ -2,7 +2,7 @@
 title = "How I'm learning Spanish"
 date = "2024-11-22T18:02:02Z"
 [taxonomies]
-categories = ["Guides"]
+categories = ["Travel"]
 tags = ["education", "spanish", "spaced-repetition", "anki", "pimsleur", "mexico"]
 +++
 
