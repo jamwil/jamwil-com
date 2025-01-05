@@ -6,13 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="referrer" content="no-referrer-when-downgrade" />
 
-    <title>
-      Running a local Kubernetes cluster with Kind: A step-by-step guide
-    </title>
-    <meta
-      name="description"
-      content="Ramblings of a half-witted software developer."
-    />
+    <title>Running a local Kubernetes cluster with Kind: A step-by-step guide</title>
+    <meta name="description" content="Ramblings of a half-witted software developer." />
 
     <link rel="stylesheet" href="https://jamwil.com/main.css" />
 
@@ -23,11 +18,7 @@
       href="https://jamwil.com/rss.xml"
     />
     <link rel="me" href="https://mastodon.sdf.org/@jamwil" />
-    <link
-      rel="shortcut icon"
-      type="image/x-icon"
-      href="https://jamwil.com/favicon.ico"
-    />
+    <link rel="shortcut icon" type="image/x-icon" href="https://jamwil.com/favicon.ico" />
   </head>
   <body>
     <a class="skip-main" href="#main">Skip to content</a>
@@ -39,9 +30,7 @@
         <nav>
           <a href="https:&#x2F;&#x2F;jamwil.com&#x2F;about&#x2F;">About</a>
 
-          <a href="https:&#x2F;&#x2F;jamwil.com&#x2F;categories&#x2F;">
-            Categories
-          </a>
+          <a href="https:&#x2F;&#x2F;jamwil.com&#x2F;categories&#x2F;">Categories</a>
 
           <a href="https:&#x2F;&#x2F;jamwil.com&#x2F;tags&#x2F;">Tags</a>
         </nav>
@@ -49,76 +38,60 @@
       <main id="main" tabindex="-1">
         <article class="post">
           <header>
-            <h1>
-              Running a local Kubernetes cluster with Kind: A step-by-step guide
-            </h1>
+            <h1>Running a local Kubernetes cluster with Kind: A step-by-step guide</h1>
           </header>
           <div class="content">
             <p>
-              It has happened. I thought I could avoid it, but here we are. As
-              if getting your program to run on one computer wasn’t hard enough,
-              now we have to run it on multiple computers at the same time? They
-              have played us for absolute fools.
+              It has happened. I thought I could avoid it, but here we are. As if getting your
+              program to run on one computer wasn’t hard enough, now we have to run it on multiple
+              computers at the same time? They have played us for absolute fools.
             </p>
             <p>
-              Anyway, assuming we have some shared experience with Docker, let’s
-              introduce some terminology:
+              Anyway, assuming we have some shared experience with Docker, let’s introduce some
+              terminology:
             </p>
             <ul>
               <li>
-                A
-                <strong>Pod</strong>
-                is the smallest deployable unit in Kubernetes, often a single
-                instance of an application. As I understand it, a pod is the
-                logical equivalent of a container.
+                A <strong>Pod</strong> is the smallest deployable unit in Kubernetes, often a single
+                instance of an application. As I understand it, a pod is the logical equivalent of a
+                container.
               </li>
               <li>
-                <strong>Nodes</strong>
-                are the machines that host these pods. More nodes allow for more
-                redundancy.
+                <strong>Nodes</strong> are the machines that host these pods. More nodes allow for
+                more redundancy.
               </li>
               <li>
-                A
-                <strong>Cluster</strong>
-                is a set of nodes with the same job. A cluster can run multiple
-                nodes, and a node can run multiple pods, and a pod typically
-                consists of between two and fifteen orca whales.
+                A <strong>Cluster</strong> is a set of nodes with the same job. A cluster can run
+                multiple nodes, and a node can run multiple pods, and a pod typically consists of
+                between two and fifteen orca whales.
               </li>
               <li>
-                A
-                <strong>Service</strong>
-                is an abstraction which provides a single network entry point to
-                distribute traffic across the cluster.
+                A <strong>Service</strong> is an abstraction which provides a single network entry
+                point to distribute traffic across the cluster.
               </li>
             </ul>
             <p>
-              For local development I am using
-              <a href="https://kind.sigs.k8s.io">Kind</a>
-              , a tool which allows you to run Kubernetes clusters in Docker
-              containers. It is a lightweight way to run docker containers
-              inside kubernetes inside a docker container (pause for effect).
+              For local development I am using <a href="https://kind.sigs.k8s.io">Kind</a>, a tool
+              which allows you to run Kubernetes clusters in Docker containers. It is a lightweight
+              way to run docker containers inside kubernetes inside a docker container (pause for
+              effect).
             </p>
+            <p>The command to create a cluster is: <code>kind create cluster</code></p>
             <p>
-              The command to create a cluster is:
-              <code>kind create cluster</code>
-            </p>
-            <p>
-              To deploy the application, it needs to be packaged as a Docker
-              image. After creating the Dockerfile, the image is built and
-              loaded into the Kind cluster with the following commands:
+              To deploy the application, it needs to be packaged as a Docker image. After creating
+              the Dockerfile, the image is built and loaded into the Kind cluster with the following
+              commands:
             </p>
             <p><code>docker build -t my-image-name .</code></p>
             <p><code>kind load docker-image my-image-name</code></p>
             <p>
-              I should note that in addition to Kind, there is a tool called
-              minikube which is similar, though it requires you to set up a
-              container registry.
+              I should note that in addition to Kind, there is a tool called minikube which is
+              similar, though it requires you to set up a container registry.
             </p>
             <p>
-              The next step is creating a deployment and a service for the
-              application by creating kubernetes manifest files in your project
-              directory. The simplest possible configuration is something like
-              so:
+              The next step is creating a deployment and a service for the application by creating
+              kubernetes manifest files in your project directory. The simplest possible
+              configuration is something like so:
             </p>
             <pre
               data-lang="yaml"
@@ -147,21 +120,15 @@
 </span><span>            - </span><span style="background-color:#282828;color:#569cd6;">containerPort</span><span>: </span><span style="color:#b5cea8;">8000 </span><span style="color:#608b4e;"># Use the port your application runs on
 </span></code></pre>
             <p>
-              Note that the
-              <code>imagePullPolicy</code>
-              is set to
-              <code>Never</code>
-              because we are using a local image with the implied tag
-              <code>latest</code>
-              . Specifying a specific tag should make this unnecessary,
-              otherwise the default behaviour is to try to pull the image from
-              Docker Hub, which will fail each time (or worse, deploy something
+              Note that the <code>imagePullPolicy</code> is set to <code>Never</code> because we are
+              using a local image with the implied tag <code>latest</code>. Specifying a specific
+              tag should make this unnecessary, otherwise the default behaviour is to try to pull
+              the image from Docker Hub, which will fail each time (or worse, deploy something
               unexpected).
             </p>
             <p>
-              In addition to matching the exposed port of the container, your
-              application should be configured to bind to any incoming address
-              (0.0.0.0), not just localhost.
+              In addition to matching the exposed port of the container, your application should be
+              configured to bind to any incoming address (0.0.0.0), not just localhost.
             </p>
             <pre
               data-lang="yaml"
@@ -181,51 +148,32 @@
 </span><span>    </span><span style="background-color:#282828;color:#569cd6;">app</span><span>: </span><span style="background-color:#282828;color:#d69d85;">my-image-name</span><span>
 </span></code></pre>
             <p>
-              With these files in place, we can create the deployment and
-              service respectively using
-              <code>kubectl apply -f &lt;file-name&gt;</code>
-              for each. They can be verified using:
-              <code>kubectl get deployments</code>
-              and
-              <code>kubectl get services</code>
-              .
+              With these files in place, we can create the deployment and service respectively using
+              <code>kubectl apply -f &lt;file-name&gt;</code> for each. They can be verified using:
+              <code>kubectl get deployments</code> and <code>kubectl get services</code>.
             </p>
             <p>
               If there are any issues, logs can be checked using:
-              <code>kubectl logs &lt;pod-name&gt;</code>
-              , and the pod name can be found using
-              <code>kubectl get pods</code>
-              .
+              <code>kubectl logs &lt;pod-name&gt;</code>, and the pod name can be found using
+              <code>kubectl get pods</code>.
             </p>
             <p>
-              Remember to specify environment variables in the
-              <code>deployment.yaml</code>
-              file under
-              <code>env</code>
-              in the
-              <code>containers</code>
-              specification if your application requires them.
+              Remember to specify environment variables in the <code>deployment.yaml</code> file
+              under <code>env</code> in the <code>containers</code> specification if your
+              application requires them.
             </p>
             <p>
-              If you’re running docker inside a linux virtual machine, port
-              30080 should already be exposed. If you’re running using Docker
-              Desktop, there’s one more step which requires forwarding a local
-              port to the service port. This can be done using:
+              If you’re running docker inside a linux virtual machine, port 30080 should already be
+              exposed. If you’re running using Docker Desktop, there’s one more step which requires
+              forwarding a local port to the service port. This can be done using:
             </p>
+            <p><code>kubectl port-forward service/my-image-name-service 30080:8000</code></p>
             <p>
-              <code>
-                kubectl port-forward service/my-image-name-service 30080:8000
-              </code>
+              This will map the service to <code>localhost:30080</code> on your local machine.
+              Launch it in tmux or append the command with an ampersand as it will block the
+              terminal otherwise.
             </p>
-            <p>
-              This will map the service to
-              <code>localhost:30080</code>
-              on your local machine. Launch it in tmux or append the command
-              with an ampersand as it will block the terminal otherwise.
-            </p>
-            <p>
-              Fin. Now deploy to prod on a Friday afternoon and you’re done!
-            </p>
+            <p>Fin. Now deploy to prod on a Friday afternoon and you’re done!</p>
             <span id="continue-reading"></span>
           </div>
 
@@ -235,23 +183,21 @@
             <div class="article-taxonomies">
               <ul class="article-categories">
                 <li>
-                  <a href="https://jamwil.com/categories/technology/">
-                    Technology
-                  </a>
+                  <a href="https://jamwil.com/categories/technology/"> Technology </a>
                 </li>
               </ul>
 
               <ul class="article-tags">
                 <li>
-                  <a href="https://jamwil.com/tags/macos/">#macOS</a>
+                  <a href="https://jamwil.com/tags/macos/"> #macOS </a>
                 </li>
 
                 <li>
-                  <a href="https://jamwil.com/tags/kubernetes/">#kubernetes</a>
+                  <a href="https://jamwil.com/tags/kubernetes/"> #kubernetes </a>
                 </li>
 
                 <li>
-                  <a href="https://jamwil.com/tags/docker/">#docker</a>
+                  <a href="https://jamwil.com/tags/docker/"> #docker </a>
                 </li>
               </ul>
             </div>
@@ -260,15 +206,9 @@
       </main>
       <footer>
         <p>
-          © James Williams 2024
-          <br />
-          Powered by
-          <a target="_blank" href="https://getzola.org/">Zola</a>
-          , Theme
-          <a target="_blank" href="https://github.com/zbrox/anpu-zola-theme">
-            Anpu
-          </a>
-          .
+          © James Williams 2025<br />
+          Powered by <a target="_blank" href="https://getzola.org/">Zola</a>, Theme
+          <a target="_blank" href="https://github.com/zbrox/anpu-zola-theme">Anpu</a>.
         </p>
         <p>
           <script src="https://cdn.jsdelivr.net/npm/vanilla-lazyload@19.1.3/dist/lazyload.min.js"></script>

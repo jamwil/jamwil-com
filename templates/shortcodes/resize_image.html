@@ -1,5 +1,5 @@
-{% set image = resize_image(path=path, width=width * 2, height=height * 2,
-op=op, format="webp", qualty=100) %}
+{% set image = resize_image(path=path, width=width * 2, height=height * 2, op=op, format="webp",
+qualty=100) %}
 <img
   data-src="{{ image.url | safe }}"
   alt="{{ alt }}"

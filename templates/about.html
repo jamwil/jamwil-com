@@ -1,5 +1,5 @@
-{% import "macros/page.html" as page_macros %} {% extends "index.html" %} {%
-block title %}{{ page.title }}{% endblock %} {% block content %}
+{% import "macros/page.html" as page_macros %} {% extends "index.html" %} {% block title %}{{
+page.title }}{% endblock %} {% block content %}
 
 <article class="post">
   <header>
@@ -15,10 +15,8 @@ block title %}{{ page.title }}{% endblock %} {% block content %}
       height="90"
       style="float: left; margin: 0em 1em 1em 0em; border-radius: 50%"
     />
-    {% set data =
-    load_data(url="https://raw.githubusercontent.com/jamwil/jamwil/main/README.md",
-    required=false) %} {% if data %}{{ data | markdown | safe }}{% else %}No
-    data found{% endif %}
+    {% set data = load_data(url="https://raw.githubusercontent.com/jamwil/jamwil/main/README.md",
+    required=false) %} {% if data %}{{ data | markdown | safe }}{% else %}No data found{% endif %}
   </div>
 
   {{ page_macros::page_info(page=page) }}

@@ -6,13 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="referrer" content="no-referrer-when-downgrade" />
 
-    <title>
-      Pulling a Smartsheet table into Microsoft Excel using Power Query
-    </title>
-    <meta
-      name="description"
-      content="Ramblings of a half-witted software developer."
-    />
+    <title>Pulling a Smartsheet table into Microsoft Excel using Power Query</title>
+    <meta name="description" content="Ramblings of a half-witted software developer." />
 
     <link rel="stylesheet" href="https://jamwil.com/main.css" />
 
@@ -23,11 +18,7 @@
       href="https://jamwil.com/rss.xml"
     />
     <link rel="me" href="https://mastodon.sdf.org/@jamwil" />
-    <link
-      rel="shortcut icon"
-      type="image/x-icon"
-      href="https://jamwil.com/favicon.ico"
-    />
+    <link rel="shortcut icon" type="image/x-icon" href="https://jamwil.com/favicon.ico" />
   </head>
   <body>
     <a class="skip-main" href="#main">Skip to content</a>
@@ -39,9 +30,7 @@
         <nav>
           <a href="https:&#x2F;&#x2F;jamwil.com&#x2F;about&#x2F;">About</a>
 
-          <a href="https:&#x2F;&#x2F;jamwil.com&#x2F;categories&#x2F;">
-            Categories
-          </a>
+          <a href="https:&#x2F;&#x2F;jamwil.com&#x2F;categories&#x2F;">Categories</a>
 
           <a href="https:&#x2F;&#x2F;jamwil.com&#x2F;tags&#x2F;">Tags</a>
         </nav>
@@ -49,41 +38,31 @@
       <main id="main" tabindex="-1">
         <article class="post">
           <header>
-            <h1>
-              Pulling a Smartsheet table into Microsoft Excel using Power Query
-            </h1>
+            <h1>Pulling a Smartsheet table into Microsoft Excel using Power Query</h1>
           </header>
           <div class="content">
             <p>
-              Well if you thought my first post in eight months would be exotic,
-              go ahead and smash that back button.
+              Well if you thought my first post in eight months would be exotic, go ahead and smash
+              that back button.
             </p>
             <p>
-              I use this technique when we have one-off assignments at work
-              where I need a quick and dirty web-based data store that several
-              people can collaborate on, and that can be easily queried in Excel
-              without any intermediate infrastructure or processing. This would
-              be quite trivial if not for Smartsheet’s intractible API format.
+              I use this technique when we have one-off assignments at work where I need a quick and
+              dirty web-based data store that several people can collaborate on, and that can be
+              easily queried in Excel without any intermediate infrastructure or processing. This
+              would be quite trivial if not for Smartsheet’s intractible API format.
             </p>
             <p>
-              Assuming you have a Smartsheet grid you want to mirror in Excel
-              and that can be refreshed on the fly, you’ll need the sheet’s ID
-              and an API bearer token for a user with viewer permissions.
+              Assuming you have a Smartsheet grid you want to mirror in Excel and that can be
+              refreshed on the fly, you’ll need the sheet’s ID and an API bearer token for a user
+              with viewer permissions.
             </p>
             <p>
-              In Excel, open Power Query and create a new query using the
-              advanced editor.
-              <strong>
-                Make sure to replace
-                <code>$SHEET_ID</code>
-                and
-                <code>$BEARER_TOKEN</code>
-              </strong>
-              . The query will bring in both your data and column headers.
+              In Excel, open Power Query and create a new query using the advanced editor.
+              <strong
+                >Make sure to replace <code>$SHEET_ID</code> and <code>$BEARER_TOKEN</code></strong
+              >. The query will bring in both your data and column headers.
             </p>
-            <pre
-              style="background-color: #1e1e1e; color: #dcdcdc"
-            ><code><span>let
+            <pre style="background-color: #1e1e1e; color: #dcdcdc"><code><span>let
 </span><span>    Source = Json.Document(
 </span><span>        Web.Contents(&quot;https://api.smartsheet.com/2.0/sheets/$SHEET_ID&quot;, [
 </span><span>            Headers=[
@@ -153,19 +132,17 @@
             <div class="article-taxonomies">
               <ul class="article-categories">
                 <li>
-                  <a href="https://jamwil.com/categories/technology/">
-                    Technology
-                  </a>
+                  <a href="https://jamwil.com/categories/technology/"> Technology </a>
                 </li>
               </ul>
 
               <ul class="article-tags">
                 <li>
-                  <a href="https://jamwil.com/tags/excel/">#excel</a>
+                  <a href="https://jamwil.com/tags/excel/"> #excel </a>
                 </li>
 
                 <li>
-                  <a href="https://jamwil.com/tags/smartsheet/">#smartsheet</a>
+                  <a href="https://jamwil.com/tags/smartsheet/"> #smartsheet </a>
                 </li>
               </ul>
             </div>
@@ -174,15 +151,9 @@
       </main>
       <footer>
         <p>
-          © James Williams 2024
-          <br />
-          Powered by
-          <a target="_blank" href="https://getzola.org/">Zola</a>
-          , Theme
-          <a target="_blank" href="https://github.com/zbrox/anpu-zola-theme">
-            Anpu
-          </a>
-          .
+          © James Williams 2025<br />
+          Powered by <a target="_blank" href="https://getzola.org/">Zola</a>, Theme
+          <a target="_blank" href="https://github.com/zbrox/anpu-zola-theme">Anpu</a>.
         </p>
         <p>
           <script src="https://cdn.jsdelivr.net/npm/vanilla-lazyload@19.1.3/dist/lazyload.min.js"></script>

@@ -7,10 +7,7 @@
     <meta name="referrer" content="no-referrer-when-downgrade" />
 
     <title>How to checkout and edit a pull request locally</title>
-    <meta
-      name="description"
-      content="Ramblings of a half-witted software developer."
-    />
+    <meta name="description" content="Ramblings of a half-witted software developer." />
 
     <link rel="stylesheet" href="https://jamwil.com/main.css" />
 
@@ -21,11 +18,7 @@
       href="https://jamwil.com/rss.xml"
     />
     <link rel="me" href="https://mastodon.sdf.org/@jamwil" />
-    <link
-      rel="shortcut icon"
-      type="image/x-icon"
-      href="https://jamwil.com/favicon.ico"
-    />
+    <link rel="shortcut icon" type="image/x-icon" href="https://jamwil.com/favicon.ico" />
   </head>
   <body>
     <a class="skip-main" href="#main">Skip to content</a>
@@ -37,9 +30,7 @@
         <nav>
           <a href="https:&#x2F;&#x2F;jamwil.com&#x2F;about&#x2F;">About</a>
 
-          <a href="https:&#x2F;&#x2F;jamwil.com&#x2F;categories&#x2F;">
-            Categories
-          </a>
+          <a href="https:&#x2F;&#x2F;jamwil.com&#x2F;categories&#x2F;">Categories</a>
 
           <a href="https:&#x2F;&#x2F;jamwil.com&#x2F;tags&#x2F;">Tags</a>
         </nav>
@@ -51,11 +42,9 @@
           </header>
           <div class="content">
             <p>
-              Let’s say you have a dependabot pull request and Charlie Marsh has
-              added a new check to
-              <a href="https://github.com/astral-sh/ruff">Ruff</a>
-              that causes your lint check to fail. You can fix the lint error
-              and push the changes back to the pull request branch!
+              Let’s say you have a dependabot pull request and Charlie Marsh has added a new check
+              to <a href="https://github.com/astral-sh/ruff">Ruff</a> that causes your lint check to
+              fail. You can fix the lint error and push the changes back to the pull request branch!
             </p>
             <p>First, checkout the pull request locally:</p>
             <pre
@@ -67,25 +56,19 @@
 </span><span>git switch --track origin/dependabot/pip/ruff-0.0.278
 </span></code></pre>
             <p>
-              We’ve now checked out the PR branch and set it to track the
-              remote. We can use this pattern to keep tabs on long-running PRs,
-              or as in this case, simply push an additional patch before
-              merging. If you’d like a more friendly local branch name, you can
-              append the
-              <code>:my-branch-name</code>
-              to the end of the git fetch call, and then call
-              <code>git switch my-branch-name</code>
-              to check it out; just keep in mind that this won’t set the local
-              branch to track the remote.
+              We’ve now checked out the PR branch and set it to track the remote. We can use this
+              pattern to keep tabs on long-running PRs, or as in this case, simply push an
+              additional patch before merging. If you’d like a more friendly local branch name, you
+              can append the <code>:my-branch-name</code> to the end of the git fetch call, and then
+              call <code>git switch my-branch-name</code> to check it out; just keep in mind that
+              this won’t set the local branch to track the remote.
             </p>
             <p>
-              In my case, this ruff release does not provide any new rule
-              categories and my lints still pass, however I’d like to update the
-              ruff version in my
-              <code>.pre-commit-config.yaml</code>
-              file so that it’s consistent with my
-              <code>requirements.txt</code>
-              . I’ll make that change, commit and push back to the remote.
+              In my case, this ruff release does not provide any new rule categories and my lints
+              still pass, however I’d like to update the ruff version in my
+              <code>.pre-commit-config.yaml</code> file so that it’s consistent with my
+              <code>requirements.txt</code>. I’ll make that change, commit and push back to the
+              remote.
             </p>
             <pre
               data-lang="bash"
@@ -96,11 +79,9 @@
 </span><span>git push
 </span></code></pre>
             <p>
-              At this point, your checks should fire again and you can merge
-              using your preferred merge method into your trunk. Check out
-              <a href="https://github.com/jamwil/bulletproof-python/pull/129">
-                real pull request
-              </a>
+              At this point, your checks should fire again and you can merge using your preferred
+              merge method into your trunk. Check out
+              <a href="https://github.com/jamwil/bulletproof-python/pull/129">real pull request</a>
               to see how this looks server side.
             </p>
             <span id="continue-reading"></span>
@@ -112,15 +93,13 @@
             <div class="article-taxonomies">
               <ul class="article-categories">
                 <li>
-                  <a href="https://jamwil.com/categories/technology/">
-                    Technology
-                  </a>
+                  <a href="https://jamwil.com/categories/technology/"> Technology </a>
                 </li>
               </ul>
 
               <ul class="article-tags">
                 <li>
-                  <a href="https://jamwil.com/tags/git/">#git</a>
+                  <a href="https://jamwil.com/tags/git/"> #git </a>
                 </li>
               </ul>
             </div>
@@ -129,15 +108,9 @@
       </main>
       <footer>
         <p>
-          © James Williams 2024
-          <br />
-          Powered by
-          <a target="_blank" href="https://getzola.org/">Zola</a>
-          , Theme
-          <a target="_blank" href="https://github.com/zbrox/anpu-zola-theme">
-            Anpu
-          </a>
-          .
+          © James Williams 2025<br />
+          Powered by <a target="_blank" href="https://getzola.org/">Zola</a>, Theme
+          <a target="_blank" href="https://github.com/zbrox/anpu-zola-theme">Anpu</a>.
         </p>
         <p>
           <script src="https://cdn.jsdelivr.net/npm/vanilla-lazyload@19.1.3/dist/lazyload.min.js"></script>
