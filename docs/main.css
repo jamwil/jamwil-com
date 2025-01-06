@@ -387,7 +387,6 @@ ul.language-select > li {
   max-width: 300px;
   margin: 20px auto;
   padding: 15px;
-  font-family: Arial, sans-serif;
 }
 .embeddable-buttondown-form label {
   display: block;
@@ -401,15 +400,15 @@ ul.language-select > li {
   margin-bottom: 15px;
   border: 1px solid #ccc;
   border-radius: 4px;
+  box-sizing: border-box;
 }
 .embeddable-buttondown-form .checkbox-group {
   display: flex;
-  align-items: baseline;
-  font-size: 0.9em;
+  font-size: 0.8em;
   margin-bottom: 15px;
 }
 .embeddable-buttondown-form .checkbox-group input[type="checkbox"] {
-  margin-right: 10px;
+  margin-right: 16px;
   width: 16px;
   height: 16px;
 }
@@ -417,19 +416,18 @@ ul.language-select > li {
   width: 100%;
   padding: 10px;
   font-size: 1em;
-  background-color: #007bff;
+  background-color: #58aafd;
   color: #fff;
   border: none;
   border-radius: 4px;
   cursor: pointer;
 }
 .embeddable-buttondown-form input[type="submit"]:hover {
-  background-color: #0056b3;
+  background-color: #1d60a3;
 }
 .embeddable-buttondown-form p {
   text-align: center;
   font-size: 0.9em;
-  color: #555;
   margin-top: 10px;
 }
 @media (max-width: 840px) {
