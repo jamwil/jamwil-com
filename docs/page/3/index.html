@@ -39,6 +39,93 @@
         <article class="post-list">
           <header>
             <h1>
+              <a href="https:&#x2F;&#x2F;jamwil.com&#x2F;llm-roundup&#x2F;">LLM Round-up</a>
+            </h1>
+          </header>
+
+          <div class="content post-summary">
+            <p>When I asked ChatGPT what type of AI it is, this is what it said:</p>
+            <blockquote>
+              <p>
+                ChatGPT is a type of language model, specifically a variant of a transformer model
+                called the Generative Pretrained Transformer (GPT). It is an example of artificial
+                general intelligence (AGI), which means that it is capable of performing a wide
+                range of natural language processing tasks, such as text generation, summarization,
+                translation, and question answering, among others.
+              </p>
+            </blockquote>
+            <p>I know some of these words 🤦‍♂️.</p>
+            <p>
+              I’ll never be an AI researcher, but I do want to have a laymen’s understanding of what
+              the tool is capable of and how it works. I’ve been searching for educational resources
+              that lie somewhere in the sweet spot of accessibility and depth. I want to understand
+              the basic terminology, like what a transformer is, and also understand a large
+              language model’s shortcomings. And I want to understand where a language model fits
+              into the broader landscape of AI.
+            </p>
+            <p>
+              To that end, I’m compiling a few resources that seem to be well regarded. I’ll treat
+              this post as a digital bookshelf, and will update it with my thoughts and notes as I
+              work through the material.
+            </p>
+            <p>
+              We’ll start with 35,000 words from Stephen Wolfram as a primer, then move into Andrej
+              Karpathy’s Zero to Hero lecture series.
+            </p>
+            <ul>
+              <li>
+                Stephen Wolfram:
+                <a
+                  href="https://writings.stephenwolfram.com/2023/02/what-is-chatgpt-doing-and-why-does-it-work/"
+                  >What Is ChatGPT Doing … and Why Does It Work?</a
+                >
+                (2023-02-14)
+              </li>
+              <li>
+                Andrej Karpathy:
+                <a href="https://karpathy.ai/zero-to-hero.html">Neural Networks: Zero to Hero</a>
+              </li>
+              <li>
+                <a href="https://platform.openai.com/docs/introduction/overview"
+                  >OpenAI Documentation</a
+                >
+              </li>
+              <li>
+                Rodrigo Girão Serrão:
+                <a href="https://mathspp.com/blog/your-first-recurrent-neural-network"
+                  >Your first recurrent neural network (RNN)</a
+                >
+              </li>
+            </ul>
+            <span id="continue-reading"></span>
+          </div>
+
+          <div class="article-info">
+            <div class="article-date">2023-03-02</div>
+
+            <div class="article-taxonomies">
+              <ul class="article-categories">
+                <li>
+                  <a href="https://jamwil.com/categories/technology/"> Technology </a>
+                </li>
+              </ul>
+
+              <ul class="article-tags">
+                <li>
+                  <a href="https://jamwil.com/tags/llm/"> #llm </a>
+                </li>
+
+                <li>
+                  <a href="https://jamwil.com/tags/chat-gpt/"> #chat-gpt </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </article>
+
+        <article class="post-list">
+          <header>
+            <h1>
               <a href="https:&#x2F;&#x2F;jamwil.com&#x2F;restaurant-principles&#x2F;"
                 >Three managerial principles I wrote down in 2015</a
               >
@@ -351,104 +438,6 @@
 
                 <li>
                   <a href="https://jamwil.com/tags/vscode/"> #vscode </a>
-                </li>
-
-                <li>
-                  <a href="https://jamwil.com/tags/tooling/"> #tooling </a>
-                </li>
-              </ul>
-            </div>
-          </div>
-        </article>
-
-        <article class="post-list">
-          <header>
-            <h1>
-              <a href="https:&#x2F;&#x2F;jamwil.com&#x2F;introducing-bulletproof-python&#x2F;"
-                >Introducing bulletproof-python</a
-              >
-            </h1>
-          </header>
-
-          <div class="content post-summary">
-            <p>
-              I owe a debt of gratitude to
-              <a href="https://github.com/cjolowicz/">Claudio Jolowicz</a>
-              for introducing me to modern python tooling. His
-              <a href="https://github.com/cjolowicz/cookiecutter-hypermodern-python"
-                >Hypermodern Python</a
-              >
-              template and associated blog series are a great resource.
-            </p>
-            <p>
-              The Hypermodern system is built around
-              <a href="https://nox.thea.codes/en/stable/">nox</a> and
-              <a href="https://python-poetry.org">poetry</a>.
-            </p>
-            <ul>
-              <li>
-                nox is similar in spirit to <a href="https://tox.wiki/en/latest/">tox</a> but uses
-                python scripts instead of configuration files.
-              </li>
-              <li>
-                It’s very powerful, but since I’m not particularly clever, I find the hypermodern
-                stack difficult to understand.
-              </li>
-            </ul>
-            <p>
-              I decided to throw together a simple template that uses tox and pip-tools. The
-              template uses:
-            </p>
-            <ul>
-              <li>
-                <a href="https://docs.pytest.org/en/7.2.x/">pytest</a> and
-                <a href="https://coverage.readthedocs.io/en/latest/">coverage.py</a> for testing,
-              </li>
-              <li>
-                <a href="https://black.readthedocs.io/en/stable/">black</a> for formatting, and
-              </li>
-              <li><a href="https://github.com/charliermarsh/ruff">ruff</a> for linting.</li>
-            </ul>
-            <p>
-              It strives to be clean, simple and hard to break, albeit incomplete and likely
-              suitable only for small libraries without broad distribution.
-            </p>
-            <p>
-              🌱
-              <strong
-                >The template is available here:
-                <a href="https://github.com/jamwil/bulletproof-python"
-                  >bulletproof-python</a
-                ></strong
-              >.
-            </p>
-            <span id="continue-reading"></span>
-            <hr />
-            <p>
-              Note: The original version of this post incorrectly stated that Poetry does not play
-              nice with pip-installs from git source. This is not the case; I simply had my
-              <code>pyproject.toml</code> file incorrectly configured to use setuptools instead of
-              poetry-core as the build backend.
-            </p>
-          </div>
-
-          <div class="article-info">
-            <div class="article-date">2023-01-02</div>
-
-            <div class="article-taxonomies">
-              <ul class="article-categories">
-                <li>
-                  <a href="https://jamwil.com/categories/technology/"> Technology </a>
-                </li>
-              </ul>
-
-              <ul class="article-tags">
-                <li>
-                  <a href="https://jamwil.com/tags/bulletproof-python/"> #bulletproof-python </a>
-                </li>
-
-                <li>
-                  <a href="https://jamwil.com/tags/python/"> #python </a>
                 </li>
 
                 <li>

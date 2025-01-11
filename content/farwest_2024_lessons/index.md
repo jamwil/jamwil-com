@@ -1,7 +1,6 @@
 +++
 title = "Lessons learned about motorcycle travel"
-date = "2025-01-10T00:00:00Z"
-draft = true
+date = "2025-01-11T16:29:00Z"
 [taxonomies]
 tags = ["far-west-2024"]
 categories = ["Travel"]
@@ -26,7 +25,7 @@ I responded to the effect that I knew it was an aggressive itinerary, but three 
 could pull off and that I'd have to make do. It was a motorcycle trip after all—shouldn't that be
 the main activity?
 
-The guy was so fucking right. Listen to your elders, kids.
+Ummm, no. Not really.
 
 ## Lesson 1: Slack
 
@@ -45,10 +44,10 @@ If I subtract the three days in Palm Springs, I covered an average of 380 kilome
 doesn't sound like much in the context of four-wheeled road trips, but they are big days on a bike
 when you're avoiding the freeway. My Garmin estimated 5-7 hours in the saddle most days, and that's
 before you factor in a fuel stop or two, lunch, points of interest, trying and failing to find a
-god-damn banana over and over again, and washroom/warming breaks. There is also labour
-involved—packing and loading the bike, setting up and tearing down camp where applicable, bike
-maintenance, sitting around in laundromats, on and on. It was easily 10 hours of logistics each day.
-Sustainable for three weeks with a good break in the middle, but I wouldn't do it this way again.
+god-damn banana over and over again, and coffee breaks. There is also hard work involved—packing and
+loading the bike, setting up and tearing down camp where applicable, bike maintenance, sitting
+around in laundromats, on and on. It was easily 10 hours of logistics each day. Sustainable for
+three weeks with a good break in the middle, but I wouldn't do it this way again.
 
 On the next trip, I will cut the target mileage-to-time ratio in half. 200 km per day average on an
 asphalt trip, less if aiming for dirt, which is the other thing I would have done more of if I had
@@ -69,7 +68,7 @@ day two.</figcaption>
 
 This all worked out okay. I can't say enough about how solid Kriega bags are, and the best idea I
 had was to stick a mountain bike handlebar bag on the bars as a quick stash for random stuff like
-ferry tickets, cash/change, and ear plugs.
+ferry tickets, GoPro batteries, cash/change, and ear plugs.
 
 Next time I will look to swap out the 12 litre side saddles with the 18 litre variants that mount to
 the same base, as that is free real estate as far as the ride goes. I will scrap either the 10 litre
@@ -84,25 +83,25 @@ went out for a nice dinner.
 
 Other minor adjustments I would make:
 
-- More compact and better quality cookware set
-- Smaller fuel canister
-- Small size, leak proof containers for oil, spices, etc
-- Don't need a roll of toilet paper; a funeral-sized Kleenex pack will get you out of a bad
-  situation
+- More compact and better quality cookware;
+- Smaller fuel canister;
+- Small size, leak proof containers for oil, spices, etc;
+- Don't need a roll of toilet paper unless you're truly wild camping—a funeral-sized Kleenex pack
+  will get you out of a bad situation;
 - Rope? Come on. I literally brought 90 feet of rope. What the actual fuck did I think I was going
-  to need 90 feet of rope for
-- Jeans are needlessly bulky and heavy; I'd probably go with a lightweight, versatile pant
-- iPad wasn't needed since I had a laptop and a kindle already
+  to need 90 feet of rope for;
+- Jeans are needlessly bulky and heavy—I'd probably go with a lightweight, versatile pant;
+- iPad wasn't needed since I had a laptop and a kindle already;
 - I'm still not sure about the hatchet. I only lit one fire, but it was nice to have the option, and
-  there's something about having one in parts unknown that makes you feel safer
+  there's something about having one in parts unknown that makes you feel safer.
 
 One thing I found hilarious when packing so tightly was how quickly I came to treasure single serve
 items like a good napkin stack or zip-lock bag. These can only be bought in household size packs
 which aren't so helpful when you just need, like, one.
 
 As for parts and tools, I made the boneheaded assumption that, America being America, I could buy
-what I needed if, when and where I needed it. No. Not when you're up against the clock (see previous
-section).
+what I needed if, when and where I needed it. Not the case. Not when you're up against the clock
+(see previous section).
 
 While I had the basic set of tools, what I ultimately needed and didn't have was a socket and wrench
 large enough for the wheel axle (needed to adjust chain tension), and a spare chain. I will be
@@ -115,12 +114,12 @@ said—boneheaded.
 
 I did some things badly. But I did a lot of things well. I climbed a sketchy hill above a lighthouse
 to get a proper view of the mighty Oregon coastline. I found my favourite place in the world at the
-northern trailhead of California's Lost Coast. I rode the Pacific Highway from Malibu to Santa
-Monica and got to see it in all its splendor before the terrible fires took so much from the people
-there this week. I split lanes on the freeway in Los Angeles and off-roaded in the Arizona desert. I
-took a 6-hour roundtrip train ride on the oldest operational steam engine in America. I rode the
-Million Dollar Highway in Colorado, through a 1 in 150 year Mormon Cricket swarm in Utah, and
-through hail in Wyoming. I had the time of my life, so far.
+northern trailhead of California's Lost Coast. I rode the Pacific Highway to Santa Monica and got to
+see it in all its splendor before the terrible fires took so much from the people there this week. I
+split lanes on the freeway in Los Angeles and off-roaded in the Arizona desert. I took a 6-hour
+roundtrip train ride on the oldest operational steam engine in America. I rode on the Million Dollar
+Highway in Colorado, through a 1 in 150 year Mormon Cricket swarm in Utah, and through hail in
+Wyoming. I had the time of my life, so far.
 
 Ted Simon, in his 1979 book _Jupiter's Travels_, wrote this on motorcycle travel:
 
@@ -130,6 +129,11 @@ Ted Simon, in his 1979 book _Jupiter's Travels_, wrote this on motorcycle travel
 > know it, to smell it and feel it between your toes you have to crawl. There is no other way. Not
 > flying, not floating. You have to stay on the ground and swallow the bugs as you go. Then the
 > world is immense."
+
+Travelling this way, you don't have the option to grab a coffee for the road. You get it to stay,
+and you sit with the locals in their favourite cafes, and you take it slow. They come talk to you
+because everyone is curious where you're going and how far you've come. None of the smells pass you
+by.
 
 Here's to the next one, Ted.
 
