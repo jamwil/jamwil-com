@@ -57,7 +57,7 @@ riding day would be higher.
 
 ## Lesson 2: Gear, parts & packing
 
-I did okay in this department. You can see my packout in my earlier post:
+I did alright in this department. You can see my packout in my earlier post:
 [Packing Lucia for a four-season motorcycle camping trip](@/farwest_2024_packing/index.md).
 
 {{ resize_image(path='content/farwest_2024_photos/IMG_4335.jpg',
@@ -103,12 +103,12 @@ As for parts and tools, I made the boneheaded assumption that, America being Ame
 what I needed if, when and where I needed it. Not the case. Not when you're up against the clock
 (see previous section).
 
-While I had the basic set of tools, what I ultimately needed and didn't have was a socket and wrench
-large enough for the wheel axle (needed to adjust chain tension), and a spare chain. I will be
-bringing spares for all bike-specific, consumable/breakable/bendable parts next time, including a
-chain, brake pads, oil filter, air filter, shift lever, brake levers and clutch lever. It also goes
-without saying that I won't ever again start a 7,000 km trip on a chain that's almost EOL. As I
-said—boneheaded.
+While I had the basic set of tools, what I ultimately needed and didn't have was a socket wrench
+pair large enough for the wheel axle (needed to adjust chain tension), and a spare chain. I will be
+adding those to my toolkit and bringing spares for all bike-specific, consumable/breakable/bendable
+parts next time (chain, brake pads, oil filter, air filter, shift lever, brake levers
+and clutch lever). It also goes without saying that I won't ever again start a 7,000 km trip on a
+chain that's almost EOL. As I said—boneheaded.
 
 ## Lesson 3: The world is immense
 
@@ -121,7 +121,7 @@ roundtrip train ride on the oldest operational steam engine in America. I rode o
 Highway in Colorado, through a 1 in 150 year Mormon Cricket swarm in Utah, and through hail in
 Wyoming. I had the time of my life, so far.
 
-Ted Simon, in his 1979 book _Jupiter's Travels_, wrote this on motorcycle travel:
+Ted Simon, in his 1979 book _Jupiter's Travels_, wrote this about motorcycle travel:
 
 > "In spite of wars and tourism and pictures by satellite, the world is just the same size it ever
 > was. It is awesome to think how much of it I will never see. It is not a trick to go round these
