@@ -1,35 +1,36 @@
-{% import "macros/page.html" as page_macros %} {% extends "index.html" %} {% block title %}{{
-page.title }}{% endblock %} {% block extra_head %} {% endblock %} {% block content %}
+{% import "macros/page.html" as page_macros %} {% extends "index.html" %}
+{% block title %}{{ page.title }}{% endblock %}
+{% block extra_head %}
+{% endblock %}
+{% block content %}
+  <article class="post">
+    <div class="content">{{ page.content | safe }}</div>
 
-<article class="post">
-  <div class="content">{{ page.content | safe }}</div>
+    {{ page_macros::page_info(page=page) }}
 
-  {{ page_macros::page_info(page=page) }}
+    <form
+      action="https://buttondown.com/api/emails/embed-subscribe/jamwil"
+      method="post"
+      target="popupwindow"
+      onsubmit="window.open('https://buttondown.com/jamwil', 'popupwindow')"
+      class="embeddable-buttondown-form"
+    >
+      <label for="bd-email">Enter your email</label>
+      <input type="email" name="email" id="bd-email" required />
 
-  <form
-    action="https://buttondown.com/api/emails/embed-subscribe/jamwil"
-    method="post"
-    target="popupwindow"
-    onsubmit="window.open('https://buttondown.com/jamwil', 'popupwindow')"
-    class="embeddable-buttondown-form"
-  >
-    <label for="bd-email">Enter your email</label>
-    <input type="email" name="email" id="bd-email" required />
+      <div class="checkbox-group">
+        <input type="checkbox" name="tag" id="bd-tag" value="Technology" />
+        <label for="bd-tag"
+          >Include technology and programming content. Check to receive everything, or leave blank
+          to receive only personal posts, travel updates, photo albums and other miscellanea.</label
+        >
+      </div>
 
-    <div class="checkbox-group">
-      <input type="checkbox" name="tag" id="bd-tag" value="Technology" />
-      <label for="bd-tag"
-        >Include technology and programming content. Check to receive everything, or leave blank to
-        receive only personal posts, travel updates, photo albums and other miscellanea.</label
-      >
-    </div>
+      <input type="submit" value="Subscribe" />
 
-    <input type="submit" value="Subscribe" />
-
-    <p>
-      <a href="https://buttondown.com/refer/jamwil" target="_blank">Powered by Buttondown.</a>
-    </p>
-  </form>
-</article>
-
+      <p>
+        <a href="https://buttondown.com/refer/jamwil" target="_blank">Powered by Buttondown.</a>
+      </p>
+    </form>
+  </article>
 {% endblock content %}

@@ -93,8 +93,8 @@
 </span><span>        {&quot;ID&quot;, &quot;Expanded&quot;, &quot;CreatedAt&quot;, &quot;ModifiedAt&quot;, &quot;CellDisplayValue&quot;, &quot;SiblingId&quot;}
 </span><span>    ),
 </span><span>    PivotedCellsByColumnId = Table.Pivot(
-</span><span>        Table.TransformColumnTypes(RemovedCellsMetaColumns, {{&quot;ColumnID&quot;, type text}}),
-</span><span>        List.Distinct(Table.TransformColumnTypes(RemovedCellsMetaColumns, {{&quot;ColumnID&quot;, type text}})[ColumnID]),
+</span><span>        Table.TransformColumnTypes(RemovedCellsMetaColumns, {{ &quot;ColumnID&quot;, type text }}),
+</span><span>        List.Distinct(Table.TransformColumnTypes(RemovedCellsMetaColumns, {{ &quot;ColumnID&quot;, type text }})[ColumnID]),
 </span><span>        &quot;ColumnID&quot;,
 </span><span>        &quot;CellValue&quot;
 </span><span>    ),
@@ -110,8 +110,8 @@
 </span><span>        {&quot;ColumnID&quot;, &quot;ColumnTitle&quot;}
 </span><span>    ),
 </span><span>    ColumnTitlesMapped = Table.Pivot(
-</span><span>        Table.TransformColumnTypes(ExpandedColumns, {{&quot;ColumnID&quot;, type text}}),
-</span><span>        List.Distinct(Table.TransformColumnTypes(ExpandedColumns, {{&quot;ColumnID&quot;, type text}})[ColumnID]),
+</span><span>        Table.TransformColumnTypes(ExpandedColumns, {{ &quot;ColumnID&quot;, type text }}),
+</span><span>        List.Distinct(Table.TransformColumnTypes(ExpandedColumns, {{ &quot;ColumnID&quot;, type text }})[ColumnID]),
 </span><span>        &quot;ColumnID&quot;,
 </span><span>        &quot;ColumnTitle&quot;
 </span><span>    ),

@@ -1,82 +1,82 @@
-{% import "macros/page.html" as page_macros %} {% extends "index.html" %} {% block title %}{{
-page.title }}{% endblock %} {% block extra_head %}
-<link rel="me" href="https://mastodon.sdf.org/@jamwil" />
-<link rel="shortcut icon" type="image/x-icon" href="{{ get_url(path='favicon.ico') }}" />
-<link
-  rel="stylesheet"
-  href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
-  integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY="
-  crossorigin=""
-/>
-<script
-  src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
-  integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo="
-  crossorigin=""
-></script>
-<link
-  rel="stylesheet"
-  href="//unpkg.com/leaflet-gesture-handling/dist/leaflet-gesture-handling.min.css"
-  type="text/css"
-/>
-<script src="//unpkg.com/leaflet-gesture-handling"></script>
-{% endblock %} {% block content %}
+{% import "macros/page.html" as page_macros %} {% extends "index.html" %}
+{% block title %}{{ page.title }}{% endblock %}
+{% block extra_head %}
+  <link rel="me" href="https://mastodon.sdf.org/@jamwil" />
+  <link rel="shortcut icon" type="image/x-icon" href="{{ get_url(path='favicon.ico') }}" />
+  <link
+    rel="stylesheet"
+    href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+    integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY="
+    crossorigin=""
+  />
+  <script
+    src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
+    integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo="
+    crossorigin=""
+  ></script>
+  <link
+    rel="stylesheet"
+    href="//unpkg.com/leaflet-gesture-handling/dist/leaflet-gesture-handling.min.css"
+    type="text/css"
+  />
+  <script src="//unpkg.com/leaflet-gesture-handling"></script>
+{% endblock %}
+{% block content %}
+  <article class="post">
+    <header>
+      <h1>{{ page.title }}</h1>
+    </header>
 
-<article class="post">
-  <header>
-    <h1>{{ page.title }}</h1>
-  </header>
+    <div id="map"></div>
 
-  <div id="map"></div>
+    <script>
+      const map = L.map("map", { gestureHandling: true }).setView([42, -117], 4);
 
-  <script>
-    const map = L.map("map", { gestureHandling: true }).setView([42, -117], 4);
+      const tiles = L.tileLayer(
+        "https://server.arcgisonline.com/ArcGIS/rest/services/NatGeo_World_Map/MapServer/tile/{z}/{y}/{x}",
+        {
+          attribution:
+            "Tiles &copy; Esri &mdash; National Geographic, Esri, DeLorme, NAVTEQ, UNEP-WCMC, USGS, NASA, ESA, METI, NRCAN, GEBCO, NOAA, iPC",
+          maxZoom: 16,
+        },
+      ).addTo(map);
 
-    const tiles = L.tileLayer(
-      "https://server.arcgisonline.com/ArcGIS/rest/services/NatGeo_World_Map/MapServer/tile/{z}/{y}/{x}",
-      {
-        attribution:
-          "Tiles &copy; Esri &mdash; National Geographic, Esri, DeLorme, NAVTEQ, UNEP-WCMC, USGS, NASA, ESA, METI, NRCAN, GEBCO, NOAA, iPC",
-        maxZoom: 16,
-      },
-    ).addTo(map);
+      async function addGeoJson(file, color) {
+        const response = await fetch("{{ get_url(path='" + file + "') }}");
+        const data = await response.json();
+        var myStyle = {
+          color: color,
+          weight: 4,
+        };
+        L.geoJson(data, { style: myStyle }).addTo(map);
+      }
 
-    async function addGeoJson(file, color) {
-      const response = await fetch("{{ get_url(path='" + file + "') }}");
-      const data = await response.json();
-      var myStyle = {
-        color: color,
-        weight: 4,
-      };
-      L.geoJson(data, { style: myStyle }).addTo(map);
-    }
+      addGeoJson("farwest/2024-05-08.geojson", "hotpink");
+      addGeoJson("farwest/2024-05-09.geojson", "coral");
+      addGeoJson("farwest/2024-05-10.geojson", "hotpink");
+      addGeoJson("farwest/2024-05-11.geojson", "coral");
+      addGeoJson("farwest/2024-05-12.geojson", "hotpink");
+      addGeoJson("farwest/2024-05-13.geojson", "coral");
+      addGeoJson("farwest/2024-05-14.geojson", "hotpink");
+      addGeoJson("farwest/2024-05-18.geojson", "coral");
+      addGeoJson("farwest/2024-05-19.geojson", "hotpink");
+      addGeoJson("farwest/2024-05-20.geojson", "#999");
+      addGeoJson("farwest/2024-05-22.geojson", "coral");
+      addGeoJson("farwest/2024-05-24.geojson", "hotpink");
+      addGeoJson("farwest/2024-05-25.geojson", "coral");
+      addGeoJson("farwest/2024-05-26.geojson", "hotpink");
+      addGeoJson("farwest/2024-05-27.geojson", "coral");
+      addGeoJson("farwest/2024-05-28.geojson", "hotpink");
+    </script>
 
-    addGeoJson("farwest/2024-05-08.geojson", "hotpink");
-    addGeoJson("farwest/2024-05-09.geojson", "coral");
-    addGeoJson("farwest/2024-05-10.geojson", "hotpink");
-    addGeoJson("farwest/2024-05-11.geojson", "coral");
-    addGeoJson("farwest/2024-05-12.geojson", "hotpink");
-    addGeoJson("farwest/2024-05-13.geojson", "coral");
-    addGeoJson("farwest/2024-05-14.geojson", "hotpink");
-    addGeoJson("farwest/2024-05-18.geojson", "coral");
-    addGeoJson("farwest/2024-05-19.geojson", "hotpink");
-    addGeoJson("farwest/2024-05-20.geojson", "#999");
-    addGeoJson("farwest/2024-05-22.geojson", "coral");
-    addGeoJson("farwest/2024-05-24.geojson", "hotpink");
-    addGeoJson("farwest/2024-05-25.geojson", "coral");
-    addGeoJson("farwest/2024-05-26.geojson", "hotpink");
-    addGeoJson("farwest/2024-05-27.geojson", "coral");
-    addGeoJson("farwest/2024-05-28.geojson", "hotpink");
-  </script>
+    <figcaption>
+      Riding days are represented by alternating pink and orange colours. The grey line represents a
+      tow truck transporting Lucia from the Grand Canyon to Scottsdale for repairs and is not
+      included in the mileage total.
+    </figcaption>
 
-  <figcaption>
-    Riding days are represented by alternating pink and orange colours. The grey line represents a
-    tow truck transporting Lucia from the Grand Canyon to Scottsdale for repairs and is not included
-    in the mileage total.
-  </figcaption>
+    <div class="content">{{ page.content | safe }}</div>
 
-  <div class="content">{{ page.content | safe }}</div>
-
-  {{ page_macros::page_info(page=page) }}
-</article>
-
+    {{ page_macros::page_info(page=page) }}
+  </article>
 {% endblock content %}

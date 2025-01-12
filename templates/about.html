@@ -1,25 +1,27 @@
-{% import "macros/page.html" as page_macros %} {% extends "index.html" %} {% block title %}{{
-page.title }}{% endblock %} {% block content %}
+{% import "macros/page.html" as page_macros %} {% extends "index.html" %}
+{% block title %}{{ page.title }}{% endblock %}
+{% block content %}
+  <article class="post">
+    <header>
+      <h1>
+        <code><a href="https://github.com/jamwil">jamwil/README.md</a></code>
+      </h1>
+    </header>
+    <div class="content">
+      {{ page.content | safe }}
+      <img
+        src="https://avatars.githubusercontent.com/u/424038?s=200"
+        width="90"
+        height="90"
+        style="float: left; margin: 0em 1em 1em 0em; border-radius: 50%"
+      />
+      {%
+        set data = load_data(url="https://raw.githubusercontent.com/jamwil/jamwil/main/README.md",
+        required=false)
+      %}
+      {% if data %}{{ data | markdown | safe }}{% else %}No data found{% endif %}
+    </div>
 
-<article class="post">
-  <header>
-    <h1>
-      <code><a href="https://github.com/jamwil">jamwil/README.md</a></code>
-    </h1>
-  </header>
-  <div class="content">
-    {{ page.content | safe }}
-    <img
-      src="https://avatars.githubusercontent.com/u/424038?s=200"
-      width="90"
-      height="90"
-      style="float: left; margin: 0em 1em 1em 0em; border-radius: 50%"
-    />
-    {% set data = load_data(url="https://raw.githubusercontent.com/jamwil/jamwil/main/README.md",
-    required=false) %} {% if data %}{{ data | markdown | safe }}{% else %}No data found{% endif %}
-  </div>
-
-  {{ page_macros::page_info(page=page) }}
-</article>
-
+    {{ page_macros::page_info(page=page) }}
+  </article>
 {% endblock content %}
