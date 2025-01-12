@@ -2,13 +2,14 @@ new-post slug:
     echo '+++' > "content/{{slug}}.md"
     echo 'title = ""' >> "content/{{slug}}.md"
     echo "date = \"$(date -u +"%Y-%m-%dT%H:%M:%SZ")\"" >> "content/{{slug}}.md"
+    echo 'draft = true' > "content/{{slug}}.md"
     echo '[taxonomies]' >> "content/{{slug}}.md"
     echo 'tags = []' >> "content/{{slug}}.md"
     echo 'categories = []' >> "content/{{slug}}.md"
     echo '+++' >> "content/{{slug}}.md"
 
 fix:
-    pre-commit run --all-files
+    npx prettier --write content docs sass templates
 
 prepare-image img:
     exiftool -c "%.6f" -Make -Model -LensModel -ExposureTime -FNumber -ISO -FocalLength \
