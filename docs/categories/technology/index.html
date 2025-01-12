@@ -10,13 +10,13 @@
     <meta name="description" content="Ramblings of a half-witted software developer." />
 
     <link rel="stylesheet" href="https://jamwil.com/main.css" />
-
     <link
       rel="alternate"
       type="application/rss+xml"
-      title="RSS"
+      title="James Williams RSS Feed"
       href="https://jamwil.com/rss.xml"
     />
+
     <link rel="me" href="https://mastodon.sdf.org/@jamwil" />
     <link rel="shortcut icon" type="image/x-icon" href="https://jamwil.com/favicon.ico" />
   </head>
@@ -126,7 +126,7 @@
                 >Make sure to replace <code>$SHEET_ID</code> and <code>$BEARER_TOKEN</code></strong
               >. The query will bring in both your data and column headers.
             </p>
-            <pre style="background-color: #1e1e1e; color: #dcdcdc"><code><span>let
+            <pre style="background-color:#1e1e1e;color:#dcdcdc;"><code><span>let
 </span><span>    Source = Json.Document(
 </span><span>        Web.Contents(&quot;https://api.smartsheet.com/2.0/sheets/$SHEET_ID&quot;, [
 </span><span>            Headers=[
@@ -231,8 +231,8 @@
             <p>First, checkout the pull request locally:</p>
             <pre
               data-lang="bash"
-              style="background-color: #1e1e1e; color: #dcdcdc"
-              class="language-bash"
+              style="background-color:#1e1e1e;color:#dcdcdc;"
+              class="language-bash "
             ><code class="language-bash" data-lang="bash"><span style="color:#608b4e;"># In this case, I&#39;m updating ruff to v0.0.278
 </span><span>git fetch origin dependabot/pip/ruff-0.0.278
 </span><span>git switch --track origin/dependabot/pip/ruff-0.0.278
@@ -254,8 +254,8 @@
             </p>
             <pre
               data-lang="bash"
-              style="background-color: #1e1e1e; color: #dcdcdc"
-              class="language-bash"
+              style="background-color:#1e1e1e;color:#dcdcdc;"
+              class="language-bash "
             ><code class="language-bash" data-lang="bash"><span>git add .pre-commit-config.yaml
 </span><span>git commit -m </span><span style="color:#d69d85;">&quot;Update pre-commit config.&quot;
 </span><span>git push
@@ -352,8 +352,8 @@
             </p>
             <pre
               data-lang="yaml"
-              style="background-color: #1e1e1e; color: #dcdcdc"
-              class="language-yaml"
+              style="background-color:#1e1e1e;color:#dcdcdc;"
+              class="language-yaml "
             ><code class="language-yaml" data-lang="yaml"><span style="color:#608b4e;"># deployment.yaml
 </span><span style="background-color:#282828;color:#569cd6;">apiVersion</span><span>: </span><span style="background-color:#282828;color:#d69d85;">apps/v1</span><span>
 </span><span style="background-color:#282828;color:#569cd6;">kind</span><span>: </span><span style="background-color:#282828;color:#d69d85;">Deployment</span><span>
@@ -389,8 +389,8 @@
             </p>
             <pre
               data-lang="yaml"
-              style="background-color: #1e1e1e; color: #dcdcdc"
-              class="language-yaml"
+              style="background-color:#1e1e1e;color:#dcdcdc;"
+              class="language-yaml "
             ><code class="language-yaml" data-lang="yaml"><span style="color:#608b4e;"># service.yaml
 </span><span style="background-color:#282828;color:#569cd6;">apiVersion</span><span>: </span><span style="background-color:#282828;color:#d69d85;">v1</span><span>
 </span><span style="background-color:#282828;color:#569cd6;">kind</span><span>: </span><span style="background-color:#282828;color:#d69d85;">Service</span><span>
@@ -669,8 +669,8 @@
           <div class="content post-summary">
             <pre
               data-lang="bash"
-              style="background-color: #1e1e1e; color: #dcdcdc"
-              class="language-bash"
+              style="background-color:#1e1e1e;color:#dcdcdc;"
+              class="language-bash "
             ><code class="language-bash" data-lang="bash"><span style="color:#608b4e;"># Make a clone of the repository
 </span><span>git clone &lt;your_project&gt; &lt;new_submodule&gt;
 </span><span>
@@ -828,8 +828,8 @@
             </p>
             <pre
               data-lang="json"
-              style="background-color: #1e1e1e; color: #dcdcdc"
-              class="language-json"
+              style="background-color:#1e1e1e;color:#dcdcdc;"
+              class="language-json "
             ><code class="language-json" data-lang="json"><span>{
 </span><span>  </span><span style="color:#608b4e;">// See https://go.microsoft.com/fwlink/?LinkId=733558
 </span><span>  </span><span style="color:#608b4e;">// for the documentation about the tasks.json format
@@ -1034,18 +1034,14 @@
       <footer>
         <p>
           © James Williams 2025<br />
-          Powered by <a target="_blank" href="https://getzola.org/">Zola</a>, Theme
-          <a target="_blank" href="https://github.com/zbrox/anpu-zola-theme">Anpu</a>.
-        </p>
-        <p>
           <a href="https://jamwil.com/subscribe">Subscribe via email</a><br />
-          <script src="https://cdn.jsdelivr.net/npm/vanilla-lazyload@19.1.3/dist/lazyload.min.js"></script>
-          <script>
-            var lazyLoadInstance = new LazyLoad({
-              threshold: 1000,
-            });
-          </script>
         </p>
+        <script src="https://cdn.jsdelivr.net/npm/vanilla-lazyload@19.1.3/dist/lazyload.min.js"></script>
+        <script>
+          var lazyLoadInstance = new LazyLoad({
+            threshold: 1000,
+          });
+        </script>
       </footer>
     </div>
   </body>
