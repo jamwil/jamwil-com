@@ -54,7 +54,7 @@ Here are the two community-made card decks that have become foundational for me:
   like `Eso [...] muy bueno. (That would be great.)`, and the back would say
   `Eso sería muy bueno.` along with a spoken audio track. There are 9000 of
   these ranked and sorted by difficulty. Seriously.
-- [Ultimate Spanish Conjugation](https://ankiweb.net/shared/info/63841184)
+- [Ultimate Spanish Conjugation](https://ankiweb.net/shared/info/638411848)
   contains full conjugations for 72 of the most important verbs (approximately
   59 cards per verb). This one comes with a
   [comprehensive manual](https://www.asiteaboutnothing.net/w_ultimate_spanish_conjugation.php)

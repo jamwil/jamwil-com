@@ -2,7 +2,7 @@
 title = "Packing Lucia for a four-season motorcycle camping trip"
 date = "2024-05-07T23:00:00Z"
 [taxonomies]
-tags = ["far-west-2024"]
+tags = ["far-west-2024", "motorcycle"]
 categories = ["Travel"]
 +++
 
