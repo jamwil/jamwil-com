@@ -2,8 +2,8 @@
 title = "Far West 2024 Photo Drop"
 date = "2024-06-26T16:40:00Z"
 [taxonomies]
-tags = ["far-west-2024", "motorcycle", "lucia", "photos"]
-categories = ["Travel"]
+tags = ["far-west-2024", "motorcycle", "photos"]
+categories = ["Travel", "Photo Albums"]
 +++
 
 _Part of the [Far West 2024](@/pages/farwest/index.md) feature._

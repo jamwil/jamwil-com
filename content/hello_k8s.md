@@ -2,7 +2,7 @@
 title = "Running a local Kubernetes cluster with Kind: A step-by-step guide"
 date = "2023-06-20T02:36:00Z"
 [taxonomies]
-tags = ["macOS", "kubernetes", "docker"]
+tags = ["docker", "kubernetes", "kind", "local-development", "tooling"]
 categories = ["Technology"]
 +++
 

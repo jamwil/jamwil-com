@@ -2,7 +2,7 @@
 title = "TIL about AlDente by AppHouseKitchen"
 date = "2022-12-28T21:31:00Z"
 [taxonomies]
-tags = ["macOS"]
+tags = ["aldente", "battery-optimization", "macos", "power-management"]
 categories = ["Technology"]
 +++
 

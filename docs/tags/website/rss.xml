@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
     <channel>
-      <title>James Williams - meta</title>
+      <title>James Williams - website</title>
       <link>https://jamwil.com</link>
       <description>Ramblings of a half-witted software developer.</description>
       <generator>Zola</generator>
       <language>en</language>
-      <atom:link href="https://jamwil.com/tags/meta/rss.xml" rel="self" type="application/rss+xml"/>
+      <atom:link href="https://jamwil.com/tags/website/rss.xml" rel="self" type="application/rss+xml"/>
       <lastBuildDate>Fri, 22 Nov 2024 05:33:28 +0000</lastBuildDate>
       <item>
           <title>Proof of life</title>

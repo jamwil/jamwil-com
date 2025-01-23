@@ -2,7 +2,7 @@
 title = "How to convert a subdirectory to its own git repository/submodule"
 date = "2023-01-12T15:53:00Z"
 [taxonomies]
-tags = ["git"]
+tags = ["development", "git", "submodules", "version-control", "workflow"]
 categories = ["Technology"]
 +++
 

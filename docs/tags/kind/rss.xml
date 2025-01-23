@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
+    <channel>
+      <title>James Williams - kind</title>
+      <link>https://jamwil.com</link>
+      <description>Ramblings of a half-witted software developer.</description>
+      <generator>Zola</generator>
+      <language>en</language>
+      <atom:link href="https://jamwil.com/tags/kind/rss.xml" rel="self" type="application/rss+xml"/>
+      <lastBuildDate>Tue, 20 Jun 2023 02:36:00 +0000</lastBuildDate>
+      <item>
+          <title>Running a local Kubernetes cluster with Kind: A step-by-step guide</title>
+          <pubDate>Tue, 20 Jun 2023 02:36:00 +0000</pubDate>
+          <author>James Williams</author>
+          <link>https://jamwil.com/hello-k8s/</link>
+          <guid>https://jamwil.com/hello-k8s/</guid>
+          <description xml:base="https://jamwil.com/hello-k8s/">&lt;p&gt;It has happened. I thought I could avoid it, but here we are. As if getting your
+program to run on one computer wasn’t hard enough, now we have to run it on
+multiple computers at the same time? They have played us for absolute fools.&lt;&#x2F;p&gt;
+&lt;p&gt;Anyway, assuming we have some shared experience with Docker, let’s introduce
+some terminology:&lt;&#x2F;p&gt;
+&lt;ul&gt;
+&lt;li&gt;A &lt;strong&gt;Pod&lt;&#x2F;strong&gt; is the smallest deployable unit in Kubernetes, often a single
+instance of an application. As I understand it, a pod is the logical
+equivalent of a container.&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;strong&gt;Nodes&lt;&#x2F;strong&gt; are the machines that host these pods. More nodes allow for more
+redundancy.&lt;&#x2F;li&gt;
+&lt;li&gt;A &lt;strong&gt;Cluster&lt;&#x2F;strong&gt; is a set of nodes with the same job. A cluster can run multiple
+nodes, and a node can run multiple pods, and a pod typically consists of
+between two and fifteen orca whales.&lt;&#x2F;li&gt;
+&lt;li&gt;A &lt;strong&gt;Service&lt;&#x2F;strong&gt; is an abstraction which provides a single network entry point to
+distribute traffic across the cluster.&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;p&gt;For local development I am using &lt;a href=&quot;https:&#x2F;&#x2F;kind.sigs.k8s.io&quot;&gt;Kind&lt;&#x2F;a&gt;, a tool which
+allows you to run Kubernetes clusters in Docker containers. It is a lightweight
+way to run docker containers inside kubernetes inside a docker container (pause
+for effect).&lt;&#x2F;p&gt;
+&lt;p&gt;The command to create a cluster is: &lt;code&gt;kind create cluster&lt;&#x2F;code&gt;&lt;&#x2F;p&gt;
+&lt;p&gt;To deploy the application, it needs to be packaged as a Docker image. After
+creating the Dockerfile, the image is built and loaded into the Kind cluster
+with the following commands:&lt;&#x2F;p&gt;
+&lt;p&gt;&lt;code&gt;docker build -t my-image-name .&lt;&#x2F;code&gt;&lt;&#x2F;p&gt;
+&lt;p&gt;&lt;code&gt;kind load docker-image my-image-name&lt;&#x2F;code&gt;&lt;&#x2F;p&gt;
+&lt;p&gt;I should note that in addition to Kind, there is a tool called minikube which is
+similar, though it requires you to set up a container registry.&lt;&#x2F;p&gt;
+&lt;p&gt;The next step is creating a deployment and a service for the application by
+creating kubernetes manifest files in your project directory. The simplest
+possible configuration is something like so:&lt;&#x2F;p&gt;
+&lt;pre data-lang=&quot;yaml&quot; style=&quot;background-color:#1e1e1e;color:#dcdcdc;&quot; class=&quot;language-yaml &quot;&gt;&lt;code class=&quot;language-yaml&quot; data-lang=&quot;yaml&quot;&gt;&lt;span style=&quot;color:#608b4e;&quot;&gt;# deployment.yaml
+&lt;&#x2F;span&gt;&lt;span style=&quot;background-color:#282828;color:#569cd6;&quot;&gt;apiVersion&lt;&#x2F;span&gt;&lt;span&gt;: &lt;&#x2F;span&gt;&lt;span style=&quot;background-color:#282828;color:#d69d85;&quot;&gt;apps&#x2F;v1&lt;&#x2F;span&gt;&lt;span&gt;
+&lt;&#x2F;span&gt;&lt;span style=&quot;background-color:#282828;color:#569cd6;&quot;&gt;kind&lt;&#x2F;span&gt;&lt;span&gt;: &lt;&#x2F;span&gt;&lt;span style=&quot;background-color:#282828;color:#d69d85;&quot;&gt;Deployment&lt;&#x2F;span&gt;&lt;span&gt;
+&lt;&#x2F;span&gt;&lt;span style=&quot;background-color:#282828;color:#569cd6;&quot;&gt;metadata&lt;&#x2F;span&gt;&lt;span&gt;:
+&lt;&#x2F;span&gt;&lt;span&gt;  &lt;&#x2F;span&gt;&lt;span style=&quot;background-color:#282828;color:#569cd6;&quot;&gt;name&lt;&#x2F;span&gt;&lt;span&gt;: &lt;&#x2F;span&gt;&lt;span style=&quot;background-color:#282828;color:#d69d85;&quot;&gt;my-image-name-deployment&lt;&#x2F;span&gt;&lt;span&gt;
+&lt;&#x2F;span&gt;&lt;span style=&quot;background-color:#282828;color:#569cd6;&quot;&gt;spec&lt;&#x2F;span&gt;&lt;span&gt;:
+&lt;&#x2F;span&gt;&lt;span&gt;  &lt;&#x2F;span&gt;&lt;span style=&quot;background-color:#282828;color:#569cd6;&quot;&gt;replicas&lt;&#x2F;span&gt;&lt;span&gt;: &lt;&#x2F;span&gt;&lt;span style=&quot;color:#b5cea8;&quot;&gt;1
+&lt;&#x2F;span&gt;&lt;span&gt;  &lt;&#x2F;span&gt;&lt;span style=&quot;background-color:#282828;color:#569cd6;&quot;&gt;selector&lt;&#x2F;span&gt;&lt;span&gt;:
+&lt;&#x2F;span&gt;&lt;span&gt;    &lt;&#x2F;span&gt;&lt;span style=&quot;background-color:#282828;color:#569cd6;&quot;&gt;matchLabels&lt;&#x2F;span&gt;&lt;span&gt;:
+&lt;&#x2F;span&gt;&lt;span&gt;      &lt;&#x2F;span&gt;&lt;span style=&quot;background-color:#282828;color:#569cd6;&quot;&gt;app&lt;&#x2F;span&gt;&lt;span&gt;: &lt;&#x2F;span&gt;&lt;span style=&quot;background-color:#282828;color:#d69d85;&quot;&gt;my-image-name&lt;&#x2F;span&gt;&lt;span&gt;
+&lt;&#x2F;span&gt;&lt;span&gt;  &lt;&#x2F;span&gt;&lt;span style=&quot;background-color:#282828;color:#569cd6;&quot;&gt;template&lt;&#x2F;span&gt;&lt;span&gt;:
+&lt;&#x2F;span&gt;&lt;span&gt;    &lt;&#x2F;span&gt;&lt;span style=&quot;background-color:#282828;color:#569cd6;&quot;&gt;metadata&lt;&#x2F;span&gt;&lt;span&gt;:
+&lt;&#x2F;span&gt;&lt;span&gt;      &lt;&#x2F;span&gt;&lt;span style=&quot;background-color:#282828;color:#569cd6;&quot;&gt;labels&lt;&#x2F;span&gt;&lt;span&gt;:
+&lt;&#x2F;span&gt;&lt;span&gt;        &lt;&#x2F;span&gt;&lt;span style=&quot;background-color:#282828;color:#569cd6;&quot;&gt;app&lt;&#x2F;span&gt;&lt;span&gt;: &lt;&#x2F;span&gt;&lt;span style=&quot;background-color:#282828;color:#d69d85;&quot;&gt;my-image-name&lt;&#x2F;span&gt;&lt;span&gt;
+&lt;&#x2F;span&gt;&lt;span&gt;    &lt;&#x2F;span&gt;&lt;span style=&quot;background-color:#282828;color:#569cd6;&quot;&gt;spec&lt;&#x2F;span&gt;&lt;span&gt;:
+&lt;&#x2F;span&gt;&lt;span&gt;      &lt;&#x2F;span&gt;&lt;span style=&quot;background-color:#282828;color:#569cd6;&quot;&gt;containers&lt;&#x2F;span&gt;&lt;span&gt;:
+&lt;&#x2F;span&gt;&lt;span&gt;        - &lt;&#x2F;span&gt;&lt;span style=&quot;background-color:#282828;color:#569cd6;&quot;&gt;name&lt;&#x2F;span&gt;&lt;span&gt;: &lt;&#x2F;span&gt;&lt;span style=&quot;background-color:#282828;color:#d69d85;&quot;&gt;my-image-name&lt;&#x2F;span&gt;&lt;span&gt;
+&lt;&#x2F;span&gt;&lt;span&gt;          &lt;&#x2F;span&gt;&lt;span style=&quot;background-color:#282828;color:#569cd6;&quot;&gt;image&lt;&#x2F;span&gt;&lt;span&gt;: &lt;&#x2F;span&gt;&lt;span style=&quot;background-color:#282828;color:#d69d85;&quot;&gt;my-image-name&lt;&#x2F;span&gt;&lt;span&gt;
+&lt;&#x2F;span&gt;&lt;span&gt;          &lt;&#x2F;span&gt;&lt;span style=&quot;background-color:#282828;color:#569cd6;&quot;&gt;imagePullPolicy&lt;&#x2F;span&gt;&lt;span&gt;: &lt;&#x2F;span&gt;&lt;span style=&quot;background-color:#282828;color:#d69d85;&quot;&gt;Never&lt;&#x2F;span&gt;&lt;span&gt; &lt;&#x2F;span&gt;&lt;span style=&quot;color:#608b4e;&quot;&gt;# Use for local image
+&lt;&#x2F;span&gt;&lt;span&gt;          &lt;&#x2F;span&gt;&lt;span style=&quot;background-color:#282828;color:#569cd6;&quot;&gt;ports&lt;&#x2F;span&gt;&lt;span&gt;:
+&lt;&#x2F;span&gt;&lt;span&gt;            - &lt;&#x2F;span&gt;&lt;span style=&quot;background-color:#282828;color:#569cd6;&quot;&gt;containerPort&lt;&#x2F;span&gt;&lt;span&gt;: &lt;&#x2F;span&gt;&lt;span style=&quot;color:#b5cea8;&quot;&gt;8000 &lt;&#x2F;span&gt;&lt;span style=&quot;color:#608b4e;&quot;&gt;# Use the port your application runs on
+&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;p&gt;Note that the &lt;code&gt;imagePullPolicy&lt;&#x2F;code&gt; is set to &lt;code&gt;Never&lt;&#x2F;code&gt; because we are using a local
+image with the implied tag &lt;code&gt;latest&lt;&#x2F;code&gt;. Specifying a specific tag should make this
+unnecessary, otherwise the default behaviour is to try to pull the image from
+Docker Hub, which will fail each time (or worse, deploy something unexpected).&lt;&#x2F;p&gt;
+&lt;p&gt;In addition to matching the exposed port of the container, your application
+should be configured to bind to any incoming address (0.0.0.0), not just
+localhost.&lt;&#x2F;p&gt;
+&lt;pre data-lang=&quot;yaml&quot; style=&quot;background-color:#1e1e1e;color:#dcdcdc;&quot; class=&quot;language-yaml &quot;&gt;&lt;code class=&quot;language-yaml&quot; data-lang=&quot;yaml&quot;&gt;&lt;span style=&quot;color:#608b4e;&quot;&gt;# service.yaml
+&lt;&#x2F;span&gt;&lt;span style=&quot;background-color:#282828;color:#569cd6;&quot;&gt;apiVersion&lt;&#x2F;span&gt;&lt;span&gt;: &lt;&#x2F;span&gt;&lt;span style=&quot;background-color:#282828;color:#d69d85;&quot;&gt;v1&lt;&#x2F;span&gt;&lt;span&gt;
+&lt;&#x2F;span&gt;&lt;span style=&quot;background-color:#282828;color:#569cd6;&quot;&gt;kind&lt;&#x2F;span&gt;&lt;span&gt;: &lt;&#x2F;span&gt;&lt;span style=&quot;background-color:#282828;color:#d69d85;&quot;&gt;Service&lt;&#x2F;span&gt;&lt;span&gt;
+&lt;&#x2F;span&gt;&lt;span style=&quot;background-color:#282828;color:#569cd6;&quot;&gt;metadata&lt;&#x2F;span&gt;&lt;span&gt;:
+&lt;&#x2F;span&gt;&lt;span&gt;  &lt;&#x2F;span&gt;&lt;span style=&quot;background-color:#282828;color:#569cd6;&quot;&gt;name&lt;&#x2F;span&gt;&lt;span&gt;: &lt;&#x2F;span&gt;&lt;span style=&quot;background-color:#282828;color:#d69d85;&quot;&gt;my-image-name-service&lt;&#x2F;span&gt;&lt;span&gt;
+&lt;&#x2F;span&gt;&lt;span style=&quot;background-color:#282828;color:#569cd6;&quot;&gt;spec&lt;&#x2F;span&gt;&lt;span&gt;:
+&lt;&#x2F;span&gt;&lt;span&gt;  &lt;&#x2F;span&gt;&lt;span style=&quot;background-color:#282828;color:#569cd6;&quot;&gt;type&lt;&#x2F;span&gt;&lt;span&gt;: &lt;&#x2F;span&gt;&lt;span style=&quot;background-color:#282828;color:#d69d85;&quot;&gt;NodePort&lt;&#x2F;span&gt;&lt;span&gt;
+&lt;&#x2F;span&gt;&lt;span&gt;  &lt;&#x2F;span&gt;&lt;span style=&quot;background-color:#282828;color:#569cd6;&quot;&gt;ports&lt;&#x2F;span&gt;&lt;span&gt;:
+&lt;&#x2F;span&gt;&lt;span&gt;    - &lt;&#x2F;span&gt;&lt;span style=&quot;background-color:#282828;color:#569cd6;&quot;&gt;port&lt;&#x2F;span&gt;&lt;span&gt;: &lt;&#x2F;span&gt;&lt;span style=&quot;color:#b5cea8;&quot;&gt;8000
+&lt;&#x2F;span&gt;&lt;span&gt;      &lt;&#x2F;span&gt;&lt;span style=&quot;background-color:#282828;color:#569cd6;&quot;&gt;nodePort&lt;&#x2F;span&gt;&lt;span&gt;: &lt;&#x2F;span&gt;&lt;span style=&quot;color:#b5cea8;&quot;&gt;30080
+&lt;&#x2F;span&gt;&lt;span&gt;  &lt;&#x2F;span&gt;&lt;span style=&quot;background-color:#282828;color:#569cd6;&quot;&gt;selector&lt;&#x2F;span&gt;&lt;span&gt;:
+&lt;&#x2F;span&gt;&lt;span&gt;    &lt;&#x2F;span&gt;&lt;span style=&quot;background-color:#282828;color:#569cd6;&quot;&gt;app&lt;&#x2F;span&gt;&lt;span&gt;: &lt;&#x2F;span&gt;&lt;span style=&quot;background-color:#282828;color:#d69d85;&quot;&gt;my-image-name&lt;&#x2F;span&gt;&lt;span&gt;
+&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;p&gt;With these files in place, we can create the deployment and service respectively
+using &lt;code&gt;kubectl apply -f &amp;lt;file-name&amp;gt;&lt;&#x2F;code&gt; for each. They can be verified using:
+&lt;code&gt;kubectl get deployments&lt;&#x2F;code&gt; and &lt;code&gt;kubectl get services&lt;&#x2F;code&gt;.&lt;&#x2F;p&gt;
+&lt;p&gt;If there are any issues, logs can be checked using: &lt;code&gt;kubectl logs &amp;lt;pod-name&amp;gt;&lt;&#x2F;code&gt;,
+and the pod name can be found using &lt;code&gt;kubectl get pods&lt;&#x2F;code&gt;.&lt;&#x2F;p&gt;
+&lt;p&gt;Remember to specify environment variables in the &lt;code&gt;deployment.yaml&lt;&#x2F;code&gt; file under
+&lt;code&gt;env&lt;&#x2F;code&gt; in the &lt;code&gt;containers&lt;&#x2F;code&gt; specification if your application requires them.&lt;&#x2F;p&gt;
+&lt;p&gt;If you’re running docker inside a linux virtual machine, port 30080 should
+already be exposed. If you’re running using Docker Desktop, there’s one more
+step which requires forwarding a local port to the service port. This can be
+done using:&lt;&#x2F;p&gt;
+&lt;p&gt;&lt;code&gt;kubectl port-forward service&#x2F;my-image-name-service 30080:8000&lt;&#x2F;code&gt;&lt;&#x2F;p&gt;
+&lt;p&gt;This will map the service to &lt;code&gt;localhost:30080&lt;&#x2F;code&gt; on your local machine. Launch it
+in tmux or append the command with an ampersand as it will block the terminal
+otherwise.&lt;&#x2F;p&gt;
+&lt;p&gt;Fin. Now deploy to prod on a Friday afternoon and you’re done!&lt;&#x2F;p&gt;
+</description>
+      </item>
+    </channel>
+</rss>

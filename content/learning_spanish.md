@@ -2,8 +2,8 @@
 title = "How I'm learning Spanish"
 date = "2024-11-22T18:02:02Z"
 [taxonomies]
+tags = ["anki", "education", "language-learning", "mexico", "pimsleur", "spanish", "spaced-repetition", "tools"]
 categories = ["Travel"]
-tags = ["education", "spanish", "spaced-repetition", "anki", "pimsleur", "mexico"]
 +++
 
 Language learning is not something that comes easy to me. My default learning

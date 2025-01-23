@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
+    <channel>
+      <title>James Williams - language-learning</title>
+      <link>https://jamwil.com</link>
+      <description>Ramblings of a half-witted software developer.</description>
+      <generator>Zola</generator>
+      <language>en</language>
+      <atom:link href="https://jamwil.com/tags/language-learning/rss.xml" rel="self" type="application/rss+xml"/>
+      <lastBuildDate>Fri, 22 Nov 2024 18:02:02 +0000</lastBuildDate>
+      <item>
+          <title>How I&#x27;m learning Spanish</title>
+          <pubDate>Fri, 22 Nov 2024 18:02:02 +0000</pubDate>
+          <author>James Williams</author>
+          <link>https://jamwil.com/learning-spanish/</link>
+          <guid>https://jamwil.com/learning-spanish/</guid>
+          <description xml:base="https://jamwil.com/learning-spanish/">&lt;p&gt;Language learning is not something that comes easy to me. My default learning
+style is to seek out concepts, rules and frameworks, and I’m relatively bad at
+domains that require a lot of rote memorization and reps. The two that come to
+mind in that category are language and mathematics, though I’m somewhat
+passionate about both, in spite of—or perhaps because of—their
+elusiveness.&lt;&#x2F;p&gt;
+&lt;p&gt;I’ve had an on- and off-again relationship with the Spanish language. I took
+elective classes in High School, set it aside through my 20s, and then in more
+recent years spent two consecutive winters in Mexico. I leaned on the basic
+structural knowledge I had during those immersive stints, but my learning was
+passive. I can get by just fine in a restaurant, but I never seriously set about
+becoming fluent. I made some measure of progress in expressing myself, but I
+didn’t have the vocabulary base to reliably pick out words and phrases when
+spoken at the natural pace of a native speaker.&lt;&#x2F;p&gt;
+&lt;p&gt;I’ve changed my approach to learning the language this year, and I think I’ve
+found two complementary tools that work for me. Neither of them are duolingo.
+Both are based on spaced repetition, which I now recognize is &lt;em&gt;the&lt;&#x2F;em&gt; way to
+memorize anything.&lt;&#x2F;p&gt;
+&lt;p&gt;From &lt;a href=&quot;https:&#x2F;&#x2F;en.wikipedia.org&#x2F;wiki&#x2F;Spaced_repetition&quot;&gt;Wikipedia&lt;&#x2F;a&gt;:&lt;&#x2F;p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Spaced repetition is an evidence-based learning technique that is usually
+performed with flashcards. Newly introduced and more difficult flashcards are
+shown more frequently, while older and less difficult flashcards are shown
+less frequently in order to exploit the psychological spacing effect. The use
+of spaced repetition has been proven to increase the rate of learning.&lt;&#x2F;p&gt;
+&lt;&#x2F;blockquote&gt;
+&lt;h2 id=&quot;anki&quot;&gt;Anki&lt;&#x2F;h2&gt;
+&lt;p&gt;There are all sorts of ways to go about this, ranging from hand-written notes to
+enshittified SAAS offerings. For my money, there is nothing better than
+&lt;a href=&quot;https:&#x2F;&#x2F;apps.ankiweb.net&quot;&gt;Anki&lt;&#x2F;a&gt;. I will die for Anki.&lt;&#x2F;p&gt;
+&lt;p&gt;Anki is a power tool that requires a little bit of elbow grease to become
+productive with. It offers a lot of settings which can be overwhelming, however
+it has sane defaults to get you started, and the documentation is excellent.&lt;&#x2F;p&gt;
+&lt;p&gt;Here are the two community-made card decks that have become foundational for me:&lt;&#x2F;p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;https:&#x2F;&#x2F;ankiweb.net&#x2F;shared&#x2F;info&#x2F;1099422617&quot;&gt;Spanish 9000 Sentences&lt;&#x2F;a&gt; contains,
+well, 9000 spanish phrases along with native audio samples for each. It’s a
+‘cloze’ type card, which presents each phrase in Spanish on the front of the
+card and makes you fill in the missing word. The front might say something
+like &lt;code&gt;Eso [...] muy bueno. (That would be great.)&lt;&#x2F;code&gt;, and the back would say
+&lt;code&gt;Eso sería muy bueno.&lt;&#x2F;code&gt; along with a spoken audio track. There are 9000 of
+these ranked and sorted by difficulty. Seriously.&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;a href=&quot;https:&#x2F;&#x2F;ankiweb.net&#x2F;shared&#x2F;info&#x2F;638411848&quot;&gt;Ultimate Spanish Conjugation&lt;&#x2F;a&gt;
+contains full conjugations for 72 of the most important verbs (approximately
+59 cards per verb). This one comes with a
+&lt;a href=&quot;https:&#x2F;&#x2F;www.asiteaboutnothing.net&#x2F;w_ultimate_spanish_conjugation.php&quot;&gt;comprehensive manual&lt;&#x2F;a&gt;
+for how to use it optimally, which I highly recommend internalizing before
+getting started.&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;p&gt;In addition to these, I also have built out a few decks of my own. Google
+Translate allows you to export your translation history into a CSV file, which
+can be imported into Anki. For short, collected phrases like these, I like to
+use a ‘Type in the answer’ card type to force me to learn the correct spelling,
+including accents and correct gendering which often can fall aside if you’re
+just doing pure mental checks in your head.&lt;&#x2F;p&gt;
+&lt;p&gt;I’ve also had great success using an LLM to create supplemental cards for
+knowledge gaps. When you take beginner language classes, you learn all sorts
+of important vocabularly, like colours, body parts, rooms in the house, telling
+time, numbers, etc. that tends to get skipped over by the above methods and
+often as well in real-world immersion. I asked ChatGPT to prepare me several
+hundred cards containing words and phrases that would typically be covered in
+beginner or intermediate spanish classes, and it performed very well on that
+task. This is one of those few genuinely useful applications of that technology.&lt;&#x2F;p&gt;
+&lt;h2 id=&quot;pimsleur&quot;&gt;Pimsleur&lt;&#x2F;h2&gt;
+&lt;p&gt;Spaced repetition flash cards are great for memorizing, but the other side of
+the coin is applying that knowledge, by which I mean speaking and listening.
+I’ve tried in-person classes several times now, and they’ve never worked very
+well for me. Typically, you’re talking with other beginner speakers who aren’t
+able to correct you, and who themselves don’t speak the language well, so you
+aren’t able to train your ear either.&lt;&#x2F;p&gt;
+&lt;p&gt;Language exchange meetups are fantastic, but they require a certain level of
+competency before they become an option.&lt;&#x2F;p&gt;
+&lt;p&gt;So how do you practice speaking and listening, short of moving to a Latin
+American country? For me, nothing beats the old-school
+&lt;a href=&quot;https:&#x2F;&#x2F;www.pimsleur.com&#x2F;learn-spanish-latin-american&#x2F;subscription-audio&#x2F;&quot;&gt;Pimsleur Audiobooks&lt;&#x2F;a&gt;.
+These are also based on spaced repetition, and force you to quickly synthesize
+responses within hypothetical conversations, closely mimicking real-world
+experience. Each day you’ll do a 30-minute session where you’ll be speaking, out
+loud. It’s very effective.&lt;&#x2F;p&gt;
+&lt;p&gt;Pimsleur has been around for a long time, and has grown from audiobooks into a
+more comprehensive app-based offering. I don’t see a lot of value in the other
+app features, especially as I’m supplementing this with intensive flash card
+learning. It’s hard to find on their website, but they offer an audio-only
+subscription (linked above) that is marginally cheaper than the full app
+experience, and it cuts out a lot of the cruft. There are also other ways to
+acquire audiobooks, if you know what I mean.&lt;&#x2F;p&gt;
+&lt;hr &#x2F;&gt;
+&lt;p&gt;All told, I spend ~30 minutes per day on a Pimsleur audio-lesson, and another
+15-20 minutes reviewing flash cards. Combining these methods is a pragmatic,
+practice-based approach to learning, and is in stark contrast to the academic
+approach of reading textbooks and completing exercises. Once you embrace it, you
+may never look back.&lt;&#x2F;p&gt;
+&lt;h2 id=&quot;bonus-cheatsheets&quot;&gt;Bonus: Cheatsheets&lt;&#x2F;h2&gt;
+&lt;p&gt;&lt;a href=&quot;https:&#x2F;&#x2F;www.spanishdict.com&quot;&gt;SpanishDictionary.com&lt;&#x2F;a&gt; has an absurdly overpriced
+subscription tier which gives you access to a collection of excellent PDF-based
+cheatsheets and reference material. I’ve found the verb conjugation reference
+valuable as a supplement to the flash cards described above. You can sign up for
+a free trial, download all the PDF cheat sheets, then cancel.&lt;&#x2F;p&gt;
+</description>
+      </item>
+    </channel>
+</rss>

@@ -2,7 +2,8 @@
 title = "Three managerial principles I wrote down in 2015"
 date = "2023-01-31T02:49:00Z"
 [taxonomies]
-tags = ["management"]
+tags = ["business", "leadership", "management", "principles", "workflow"]
+categories = ["Business"]
 +++
 
 In my mid-20s—okay, mid- to late-20s—I worked as the Assistant Manager of a
@@ -66,5 +67,3 @@ Bonus: I also wrote this, titled `reviews_cometh.txt`:
 > acceptance, they reach upon their mobile devices and tap.
 >
 > For the negative reviews cometh.
-
-<!-- more -->

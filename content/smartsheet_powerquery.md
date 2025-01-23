@@ -2,7 +2,7 @@
 title = "Pulling a Smartsheet table into Microsoft Excel using Power Query"
 date = "2024-03-07T05:04:34Z"
 [taxonomies]
-tags = ["excel", "smartsheet"]
+tags = ["automation", "data", "excel", "power-query", "smartsheet"]
 categories = ["Technology"]
 +++
 

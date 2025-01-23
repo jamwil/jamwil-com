@@ -2,7 +2,7 @@
 title = "Proof of life"
 date = "2024-11-22T05:33:28Z"
 [taxonomies]
-tags = ["meta", "bluesky", "mastodon"]
+tags = ["bluesky", "mastodon", "web-development", "website"]
 categories = ["Technology"]
 +++
 

@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
     <channel>
-      <title>James Williams - lucia</title>
+      <title>James Williams - Photo Albums</title>
       <link>https://jamwil.com</link>
       <description>Ramblings of a half-witted software developer.</description>
       <generator>Zola</generator>
       <language>en</language>
-      <atom:link href="https://jamwil.com/tags/lucia/rss.xml" rel="self" type="application/rss+xml"/>
+      <atom:link href="https://jamwil.com/categories/photo-albums/rss.xml" rel="self" type="application/rss+xml"/>
       <lastBuildDate>Wed, 26 Jun 2024 16:40:00 +0000</lastBuildDate>
       <item>
           <title>Far West 2024 Photo Drop</title>
@@ -20,6 +20,19 @@ learn some photography basics and document the trip. The slower pace this
 afforded as I occasionally stopped to compose a scene was worth it alone.&lt;&#x2F;p&gt;
 &lt;p&gt;Here are a few of my favourite photos from my three-week motorcycle adventure
 through the American west.&lt;&#x2F;p&gt;
+</description>
+      </item>
+      <item>
+          <title>I&#x27;m in love with Guanajuato</title>
+          <pubDate>Sat, 23 Mar 2024 05:11:00 +0000</pubDate>
+          <author>James Williams</author>
+          <link>https://jamwil.com/guanajuato/</link>
+          <guid>https://jamwil.com/guanajuato/</guid>
+          <description xml:base="https://jamwil.com/guanajuato/">&lt;p&gt;Guanajuato is my favourite city in Mexico. The centro historico is built into a
+valley, and many of the roads are tunneled through the mountains that surround
+it. The city itself has been built and rebuilt upon its former self, with a
+subterranean level comprised of the haciendas that once lined the Guanajatu
+River.&lt;&#x2F;p&gt;
 </description>
       </item>
     </channel>

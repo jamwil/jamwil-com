@@ -2,3 +2,5 @@ drafts.md
 .DS_Store
 node_modules
 .venv
+.aider*
+.env

@@ -14,6 +14,12 @@
         <loc>https://jamwil.com/categories/</loc>
     </url>
     <url>
+        <loc>https://jamwil.com/categories/business/</loc>
+    </url>
+    <url>
+        <loc>https://jamwil.com/categories/photo-albums/</loc>
+    </url>
+    <url>
         <loc>https://jamwil.com/categories/technology/</loc>
     </url>
     <url>
@@ -109,7 +115,19 @@
         <loc>https://jamwil.com/tags/</loc>
     </url>
     <url>
+        <loc>https://jamwil.com/tags/aldente/</loc>
+    </url>
+    <url>
         <loc>https://jamwil.com/tags/anki/</loc>
+    </url>
+    <url>
+        <loc>https://jamwil.com/tags/automation/</loc>
+    </url>
+    <url>
+        <loc>https://jamwil.com/tags/battery-optimization/</loc>
+    </url>
+    <url>
+        <loc>https://jamwil.com/tags/black/</loc>
     </url>
     <url>
         <loc>https://jamwil.com/tags/bluesky/</loc>
@@ -118,13 +136,25 @@
         <loc>https://jamwil.com/tags/bulletproof-python/</loc>
     </url>
     <url>
+        <loc>https://jamwil.com/tags/business/</loc>
+    </url>
+    <url>
         <loc>https://jamwil.com/tags/chat-gpt/</loc>
+    </url>
+    <url>
+        <loc>https://jamwil.com/tags/data/</loc>
+    </url>
+    <url>
+        <loc>https://jamwil.com/tags/development/</loc>
     </url>
     <url>
         <loc>https://jamwil.com/tags/docker/</loc>
     </url>
     <url>
         <loc>https://jamwil.com/tags/education/</loc>
+    </url>
+    <url>
+        <loc>https://jamwil.com/tags/encryption/</loc>
     </url>
     <url>
         <loc>https://jamwil.com/tags/excel/</loc>
@@ -139,13 +169,31 @@
         <loc>https://jamwil.com/tags/gpg/</loc>
     </url>
     <url>
+        <loc>https://jamwil.com/tags/guanajuato/</loc>
+    </url>
+    <url>
+        <loc>https://jamwil.com/tags/history/</loc>
+    </url>
+    <url>
+        <loc>https://jamwil.com/tags/kind/</loc>
+    </url>
+    <url>
         <loc>https://jamwil.com/tags/kubernetes/</loc>
+    </url>
+    <url>
+        <loc>https://jamwil.com/tags/language-learning/</loc>
+    </url>
+    <url>
+        <loc>https://jamwil.com/tags/leadership/</loc>
     </url>
     <url>
         <loc>https://jamwil.com/tags/llm/</loc>
     </url>
     <url>
-        <loc>https://jamwil.com/tags/lucia/</loc>
+        <loc>https://jamwil.com/tags/local-development/</loc>
+    </url>
+    <url>
+        <loc>https://jamwil.com/tags/machine-learning/</loc>
     </url>
     <url>
         <loc>https://jamwil.com/tags/macos/</loc>
@@ -155,9 +203,6 @@
     </url>
     <url>
         <loc>https://jamwil.com/tags/mastodon/</loc>
-    </url>
-    <url>
-        <loc>https://jamwil.com/tags/meta/</loc>
     </url>
     <url>
         <loc>https://jamwil.com/tags/mexico/</loc>
@@ -172,7 +217,28 @@
         <loc>https://jamwil.com/tags/pimsleur/</loc>
     </url>
     <url>
+        <loc>https://jamwil.com/tags/power-management/</loc>
+    </url>
+    <url>
+        <loc>https://jamwil.com/tags/power-query/</loc>
+    </url>
+    <url>
+        <loc>https://jamwil.com/tags/principles/</loc>
+    </url>
+    <url>
+        <loc>https://jamwil.com/tags/privacy/</loc>
+    </url>
+    <url>
+        <loc>https://jamwil.com/tags/pull-request/</loc>
+    </url>
+    <url>
         <loc>https://jamwil.com/tags/python/</loc>
+    </url>
+    <url>
+        <loc>https://jamwil.com/tags/ruff/</loc>
+    </url>
+    <url>
+        <loc>https://jamwil.com/tags/security/</loc>
     </url>
     <url>
         <loc>https://jamwil.com/tags/smartsheet/</loc>
@@ -184,9 +250,33 @@
         <loc>https://jamwil.com/tags/spanish/</loc>
     </url>
     <url>
+        <loc>https://jamwil.com/tags/submodules/</loc>
+    </url>
+    <url>
+        <loc>https://jamwil.com/tags/testing/</loc>
+    </url>
+    <url>
         <loc>https://jamwil.com/tags/tooling/</loc>
     </url>
     <url>
+        <loc>https://jamwil.com/tags/tools/</loc>
+    </url>
+    <url>
+        <loc>https://jamwil.com/tags/transformers/</loc>
+    </url>
+    <url>
+        <loc>https://jamwil.com/tags/version-control/</loc>
+    </url>
+    <url>
         <loc>https://jamwil.com/tags/vscode/</loc>
+    </url>
+    <url>
+        <loc>https://jamwil.com/tags/web-development/</loc>
+    </url>
+    <url>
+        <loc>https://jamwil.com/tags/website/</loc>
+    </url>
+    <url>
+        <loc>https://jamwil.com/tags/workflow/</loc>
     </url>
 </urlset>
