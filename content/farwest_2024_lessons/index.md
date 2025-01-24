@@ -2,7 +2,7 @@
 title = "Lessons learned about motorcycle travel"
 date = "2025-01-11T16:29:00Z"
 [taxonomies]
-tags = ["far-west-2024", "motorcycle"]
+tags = ["camping", "far-west-2024", "gear", "motorcycle", "packing", "usa"]
 categories = ["Travel"]
 +++
 

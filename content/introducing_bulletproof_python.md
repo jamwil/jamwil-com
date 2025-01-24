@@ -3,7 +3,7 @@ title = "Introducing bulletproof-python"
 date = "2023-01-02T19:58:00Z"
 updated = "2023-01-03T00:13:00Z"
 [taxonomies]
-tags = ["black", "bulletproof-python", "python", "ruff", "testing", "tooling"]
+tags = ["black", "bulletproof-python", "development", "python", "ruff", "testing", "tooling"]
 categories = ["Technology"]
 +++
 

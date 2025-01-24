@@ -2,7 +2,7 @@
 title = "How to configure a python script as the default build task in VS Code"
 date = "2023-01-03T22:42:00Z"
 [taxonomies]
-tags = ["black", "python", "ruff", "testing", "tooling", "vscode"]
+tags = ["black", "development", "python", "ruff", "testing", "tooling", "vscode"]
 categories = ["Technology"]
 +++
 

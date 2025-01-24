@@ -441,6 +441,12 @@ img.thumbnail {
   list-style-type: none;
   padding: 0;
   line-height: 2em;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.terms li {
+  margin-right: 1.5em;
 }
 
 .terms li:before {

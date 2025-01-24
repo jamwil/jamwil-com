@@ -2,7 +2,7 @@
 title = "How to checkout and edit a pull request locally"
 date = "2023-07-16T16:18:00Z"
 [taxonomies]
-tags = ["development", "git", "pull-request", "tooling", "version-control", "workflow"]
+tags = ["development", "git", "pull-request", "tooling", "version-control"]
 categories = ["Technology"]
 +++
 

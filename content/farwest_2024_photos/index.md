@@ -2,7 +2,7 @@
 title = "Far West 2024 Photo Drop"
 date = "2024-06-26T16:40:00Z"
 [taxonomies]
-tags = ["far-west-2024", "motorcycle", "photos"]
+tags = ["arizona", "british-columbia", "california", "camping", "colorado", "far-west-2024", "idaho", "motorcycle", "oregon", "photos", "usa", "utah", "washington"]
 categories = ["Travel", "Photo Albums"]
 +++
 
@@ -17,7 +17,7 @@ through the American west.
 
 <!-- more -->
 
-<noscript><i>Note: Images are hyper-compressed with javascript disabled.</i></noscript>
+<noscript><i>Note: Inline images are hyper-compressed with javascript disabled.</i></noscript>
 
 ## British Columbia
 
