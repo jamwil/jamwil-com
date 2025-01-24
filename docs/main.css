@@ -431,6 +431,11 @@ ul.language-select > li {
   font-size: 0.9em;
   margin-top: 10px;
 }
+img:not([src]):not([srcset]) {
+  height: 0;
+  margin: 0;
+  visibility: hidden;
+}
 @media (max-width: 840px) {
   .main-wrapper {
     margin: 0;

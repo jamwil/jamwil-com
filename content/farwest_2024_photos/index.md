@@ -17,6 +17,8 @@ through the American west.
 
 <!-- more -->
 
+<noscript><i>Note: Images are hyper-compressed with javascript disabled.</i></noscript>
+
 ## British Columbia
 
 {{ resize_image(path="content/farwest_2024_photos/DSCF0062.jpg", width=500, height=500, op="fit_width", alt="A wooded urban park in North Vancouver, BC.") }}

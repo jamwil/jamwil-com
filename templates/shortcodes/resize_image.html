@@ -1,11 +1,38 @@
 {%
-  set image = resize_image(path=path, width=width * 2, height=height * 2, op=op, format="webp",
-  qualty=100)
+  set image = resize_image(
+    path=path,
+    width=width * 2,
+    height=height * 2,
+    op=op,
+    format="webp",
+    quality=100
+  )
+%}
+{%
+  set fallback_image = resize_image(
+    path=path,
+    width=width,
+    height=height,
+    op=op,
+    format="webp",
+    quality=10
+  )
 %}
 <img
   data-src="{{ image.url | safe }}"
   alt="{{ alt }}"
+  title="{{ alt }}"
   width="{{ width }}"
   height="{{ height }}"
   class="thumbnail lazy"
 />
+<noscript>
+  <img
+    src="{{ fallback_image.url | safe }}"
+    alt="{{ alt }} Note: image is hyper-compressed with javascript disabled."
+    title="{{ alt }} Note: image is hyper-compressed with javascript disabled."
+    width="{{ width }}"
+    height="{{ height }}"
+    class="thumbnail"
+  />
+</noscript>

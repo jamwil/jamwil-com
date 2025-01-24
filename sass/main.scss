@@ -557,6 +557,13 @@ ul.language-select > li {
   margin-top: 10px; /* Space above the paragraph */
 }
 
+/* Lazy Loading */
+img:not([src]):not([srcset]) {
+  height: 0;
+  margin: 0;
+  visibility: hidden;
+}
+
 /* Media Queries */
 
 @media (max-width: 840px) {
