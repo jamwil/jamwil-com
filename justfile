@@ -8,9 +8,6 @@ new-post slug:
     echo 'categories = []' >> "content/{{slug}}.md"
     echo '+++' >> "content/{{slug}}.md"
 
-fix:
-    npx prettier --write content docs sass templates
-
 prepare-image img:
     exiftool -c "%.6f" -Make -Model -LensModel -ExposureTime -FNumber -ISO -FocalLength \
         -GPSPosition -GPSAltitude -ImageSize -FileSize -h {{img}}
@@ -21,3 +18,10 @@ geotag-images-from-track track dir:
 
 geotag-image lat lon img:
     exiftool -GPSLatitude={{lat}} -GPSLatitudeRef={{lat}} -GPSLongitude={{lon}} -GPSLongitudeRef={{lon}} {{img}}
+
+fix:
+    npx prettier --ignore-unknown --write content docs sass templates
+
+build: && fix
+    zola build
+
