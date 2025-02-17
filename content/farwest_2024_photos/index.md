@@ -705,3 +705,7 @@ through the American west.
 </table>
 
 <div style="clear:both;"></div>
+
+_Note: All images were resized to a maximum of 4032 px wide after the metadata
+was processed. Image Sizes indicated above reflect the original image size prior
+to resizing._
