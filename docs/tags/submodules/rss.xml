@@ -50,8 +50,7 @@ subdirectory you specified. You can then push it to a new remote and add it as a
 submodule to your original repository.&lt;&#x2F;p&gt;
 &lt;p&gt;&lt;code&gt;git filter-branch&lt;&#x2F;code&gt; is a destructive operation. While I’ve used the above
 command with success on my own repositories, your mileage may vary and I
-probably can’t help you if something goes wrong.&lt;&#x2F;p&gt;
-</description>
+probably can’t help you if something goes wrong.&lt;&#x2F;p&gt;</description>
       </item>
     </channel>
 </rss>

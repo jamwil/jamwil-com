@@ -109,8 +109,7 @@ in both your data and column headers.&lt;&#x2F;p&gt;
 &lt;&#x2F;span&gt;&lt;span&gt;
 &lt;&#x2F;span&gt;&lt;span&gt;in
 &lt;&#x2F;span&gt;&lt;span&gt;    FinalData
-&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
-</description>
+&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;</description>
       </item>
       <item>
           <title>How to checkout and edit a pull request locally</title>
@@ -144,8 +143,7 @@ lints still pass, however I’d like to update the ruff version in my
 &lt;p&gt;At this point, your checks should fire again and you can merge using your
 preferred merge method into your trunk. Check out
 &lt;a href=&quot;https:&#x2F;&#x2F;github.com&#x2F;jamwil&#x2F;bulletproof-python&#x2F;pull&#x2F;129&quot;&gt;real pull request&lt;&#x2F;a&gt; to
-see how this looks server side.&lt;&#x2F;p&gt;
-</description>
+see how this looks server side.&lt;&#x2F;p&gt;</description>
       </item>
       <item>
           <title>Running a local Kubernetes cluster with Kind: A step-by-step guide</title>
@@ -242,8 +240,7 @@ done using:&lt;&#x2F;p&gt;
 &lt;p&gt;This will map the service to &lt;code&gt;localhost:30080&lt;&#x2F;code&gt; on your local machine. Launch it
 in tmux or append the command with an ampersand as it will block the terminal
 otherwise.&lt;&#x2F;p&gt;
-&lt;p&gt;Fin. Now deploy to prod on a Friday afternoon and you’re done!&lt;&#x2F;p&gt;
-</description>
+&lt;p&gt;Fin. Now deploy to prod on a Friday afternoon and you’re done!&lt;&#x2F;p&gt;</description>
       </item>
       <item>
           <title>Notes from Stephen Wolfram&#x27;s ChatGPT primer</title>
@@ -302,8 +299,7 @@ interesting.&lt;&#x2F;p&gt;
 ChatGPT as a scientific &lt;em&gt;discovery&lt;&#x2F;em&gt; in that it shows that there may be simple
 rules that describe how the semantics of human language can be arranged that we
 ourselves don’t yet understand. Studying the pathways and structures ChatGPT
-uses could help deepen our own understanding of human language.&lt;&#x2F;p&gt;
-</description>
+uses could help deepen our own understanding of human language.&lt;&#x2F;p&gt;</description>
       </item>
       <item>
           <title>LLM Round-up</title>
@@ -340,8 +336,7 @@ Andrej Karpathy’s Zero to Hero lecture series.&lt;&#x2F;p&gt;
 &lt;li&gt;&lt;a href=&quot;https:&#x2F;&#x2F;platform.openai.com&#x2F;docs&#x2F;introduction&#x2F;overview&quot;&gt;OpenAI Documentation&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
 &lt;li&gt;Rodrigo Girão Serrão:
 &lt;a href=&quot;https:&#x2F;&#x2F;mathspp.com&#x2F;blog&#x2F;your-first-recurrent-neural-network&quot;&gt;Your first recurrent neural network (RNN)&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
-&lt;&#x2F;ul&gt;
-</description>
+&lt;&#x2F;ul&gt;</description>
       </item>
       <item>
           <title>How to convert a subdirectory to its own git repository&#x2F;submodule</title>
@@ -385,8 +380,7 @@ subdirectory you specified. You can then push it to a new remote and add it as a
 submodule to your original repository.&lt;&#x2F;p&gt;
 &lt;p&gt;&lt;code&gt;git filter-branch&lt;&#x2F;code&gt; is a destructive operation. While I’ve used the above
 command with success on my own repositories, your mileage may vary and I
-probably can’t help you if something goes wrong.&lt;&#x2F;p&gt;
-</description>
+probably can’t help you if something goes wrong.&lt;&#x2F;p&gt;</description>
       </item>
       <item>
           <title>GPG Field Guide</title>
@@ -401,8 +395,7 @@ commands - they just don’t stick :-)&lt;&#x2F;p&gt;
 &lt;p&gt;Over the last couple of months I collected every command I had to use. Enjoy!&lt;&#x2F;p&gt;
 &lt;&#x2F;blockquote&gt;
 &lt;p&gt;&lt;strong&gt;🔖 One for the bookmarks:
-&lt;a href=&quot;https:&#x2F;&#x2F;jugmac00.github.io&#x2F;blog&#x2F;gpg-all-i-need-to-know&#x2F;&quot;&gt;GPG - All I Need to Know&lt;&#x2F;a&gt;&lt;&#x2F;strong&gt;&lt;&#x2F;p&gt;
-</description>
+&lt;a href=&quot;https:&#x2F;&#x2F;jugmac00.github.io&#x2F;blog&#x2F;gpg-all-i-need-to-know&#x2F;&quot;&gt;GPG - All I Need to Know&lt;&#x2F;a&gt;&lt;&#x2F;strong&gt;&lt;&#x2F;p&gt;</description>
       </item>
       <item>
           <title>How to configure a python script as the default build task in VS Code</title>
@@ -445,8 +438,7 @@ workspace settings.&lt;&#x2F;li&gt;
 &lt;&#x2F;span&gt;&lt;span&gt;    }
 &lt;&#x2F;span&gt;&lt;span&gt;  ]
 &lt;&#x2F;span&gt;&lt;span&gt;}
-&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
-</description>
+&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;</description>
       </item>
       <item>
           <title>Introducing bulletproof-python</title>
@@ -477,8 +469,7 @@ template uses:&lt;&#x2F;p&gt;
 &lt;p&gt;It strives to be clean, simple and hard to break, albeit incomplete and likely
 suitable only for small libraries without broad distribution.&lt;&#x2F;p&gt;
 &lt;p&gt;🌱 &lt;strong&gt;The template is available here:
-&lt;a href=&quot;https:&#x2F;&#x2F;github.com&#x2F;jamwil&#x2F;bulletproof-python&quot;&gt;bulletproof-python&lt;&#x2F;a&gt;&lt;&#x2F;strong&gt;.&lt;&#x2F;p&gt;
-</description>
+&lt;a href=&quot;https:&#x2F;&#x2F;github.com&#x2F;jamwil&#x2F;bulletproof-python&quot;&gt;bulletproof-python&lt;&#x2F;a&gt;&lt;&#x2F;strong&gt;.&lt;&#x2F;p&gt;</description>
       </item>
       <item>
           <title>TIL about AlDente by AppHouseKitchen</title>
@@ -494,8 +485,7 @@ There is a free tier I believe, but I almost always eat the paid versions of
 apps that I like and use.&lt;&#x2F;p&gt;
 &lt;p&gt;I’ve been using it for a few days now and it’s been working great. If you’re
 similarly annoyed by macOS’s battery charging behavior, I highly recommend it.
-Not a sponsored post, just a (so far) happy user.&lt;&#x2F;p&gt;
-</description>
+Not a sponsored post, just a (so far) happy user.&lt;&#x2F;p&gt;</description>
       </item>
     </channel>
 </rss>

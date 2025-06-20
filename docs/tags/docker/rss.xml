@@ -103,8 +103,7 @@ done using:&lt;&#x2F;p&gt;
 &lt;p&gt;This will map the service to &lt;code&gt;localhost:30080&lt;&#x2F;code&gt; on your local machine. Launch it
 in tmux or append the command with an ampersand as it will block the terminal
 otherwise.&lt;&#x2F;p&gt;
-&lt;p&gt;Fin. Now deploy to prod on a Friday afternoon and you’re done!&lt;&#x2F;p&gt;
-</description>
+&lt;p&gt;Fin. Now deploy to prod on a Friday afternoon and you’re done!&lt;&#x2F;p&gt;</description>
       </item>
     </channel>
 </rss>

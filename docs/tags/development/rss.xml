@@ -62,8 +62,7 @@ lints still pass, however I’d like to update the ruff version in my
 &lt;p&gt;At this point, your checks should fire again and you can merge using your
 preferred merge method into your trunk. Check out
 &lt;a href=&quot;https:&#x2F;&#x2F;github.com&#x2F;jamwil&#x2F;bulletproof-python&#x2F;pull&#x2F;129&quot;&gt;real pull request&lt;&#x2F;a&gt; to
-see how this looks server side.&lt;&#x2F;p&gt;
-</description>
+see how this looks server side.&lt;&#x2F;p&gt;</description>
       </item>
       <item>
           <title>Running a local Kubernetes cluster with Kind: A step-by-step guide</title>
@@ -160,8 +159,7 @@ done using:&lt;&#x2F;p&gt;
 &lt;p&gt;This will map the service to &lt;code&gt;localhost:30080&lt;&#x2F;code&gt; on your local machine. Launch it
 in tmux or append the command with an ampersand as it will block the terminal
 otherwise.&lt;&#x2F;p&gt;
-&lt;p&gt;Fin. Now deploy to prod on a Friday afternoon and you’re done!&lt;&#x2F;p&gt;
-</description>
+&lt;p&gt;Fin. Now deploy to prod on a Friday afternoon and you’re done!&lt;&#x2F;p&gt;</description>
       </item>
       <item>
           <title>How to convert a subdirectory to its own git repository&#x2F;submodule</title>
@@ -205,8 +203,7 @@ subdirectory you specified. You can then push it to a new remote and add it as a
 submodule to your original repository.&lt;&#x2F;p&gt;
 &lt;p&gt;&lt;code&gt;git filter-branch&lt;&#x2F;code&gt; is a destructive operation. While I’ve used the above
 command with success on my own repositories, your mileage may vary and I
-probably can’t help you if something goes wrong.&lt;&#x2F;p&gt;
-</description>
+probably can’t help you if something goes wrong.&lt;&#x2F;p&gt;</description>
       </item>
       <item>
           <title>How to configure a python script as the default build task in VS Code</title>
@@ -249,8 +246,7 @@ workspace settings.&lt;&#x2F;li&gt;
 &lt;&#x2F;span&gt;&lt;span&gt;    }
 &lt;&#x2F;span&gt;&lt;span&gt;  ]
 &lt;&#x2F;span&gt;&lt;span&gt;}
-&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
-</description>
+&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;</description>
       </item>
       <item>
           <title>Introducing bulletproof-python</title>
@@ -281,8 +277,7 @@ template uses:&lt;&#x2F;p&gt;
 &lt;p&gt;It strives to be clean, simple and hard to break, albeit incomplete and likely
 suitable only for small libraries without broad distribution.&lt;&#x2F;p&gt;
 &lt;p&gt;🌱 &lt;strong&gt;The template is available here:
-&lt;a href=&quot;https:&#x2F;&#x2F;github.com&#x2F;jamwil&#x2F;bulletproof-python&quot;&gt;bulletproof-python&lt;&#x2F;a&gt;&lt;&#x2F;strong&gt;.&lt;&#x2F;p&gt;
-</description>
+&lt;a href=&quot;https:&#x2F;&#x2F;github.com&#x2F;jamwil&#x2F;bulletproof-python&quot;&gt;bulletproof-python&lt;&#x2F;a&gt;&lt;&#x2F;strong&gt;.&lt;&#x2F;p&gt;</description>
       </item>
     </channel>
 </rss>

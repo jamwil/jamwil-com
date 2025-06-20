@@ -40,8 +40,7 @@ lints still pass, however I’d like to update the ruff version in my
 &lt;p&gt;At this point, your checks should fire again and you can merge using your
 preferred merge method into your trunk. Check out
 &lt;a href=&quot;https:&#x2F;&#x2F;github.com&#x2F;jamwil&#x2F;bulletproof-python&#x2F;pull&#x2F;129&quot;&gt;real pull request&lt;&#x2F;a&gt; to
-see how this looks server side.&lt;&#x2F;p&gt;
-</description>
+see how this looks server side.&lt;&#x2F;p&gt;</description>
       </item>
     </channel>
 </rss>

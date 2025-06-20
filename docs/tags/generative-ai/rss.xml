@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
     <channel>
-      <title>James Williams - chat-gpt</title>
+      <title>James Williams - generative-ai</title>
       <link>https://jamwil.com</link>
       <description>Ramblings of a half-witted software developer.</description>
       <generator>Zola</generator>
       <language>en</language>
-      <atom:link href="https://jamwil.com/tags/chat-gpt/rss.xml" rel="self" type="application/rss+xml"/>
+      <atom:link href="https://jamwil.com/tags/generative-ai/rss.xml" rel="self" type="application/rss+xml"/>
       <lastBuildDate>Fri, 07 Apr 2023 02:15:00 +0000</lastBuildDate>
       <item>
           <title>Notes from Stephen Wolfram&#x27;s ChatGPT primer</title>
@@ -65,8 +65,7 @@ interesting.&lt;&#x2F;p&gt;
 ChatGPT as a scientific &lt;em&gt;discovery&lt;&#x2F;em&gt; in that it shows that there may be simple
 rules that describe how the semantics of human language can be arranged that we
 ourselves don’t yet understand. Studying the pathways and structures ChatGPT
-uses could help deepen our own understanding of human language.&lt;&#x2F;p&gt;
-</description>
+uses could help deepen our own understanding of human language.&lt;&#x2F;p&gt;</description>
       </item>
       <item>
           <title>LLM Round-up</title>
@@ -103,8 +102,7 @@ Andrej Karpathy’s Zero to Hero lecture series.&lt;&#x2F;p&gt;
 &lt;li&gt;&lt;a href=&quot;https:&#x2F;&#x2F;platform.openai.com&#x2F;docs&#x2F;introduction&#x2F;overview&quot;&gt;OpenAI Documentation&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
 &lt;li&gt;Rodrigo Girão Serrão:
 &lt;a href=&quot;https:&#x2F;&#x2F;mathspp.com&#x2F;blog&#x2F;your-first-recurrent-neural-network&quot;&gt;Your first recurrent neural network (RNN)&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
-&lt;&#x2F;ul&gt;
-</description>
+&lt;&#x2F;ul&gt;</description>
       </item>
     </channel>
 </rss>

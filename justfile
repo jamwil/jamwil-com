@@ -24,7 +24,7 @@ fix:
 
 build: && fix
     zola build
-    zola build -u 'http://jamwil.sdf.org' -o docs_sdf -f
+    zola build -u 'http://jamwil.sdf.org' --drafts -o docs_sdf -f
 
 publish:
     ssh jamwil@tty.sdf.org -t "rm -rf html/*"

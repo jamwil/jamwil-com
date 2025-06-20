@@ -140,8 +140,7 @@ world is immense.”&lt;&#x2F;p&gt;
 and you sit with the locals in their favourite cafes, and you take it slow. They come talk to you
 because everyone is curious where you’re going and how far you’ve come. None of the smells pass you
 by.&lt;&#x2F;p&gt;
-&lt;p&gt;Here’s to the next one, Ted.&lt;&#x2F;p&gt;
-</description>
+&lt;p&gt;Here’s to the next one, Ted.&lt;&#x2F;p&gt;</description>
       </item>
       <item>
           <title>How I&#x27;m learning Spanish</title>
@@ -282,8 +281,7 @@ hope to see you there.&lt;&#x2F;p&gt;
 learn some photography basics and document the trip. The slower pace this
 afforded as I occasionally stopped to compose a scene was worth it alone.&lt;&#x2F;p&gt;
 &lt;p&gt;Here are a few of my favourite photos from my three-week motorcycle adventure
-through the American west.&lt;&#x2F;p&gt;
-</description>
+through the American west.&lt;&#x2F;p&gt;</description>
       </item>
       <item>
           <title>Packing Lucia for a four-season motorcycle camping trip</title>
@@ -429,8 +427,7 @@ easiest to just fix them on at the outset and leave ’em.&lt;&#x2F;p&gt;
 11 mounted on a rigid mount above the wind screen facing forward. I also have a
 Hero 7 on a flexible clamp mount I can use for B-roll. Rounding it out on the
 handlebars is a Garmin Zumo XT Navigator that frankly deserves an entire blog
-post of its own to unravel the dark wisdom of the Garmin software engineer.&lt;&#x2F;p&gt;
-</description>
+post of its own to unravel the dark wisdom of the Garmin software engineer.&lt;&#x2F;p&gt;</description>
       </item>
       <item>
           <title>I&#x27;m in love with Guanajuato</title>
@@ -442,8 +439,7 @@ post of its own to unravel the dark wisdom of the Garmin software engineer.&lt;&
 valley, and many of the roads are tunneled through the mountains that surround
 it. The city itself has been built and rebuilt upon its former self, with a
 subterranean level comprised of the haciendas that once lined the Guanajatu
-River.&lt;&#x2F;p&gt;
-</description>
+River.&lt;&#x2F;p&gt;</description>
       </item>
       <item>
           <title>Pulling a Smartsheet table into Microsoft Excel using Power Query</title>
@@ -524,8 +520,7 @@ in both your data and column headers.&lt;&#x2F;p&gt;
 &lt;&#x2F;span&gt;&lt;span&gt;
 &lt;&#x2F;span&gt;&lt;span&gt;in
 &lt;&#x2F;span&gt;&lt;span&gt;    FinalData
-&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
-</description>
+&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;</description>
       </item>
       <item>
           <title>How to checkout and edit a pull request locally</title>
@@ -559,8 +554,7 @@ lints still pass, however I’d like to update the ruff version in my
 &lt;p&gt;At this point, your checks should fire again and you can merge using your
 preferred merge method into your trunk. Check out
 &lt;a href=&quot;https:&#x2F;&#x2F;github.com&#x2F;jamwil&#x2F;bulletproof-python&#x2F;pull&#x2F;129&quot;&gt;real pull request&lt;&#x2F;a&gt; to
-see how this looks server side.&lt;&#x2F;p&gt;
-</description>
+see how this looks server side.&lt;&#x2F;p&gt;</description>
       </item>
       <item>
           <title>Running a local Kubernetes cluster with Kind: A step-by-step guide</title>
@@ -657,8 +651,7 @@ done using:&lt;&#x2F;p&gt;
 &lt;p&gt;This will map the service to &lt;code&gt;localhost:30080&lt;&#x2F;code&gt; on your local machine. Launch it
 in tmux or append the command with an ampersand as it will block the terminal
 otherwise.&lt;&#x2F;p&gt;
-&lt;p&gt;Fin. Now deploy to prod on a Friday afternoon and you’re done!&lt;&#x2F;p&gt;
-</description>
+&lt;p&gt;Fin. Now deploy to prod on a Friday afternoon and you’re done!&lt;&#x2F;p&gt;</description>
       </item>
       <item>
           <title>Notes from Stephen Wolfram&#x27;s ChatGPT primer</title>
@@ -717,8 +710,7 @@ interesting.&lt;&#x2F;p&gt;
 ChatGPT as a scientific &lt;em&gt;discovery&lt;&#x2F;em&gt; in that it shows that there may be simple
 rules that describe how the semantics of human language can be arranged that we
 ourselves don’t yet understand. Studying the pathways and structures ChatGPT
-uses could help deepen our own understanding of human language.&lt;&#x2F;p&gt;
-</description>
+uses could help deepen our own understanding of human language.&lt;&#x2F;p&gt;</description>
       </item>
       <item>
           <title>LLM Round-up</title>
@@ -755,8 +747,7 @@ Andrej Karpathy’s Zero to Hero lecture series.&lt;&#x2F;p&gt;
 &lt;li&gt;&lt;a href=&quot;https:&#x2F;&#x2F;platform.openai.com&#x2F;docs&#x2F;introduction&#x2F;overview&quot;&gt;OpenAI Documentation&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
 &lt;li&gt;Rodrigo Girão Serrão:
 &lt;a href=&quot;https:&#x2F;&#x2F;mathspp.com&#x2F;blog&#x2F;your-first-recurrent-neural-network&quot;&gt;Your first recurrent neural network (RNN)&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
-&lt;&#x2F;ul&gt;
-</description>
+&lt;&#x2F;ul&gt;</description>
       </item>
       <item>
           <title>Three managerial principles I wrote down in 2015</title>
@@ -860,8 +851,7 @@ subdirectory you specified. You can then push it to a new remote and add it as a
 submodule to your original repository.&lt;&#x2F;p&gt;
 &lt;p&gt;&lt;code&gt;git filter-branch&lt;&#x2F;code&gt; is a destructive operation. While I’ve used the above
 command with success on my own repositories, your mileage may vary and I
-probably can’t help you if something goes wrong.&lt;&#x2F;p&gt;
-</description>
+probably can’t help you if something goes wrong.&lt;&#x2F;p&gt;</description>
       </item>
       <item>
           <title>GPG Field Guide</title>
@@ -876,8 +866,7 @@ commands - they just don’t stick :-)&lt;&#x2F;p&gt;
 &lt;p&gt;Over the last couple of months I collected every command I had to use. Enjoy!&lt;&#x2F;p&gt;
 &lt;&#x2F;blockquote&gt;
 &lt;p&gt;&lt;strong&gt;🔖 One for the bookmarks:
-&lt;a href=&quot;https:&#x2F;&#x2F;jugmac00.github.io&#x2F;blog&#x2F;gpg-all-i-need-to-know&#x2F;&quot;&gt;GPG - All I Need to Know&lt;&#x2F;a&gt;&lt;&#x2F;strong&gt;&lt;&#x2F;p&gt;
-</description>
+&lt;a href=&quot;https:&#x2F;&#x2F;jugmac00.github.io&#x2F;blog&#x2F;gpg-all-i-need-to-know&#x2F;&quot;&gt;GPG - All I Need to Know&lt;&#x2F;a&gt;&lt;&#x2F;strong&gt;&lt;&#x2F;p&gt;</description>
       </item>
       <item>
           <title>How to configure a python script as the default build task in VS Code</title>
@@ -920,8 +909,7 @@ workspace settings.&lt;&#x2F;li&gt;
 &lt;&#x2F;span&gt;&lt;span&gt;    }
 &lt;&#x2F;span&gt;&lt;span&gt;  ]
 &lt;&#x2F;span&gt;&lt;span&gt;}
-&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
-</description>
+&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;</description>
       </item>
       <item>
           <title>Introducing bulletproof-python</title>
@@ -952,8 +940,7 @@ template uses:&lt;&#x2F;p&gt;
 &lt;p&gt;It strives to be clean, simple and hard to break, albeit incomplete and likely
 suitable only for small libraries without broad distribution.&lt;&#x2F;p&gt;
 &lt;p&gt;🌱 &lt;strong&gt;The template is available here:
-&lt;a href=&quot;https:&#x2F;&#x2F;github.com&#x2F;jamwil&#x2F;bulletproof-python&quot;&gt;bulletproof-python&lt;&#x2F;a&gt;&lt;&#x2F;strong&gt;.&lt;&#x2F;p&gt;
-</description>
+&lt;a href=&quot;https:&#x2F;&#x2F;github.com&#x2F;jamwil&#x2F;bulletproof-python&quot;&gt;bulletproof-python&lt;&#x2F;a&gt;&lt;&#x2F;strong&gt;.&lt;&#x2F;p&gt;</description>
       </item>
       <item>
           <title>TIL about AlDente by AppHouseKitchen</title>
@@ -969,8 +956,7 @@ There is a free tier I believe, but I almost always eat the paid versions of
 apps that I like and use.&lt;&#x2F;p&gt;
 &lt;p&gt;I’ve been using it for a few days now and it’s been working great. If you’re
 similarly annoyed by macOS’s battery charging behavior, I highly recommend it.
-Not a sponsored post, just a (so far) happy user.&lt;&#x2F;p&gt;
-</description>
+Not a sponsored post, just a (so far) happy user.&lt;&#x2F;p&gt;</description>
       </item>
       <item>
           <title>Hello World</title>
@@ -981,8 +967,7 @@ Not a sponsored post, just a (so far) happy user.&lt;&#x2F;p&gt;
           <description xml:base="https://jamwil.com/hello-world/">&lt;p&gt;Welcome to my shiny new blog.&lt;&#x2F;p&gt;
 &lt;p&gt;*slaps roof* This baby can hold so many posts. Check out
 &lt;a href=&quot;https:&#x2F;&#x2F;jamwil.com&#x2F;about&#x2F;&quot;&gt;&#x2F;about&lt;&#x2F;a&gt; for more information about me, and expect more
-meaningful content in 2023 as I embark on my open source journey.&lt;&#x2F;p&gt;
-</description>
+meaningful content in 2023 as I embark on my open source journey.&lt;&#x2F;p&gt;</description>
       </item>
     </channel>
 </rss>

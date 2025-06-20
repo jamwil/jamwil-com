@@ -2,7 +2,7 @@
 title = "LLM Round-up"
 date = "2023-03-02T16:45:00Z"
 [taxonomies]
-tags = ["chat-gpt", "llm", "machine-learning", "tools"]
+tags = ["generative-ai", "tools"]
 categories = ["Technology"]
 +++
 
