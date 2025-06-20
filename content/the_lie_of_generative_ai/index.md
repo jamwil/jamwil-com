@@ -9,26 +9,28 @@ categories = ["Business", "Technology"]
 
 You know how it's pretty easy to spot an online post or comment that was written
 with ChatGPT? It's not that they use em-dashes—_plenty_ of great writers use
-em-dashes—it's that they have a general air of disconnectedness from the subject
-and they write with a predictable, prescriptive structure. There is no art to
-it. No craft.
+em-dashes—it's that they have a general air of disconnectedness and they write
+with a patronizing, prescriptive structure. It's not original and it's
+definitely not cool. It's easy to spot most AI slop.
 
-I am cognizant of survivorship bias here. There is, of course, lots of
-AI-generated content that slips by unnoticed. If you have a strong command of
-both your subject matter and written prose, you can prompt your way to a
-high-quality post, but you have to give more than it gives back. It's a
-lopsided, toxic relationship, and your boss is lovesick.
+However, I am cognizant of survivorship bias. There is a lot of AI-generated
+content that slips by unnoticed. If you have a strong command of both your
+subject matter and written prose you can prompt your way to a high-quality
+output, but in order to do that you have to give it more than it gives back.
+It's a lopsided, toxic relationship, and these days there are a lot of lovesick
+people out there.
 
-Cue lights.
+Unfortunately, your boss is one of those sad saps standing on the curb with
+nothing but a bouquet of flowers and a dream.
 
 ---
 
-Let's take stock of the different types of tasks that we might get a Generative
-AI tool or "Agent" to do for us:
+In my mind there are three different types of tasks that we might get a
+Generative AI tool or "Agent"[^agent] to do for us:
 
 1. There is little disagreement that Generative AI is bad at anything that might
    loosely be described as art, which I'll define for myself as anything unique
-   that is created with a mixture of imagination and craftsmanship.
+   that is created with a mixture of curiosity, imagination and craftsmanship.
 2. Generative AI is great at tasks and processes that require no imagination,
    like extracting structured data from written text, summarizing a transcript,
    or repetitive clerical tasks.
@@ -46,12 +48,12 @@ In the physical world of atoms, we have a general idea of the forces, chemicals
 and components that we need to build a bench, a bridge or an airplane. That
 isn't to discount the expertise required to build those things, I note only that
 there is an inherent tactile structure to building things in physical space that
-doesn't exist in the digital one. Things fit together, or they don't. Failure
-modes are typically known in advance, unlike the sly bugs that lie in wait
-within every digital codebase.
+doesn't exist in the digital one. Things fit together, or they don't. Most
+failure modes are known in advance, unlike the sly bugs that lie in wait within
+every digital codebase.
 
 Because it is not grounded in the physical world, software complexity fits a
-long-tailed distribution. A lot of applications follow the tried and true recipe
+fat-tailed distribution. A lot of applications follow the tried and true recipe
 of reading and writing information to a database with a bit of business logic
 and reporting mixed in. The techniques for creating such an application are well
 documented and well understood, and this is the sort of thing that Generative AI
@@ -59,7 +61,7 @@ can do very well with little correction or oversight on the part of the
 operator. For this reason, prototyping greenfield projects is a great use of the
 technology.
 
-As we navigate further to the right on our long-tailed distribution of software
+As we navigate further to the right on our fat-tailed distribution of software
 complexity, we quickly enter a different world. Any piece of software is
 comprised of layers—each layer building upon the layer below it, disconnected
 from and naive to the specific implementation details underpinning it. This is
@@ -71,8 +73,8 @@ and the AI hasn't been trained on the building blocks we're asking it to use.
 
 I believe most of the disparity in lived experience with Generative AI among
 software developers can be explained by plotting their work on this approximate
-log-normal distribution. I suspect this shape holds true in many other
-professional domains as well.
+log-normal (fat-tailed) distribution. I suspect this shape holds true in many
+other professional domains as well.
 
 ![Generative AI attitudes](log-normal.png)
 
@@ -123,13 +125,15 @@ hot air.
 
 Your boss has been told that an AI "Agent" is equivalent to a person. That you
 can set it on a task, and with enough iterations of the loop, it will arrive at
-the correct solution/feature/output. Your boss truly believes this! They can't
-know it for sure, and they can't dispell it, but everyone is saying it,
-including their own boss, and their boss's boss. It's not their fault, they're
-just trying to keep up with \<dastardly competitor\>, who no doubt is using
-_Workday: the powerful AI platform that keeps your most important assets on
-track, every decision on point, and your fleet of AI agents at peak performance.
-That’s Workday._&copy;
+the correct solution/feature/output. They've been told that their competitors
+have many such tools and "Agents". They've been told they're falling behind.
+They can't know it for sure, and they can't dispell it, but everyone is saying
+it, including their own boss, and their boss's boss, and those well-dressed
+chaps on that panel last week. It's not your boss's fault, they just have to to
+keep up with \<dastardly competitor\>, who no doubt is using _Workday: the
+powerful AI platform that keeps your most important assets on track, every
+decision on point, and your fleet of AI agents at peak performance. That’s
+Workday._&copy;
 
 Jesus christ.
 
@@ -139,15 +143,16 @@ The classic adage of "garbage in; garbage out" applies. You cannot take someone
 who lives on the median of the distribution in the chart above, give them a
 replit account, and expect top-tier output.
 
-The upper bound on what you can accomplish with Generative AI is the level of
-your most proficient colleague. It is as true in 2025 as it was in 2020 as it
-was in 1820: you cannot do great things without great people. What you _can_ now
-accomplish are more middling things with the same amount of great people. That
-has business value, to be sure. There is plenty of middling work that needs to
-be done. To quote my man Alec, "world needs plenty of bartenders!"[^1]
+The upper bound on what your company can accomplish with Generative AI is the
+level of your most proficient colleague. It is as true in 2025 as it was in 2020
+as it was in 1820: you cannot do great things without great people. What you
+_can_ now accomplish are more middling things with the same amount of great
+people. That has business value, to be sure. There is plenty of middling work
+that needs to be done. To quote my man Alec, "world needs plenty of
+bartenders!"[^alec]
 
-I have no empirical basis for these numbers aside from my own experience and
-intuition, but if I'm being VERY generous I would peg my own efficiency
+Now, I have no empirical basis for these numbers aside from my own experience
+and intuition, but if I'm being VERY generous I would peg my own efficiency
 improvements using Generative AI at somewhere around 20% to 30% on average. On
 prototyping and side projects, I'd guess that I'm approaching 100%, but that's
 not real work. On my mature main project and its components, the improvement is
@@ -156,8 +161,8 @@ human ass in a human seat, that much is true. I would estimate that an
 AI-forward company could drop a single junior developer for every 3 or 4 senior
 developers, which would be on the order of a 10% to 15% reduction in
 compensation expense in the base case of a company with only 4 or 5 employees,
-all but one of them senior. The savings would be well below 10% in a larger
-pool.
+all but one of them senior. The savings would be well below 10% in a larger,
+more balanced pool.
 
 ---
 
@@ -175,26 +180,43 @@ rather average).
 
 If you're already in that "skilled operator" category and using Generative AI to
 expedite your more menial work, continue advancing your ability to use the tools
-but remember not to let your skills atrophy. I can say my spelling is likely
+but remember not to let your basic skills atrophy. I can say my spelling is far
 worse now with the ubiquity of spell-check than it was in grade school.
 Likewise, how many people can still parallel park under pressure without a
 backup camera, or navigate across town without GPS navigation? Take your cue
 from the aviation industry where pilots regularly fly manually despite
-auto-pilot to keep their skills sharp.
+auto-pilot to keep their skills up.
 
 If you're starting out, that's a trickier spot to be in, but it's not
-impossible. I stated early on that art is safe. I believe that will always be
-true because art is how we express humanity. It is the antithesis of machine.
-There may be no artistry involved in your day job, but curiosity, craftsmanship
-and imagination are the ingredients of mastery no matter what you do. An AI
-agent cannot replicate your taste. It has none of your fluorish or flair. If
-you're a programmer, recognize that programming is design. If you're a labourer,
-approach your job like an engineer. If you're an engineer, approach your job
-like an architect. Carve your name into your work and you'll be alright.
+impossible. Lean into fundamentals and keep your pencil sharp, because there
+will always be a place for the person who actually understands the code that is
+deployed, and that will only amplify in the future. Your colleagues or
+classmates are all learning to ride a motorcycle before they know how to pedal a
+bicycle. Learn how to pedal the bike.
+
+I stated early on that art is safe. I believe that will always be true because
+art is how we express humanity. It is the antithesis of machine. There may be no
+artistry apparent in your day job, but curiosity, craftsmanship and imagination
+are the ingredients of mastery no matter what you do. An AI agent cannot
+replicate your taste. It has none of your fluorish or flair. It has no style. It
+is not cool.
+
+If you're a programmer, recognize that programming is design. If you're a
+labourer, approach your job like an engineer. If you're an engineer, approach
+your job like an architect. Carve your name into your work and you'll be
+alright.
 
 <!-- more -->
 
 ---
 
-[^1]:
+[^agent]:
+    The industry defines an Agent as a language model that can iterate on it's
+    own output (runs in a loop) and use tools. Personally, I define an agent by
+    it's correct definition of something or someone that acts on behalf of
+    something or someone else. The agent works for you, not in place of you.
+
+<br />
+
+[^alec]:
     <iframe width="560" height="315" src="https://www.youtube.com/embed/dJ1FeBF_1p0?si=xOUuh5-_ck-bOFX0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>

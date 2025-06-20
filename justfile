@@ -20,7 +20,7 @@ geotag-image lat lon img:
     exiftool -GPSLatitude={{lat}} -GPSLatitudeRef={{lat}} -GPSLongitude={{lon}} -GPSLongitudeRef={{lon}} {{img}}
 
 fix:
-    npx prettier --ignore-unknown --write content docs docs_sdf sass templates
+    npx prettier --ignore-path .prettierignore --ignore-unknown --write content docs docs_sdf sass templates
 
 build: && fix
     zola build
@@ -28,5 +28,5 @@ build: && fix
 
 publish:
     ssh jamwil@tty.sdf.org -t "rm -rf html/*"
-    scp -r docs/* jamwil@tty.sdf.org:html/
+    scp -r docs_sdf/* jamwil@tty.sdf.org:html/
 
