@@ -1,9 +1,9 @@
 +++
-title = "DRAFT: Your boss is being taken for a ride on Generative AI"
-date = "2025-06-20T02:00:00Z"
-draft = true
+title = "Your boss is being taken for a ride on Generative AI"
+date = "2025-06-21T18:11:00Z"
+draft = false
 [taxonomies]
-tags = ["education", "generative-ai", "management"]
+tags = ["education", "generative-ai", "management", "tools"]
 categories = ["Business", "Technology"]
 +++
 
@@ -127,7 +127,7 @@ Your boss has been told that an AI "Agent" is equivalent to a person. That you
 can set it on a task, and with enough iterations of the loop, it will arrive at
 the correct solution/feature/output. They've been told that their competitors
 have many such tools and "Agents". They've been told they're falling behind.
-They can't know it for sure, and they can't dispell it, but everyone is saying
+They can't know it for sure, and they can't dispel it, but everyone is saying
 it, including their own boss, and their boss's boss, and those well-dressed
 chaps on that panel last week. It's not your boss's fault, they just have to to
 keep up with \<dastardly competitor\>, who no doubt is using _Workday: the
@@ -135,7 +135,7 @@ powerful AI platform that keeps your most important assets on track, every
 decision on point, and your fleet of AI agents at peak performance. That’s
 Workday._&copy;
 
-Jesus christ.
+Jesus Christ.
 
 The reality is this: **in order to apply Generative AI to a task, there needs to
 be a human operator in the loop who understands that task BETTER than the AI**.
@@ -198,7 +198,7 @@ I stated early on that art is safe. I believe that will always be true because
 art is how we express humanity. It is the antithesis of machine. There may be no
 artistry apparent in your day job, but curiosity, craftsmanship and imagination
 are the ingredients of mastery no matter what you do. An AI agent cannot
-replicate your taste. It has none of your fluorish or flair. It has no style. It
+replicate your taste. It has none of your flourish or flair. It has no style. It
 is not cool.
 
 If you're a programmer, recognize that programming is design. If you're a
@@ -213,7 +213,7 @@ alright.
 [^agent]:
     The industry defines an Agent as a language model that can iterate on it's
     own output (runs in a loop) and use tools. Personally, I define an agent by
-    it's correct definition of something or someone that acts on behalf of
+    its correct definition of something or someone that acts on behalf of
     something or someone else. The agent works for you, not in place of you.
 
 <br />

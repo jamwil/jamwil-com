@@ -7,7 +7,10 @@
     <meta name="referrer" content="no-referrer-when-downgrade" />
 
     <title>How to configure a python script as the default build task in VS Code</title>
-    <meta name="description" content="Ramblings of a half-witted software developer." />
+    <meta
+      name="description"
+      content="The eponymous world wide webpage containing various hoots and hollers."
+    />
 
     <link rel="stylesheet" href="https://jamwil.com/main.css" />
     <link
@@ -19,6 +22,12 @@
 
     <link rel="me" href="https://mastodon.sdf.org/@jamwil" />
     <link rel="shortcut icon" type="image/x-icon" href="https://jamwil.com/favicon.ico" />
+
+    <meta property="og:description" content="by James Williams" />
+
+    <meta property="og:image" content="https://jamwil.com/share.png" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="800" />
   </head>
   <body>
     <a class="skip-main" href="#main">Skip to content</a>
@@ -65,29 +74,29 @@
             </p>
             <pre
               data-lang="json"
-              style="background-color:#1e1e1e;color:#dcdcdc;"
+              style="background-color:#2e3440;color:#d8dee9;"
               class="language-json "
             ><code class="language-json" data-lang="json"><span>{
-</span><span>  </span><span style="color:#608b4e;">// See https://go.microsoft.com/fwlink/?LinkId=733558
-</span><span>  </span><span style="color:#608b4e;">// for the documentation about the tasks.json format
-</span><span>  </span><span style="color:#d69d85;">&quot;version&quot;</span><span>: </span><span style="color:#d69d85;">&quot;2.0.0&quot;</span><span>,
-</span><span>  </span><span style="color:#d69d85;">&quot;tasks&quot;</span><span>: [
+</span><span>  </span><span style="color:#616e88;">// See https://go.microsoft.com/fwlink/?LinkId=733558
+</span><span>  </span><span style="color:#616e88;">// for the documentation about the tasks.json format
+</span><span>  </span><span style="color:#a3be8c;">&quot;version&quot;</span><span style="color:#eceff4;">: </span><span style="color:#a3be8c;">&quot;2.0.0&quot;</span><span style="color:#eceff4;">,
+</span><span>  </span><span style="color:#a3be8c;">&quot;tasks&quot;</span><span style="color:#eceff4;">: </span><span>[
 </span><span>    {
-</span><span>      </span><span style="color:#d69d85;">&quot;label&quot;</span><span>: </span><span style="color:#d69d85;">&quot;Python: current file&quot;</span><span>,
-</span><span>      </span><span style="color:#d69d85;">&quot;type&quot;</span><span>: </span><span style="color:#d69d85;">&quot;shell&quot;</span><span>,
-</span><span>      </span><span style="color:#d69d85;">&quot;command&quot;</span><span>: </span><span style="color:#d69d85;">&quot;${command:python.interpreterPath}&quot;</span><span>,
-</span><span>      </span><span style="color:#d69d85;">&quot;args&quot;</span><span>: [</span><span style="color:#d69d85;">&quot;${file}&quot;</span><span>],
-</span><span>      </span><span style="color:#d69d85;">&quot;problemMatcher&quot;</span><span>: [],
-</span><span>      </span><span style="color:#d69d85;">&quot;group&quot;</span><span>: {
-</span><span>        </span><span style="color:#d69d85;">&quot;kind&quot;</span><span>: </span><span style="color:#d69d85;">&quot;build&quot;</span><span>,
-</span><span>        </span><span style="color:#d69d85;">&quot;isDefault&quot;</span><span>: </span><span style="color:#569cd6;">true
-</span><span>      },
-</span><span>      </span><span style="color:#d69d85;">&quot;presentation&quot;</span><span>: {
-</span><span>        </span><span style="color:#d69d85;">&quot;focus&quot;</span><span>: </span><span style="color:#569cd6;">true</span><span>,
-</span><span>        </span><span style="color:#d69d85;">&quot;reveal&quot;</span><span>: </span><span style="color:#d69d85;">&quot;always&quot;
-</span><span>      },
-</span><span>      </span><span style="color:#d69d85;">&quot;options&quot;</span><span>: {
-</span><span>        </span><span style="color:#d69d85;">&quot;cwd&quot;</span><span>: </span><span style="color:#d69d85;">&quot;${workspaceFolder}&quot;
+</span><span>      </span><span style="color:#a3be8c;">&quot;label&quot;</span><span style="color:#eceff4;">: </span><span style="color:#a3be8c;">&quot;Python: current file&quot;</span><span style="color:#eceff4;">,
+</span><span>      </span><span style="color:#a3be8c;">&quot;type&quot;</span><span style="color:#eceff4;">: </span><span style="color:#a3be8c;">&quot;shell&quot;</span><span style="color:#eceff4;">,
+</span><span>      </span><span style="color:#a3be8c;">&quot;command&quot;</span><span style="color:#eceff4;">: </span><span style="color:#a3be8c;">&quot;${command:python.interpreterPath}&quot;</span><span style="color:#eceff4;">,
+</span><span>      </span><span style="color:#a3be8c;">&quot;args&quot;</span><span style="color:#eceff4;">: </span><span>[</span><span style="color:#a3be8c;">&quot;${file}&quot;</span><span>]</span><span style="color:#eceff4;">,
+</span><span>      </span><span style="color:#a3be8c;">&quot;problemMatcher&quot;</span><span style="color:#eceff4;">: </span><span>[]</span><span style="color:#eceff4;">,
+</span><span>      </span><span style="color:#a3be8c;">&quot;group&quot;</span><span style="color:#eceff4;">: </span><span>{
+</span><span>        </span><span style="color:#a3be8c;">&quot;kind&quot;</span><span style="color:#eceff4;">: </span><span style="color:#a3be8c;">&quot;build&quot;</span><span style="color:#eceff4;">,
+</span><span>        </span><span style="color:#a3be8c;">&quot;isDefault&quot;</span><span style="color:#eceff4;">: </span><span style="color:#81a1c1;">true
+</span><span>      }</span><span style="color:#eceff4;">,
+</span><span>      </span><span style="color:#a3be8c;">&quot;presentation&quot;</span><span style="color:#eceff4;">: </span><span>{
+</span><span>        </span><span style="color:#a3be8c;">&quot;focus&quot;</span><span style="color:#eceff4;">: </span><span style="color:#81a1c1;">true</span><span style="color:#eceff4;">,
+</span><span>        </span><span style="color:#a3be8c;">&quot;reveal&quot;</span><span style="color:#eceff4;">: </span><span style="color:#a3be8c;">&quot;always&quot;
+</span><span>      }</span><span style="color:#eceff4;">,
+</span><span>      </span><span style="color:#a3be8c;">&quot;options&quot;</span><span style="color:#eceff4;">: </span><span>{
+</span><span>        </span><span style="color:#a3be8c;">&quot;cwd&quot;</span><span style="color:#eceff4;">: </span><span style="color:#a3be8c;">&quot;${workspaceFolder}&quot;
 </span><span>      }
 </span><span>    }
 </span><span>  ]

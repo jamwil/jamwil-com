@@ -7,7 +7,10 @@
     <meta name="referrer" content="no-referrer-when-downgrade" />
 
     <title>James Williams</title>
-    <meta name="description" content="Ramblings of a half-witted software developer." />
+    <meta
+      name="description"
+      content="The eponymous world wide webpage containing various hoots and hollers."
+    />
 
     <link rel="stylesheet" href="https://jamwil.com/main.css" />
     <link
@@ -19,6 +22,15 @@
 
     <link rel="me" href="https://mastodon.sdf.org/@jamwil" />
     <link rel="shortcut icon" type="image/x-icon" href="https://jamwil.com/favicon.ico" />
+
+    <meta
+      property="og:description"
+      content="The eponymous world wide webpage containing various hoots and hollers."
+    />
+
+    <meta property="og:image" content="https://jamwil.com/share.png" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="800" />
   </head>
   <body>
     <a class="skip-main" href="#main">Skip to content</a>
@@ -36,6 +48,114 @@
         </nav>
       </header>
       <main id="main" tabindex="-1">
+        <article class="post-list">
+          <header>
+            <h1>
+              <a href="https:&#x2F;&#x2F;jamwil.com&#x2F;python-vscode-build-task&#x2F;"
+                >How to configure a python script as the default build task in VS Code</a
+              >
+            </h1>
+          </header>
+
+          <div class="content post-summary">
+            <p>
+              This snippet goes in your <code>.vscode/tasks.json</code> file. It will run the
+              current python file as the default build task.
+            </p>
+            <ul>
+              <li>
+                <code>command</code> will invoke the python interpreter that is configured in your
+                workspace settings.
+              </li>
+              <li><code>group</code> will make this task the default build task.</li>
+              <li>
+                <code>presentation:focus</code> will focus the terminal window when the task is run.
+              </li>
+              <li>
+                <code>presentation:reveal</code> will reveal the terminal window when the task is
+                run.
+              </li>
+            </ul>
+            <p>
+              Change <code>args</code> to any python file if you’d like to run the same file each
+              time.
+            </p>
+            <pre
+              data-lang="json"
+              style="background-color:#2e3440;color:#d8dee9;"
+              class="language-json "
+            ><code class="language-json" data-lang="json"><span>{
+</span><span>  </span><span style="color:#616e88;">// See https://go.microsoft.com/fwlink/?LinkId=733558
+</span><span>  </span><span style="color:#616e88;">// for the documentation about the tasks.json format
+</span><span>  </span><span style="color:#a3be8c;">&quot;version&quot;</span><span style="color:#eceff4;">: </span><span style="color:#a3be8c;">&quot;2.0.0&quot;</span><span style="color:#eceff4;">,
+</span><span>  </span><span style="color:#a3be8c;">&quot;tasks&quot;</span><span style="color:#eceff4;">: </span><span>[
+</span><span>    {
+</span><span>      </span><span style="color:#a3be8c;">&quot;label&quot;</span><span style="color:#eceff4;">: </span><span style="color:#a3be8c;">&quot;Python: current file&quot;</span><span style="color:#eceff4;">,
+</span><span>      </span><span style="color:#a3be8c;">&quot;type&quot;</span><span style="color:#eceff4;">: </span><span style="color:#a3be8c;">&quot;shell&quot;</span><span style="color:#eceff4;">,
+</span><span>      </span><span style="color:#a3be8c;">&quot;command&quot;</span><span style="color:#eceff4;">: </span><span style="color:#a3be8c;">&quot;${command:python.interpreterPath}&quot;</span><span style="color:#eceff4;">,
+</span><span>      </span><span style="color:#a3be8c;">&quot;args&quot;</span><span style="color:#eceff4;">: </span><span>[</span><span style="color:#a3be8c;">&quot;${file}&quot;</span><span>]</span><span style="color:#eceff4;">,
+</span><span>      </span><span style="color:#a3be8c;">&quot;problemMatcher&quot;</span><span style="color:#eceff4;">: </span><span>[]</span><span style="color:#eceff4;">,
+</span><span>      </span><span style="color:#a3be8c;">&quot;group&quot;</span><span style="color:#eceff4;">: </span><span>{
+</span><span>        </span><span style="color:#a3be8c;">&quot;kind&quot;</span><span style="color:#eceff4;">: </span><span style="color:#a3be8c;">&quot;build&quot;</span><span style="color:#eceff4;">,
+</span><span>        </span><span style="color:#a3be8c;">&quot;isDefault&quot;</span><span style="color:#eceff4;">: </span><span style="color:#81a1c1;">true
+</span><span>      }</span><span style="color:#eceff4;">,
+</span><span>      </span><span style="color:#a3be8c;">&quot;presentation&quot;</span><span style="color:#eceff4;">: </span><span>{
+</span><span>        </span><span style="color:#a3be8c;">&quot;focus&quot;</span><span style="color:#eceff4;">: </span><span style="color:#81a1c1;">true</span><span style="color:#eceff4;">,
+</span><span>        </span><span style="color:#a3be8c;">&quot;reveal&quot;</span><span style="color:#eceff4;">: </span><span style="color:#a3be8c;">&quot;always&quot;
+</span><span>      }</span><span style="color:#eceff4;">,
+</span><span>      </span><span style="color:#a3be8c;">&quot;options&quot;</span><span style="color:#eceff4;">: </span><span>{
+</span><span>        </span><span style="color:#a3be8c;">&quot;cwd&quot;</span><span style="color:#eceff4;">: </span><span style="color:#a3be8c;">&quot;${workspaceFolder}&quot;
+</span><span>      }
+</span><span>    }
+</span><span>  ]
+</span><span>}
+</span></code></pre>
+            <span id="continue-reading"></span>
+          </div>
+
+          <div class="article-info">
+            <div class="article-date">2023-01-03</div>
+
+            <div class="article-taxonomies">
+              <ul class="article-categories">
+                <li>
+                  <a href="https://jamwil.com/categories/technology/"> Technology </a>
+                </li>
+              </ul>
+
+              <ul class="article-tags">
+                <li>
+                  <a href="https://jamwil.com/tags/black/"> #black </a>
+                </li>
+
+                <li>
+                  <a href="https://jamwil.com/tags/development/"> #development </a>
+                </li>
+
+                <li>
+                  <a href="https://jamwil.com/tags/python/"> #python </a>
+                </li>
+
+                <li>
+                  <a href="https://jamwil.com/tags/ruff/"> #ruff </a>
+                </li>
+
+                <li>
+                  <a href="https://jamwil.com/tags/testing/"> #testing </a>
+                </li>
+
+                <li>
+                  <a href="https://jamwil.com/tags/tooling/"> #tooling </a>
+                </li>
+
+                <li>
+                  <a href="https://jamwil.com/tags/vscode/"> #vscode </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </article>
+
         <article class="post-list">
           <header>
             <h1>
@@ -222,10 +342,10 @@
             <span id="continue-reading"></span>
             <pre
               data-lang="python"
-              style="background-color:#1e1e1e;color:#dcdcdc;"
+              style="background-color:#2e3440;color:#d8dee9;"
               class="language-python "
-            ><code class="language-python" data-lang="python"><span style="color:#608b4e;"># Here&#39;s some code
-</span><span>print(</span><span style="color:#d69d85;">&quot;Hello World&quot;</span><span>)
+            ><code class="language-python" data-lang="python"><span style="color:#616e88;"># Here&#39;s some code
+</span><span style="font-style:italic;color:#88c0d0;">print</span><span>(</span><span style="color:#a3be8c;">&quot;Hello World&quot;</span><span>)
 </span></code></pre>
           </div>
 

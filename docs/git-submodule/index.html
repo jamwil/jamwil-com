@@ -7,7 +7,10 @@
     <meta name="referrer" content="no-referrer-when-downgrade" />
 
     <title>How to convert a subdirectory to its own git repository&#x2F;submodule</title>
-    <meta name="description" content="Ramblings of a half-witted software developer." />
+    <meta
+      name="description"
+      content="The eponymous world wide webpage containing various hoots and hollers."
+    />
 
     <link rel="stylesheet" href="https://jamwil.com/main.css" />
     <link
@@ -19,6 +22,12 @@
 
     <link rel="me" href="https://mastodon.sdf.org/@jamwil" />
     <link rel="shortcut icon" type="image/x-icon" href="https://jamwil.com/favicon.ico" />
+
+    <meta property="og:description" content="by James Williams" />
+
+    <meta property="og:image" content="https://jamwil.com/share.png" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="800" />
   </head>
   <body>
     <a class="skip-main" href="#main">Skip to content</a>
@@ -43,19 +52,19 @@
           <div class="content">
             <pre
               data-lang="bash"
-              style="background-color:#1e1e1e;color:#dcdcdc;"
+              style="background-color:#2e3440;color:#d8dee9;"
               class="language-bash "
-            ><code class="language-bash" data-lang="bash"><span style="color:#608b4e;"># Make a clone of the repository
-</span><span>git clone &lt;your_project&gt; &lt;new_submodule&gt;
+            ><code class="language-bash" data-lang="bash"><span style="color:#616e88;"># Make a clone of the repository
+</span><span style="color:#88c0d0;">git</span><span> clone </span><span style="color:#81a1c1;">&lt;</span><span>your_project</span><span style="color:#81a1c1;">&gt; &lt;</span><span>new_submodule</span><span style="color:#81a1c1;">&gt;
 </span><span>
-</span><span style="color:#608b4e;"># CD into the new repository
-</span><span>cd &lt;new_submodule&gt;
+</span><span style="color:#616e88;"># CD into the new repository
+</span><span style="color:#88c0d0;">cd </span><span style="color:#81a1c1;">&lt;</span><span>new_submodule</span><span style="color:#81a1c1;">&gt;
 </span><span>
-</span><span style="color:#608b4e;"># Use filter-branch to isolate the subdirectory
-</span><span>git filter-branch --subdirectory-filter </span><span style="color:#d69d85;">&#39;path/to/subdirectory&#39;</span><span> --prune-empty</span><span style="color:#569cd6;"> --</span><span> --all
+</span><span style="color:#616e88;"># Use filter-branch to isolate the subdirectory
+</span><span style="color:#88c0d0;">git</span><span> filter-branch --subdirectory-filter </span><span style="color:#a3be8c;">&#39;path/to/subdirectory&#39;</span><span> --prune-empty</span><span style="color:#81a1c1;"> --</span><span> --all
 </span><span>
-</span><span style="color:#608b4e;"># Remove the old remote
-</span><span>git remote rm &lt;remote_name&gt;
+</span><span style="color:#616e88;"># Remove the old remote
+</span><span style="color:#88c0d0;">git</span><span> remote rm </span><span style="color:#81a1c1;">&lt;</span><span>remote_name</span><span style="color:#81a1c1;">&gt;
 </span></code></pre>
             <p>
               <code>git filter-branch</code> lets you rewrite Git revision history and apply custom

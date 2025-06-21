@@ -3,7 +3,7 @@
     <channel>
       <title>James Williams - language-learning</title>
       <link>https://jamwil.com</link>
-      <description>Ramblings of a half-witted software developer.</description>
+      <description>The eponymous world wide webpage containing various hoots and hollers.</description>
       <generator>Zola</generator>
       <language>en</language>
       <atom:link href="https://jamwil.com/tags/language-learning/rss.xml" rel="self" type="application/rss+xml"/>

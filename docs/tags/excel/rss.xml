@@ -3,7 +3,7 @@
     <channel>
       <title>James Williams - excel</title>
       <link>https://jamwil.com</link>
-      <description>Ramblings of a half-witted software developer.</description>
+      <description>The eponymous world wide webpage containing various hoots and hollers.</description>
       <generator>Zola</generator>
       <language>en</language>
       <atom:link href="https://jamwil.com/tags/excel/rss.xml" rel="self" type="application/rss+xml"/>
@@ -27,7 +27,7 @@ user with viewer permissions.&lt;&#x2F;p&gt;
 &lt;p&gt;In Excel, open Power Query and create a new query using the advanced editor.
 &lt;strong&gt;Make sure to replace &lt;code&gt;$SHEET_ID&lt;&#x2F;code&gt; and &lt;code&gt;$BEARER_TOKEN&lt;&#x2F;code&gt;&lt;&#x2F;strong&gt;. The query will bring
 in both your data and column headers.&lt;&#x2F;p&gt;
-&lt;pre style=&quot;background-color:#1e1e1e;color:#dcdcdc;&quot;&gt;&lt;code&gt;&lt;span&gt;let
+&lt;pre style=&quot;background-color:#2e3440;color:#d8dee9;&quot;&gt;&lt;code&gt;&lt;span&gt;let
 &lt;&#x2F;span&gt;&lt;span&gt;    Source = Json.Document(
 &lt;&#x2F;span&gt;&lt;span&gt;        Web.Contents(&amp;quot;https:&#x2F;&#x2F;api.smartsheet.com&#x2F;2.0&#x2F;sheets&#x2F;$SHEET_ID&amp;quot;, [
 &lt;&#x2F;span&gt;&lt;span&gt;            Headers=[

@@ -1,6 +1,6 @@
 base_url = "https://jamwil.com"
 title = "James Williams"
-description = "Ramblings of a half-witted software developer."
+description = "The eponymous world wide webpage containing various hoots and hollers."
 author = "James Williams"
 output_dir = "docs"
 compile_sass = true
@@ -15,7 +15,7 @@ taxonomies = [
 
 [markdown]
 highlight_code = true
-highlight_theme = "visual-studio-dark"
+highlight_theme = "nord"
 render_emoji = true
 smart_punctuation = true
 

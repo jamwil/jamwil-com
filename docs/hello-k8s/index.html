@@ -7,7 +7,10 @@
     <meta name="referrer" content="no-referrer-when-downgrade" />
 
     <title>Running a local Kubernetes cluster with Kind: A step-by-step guide</title>
-    <meta name="description" content="Ramblings of a half-witted software developer." />
+    <meta
+      name="description"
+      content="The eponymous world wide webpage containing various hoots and hollers."
+    />
 
     <link rel="stylesheet" href="https://jamwil.com/main.css" />
     <link
@@ -19,6 +22,12 @@
 
     <link rel="me" href="https://mastodon.sdf.org/@jamwil" />
     <link rel="shortcut icon" type="image/x-icon" href="https://jamwil.com/favicon.ico" />
+
+    <meta property="og:description" content="by James Williams" />
+
+    <meta property="og:image" content="https://jamwil.com/share.png" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="800" />
   </head>
   <body>
     <a class="skip-main" href="#main">Skip to content</a>
@@ -95,29 +104,29 @@
             </p>
             <pre
               data-lang="yaml"
-              style="background-color:#1e1e1e;color:#dcdcdc;"
+              style="background-color:#2e3440;color:#d8dee9;"
               class="language-yaml "
-            ><code class="language-yaml" data-lang="yaml"><span style="color:#608b4e;"># deployment.yaml
-</span><span style="background-color:#282828;color:#569cd6;">apiVersion</span><span>: </span><span style="background-color:#282828;color:#d69d85;">apps/v1</span><span>
-</span><span style="background-color:#282828;color:#569cd6;">kind</span><span>: </span><span style="background-color:#282828;color:#d69d85;">Deployment</span><span>
-</span><span style="background-color:#282828;color:#569cd6;">metadata</span><span>:
-</span><span>  </span><span style="background-color:#282828;color:#569cd6;">name</span><span>: </span><span style="background-color:#282828;color:#d69d85;">my-image-name-deployment</span><span>
-</span><span style="background-color:#282828;color:#569cd6;">spec</span><span>:
-</span><span>  </span><span style="background-color:#282828;color:#569cd6;">replicas</span><span>: </span><span style="color:#b5cea8;">1
-</span><span>  </span><span style="background-color:#282828;color:#569cd6;">selector</span><span>:
-</span><span>    </span><span style="background-color:#282828;color:#569cd6;">matchLabels</span><span>:
-</span><span>      </span><span style="background-color:#282828;color:#569cd6;">app</span><span>: </span><span style="background-color:#282828;color:#d69d85;">my-image-name</span><span>
-</span><span>  </span><span style="background-color:#282828;color:#569cd6;">template</span><span>:
-</span><span>    </span><span style="background-color:#282828;color:#569cd6;">metadata</span><span>:
-</span><span>      </span><span style="background-color:#282828;color:#569cd6;">labels</span><span>:
-</span><span>        </span><span style="background-color:#282828;color:#569cd6;">app</span><span>: </span><span style="background-color:#282828;color:#d69d85;">my-image-name</span><span>
-</span><span>    </span><span style="background-color:#282828;color:#569cd6;">spec</span><span>:
-</span><span>      </span><span style="background-color:#282828;color:#569cd6;">containers</span><span>:
-</span><span>        - </span><span style="background-color:#282828;color:#569cd6;">name</span><span>: </span><span style="background-color:#282828;color:#d69d85;">my-image-name</span><span>
-</span><span>          </span><span style="background-color:#282828;color:#569cd6;">image</span><span>: </span><span style="background-color:#282828;color:#d69d85;">my-image-name</span><span>
-</span><span>          </span><span style="background-color:#282828;color:#569cd6;">imagePullPolicy</span><span>: </span><span style="background-color:#282828;color:#d69d85;">Never</span><span> </span><span style="color:#608b4e;"># Use for local image
-</span><span>          </span><span style="background-color:#282828;color:#569cd6;">ports</span><span>:
-</span><span>            - </span><span style="background-color:#282828;color:#569cd6;">containerPort</span><span>: </span><span style="color:#b5cea8;">8000 </span><span style="color:#608b4e;"># Use the port your application runs on
+            ><code class="language-yaml" data-lang="yaml"><span style="color:#616e88;"># deployment.yaml
+</span><span style="color:#8fbcbb;">apiVersion</span><span style="color:#eceff4;">: </span><span style="color:#a3be8c;">apps/v1
+</span><span style="color:#8fbcbb;">kind</span><span style="color:#eceff4;">: </span><span style="color:#a3be8c;">Deployment
+</span><span style="color:#8fbcbb;">metadata</span><span style="color:#eceff4;">:
+</span><span>  </span><span style="color:#8fbcbb;">name</span><span style="color:#eceff4;">: </span><span style="color:#a3be8c;">my-image-name-deployment
+</span><span style="color:#8fbcbb;">spec</span><span style="color:#eceff4;">:
+</span><span>  </span><span style="color:#8fbcbb;">replicas</span><span style="color:#eceff4;">: </span><span style="color:#b48ead;">1
+</span><span>  </span><span style="color:#8fbcbb;">selector</span><span style="color:#eceff4;">:
+</span><span>    </span><span style="color:#8fbcbb;">matchLabels</span><span style="color:#eceff4;">:
+</span><span>      </span><span style="color:#8fbcbb;">app</span><span style="color:#eceff4;">: </span><span style="color:#a3be8c;">my-image-name
+</span><span>  </span><span style="color:#8fbcbb;">template</span><span style="color:#eceff4;">:
+</span><span>    </span><span style="color:#8fbcbb;">metadata</span><span style="color:#eceff4;">:
+</span><span>      </span><span style="color:#8fbcbb;">labels</span><span style="color:#eceff4;">:
+</span><span>        </span><span style="color:#8fbcbb;">app</span><span style="color:#eceff4;">: </span><span style="color:#a3be8c;">my-image-name
+</span><span>    </span><span style="color:#8fbcbb;">spec</span><span style="color:#eceff4;">:
+</span><span>      </span><span style="color:#8fbcbb;">containers</span><span style="color:#eceff4;">:
+</span><span>        - </span><span style="color:#8fbcbb;">name</span><span style="color:#eceff4;">: </span><span style="color:#a3be8c;">my-image-name
+</span><span>          </span><span style="color:#8fbcbb;">image</span><span style="color:#eceff4;">: </span><span style="color:#a3be8c;">my-image-name
+</span><span>          </span><span style="color:#8fbcbb;">imagePullPolicy</span><span style="color:#eceff4;">: </span><span style="color:#a3be8c;">Never </span><span style="color:#616e88;"># Use for local image
+</span><span>          </span><span style="color:#8fbcbb;">ports</span><span style="color:#eceff4;">:
+</span><span>            - </span><span style="color:#8fbcbb;">containerPort</span><span style="color:#eceff4;">: </span><span style="color:#b48ead;">8000 </span><span style="color:#616e88;"># Use the port your application runs on
 </span></code></pre>
             <p>
               Note that the <code>imagePullPolicy</code> is set to <code>Never</code> because we are
@@ -132,20 +141,20 @@
             </p>
             <pre
               data-lang="yaml"
-              style="background-color:#1e1e1e;color:#dcdcdc;"
+              style="background-color:#2e3440;color:#d8dee9;"
               class="language-yaml "
-            ><code class="language-yaml" data-lang="yaml"><span style="color:#608b4e;"># service.yaml
-</span><span style="background-color:#282828;color:#569cd6;">apiVersion</span><span>: </span><span style="background-color:#282828;color:#d69d85;">v1</span><span>
-</span><span style="background-color:#282828;color:#569cd6;">kind</span><span>: </span><span style="background-color:#282828;color:#d69d85;">Service</span><span>
-</span><span style="background-color:#282828;color:#569cd6;">metadata</span><span>:
-</span><span>  </span><span style="background-color:#282828;color:#569cd6;">name</span><span>: </span><span style="background-color:#282828;color:#d69d85;">my-image-name-service</span><span>
-</span><span style="background-color:#282828;color:#569cd6;">spec</span><span>:
-</span><span>  </span><span style="background-color:#282828;color:#569cd6;">type</span><span>: </span><span style="background-color:#282828;color:#d69d85;">NodePort</span><span>
-</span><span>  </span><span style="background-color:#282828;color:#569cd6;">ports</span><span>:
-</span><span>    - </span><span style="background-color:#282828;color:#569cd6;">port</span><span>: </span><span style="color:#b5cea8;">8000
-</span><span>      </span><span style="background-color:#282828;color:#569cd6;">nodePort</span><span>: </span><span style="color:#b5cea8;">30080
-</span><span>  </span><span style="background-color:#282828;color:#569cd6;">selector</span><span>:
-</span><span>    </span><span style="background-color:#282828;color:#569cd6;">app</span><span>: </span><span style="background-color:#282828;color:#d69d85;">my-image-name</span><span>
+            ><code class="language-yaml" data-lang="yaml"><span style="color:#616e88;"># service.yaml
+</span><span style="color:#8fbcbb;">apiVersion</span><span style="color:#eceff4;">: </span><span style="color:#a3be8c;">v1
+</span><span style="color:#8fbcbb;">kind</span><span style="color:#eceff4;">: </span><span style="color:#a3be8c;">Service
+</span><span style="color:#8fbcbb;">metadata</span><span style="color:#eceff4;">:
+</span><span>  </span><span style="color:#8fbcbb;">name</span><span style="color:#eceff4;">: </span><span style="color:#a3be8c;">my-image-name-service
+</span><span style="color:#8fbcbb;">spec</span><span style="color:#eceff4;">:
+</span><span>  </span><span style="color:#8fbcbb;">type</span><span style="color:#eceff4;">: </span><span style="color:#a3be8c;">NodePort
+</span><span>  </span><span style="color:#8fbcbb;">ports</span><span style="color:#eceff4;">:
+</span><span>    - </span><span style="color:#8fbcbb;">port</span><span style="color:#eceff4;">: </span><span style="color:#b48ead;">8000
+</span><span>      </span><span style="color:#8fbcbb;">nodePort</span><span style="color:#eceff4;">: </span><span style="color:#b48ead;">30080
+</span><span>  </span><span style="color:#8fbcbb;">selector</span><span style="color:#eceff4;">:
+</span><span>    </span><span style="color:#8fbcbb;">app</span><span style="color:#eceff4;">: </span><span style="color:#a3be8c;">my-image-name
 </span></code></pre>
             <p>
               With these files in place, we can create the deployment and service respectively using

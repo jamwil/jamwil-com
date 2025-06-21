@@ -3,7 +3,7 @@
     <channel>
       <title>James Williams - git</title>
       <link>https://jamwil.com</link>
-      <description>Ramblings of a half-witted software developer.</description>
+      <description>The eponymous world wide webpage containing various hoots and hollers.</description>
       <generator>Zola</generator>
       <language>en</language>
       <atom:link href="https://jamwil.com/tags/git/rss.xml" rel="self" type="application/rss+xml"/>
@@ -19,9 +19,9 @@ check to &lt;a href=&quot;https:&#x2F;&#x2F;github.com&#x2F;astral-sh&#x2F;ruff&
 to fail. You can fix the lint error and push the changes back to the pull
 request branch!&lt;&#x2F;p&gt;
 &lt;p&gt;First, checkout the pull request locally:&lt;&#x2F;p&gt;
-&lt;pre data-lang=&quot;bash&quot; style=&quot;background-color:#1e1e1e;color:#dcdcdc;&quot; class=&quot;language-bash &quot;&gt;&lt;code class=&quot;language-bash&quot; data-lang=&quot;bash&quot;&gt;&lt;span style=&quot;color:#608b4e;&quot;&gt;# In this case, I&amp;#39;m updating ruff to v0.0.278
-&lt;&#x2F;span&gt;&lt;span&gt;git fetch origin dependabot&#x2F;pip&#x2F;ruff-0.0.278
-&lt;&#x2F;span&gt;&lt;span&gt;git switch --track origin&#x2F;dependabot&#x2F;pip&#x2F;ruff-0.0.278
+&lt;pre data-lang=&quot;bash&quot; style=&quot;background-color:#2e3440;color:#d8dee9;&quot; class=&quot;language-bash &quot;&gt;&lt;code class=&quot;language-bash&quot; data-lang=&quot;bash&quot;&gt;&lt;span style=&quot;color:#616e88;&quot;&gt;# In this case, I&amp;#39;m updating ruff to v0.0.278
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#88c0d0;&quot;&gt;git&lt;&#x2F;span&gt;&lt;span&gt; fetch origin dependabot&#x2F;pip&#x2F;ruff-0.0.278
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#88c0d0;&quot;&gt;git&lt;&#x2F;span&gt;&lt;span&gt; switch --track origin&#x2F;dependabot&#x2F;pip&#x2F;ruff-0.0.278
 &lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
 &lt;p&gt;We’ve now checked out the PR branch and set it to track the remote. We can use
 this pattern to keep tabs on long-running PRs, or as in this case, simply push
@@ -33,9 +33,9 @@ this won’t set the local branch to track the remote.&lt;&#x2F;p&gt;
 lints still pass, however I’d like to update the ruff version in my
 &lt;code&gt;.pre-commit-config.yaml&lt;&#x2F;code&gt; file so that it’s consistent with my
 &lt;code&gt;requirements.txt&lt;&#x2F;code&gt;. I’ll make that change, commit and push back to the remote.&lt;&#x2F;p&gt;
-&lt;pre data-lang=&quot;bash&quot; style=&quot;background-color:#1e1e1e;color:#dcdcdc;&quot; class=&quot;language-bash &quot;&gt;&lt;code class=&quot;language-bash&quot; data-lang=&quot;bash&quot;&gt;&lt;span&gt;git add .pre-commit-config.yaml
-&lt;&#x2F;span&gt;&lt;span&gt;git commit -m &lt;&#x2F;span&gt;&lt;span style=&quot;color:#d69d85;&quot;&gt;&amp;quot;Update pre-commit config.&amp;quot;
-&lt;&#x2F;span&gt;&lt;span&gt;git push
+&lt;pre data-lang=&quot;bash&quot; style=&quot;background-color:#2e3440;color:#d8dee9;&quot; class=&quot;language-bash &quot;&gt;&lt;code class=&quot;language-bash&quot; data-lang=&quot;bash&quot;&gt;&lt;span style=&quot;color:#88c0d0;&quot;&gt;git&lt;&#x2F;span&gt;&lt;span&gt; add .pre-commit-config.yaml
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#88c0d0;&quot;&gt;git&lt;&#x2F;span&gt;&lt;span&gt; commit -m &lt;&#x2F;span&gt;&lt;span style=&quot;color:#a3be8c;&quot;&gt;&amp;quot;Update pre-commit config.&amp;quot;
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#88c0d0;&quot;&gt;git&lt;&#x2F;span&gt;&lt;span&gt; push
 &lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
 &lt;p&gt;At this point, your checks should fire again and you can merge using your
 preferred merge method into your trunk. Check out
@@ -48,17 +48,17 @@ see how this looks server side.&lt;&#x2F;p&gt;</description>
           <author>James Williams</author>
           <link>https://jamwil.com/git-submodule/</link>
           <guid>https://jamwil.com/git-submodule/</guid>
-          <description xml:base="https://jamwil.com/git-submodule/">&lt;pre data-lang=&quot;bash&quot; style=&quot;background-color:#1e1e1e;color:#dcdcdc;&quot; class=&quot;language-bash &quot;&gt;&lt;code class=&quot;language-bash&quot; data-lang=&quot;bash&quot;&gt;&lt;span style=&quot;color:#608b4e;&quot;&gt;# Make a clone of the repository
-&lt;&#x2F;span&gt;&lt;span&gt;git clone &amp;lt;your_project&amp;gt; &amp;lt;new_submodule&amp;gt;
+          <description xml:base="https://jamwil.com/git-submodule/">&lt;pre data-lang=&quot;bash&quot; style=&quot;background-color:#2e3440;color:#d8dee9;&quot; class=&quot;language-bash &quot;&gt;&lt;code class=&quot;language-bash&quot; data-lang=&quot;bash&quot;&gt;&lt;span style=&quot;color:#616e88;&quot;&gt;# Make a clone of the repository
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#88c0d0;&quot;&gt;git&lt;&#x2F;span&gt;&lt;span&gt; clone &lt;&#x2F;span&gt;&lt;span style=&quot;color:#81a1c1;&quot;&gt;&amp;lt;&lt;&#x2F;span&gt;&lt;span&gt;your_project&lt;&#x2F;span&gt;&lt;span style=&quot;color:#81a1c1;&quot;&gt;&amp;gt; &amp;lt;&lt;&#x2F;span&gt;&lt;span&gt;new_submodule&lt;&#x2F;span&gt;&lt;span style=&quot;color:#81a1c1;&quot;&gt;&amp;gt;
 &lt;&#x2F;span&gt;&lt;span&gt;
-&lt;&#x2F;span&gt;&lt;span style=&quot;color:#608b4e;&quot;&gt;# CD into the new repository
-&lt;&#x2F;span&gt;&lt;span&gt;cd &amp;lt;new_submodule&amp;gt;
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#616e88;&quot;&gt;# CD into the new repository
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#88c0d0;&quot;&gt;cd &lt;&#x2F;span&gt;&lt;span style=&quot;color:#81a1c1;&quot;&gt;&amp;lt;&lt;&#x2F;span&gt;&lt;span&gt;new_submodule&lt;&#x2F;span&gt;&lt;span style=&quot;color:#81a1c1;&quot;&gt;&amp;gt;
 &lt;&#x2F;span&gt;&lt;span&gt;
-&lt;&#x2F;span&gt;&lt;span style=&quot;color:#608b4e;&quot;&gt;# Use filter-branch to isolate the subdirectory
-&lt;&#x2F;span&gt;&lt;span&gt;git filter-branch --subdirectory-filter &lt;&#x2F;span&gt;&lt;span style=&quot;color:#d69d85;&quot;&gt;&amp;#39;path&#x2F;to&#x2F;subdirectory&amp;#39;&lt;&#x2F;span&gt;&lt;span&gt; --prune-empty&lt;&#x2F;span&gt;&lt;span style=&quot;color:#569cd6;&quot;&gt; --&lt;&#x2F;span&gt;&lt;span&gt; --all
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#616e88;&quot;&gt;# Use filter-branch to isolate the subdirectory
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#88c0d0;&quot;&gt;git&lt;&#x2F;span&gt;&lt;span&gt; filter-branch --subdirectory-filter &lt;&#x2F;span&gt;&lt;span style=&quot;color:#a3be8c;&quot;&gt;&amp;#39;path&#x2F;to&#x2F;subdirectory&amp;#39;&lt;&#x2F;span&gt;&lt;span&gt; --prune-empty&lt;&#x2F;span&gt;&lt;span style=&quot;color:#81a1c1;&quot;&gt; --&lt;&#x2F;span&gt;&lt;span&gt; --all
 &lt;&#x2F;span&gt;&lt;span&gt;
-&lt;&#x2F;span&gt;&lt;span style=&quot;color:#608b4e;&quot;&gt;# Remove the old remote
-&lt;&#x2F;span&gt;&lt;span&gt;git remote rm &amp;lt;remote_name&amp;gt;
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#616e88;&quot;&gt;# Remove the old remote
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#88c0d0;&quot;&gt;git&lt;&#x2F;span&gt;&lt;span&gt; remote rm &lt;&#x2F;span&gt;&lt;span style=&quot;color:#81a1c1;&quot;&gt;&amp;lt;&lt;&#x2F;span&gt;&lt;span&gt;remote_name&lt;&#x2F;span&gt;&lt;span style=&quot;color:#81a1c1;&quot;&gt;&amp;gt;
 &lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
 &lt;p&gt;&lt;code&gt;git filter-branch&lt;&#x2F;code&gt; lets you rewrite Git revision history and apply custom
 filters on each revision. &lt;strong&gt;It should be used with caution!&lt;&#x2F;strong&gt; From the Git
