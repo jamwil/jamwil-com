@@ -15,14 +15,14 @@
           <link>https://jamwil.com/refine-pull-request/</link>
           <guid>https://jamwil.com/refine-pull-request/</guid>
           <description xml:base="https://jamwil.com/refine-pull-request/">&lt;p&gt;Let’s say you have a dependabot pull request and Charlie Marsh has added a new
-check to &lt;a href=&quot;https:&#x2F;&#x2F;github.com&#x2F;astral-sh&#x2F;ruff&quot;&gt;Ruff&lt;&#x2F;a&gt; that causes your lint check
+check to &lt;a rel=&quot;external&quot; href=&quot;https:&#x2F;&#x2F;github.com&#x2F;astral-sh&#x2F;ruff&quot;&gt;Ruff&lt;&#x2F;a&gt; that causes your lint check
 to fail. You can fix the lint error and push the changes back to the pull
 request branch!&lt;&#x2F;p&gt;
 &lt;p&gt;First, checkout the pull request locally:&lt;&#x2F;p&gt;
-&lt;pre data-lang=&quot;bash&quot; style=&quot;background-color:#2e3440;color:#d8dee9;&quot; class=&quot;language-bash &quot;&gt;&lt;code class=&quot;language-bash&quot; data-lang=&quot;bash&quot;&gt;&lt;span style=&quot;color:#616e88;&quot;&gt;# In this case, I&amp;#39;m updating ruff to v0.0.278
-&lt;&#x2F;span&gt;&lt;span style=&quot;color:#88c0d0;&quot;&gt;git&lt;&#x2F;span&gt;&lt;span&gt; fetch origin dependabot&#x2F;pip&#x2F;ruff-0.0.278
-&lt;&#x2F;span&gt;&lt;span style=&quot;color:#88c0d0;&quot;&gt;git&lt;&#x2F;span&gt;&lt;span&gt; switch --track origin&#x2F;dependabot&#x2F;pip&#x2F;ruff-0.0.278
-&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;pre&gt;&lt;code data-lang=&quot;bash&quot;&gt;# In this case, I&amp;#39;m updating ruff to v0.0.278
+git fetch origin dependabot&#x2F;pip&#x2F;ruff-0.0.278
+git switch --track origin&#x2F;dependabot&#x2F;pip&#x2F;ruff-0.0.278
+&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
 &lt;p&gt;We’ve now checked out the PR branch and set it to track the remote. We can use
 this pattern to keep tabs on long-running PRs, or as in this case, simply push
 an additional patch before merging. If you’d like a more friendly local branch
@@ -33,13 +33,13 @@ this won’t set the local branch to track the remote.&lt;&#x2F;p&gt;
 lints still pass, however I’d like to update the ruff version in my
 &lt;code&gt;.pre-commit-config.yaml&lt;&#x2F;code&gt; file so that it’s consistent with my
 &lt;code&gt;requirements.txt&lt;&#x2F;code&gt;. I’ll make that change, commit and push back to the remote.&lt;&#x2F;p&gt;
-&lt;pre data-lang=&quot;bash&quot; style=&quot;background-color:#2e3440;color:#d8dee9;&quot; class=&quot;language-bash &quot;&gt;&lt;code class=&quot;language-bash&quot; data-lang=&quot;bash&quot;&gt;&lt;span style=&quot;color:#88c0d0;&quot;&gt;git&lt;&#x2F;span&gt;&lt;span&gt; add .pre-commit-config.yaml
-&lt;&#x2F;span&gt;&lt;span style=&quot;color:#88c0d0;&quot;&gt;git&lt;&#x2F;span&gt;&lt;span&gt; commit -m &lt;&#x2F;span&gt;&lt;span style=&quot;color:#a3be8c;&quot;&gt;&amp;quot;Update pre-commit config.&amp;quot;
-&lt;&#x2F;span&gt;&lt;span style=&quot;color:#88c0d0;&quot;&gt;git&lt;&#x2F;span&gt;&lt;span&gt; push
-&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;pre&gt;&lt;code data-lang=&quot;bash&quot;&gt;git add .pre-commit-config.yaml
+git commit -m &amp;quot;Update pre-commit config.&amp;quot;
+git push
+&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
 &lt;p&gt;At this point, your checks should fire again and you can merge using your
 preferred merge method into your trunk. Check out
-&lt;a href=&quot;https:&#x2F;&#x2F;github.com&#x2F;jamwil&#x2F;bulletproof-python&#x2F;pull&#x2F;129&quot;&gt;real pull request&lt;&#x2F;a&gt; to
+&lt;a rel=&quot;external&quot; href=&quot;https:&#x2F;&#x2F;github.com&#x2F;jamwil&#x2F;bulletproof-python&#x2F;pull&#x2F;129&quot;&gt;real pull request&lt;&#x2F;a&gt; to
 see how this looks server side.&lt;&#x2F;p&gt;</description>
       </item>
       <item>
@@ -65,7 +65,7 @@ between two and fifteen orca whales.&lt;&#x2F;li&gt;
 &lt;li&gt;A &lt;strong&gt;Service&lt;&#x2F;strong&gt; is an abstraction which provides a single network entry point to
 distribute traffic across the cluster.&lt;&#x2F;li&gt;
 &lt;&#x2F;ul&gt;
-&lt;p&gt;For local development I am using &lt;a href=&quot;https:&#x2F;&#x2F;kind.sigs.k8s.io&quot;&gt;Kind&lt;&#x2F;a&gt;, a tool which
+&lt;p&gt;For local development I am using &lt;a rel=&quot;external&quot; href=&quot;https:&#x2F;&#x2F;kind.sigs.k8s.io&quot;&gt;Kind&lt;&#x2F;a&gt;, a tool which
 allows you to run Kubernetes clusters in Docker containers. It is a lightweight
 way to run docker containers inside kubernetes inside a docker container (pause
 for effect).&lt;&#x2F;p&gt;
@@ -80,28 +80,28 @@ similar, though it requires you to set up a container registry.&lt;&#x2F;p&gt;
 &lt;p&gt;The next step is creating a deployment and a service for the application by
 creating kubernetes manifest files in your project directory. The simplest
 possible configuration is something like so:&lt;&#x2F;p&gt;
-&lt;pre data-lang=&quot;yaml&quot; style=&quot;background-color:#2e3440;color:#d8dee9;&quot; class=&quot;language-yaml &quot;&gt;&lt;code class=&quot;language-yaml&quot; data-lang=&quot;yaml&quot;&gt;&lt;span style=&quot;color:#616e88;&quot;&gt;# deployment.yaml
-&lt;&#x2F;span&gt;&lt;span style=&quot;color:#8fbcbb;&quot;&gt;apiVersion&lt;&#x2F;span&gt;&lt;span style=&quot;color:#eceff4;&quot;&gt;: &lt;&#x2F;span&gt;&lt;span style=&quot;color:#a3be8c;&quot;&gt;apps&#x2F;v1
-&lt;&#x2F;span&gt;&lt;span style=&quot;color:#8fbcbb;&quot;&gt;kind&lt;&#x2F;span&gt;&lt;span style=&quot;color:#eceff4;&quot;&gt;: &lt;&#x2F;span&gt;&lt;span style=&quot;color:#a3be8c;&quot;&gt;Deployment
-&lt;&#x2F;span&gt;&lt;span style=&quot;color:#8fbcbb;&quot;&gt;metadata&lt;&#x2F;span&gt;&lt;span style=&quot;color:#eceff4;&quot;&gt;:
-&lt;&#x2F;span&gt;&lt;span&gt;  &lt;&#x2F;span&gt;&lt;span style=&quot;color:#8fbcbb;&quot;&gt;name&lt;&#x2F;span&gt;&lt;span style=&quot;color:#eceff4;&quot;&gt;: &lt;&#x2F;span&gt;&lt;span style=&quot;color:#a3be8c;&quot;&gt;my-image-name-deployment
-&lt;&#x2F;span&gt;&lt;span style=&quot;color:#8fbcbb;&quot;&gt;spec&lt;&#x2F;span&gt;&lt;span style=&quot;color:#eceff4;&quot;&gt;:
-&lt;&#x2F;span&gt;&lt;span&gt;  &lt;&#x2F;span&gt;&lt;span style=&quot;color:#8fbcbb;&quot;&gt;replicas&lt;&#x2F;span&gt;&lt;span style=&quot;color:#eceff4;&quot;&gt;: &lt;&#x2F;span&gt;&lt;span style=&quot;color:#b48ead;&quot;&gt;1
-&lt;&#x2F;span&gt;&lt;span&gt;  &lt;&#x2F;span&gt;&lt;span style=&quot;color:#8fbcbb;&quot;&gt;selector&lt;&#x2F;span&gt;&lt;span style=&quot;color:#eceff4;&quot;&gt;:
-&lt;&#x2F;span&gt;&lt;span&gt;    &lt;&#x2F;span&gt;&lt;span style=&quot;color:#8fbcbb;&quot;&gt;matchLabels&lt;&#x2F;span&gt;&lt;span style=&quot;color:#eceff4;&quot;&gt;:
-&lt;&#x2F;span&gt;&lt;span&gt;      &lt;&#x2F;span&gt;&lt;span style=&quot;color:#8fbcbb;&quot;&gt;app&lt;&#x2F;span&gt;&lt;span style=&quot;color:#eceff4;&quot;&gt;: &lt;&#x2F;span&gt;&lt;span style=&quot;color:#a3be8c;&quot;&gt;my-image-name
-&lt;&#x2F;span&gt;&lt;span&gt;  &lt;&#x2F;span&gt;&lt;span style=&quot;color:#8fbcbb;&quot;&gt;template&lt;&#x2F;span&gt;&lt;span style=&quot;color:#eceff4;&quot;&gt;:
-&lt;&#x2F;span&gt;&lt;span&gt;    &lt;&#x2F;span&gt;&lt;span style=&quot;color:#8fbcbb;&quot;&gt;metadata&lt;&#x2F;span&gt;&lt;span style=&quot;color:#eceff4;&quot;&gt;:
-&lt;&#x2F;span&gt;&lt;span&gt;      &lt;&#x2F;span&gt;&lt;span style=&quot;color:#8fbcbb;&quot;&gt;labels&lt;&#x2F;span&gt;&lt;span style=&quot;color:#eceff4;&quot;&gt;:
-&lt;&#x2F;span&gt;&lt;span&gt;        &lt;&#x2F;span&gt;&lt;span style=&quot;color:#8fbcbb;&quot;&gt;app&lt;&#x2F;span&gt;&lt;span style=&quot;color:#eceff4;&quot;&gt;: &lt;&#x2F;span&gt;&lt;span style=&quot;color:#a3be8c;&quot;&gt;my-image-name
-&lt;&#x2F;span&gt;&lt;span&gt;    &lt;&#x2F;span&gt;&lt;span style=&quot;color:#8fbcbb;&quot;&gt;spec&lt;&#x2F;span&gt;&lt;span style=&quot;color:#eceff4;&quot;&gt;:
-&lt;&#x2F;span&gt;&lt;span&gt;      &lt;&#x2F;span&gt;&lt;span style=&quot;color:#8fbcbb;&quot;&gt;containers&lt;&#x2F;span&gt;&lt;span style=&quot;color:#eceff4;&quot;&gt;:
-&lt;&#x2F;span&gt;&lt;span&gt;        - &lt;&#x2F;span&gt;&lt;span style=&quot;color:#8fbcbb;&quot;&gt;name&lt;&#x2F;span&gt;&lt;span style=&quot;color:#eceff4;&quot;&gt;: &lt;&#x2F;span&gt;&lt;span style=&quot;color:#a3be8c;&quot;&gt;my-image-name
-&lt;&#x2F;span&gt;&lt;span&gt;          &lt;&#x2F;span&gt;&lt;span style=&quot;color:#8fbcbb;&quot;&gt;image&lt;&#x2F;span&gt;&lt;span style=&quot;color:#eceff4;&quot;&gt;: &lt;&#x2F;span&gt;&lt;span style=&quot;color:#a3be8c;&quot;&gt;my-image-name
-&lt;&#x2F;span&gt;&lt;span&gt;          &lt;&#x2F;span&gt;&lt;span style=&quot;color:#8fbcbb;&quot;&gt;imagePullPolicy&lt;&#x2F;span&gt;&lt;span style=&quot;color:#eceff4;&quot;&gt;: &lt;&#x2F;span&gt;&lt;span style=&quot;color:#a3be8c;&quot;&gt;Never &lt;&#x2F;span&gt;&lt;span style=&quot;color:#616e88;&quot;&gt;# Use for local image
-&lt;&#x2F;span&gt;&lt;span&gt;          &lt;&#x2F;span&gt;&lt;span style=&quot;color:#8fbcbb;&quot;&gt;ports&lt;&#x2F;span&gt;&lt;span style=&quot;color:#eceff4;&quot;&gt;:
-&lt;&#x2F;span&gt;&lt;span&gt;            - &lt;&#x2F;span&gt;&lt;span style=&quot;color:#8fbcbb;&quot;&gt;containerPort&lt;&#x2F;span&gt;&lt;span style=&quot;color:#eceff4;&quot;&gt;: &lt;&#x2F;span&gt;&lt;span style=&quot;color:#b48ead;&quot;&gt;8000 &lt;&#x2F;span&gt;&lt;span style=&quot;color:#616e88;&quot;&gt;# Use the port your application runs on
-&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;pre&gt;&lt;code data-lang=&quot;yaml&quot;&gt;# deployment.yaml
+apiVersion: apps&#x2F;v1
+kind: Deployment
+metadata:
+  name: my-image-name-deployment
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: my-image-name
+  template:
+    metadata:
+      labels:
+        app: my-image-name
+    spec:
+      containers:
+        - name: my-image-name
+          image: my-image-name
+          imagePullPolicy: Never # Use for local image
+          ports:
+            - containerPort: 8000 # Use the port your application runs on
+&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
 &lt;p&gt;Note that the &lt;code&gt;imagePullPolicy&lt;&#x2F;code&gt; is set to &lt;code&gt;Never&lt;&#x2F;code&gt; because we are using a local
 image with the implied tag &lt;code&gt;latest&lt;&#x2F;code&gt;. Specifying a specific tag should make this
 unnecessary, otherwise the default behaviour is to try to pull the image from
@@ -109,19 +109,19 @@ Docker Hub, which will fail each time (or worse, deploy something unexpected).&l
 &lt;p&gt;In addition to matching the exposed port of the container, your application
 should be configured to bind to any incoming address (0.0.0.0), not just
 localhost.&lt;&#x2F;p&gt;
-&lt;pre data-lang=&quot;yaml&quot; style=&quot;background-color:#2e3440;color:#d8dee9;&quot; class=&quot;language-yaml &quot;&gt;&lt;code class=&quot;language-yaml&quot; data-lang=&quot;yaml&quot;&gt;&lt;span style=&quot;color:#616e88;&quot;&gt;# service.yaml
-&lt;&#x2F;span&gt;&lt;span style=&quot;color:#8fbcbb;&quot;&gt;apiVersion&lt;&#x2F;span&gt;&lt;span style=&quot;color:#eceff4;&quot;&gt;: &lt;&#x2F;span&gt;&lt;span style=&quot;color:#a3be8c;&quot;&gt;v1
-&lt;&#x2F;span&gt;&lt;span style=&quot;color:#8fbcbb;&quot;&gt;kind&lt;&#x2F;span&gt;&lt;span style=&quot;color:#eceff4;&quot;&gt;: &lt;&#x2F;span&gt;&lt;span style=&quot;color:#a3be8c;&quot;&gt;Service
-&lt;&#x2F;span&gt;&lt;span style=&quot;color:#8fbcbb;&quot;&gt;metadata&lt;&#x2F;span&gt;&lt;span style=&quot;color:#eceff4;&quot;&gt;:
-&lt;&#x2F;span&gt;&lt;span&gt;  &lt;&#x2F;span&gt;&lt;span style=&quot;color:#8fbcbb;&quot;&gt;name&lt;&#x2F;span&gt;&lt;span style=&quot;color:#eceff4;&quot;&gt;: &lt;&#x2F;span&gt;&lt;span style=&quot;color:#a3be8c;&quot;&gt;my-image-name-service
-&lt;&#x2F;span&gt;&lt;span style=&quot;color:#8fbcbb;&quot;&gt;spec&lt;&#x2F;span&gt;&lt;span style=&quot;color:#eceff4;&quot;&gt;:
-&lt;&#x2F;span&gt;&lt;span&gt;  &lt;&#x2F;span&gt;&lt;span style=&quot;color:#8fbcbb;&quot;&gt;type&lt;&#x2F;span&gt;&lt;span style=&quot;color:#eceff4;&quot;&gt;: &lt;&#x2F;span&gt;&lt;span style=&quot;color:#a3be8c;&quot;&gt;NodePort
-&lt;&#x2F;span&gt;&lt;span&gt;  &lt;&#x2F;span&gt;&lt;span style=&quot;color:#8fbcbb;&quot;&gt;ports&lt;&#x2F;span&gt;&lt;span style=&quot;color:#eceff4;&quot;&gt;:
-&lt;&#x2F;span&gt;&lt;span&gt;    - &lt;&#x2F;span&gt;&lt;span style=&quot;color:#8fbcbb;&quot;&gt;port&lt;&#x2F;span&gt;&lt;span style=&quot;color:#eceff4;&quot;&gt;: &lt;&#x2F;span&gt;&lt;span style=&quot;color:#b48ead;&quot;&gt;8000
-&lt;&#x2F;span&gt;&lt;span&gt;      &lt;&#x2F;span&gt;&lt;span style=&quot;color:#8fbcbb;&quot;&gt;nodePort&lt;&#x2F;span&gt;&lt;span style=&quot;color:#eceff4;&quot;&gt;: &lt;&#x2F;span&gt;&lt;span style=&quot;color:#b48ead;&quot;&gt;30080
-&lt;&#x2F;span&gt;&lt;span&gt;  &lt;&#x2F;span&gt;&lt;span style=&quot;color:#8fbcbb;&quot;&gt;selector&lt;&#x2F;span&gt;&lt;span style=&quot;color:#eceff4;&quot;&gt;:
-&lt;&#x2F;span&gt;&lt;span&gt;    &lt;&#x2F;span&gt;&lt;span style=&quot;color:#8fbcbb;&quot;&gt;app&lt;&#x2F;span&gt;&lt;span style=&quot;color:#eceff4;&quot;&gt;: &lt;&#x2F;span&gt;&lt;span style=&quot;color:#a3be8c;&quot;&gt;my-image-name
-&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;pre&gt;&lt;code data-lang=&quot;yaml&quot;&gt;# service.yaml
+apiVersion: v1
+kind: Service
+metadata:
+  name: my-image-name-service
+spec:
+  type: NodePort
+  ports:
+    - port: 8000
+      nodePort: 30080
+  selector:
+    app: my-image-name
+&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
 &lt;p&gt;With these files in place, we can create the deployment and service respectively
 using &lt;code&gt;kubectl apply -f &amp;lt;file-name&amp;gt;&lt;&#x2F;code&gt; for each. They can be verified using:
 &lt;code&gt;kubectl get deployments&lt;&#x2F;code&gt; and &lt;code&gt;kubectl get services&lt;&#x2F;code&gt;.&lt;&#x2F;p&gt;
@@ -155,32 +155,32 @@ workspace settings.&lt;&#x2F;li&gt;
 &lt;li&gt;&lt;code&gt;presentation:reveal&lt;&#x2F;code&gt; will reveal the terminal window when the task is run.&lt;&#x2F;li&gt;
 &lt;&#x2F;ul&gt;
 &lt;p&gt;Change &lt;code&gt;args&lt;&#x2F;code&gt; to any python file if you’d like to run the same file each time.&lt;&#x2F;p&gt;
-&lt;pre data-lang=&quot;json&quot; style=&quot;background-color:#2e3440;color:#d8dee9;&quot; class=&quot;language-json &quot;&gt;&lt;code class=&quot;language-json&quot; data-lang=&quot;json&quot;&gt;&lt;span&gt;{
-&lt;&#x2F;span&gt;&lt;span&gt;  &lt;&#x2F;span&gt;&lt;span style=&quot;color:#616e88;&quot;&gt;&#x2F;&#x2F; See https:&#x2F;&#x2F;go.microsoft.com&#x2F;fwlink&#x2F;?LinkId=733558
-&lt;&#x2F;span&gt;&lt;span&gt;  &lt;&#x2F;span&gt;&lt;span style=&quot;color:#616e88;&quot;&gt;&#x2F;&#x2F; for the documentation about the tasks.json format
-&lt;&#x2F;span&gt;&lt;span&gt;  &lt;&#x2F;span&gt;&lt;span style=&quot;color:#a3be8c;&quot;&gt;&amp;quot;version&amp;quot;&lt;&#x2F;span&gt;&lt;span style=&quot;color:#eceff4;&quot;&gt;: &lt;&#x2F;span&gt;&lt;span style=&quot;color:#a3be8c;&quot;&gt;&amp;quot;2.0.0&amp;quot;&lt;&#x2F;span&gt;&lt;span style=&quot;color:#eceff4;&quot;&gt;,
-&lt;&#x2F;span&gt;&lt;span&gt;  &lt;&#x2F;span&gt;&lt;span style=&quot;color:#a3be8c;&quot;&gt;&amp;quot;tasks&amp;quot;&lt;&#x2F;span&gt;&lt;span style=&quot;color:#eceff4;&quot;&gt;: &lt;&#x2F;span&gt;&lt;span&gt;[
-&lt;&#x2F;span&gt;&lt;span&gt;    {
-&lt;&#x2F;span&gt;&lt;span&gt;      &lt;&#x2F;span&gt;&lt;span style=&quot;color:#a3be8c;&quot;&gt;&amp;quot;label&amp;quot;&lt;&#x2F;span&gt;&lt;span style=&quot;color:#eceff4;&quot;&gt;: &lt;&#x2F;span&gt;&lt;span style=&quot;color:#a3be8c;&quot;&gt;&amp;quot;Python: current file&amp;quot;&lt;&#x2F;span&gt;&lt;span style=&quot;color:#eceff4;&quot;&gt;,
-&lt;&#x2F;span&gt;&lt;span&gt;      &lt;&#x2F;span&gt;&lt;span style=&quot;color:#a3be8c;&quot;&gt;&amp;quot;type&amp;quot;&lt;&#x2F;span&gt;&lt;span style=&quot;color:#eceff4;&quot;&gt;: &lt;&#x2F;span&gt;&lt;span style=&quot;color:#a3be8c;&quot;&gt;&amp;quot;shell&amp;quot;&lt;&#x2F;span&gt;&lt;span style=&quot;color:#eceff4;&quot;&gt;,
-&lt;&#x2F;span&gt;&lt;span&gt;      &lt;&#x2F;span&gt;&lt;span style=&quot;color:#a3be8c;&quot;&gt;&amp;quot;command&amp;quot;&lt;&#x2F;span&gt;&lt;span style=&quot;color:#eceff4;&quot;&gt;: &lt;&#x2F;span&gt;&lt;span style=&quot;color:#a3be8c;&quot;&gt;&amp;quot;${command:python.interpreterPath}&amp;quot;&lt;&#x2F;span&gt;&lt;span style=&quot;color:#eceff4;&quot;&gt;,
-&lt;&#x2F;span&gt;&lt;span&gt;      &lt;&#x2F;span&gt;&lt;span style=&quot;color:#a3be8c;&quot;&gt;&amp;quot;args&amp;quot;&lt;&#x2F;span&gt;&lt;span style=&quot;color:#eceff4;&quot;&gt;: &lt;&#x2F;span&gt;&lt;span&gt;[&lt;&#x2F;span&gt;&lt;span style=&quot;color:#a3be8c;&quot;&gt;&amp;quot;${file}&amp;quot;&lt;&#x2F;span&gt;&lt;span&gt;]&lt;&#x2F;span&gt;&lt;span style=&quot;color:#eceff4;&quot;&gt;,
-&lt;&#x2F;span&gt;&lt;span&gt;      &lt;&#x2F;span&gt;&lt;span style=&quot;color:#a3be8c;&quot;&gt;&amp;quot;problemMatcher&amp;quot;&lt;&#x2F;span&gt;&lt;span style=&quot;color:#eceff4;&quot;&gt;: &lt;&#x2F;span&gt;&lt;span&gt;[]&lt;&#x2F;span&gt;&lt;span style=&quot;color:#eceff4;&quot;&gt;,
-&lt;&#x2F;span&gt;&lt;span&gt;      &lt;&#x2F;span&gt;&lt;span style=&quot;color:#a3be8c;&quot;&gt;&amp;quot;group&amp;quot;&lt;&#x2F;span&gt;&lt;span style=&quot;color:#eceff4;&quot;&gt;: &lt;&#x2F;span&gt;&lt;span&gt;{
-&lt;&#x2F;span&gt;&lt;span&gt;        &lt;&#x2F;span&gt;&lt;span style=&quot;color:#a3be8c;&quot;&gt;&amp;quot;kind&amp;quot;&lt;&#x2F;span&gt;&lt;span style=&quot;color:#eceff4;&quot;&gt;: &lt;&#x2F;span&gt;&lt;span style=&quot;color:#a3be8c;&quot;&gt;&amp;quot;build&amp;quot;&lt;&#x2F;span&gt;&lt;span style=&quot;color:#eceff4;&quot;&gt;,
-&lt;&#x2F;span&gt;&lt;span&gt;        &lt;&#x2F;span&gt;&lt;span style=&quot;color:#a3be8c;&quot;&gt;&amp;quot;isDefault&amp;quot;&lt;&#x2F;span&gt;&lt;span style=&quot;color:#eceff4;&quot;&gt;: &lt;&#x2F;span&gt;&lt;span style=&quot;color:#81a1c1;&quot;&gt;true
-&lt;&#x2F;span&gt;&lt;span&gt;      }&lt;&#x2F;span&gt;&lt;span style=&quot;color:#eceff4;&quot;&gt;,
-&lt;&#x2F;span&gt;&lt;span&gt;      &lt;&#x2F;span&gt;&lt;span style=&quot;color:#a3be8c;&quot;&gt;&amp;quot;presentation&amp;quot;&lt;&#x2F;span&gt;&lt;span style=&quot;color:#eceff4;&quot;&gt;: &lt;&#x2F;span&gt;&lt;span&gt;{
-&lt;&#x2F;span&gt;&lt;span&gt;        &lt;&#x2F;span&gt;&lt;span style=&quot;color:#a3be8c;&quot;&gt;&amp;quot;focus&amp;quot;&lt;&#x2F;span&gt;&lt;span style=&quot;color:#eceff4;&quot;&gt;: &lt;&#x2F;span&gt;&lt;span style=&quot;color:#81a1c1;&quot;&gt;true&lt;&#x2F;span&gt;&lt;span style=&quot;color:#eceff4;&quot;&gt;,
-&lt;&#x2F;span&gt;&lt;span&gt;        &lt;&#x2F;span&gt;&lt;span style=&quot;color:#a3be8c;&quot;&gt;&amp;quot;reveal&amp;quot;&lt;&#x2F;span&gt;&lt;span style=&quot;color:#eceff4;&quot;&gt;: &lt;&#x2F;span&gt;&lt;span style=&quot;color:#a3be8c;&quot;&gt;&amp;quot;always&amp;quot;
-&lt;&#x2F;span&gt;&lt;span&gt;      }&lt;&#x2F;span&gt;&lt;span style=&quot;color:#eceff4;&quot;&gt;,
-&lt;&#x2F;span&gt;&lt;span&gt;      &lt;&#x2F;span&gt;&lt;span style=&quot;color:#a3be8c;&quot;&gt;&amp;quot;options&amp;quot;&lt;&#x2F;span&gt;&lt;span style=&quot;color:#eceff4;&quot;&gt;: &lt;&#x2F;span&gt;&lt;span&gt;{
-&lt;&#x2F;span&gt;&lt;span&gt;        &lt;&#x2F;span&gt;&lt;span style=&quot;color:#a3be8c;&quot;&gt;&amp;quot;cwd&amp;quot;&lt;&#x2F;span&gt;&lt;span style=&quot;color:#eceff4;&quot;&gt;: &lt;&#x2F;span&gt;&lt;span style=&quot;color:#a3be8c;&quot;&gt;&amp;quot;${workspaceFolder}&amp;quot;
-&lt;&#x2F;span&gt;&lt;span&gt;      }
-&lt;&#x2F;span&gt;&lt;span&gt;    }
-&lt;&#x2F;span&gt;&lt;span&gt;  ]
-&lt;&#x2F;span&gt;&lt;span&gt;}
-&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;</description>
+&lt;pre&gt;&lt;code data-lang=&quot;json&quot;&gt;{
+  &#x2F;&#x2F; See https:&#x2F;&#x2F;go.microsoft.com&#x2F;fwlink&#x2F;?LinkId=733558
+  &#x2F;&#x2F; for the documentation about the tasks.json format
+  &amp;quot;version&amp;quot;: &amp;quot;2.0.0&amp;quot;,
+  &amp;quot;tasks&amp;quot;: [
+    {
+      &amp;quot;label&amp;quot;: &amp;quot;Python: current file&amp;quot;,
+      &amp;quot;type&amp;quot;: &amp;quot;shell&amp;quot;,
+      &amp;quot;command&amp;quot;: &amp;quot;${command:python.interpreterPath}&amp;quot;,
+      &amp;quot;args&amp;quot;: [&amp;quot;${file}&amp;quot;],
+      &amp;quot;problemMatcher&amp;quot;: [],
+      &amp;quot;group&amp;quot;: {
+        &amp;quot;kind&amp;quot;: &amp;quot;build&amp;quot;,
+        &amp;quot;isDefault&amp;quot;: true
+      },
+      &amp;quot;presentation&amp;quot;: {
+        &amp;quot;focus&amp;quot;: true,
+        &amp;quot;reveal&amp;quot;: &amp;quot;always&amp;quot;
+      },
+      &amp;quot;options&amp;quot;: {
+        &amp;quot;cwd&amp;quot;: &amp;quot;${workspaceFolder}&amp;quot;
+      }
+    }
+  ]
+}
+&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;</description>
       </item>
       <item>
           <title>Introducing bulletproof-python</title>
@@ -188,14 +188,14 @@ workspace settings.&lt;&#x2F;li&gt;
           <author>James Williams</author>
           <link>https://jamwil.com/introducing-bulletproof-python/</link>
           <guid>https://jamwil.com/introducing-bulletproof-python/</guid>
-          <description xml:base="https://jamwil.com/introducing-bulletproof-python/">&lt;p&gt;I owe a debt of gratitude to &lt;a href=&quot;https:&#x2F;&#x2F;github.com&#x2F;cjolowicz&#x2F;&quot;&gt;Claudio Jolowicz&lt;&#x2F;a&gt;
+          <description xml:base="https://jamwil.com/introducing-bulletproof-python/">&lt;p&gt;I owe a debt of gratitude to &lt;a rel=&quot;external&quot; href=&quot;https:&#x2F;&#x2F;github.com&#x2F;cjolowicz&#x2F;&quot;&gt;Claudio Jolowicz&lt;&#x2F;a&gt;
 for introducing me to modern python tooling. His
-&lt;a href=&quot;https:&#x2F;&#x2F;github.com&#x2F;cjolowicz&#x2F;cookiecutter-hypermodern-python&quot;&gt;Hypermodern Python&lt;&#x2F;a&gt;
+&lt;a rel=&quot;external&quot; href=&quot;https:&#x2F;&#x2F;github.com&#x2F;cjolowicz&#x2F;cookiecutter-hypermodern-python&quot;&gt;Hypermodern Python&lt;&#x2F;a&gt;
 template and associated blog series are a great resource.&lt;&#x2F;p&gt;
-&lt;p&gt;The Hypermodern system is built around &lt;a href=&quot;https:&#x2F;&#x2F;nox.thea.codes&#x2F;en&#x2F;stable&#x2F;&quot;&gt;nox&lt;&#x2F;a&gt;
-and &lt;a href=&quot;https:&#x2F;&#x2F;python-poetry.org&quot;&gt;poetry&lt;&#x2F;a&gt;.&lt;&#x2F;p&gt;
+&lt;p&gt;The Hypermodern system is built around &lt;a rel=&quot;external&quot; href=&quot;https:&#x2F;&#x2F;nox.thea.codes&#x2F;en&#x2F;stable&#x2F;&quot;&gt;nox&lt;&#x2F;a&gt;
+and &lt;a rel=&quot;external&quot; href=&quot;https:&#x2F;&#x2F;python-poetry.org&quot;&gt;poetry&lt;&#x2F;a&gt;.&lt;&#x2F;p&gt;
 &lt;ul&gt;
-&lt;li&gt;nox is similar in spirit to &lt;a href=&quot;https:&#x2F;&#x2F;tox.wiki&#x2F;en&#x2F;latest&#x2F;&quot;&gt;tox&lt;&#x2F;a&gt; but uses python
+&lt;li&gt;nox is similar in spirit to &lt;a rel=&quot;external&quot; href=&quot;https:&#x2F;&#x2F;tox.wiki&#x2F;en&#x2F;latest&#x2F;&quot;&gt;tox&lt;&#x2F;a&gt; but uses python
 scripts instead of configuration files.&lt;&#x2F;li&gt;
 &lt;li&gt;It’s very powerful, but since I’m not particularly clever, I find the
 hypermodern stack difficult to understand.&lt;&#x2F;li&gt;
@@ -203,15 +203,15 @@ hypermodern stack difficult to understand.&lt;&#x2F;li&gt;
 &lt;p&gt;I decided to throw together a simple template that uses tox and pip-tools. The
 template uses:&lt;&#x2F;p&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;a href=&quot;https:&#x2F;&#x2F;docs.pytest.org&#x2F;en&#x2F;7.2.x&#x2F;&quot;&gt;pytest&lt;&#x2F;a&gt; and
-&lt;a href=&quot;https:&#x2F;&#x2F;coverage.readthedocs.io&#x2F;en&#x2F;latest&#x2F;&quot;&gt;coverage.py&lt;&#x2F;a&gt; for testing,&lt;&#x2F;li&gt;
-&lt;li&gt;&lt;a href=&quot;https:&#x2F;&#x2F;black.readthedocs.io&#x2F;en&#x2F;stable&#x2F;&quot;&gt;black&lt;&#x2F;a&gt; for formatting, and&lt;&#x2F;li&gt;
-&lt;li&gt;&lt;a href=&quot;https:&#x2F;&#x2F;github.com&#x2F;charliermarsh&#x2F;ruff&quot;&gt;ruff&lt;&#x2F;a&gt; for linting.&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;a rel=&quot;external&quot; href=&quot;https:&#x2F;&#x2F;docs.pytest.org&#x2F;en&#x2F;7.2.x&#x2F;&quot;&gt;pytest&lt;&#x2F;a&gt; and
+&lt;a rel=&quot;external&quot; href=&quot;https:&#x2F;&#x2F;coverage.readthedocs.io&#x2F;en&#x2F;latest&#x2F;&quot;&gt;coverage.py&lt;&#x2F;a&gt; for testing,&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;a rel=&quot;external&quot; href=&quot;https:&#x2F;&#x2F;black.readthedocs.io&#x2F;en&#x2F;stable&#x2F;&quot;&gt;black&lt;&#x2F;a&gt; for formatting, and&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;a rel=&quot;external&quot; href=&quot;https:&#x2F;&#x2F;github.com&#x2F;charliermarsh&#x2F;ruff&quot;&gt;ruff&lt;&#x2F;a&gt; for linting.&lt;&#x2F;li&gt;
 &lt;&#x2F;ul&gt;
 &lt;p&gt;It strives to be clean, simple and hard to break, albeit incomplete and likely
 suitable only for small libraries without broad distribution.&lt;&#x2F;p&gt;
 &lt;p&gt;🌱 &lt;strong&gt;The template is available here:
-&lt;a href=&quot;https:&#x2F;&#x2F;github.com&#x2F;jamwil&#x2F;bulletproof-python&quot;&gt;bulletproof-python&lt;&#x2F;a&gt;&lt;&#x2F;strong&gt;.&lt;&#x2F;p&gt;</description>
+&lt;a rel=&quot;external&quot; href=&quot;https:&#x2F;&#x2F;github.com&#x2F;jamwil&#x2F;bulletproof-python&quot;&gt;bulletproof-python&lt;&#x2F;a&gt;&lt;&#x2F;strong&gt;.&lt;&#x2F;p&gt;</description>
       </item>
     </channel>
 </rss>

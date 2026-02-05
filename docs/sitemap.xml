@@ -45,6 +45,10 @@
         <loc>https://jamwil.com/farwest/</loc>
     </url>
     <url>
+        <loc>https://jamwil.com/fuck-microsoft/</loc>
+        <lastmod>2026-02-05T11:35:46Z</lastmod>
+    </url>
+    <url>
         <loc>https://jamwil.com/git-submodule/</loc>
         <lastmod>2023-01-12T15:53:00Z</lastmod>
     </url>
@@ -160,6 +164,9 @@
         <loc>https://jamwil.com/tags/encryption/</loc>
     </url>
     <url>
+        <loc>https://jamwil.com/tags/enshittification/</loc>
+    </url>
+    <url>
         <loc>https://jamwil.com/tags/excel/</loc>
     </url>
     <url>
@@ -209,6 +216,9 @@
     </url>
     <url>
         <loc>https://jamwil.com/tags/mexico/</loc>
+    </url>
+    <url>
+        <loc>https://jamwil.com/tags/microsoft/</loc>
     </url>
     <url>
         <loc>https://jamwil.com/tags/motorcycle/</loc>

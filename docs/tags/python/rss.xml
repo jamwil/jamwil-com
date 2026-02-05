@@ -24,32 +24,32 @@ workspace settings.&lt;&#x2F;li&gt;
 &lt;li&gt;&lt;code&gt;presentation:reveal&lt;&#x2F;code&gt; will reveal the terminal window when the task is run.&lt;&#x2F;li&gt;
 &lt;&#x2F;ul&gt;
 &lt;p&gt;Change &lt;code&gt;args&lt;&#x2F;code&gt; to any python file if you’d like to run the same file each time.&lt;&#x2F;p&gt;
-&lt;pre data-lang=&quot;json&quot; style=&quot;background-color:#2e3440;color:#d8dee9;&quot; class=&quot;language-json &quot;&gt;&lt;code class=&quot;language-json&quot; data-lang=&quot;json&quot;&gt;&lt;span&gt;{
-&lt;&#x2F;span&gt;&lt;span&gt;  &lt;&#x2F;span&gt;&lt;span style=&quot;color:#616e88;&quot;&gt;&#x2F;&#x2F; See https:&#x2F;&#x2F;go.microsoft.com&#x2F;fwlink&#x2F;?LinkId=733558
-&lt;&#x2F;span&gt;&lt;span&gt;  &lt;&#x2F;span&gt;&lt;span style=&quot;color:#616e88;&quot;&gt;&#x2F;&#x2F; for the documentation about the tasks.json format
-&lt;&#x2F;span&gt;&lt;span&gt;  &lt;&#x2F;span&gt;&lt;span style=&quot;color:#a3be8c;&quot;&gt;&amp;quot;version&amp;quot;&lt;&#x2F;span&gt;&lt;span style=&quot;color:#eceff4;&quot;&gt;: &lt;&#x2F;span&gt;&lt;span style=&quot;color:#a3be8c;&quot;&gt;&amp;quot;2.0.0&amp;quot;&lt;&#x2F;span&gt;&lt;span style=&quot;color:#eceff4;&quot;&gt;,
-&lt;&#x2F;span&gt;&lt;span&gt;  &lt;&#x2F;span&gt;&lt;span style=&quot;color:#a3be8c;&quot;&gt;&amp;quot;tasks&amp;quot;&lt;&#x2F;span&gt;&lt;span style=&quot;color:#eceff4;&quot;&gt;: &lt;&#x2F;span&gt;&lt;span&gt;[
-&lt;&#x2F;span&gt;&lt;span&gt;    {
-&lt;&#x2F;span&gt;&lt;span&gt;      &lt;&#x2F;span&gt;&lt;span style=&quot;color:#a3be8c;&quot;&gt;&amp;quot;label&amp;quot;&lt;&#x2F;span&gt;&lt;span style=&quot;color:#eceff4;&quot;&gt;: &lt;&#x2F;span&gt;&lt;span style=&quot;color:#a3be8c;&quot;&gt;&amp;quot;Python: current file&amp;quot;&lt;&#x2F;span&gt;&lt;span style=&quot;color:#eceff4;&quot;&gt;,
-&lt;&#x2F;span&gt;&lt;span&gt;      &lt;&#x2F;span&gt;&lt;span style=&quot;color:#a3be8c;&quot;&gt;&amp;quot;type&amp;quot;&lt;&#x2F;span&gt;&lt;span style=&quot;color:#eceff4;&quot;&gt;: &lt;&#x2F;span&gt;&lt;span style=&quot;color:#a3be8c;&quot;&gt;&amp;quot;shell&amp;quot;&lt;&#x2F;span&gt;&lt;span style=&quot;color:#eceff4;&quot;&gt;,
-&lt;&#x2F;span&gt;&lt;span&gt;      &lt;&#x2F;span&gt;&lt;span style=&quot;color:#a3be8c;&quot;&gt;&amp;quot;command&amp;quot;&lt;&#x2F;span&gt;&lt;span style=&quot;color:#eceff4;&quot;&gt;: &lt;&#x2F;span&gt;&lt;span style=&quot;color:#a3be8c;&quot;&gt;&amp;quot;${command:python.interpreterPath}&amp;quot;&lt;&#x2F;span&gt;&lt;span style=&quot;color:#eceff4;&quot;&gt;,
-&lt;&#x2F;span&gt;&lt;span&gt;      &lt;&#x2F;span&gt;&lt;span style=&quot;color:#a3be8c;&quot;&gt;&amp;quot;args&amp;quot;&lt;&#x2F;span&gt;&lt;span style=&quot;color:#eceff4;&quot;&gt;: &lt;&#x2F;span&gt;&lt;span&gt;[&lt;&#x2F;span&gt;&lt;span style=&quot;color:#a3be8c;&quot;&gt;&amp;quot;${file}&amp;quot;&lt;&#x2F;span&gt;&lt;span&gt;]&lt;&#x2F;span&gt;&lt;span style=&quot;color:#eceff4;&quot;&gt;,
-&lt;&#x2F;span&gt;&lt;span&gt;      &lt;&#x2F;span&gt;&lt;span style=&quot;color:#a3be8c;&quot;&gt;&amp;quot;problemMatcher&amp;quot;&lt;&#x2F;span&gt;&lt;span style=&quot;color:#eceff4;&quot;&gt;: &lt;&#x2F;span&gt;&lt;span&gt;[]&lt;&#x2F;span&gt;&lt;span style=&quot;color:#eceff4;&quot;&gt;,
-&lt;&#x2F;span&gt;&lt;span&gt;      &lt;&#x2F;span&gt;&lt;span style=&quot;color:#a3be8c;&quot;&gt;&amp;quot;group&amp;quot;&lt;&#x2F;span&gt;&lt;span style=&quot;color:#eceff4;&quot;&gt;: &lt;&#x2F;span&gt;&lt;span&gt;{
-&lt;&#x2F;span&gt;&lt;span&gt;        &lt;&#x2F;span&gt;&lt;span style=&quot;color:#a3be8c;&quot;&gt;&amp;quot;kind&amp;quot;&lt;&#x2F;span&gt;&lt;span style=&quot;color:#eceff4;&quot;&gt;: &lt;&#x2F;span&gt;&lt;span style=&quot;color:#a3be8c;&quot;&gt;&amp;quot;build&amp;quot;&lt;&#x2F;span&gt;&lt;span style=&quot;color:#eceff4;&quot;&gt;,
-&lt;&#x2F;span&gt;&lt;span&gt;        &lt;&#x2F;span&gt;&lt;span style=&quot;color:#a3be8c;&quot;&gt;&amp;quot;isDefault&amp;quot;&lt;&#x2F;span&gt;&lt;span style=&quot;color:#eceff4;&quot;&gt;: &lt;&#x2F;span&gt;&lt;span style=&quot;color:#81a1c1;&quot;&gt;true
-&lt;&#x2F;span&gt;&lt;span&gt;      }&lt;&#x2F;span&gt;&lt;span style=&quot;color:#eceff4;&quot;&gt;,
-&lt;&#x2F;span&gt;&lt;span&gt;      &lt;&#x2F;span&gt;&lt;span style=&quot;color:#a3be8c;&quot;&gt;&amp;quot;presentation&amp;quot;&lt;&#x2F;span&gt;&lt;span style=&quot;color:#eceff4;&quot;&gt;: &lt;&#x2F;span&gt;&lt;span&gt;{
-&lt;&#x2F;span&gt;&lt;span&gt;        &lt;&#x2F;span&gt;&lt;span style=&quot;color:#a3be8c;&quot;&gt;&amp;quot;focus&amp;quot;&lt;&#x2F;span&gt;&lt;span style=&quot;color:#eceff4;&quot;&gt;: &lt;&#x2F;span&gt;&lt;span style=&quot;color:#81a1c1;&quot;&gt;true&lt;&#x2F;span&gt;&lt;span style=&quot;color:#eceff4;&quot;&gt;,
-&lt;&#x2F;span&gt;&lt;span&gt;        &lt;&#x2F;span&gt;&lt;span style=&quot;color:#a3be8c;&quot;&gt;&amp;quot;reveal&amp;quot;&lt;&#x2F;span&gt;&lt;span style=&quot;color:#eceff4;&quot;&gt;: &lt;&#x2F;span&gt;&lt;span style=&quot;color:#a3be8c;&quot;&gt;&amp;quot;always&amp;quot;
-&lt;&#x2F;span&gt;&lt;span&gt;      }&lt;&#x2F;span&gt;&lt;span style=&quot;color:#eceff4;&quot;&gt;,
-&lt;&#x2F;span&gt;&lt;span&gt;      &lt;&#x2F;span&gt;&lt;span style=&quot;color:#a3be8c;&quot;&gt;&amp;quot;options&amp;quot;&lt;&#x2F;span&gt;&lt;span style=&quot;color:#eceff4;&quot;&gt;: &lt;&#x2F;span&gt;&lt;span&gt;{
-&lt;&#x2F;span&gt;&lt;span&gt;        &lt;&#x2F;span&gt;&lt;span style=&quot;color:#a3be8c;&quot;&gt;&amp;quot;cwd&amp;quot;&lt;&#x2F;span&gt;&lt;span style=&quot;color:#eceff4;&quot;&gt;: &lt;&#x2F;span&gt;&lt;span style=&quot;color:#a3be8c;&quot;&gt;&amp;quot;${workspaceFolder}&amp;quot;
-&lt;&#x2F;span&gt;&lt;span&gt;      }
-&lt;&#x2F;span&gt;&lt;span&gt;    }
-&lt;&#x2F;span&gt;&lt;span&gt;  ]
-&lt;&#x2F;span&gt;&lt;span&gt;}
-&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;</description>
+&lt;pre&gt;&lt;code data-lang=&quot;json&quot;&gt;{
+  &#x2F;&#x2F; See https:&#x2F;&#x2F;go.microsoft.com&#x2F;fwlink&#x2F;?LinkId=733558
+  &#x2F;&#x2F; for the documentation about the tasks.json format
+  &amp;quot;version&amp;quot;: &amp;quot;2.0.0&amp;quot;,
+  &amp;quot;tasks&amp;quot;: [
+    {
+      &amp;quot;label&amp;quot;: &amp;quot;Python: current file&amp;quot;,
+      &amp;quot;type&amp;quot;: &amp;quot;shell&amp;quot;,
+      &amp;quot;command&amp;quot;: &amp;quot;${command:python.interpreterPath}&amp;quot;,
+      &amp;quot;args&amp;quot;: [&amp;quot;${file}&amp;quot;],
+      &amp;quot;problemMatcher&amp;quot;: [],
+      &amp;quot;group&amp;quot;: {
+        &amp;quot;kind&amp;quot;: &amp;quot;build&amp;quot;,
+        &amp;quot;isDefault&amp;quot;: true
+      },
+      &amp;quot;presentation&amp;quot;: {
+        &amp;quot;focus&amp;quot;: true,
+        &amp;quot;reveal&amp;quot;: &amp;quot;always&amp;quot;
+      },
+      &amp;quot;options&amp;quot;: {
+        &amp;quot;cwd&amp;quot;: &amp;quot;${workspaceFolder}&amp;quot;
+      }
+    }
+  ]
+}
+&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;</description>
       </item>
       <item>
           <title>Introducing bulletproof-python</title>
@@ -57,14 +57,14 @@ workspace settings.&lt;&#x2F;li&gt;
           <author>James Williams</author>
           <link>https://jamwil.com/introducing-bulletproof-python/</link>
           <guid>https://jamwil.com/introducing-bulletproof-python/</guid>
-          <description xml:base="https://jamwil.com/introducing-bulletproof-python/">&lt;p&gt;I owe a debt of gratitude to &lt;a href=&quot;https:&#x2F;&#x2F;github.com&#x2F;cjolowicz&#x2F;&quot;&gt;Claudio Jolowicz&lt;&#x2F;a&gt;
+          <description xml:base="https://jamwil.com/introducing-bulletproof-python/">&lt;p&gt;I owe a debt of gratitude to &lt;a rel=&quot;external&quot; href=&quot;https:&#x2F;&#x2F;github.com&#x2F;cjolowicz&#x2F;&quot;&gt;Claudio Jolowicz&lt;&#x2F;a&gt;
 for introducing me to modern python tooling. His
-&lt;a href=&quot;https:&#x2F;&#x2F;github.com&#x2F;cjolowicz&#x2F;cookiecutter-hypermodern-python&quot;&gt;Hypermodern Python&lt;&#x2F;a&gt;
+&lt;a rel=&quot;external&quot; href=&quot;https:&#x2F;&#x2F;github.com&#x2F;cjolowicz&#x2F;cookiecutter-hypermodern-python&quot;&gt;Hypermodern Python&lt;&#x2F;a&gt;
 template and associated blog series are a great resource.&lt;&#x2F;p&gt;
-&lt;p&gt;The Hypermodern system is built around &lt;a href=&quot;https:&#x2F;&#x2F;nox.thea.codes&#x2F;en&#x2F;stable&#x2F;&quot;&gt;nox&lt;&#x2F;a&gt;
-and &lt;a href=&quot;https:&#x2F;&#x2F;python-poetry.org&quot;&gt;poetry&lt;&#x2F;a&gt;.&lt;&#x2F;p&gt;
+&lt;p&gt;The Hypermodern system is built around &lt;a rel=&quot;external&quot; href=&quot;https:&#x2F;&#x2F;nox.thea.codes&#x2F;en&#x2F;stable&#x2F;&quot;&gt;nox&lt;&#x2F;a&gt;
+and &lt;a rel=&quot;external&quot; href=&quot;https:&#x2F;&#x2F;python-poetry.org&quot;&gt;poetry&lt;&#x2F;a&gt;.&lt;&#x2F;p&gt;
 &lt;ul&gt;
-&lt;li&gt;nox is similar in spirit to &lt;a href=&quot;https:&#x2F;&#x2F;tox.wiki&#x2F;en&#x2F;latest&#x2F;&quot;&gt;tox&lt;&#x2F;a&gt; but uses python
+&lt;li&gt;nox is similar in spirit to &lt;a rel=&quot;external&quot; href=&quot;https:&#x2F;&#x2F;tox.wiki&#x2F;en&#x2F;latest&#x2F;&quot;&gt;tox&lt;&#x2F;a&gt; but uses python
 scripts instead of configuration files.&lt;&#x2F;li&gt;
 &lt;li&gt;It’s very powerful, but since I’m not particularly clever, I find the
 hypermodern stack difficult to understand.&lt;&#x2F;li&gt;
@@ -72,15 +72,15 @@ hypermodern stack difficult to understand.&lt;&#x2F;li&gt;
 &lt;p&gt;I decided to throw together a simple template that uses tox and pip-tools. The
 template uses:&lt;&#x2F;p&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;a href=&quot;https:&#x2F;&#x2F;docs.pytest.org&#x2F;en&#x2F;7.2.x&#x2F;&quot;&gt;pytest&lt;&#x2F;a&gt; and
-&lt;a href=&quot;https:&#x2F;&#x2F;coverage.readthedocs.io&#x2F;en&#x2F;latest&#x2F;&quot;&gt;coverage.py&lt;&#x2F;a&gt; for testing,&lt;&#x2F;li&gt;
-&lt;li&gt;&lt;a href=&quot;https:&#x2F;&#x2F;black.readthedocs.io&#x2F;en&#x2F;stable&#x2F;&quot;&gt;black&lt;&#x2F;a&gt; for formatting, and&lt;&#x2F;li&gt;
-&lt;li&gt;&lt;a href=&quot;https:&#x2F;&#x2F;github.com&#x2F;charliermarsh&#x2F;ruff&quot;&gt;ruff&lt;&#x2F;a&gt; for linting.&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;a rel=&quot;external&quot; href=&quot;https:&#x2F;&#x2F;docs.pytest.org&#x2F;en&#x2F;7.2.x&#x2F;&quot;&gt;pytest&lt;&#x2F;a&gt; and
+&lt;a rel=&quot;external&quot; href=&quot;https:&#x2F;&#x2F;coverage.readthedocs.io&#x2F;en&#x2F;latest&#x2F;&quot;&gt;coverage.py&lt;&#x2F;a&gt; for testing,&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;a rel=&quot;external&quot; href=&quot;https:&#x2F;&#x2F;black.readthedocs.io&#x2F;en&#x2F;stable&#x2F;&quot;&gt;black&lt;&#x2F;a&gt; for formatting, and&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;a rel=&quot;external&quot; href=&quot;https:&#x2F;&#x2F;github.com&#x2F;charliermarsh&#x2F;ruff&quot;&gt;ruff&lt;&#x2F;a&gt; for linting.&lt;&#x2F;li&gt;
 &lt;&#x2F;ul&gt;
 &lt;p&gt;It strives to be clean, simple and hard to break, albeit incomplete and likely
 suitable only for small libraries without broad distribution.&lt;&#x2F;p&gt;
 &lt;p&gt;🌱 &lt;strong&gt;The template is available here:
-&lt;a href=&quot;https:&#x2F;&#x2F;github.com&#x2F;jamwil&#x2F;bulletproof-python&quot;&gt;bulletproof-python&lt;&#x2F;a&gt;&lt;&#x2F;strong&gt;.&lt;&#x2F;p&gt;</description>
+&lt;a rel=&quot;external&quot; href=&quot;https:&#x2F;&#x2F;github.com&#x2F;jamwil&#x2F;bulletproof-python&quot;&gt;bulletproof-python&lt;&#x2F;a&gt;&lt;&#x2F;strong&gt;.&lt;&#x2F;p&gt;</description>
       </item>
     </channel>
 </rss>

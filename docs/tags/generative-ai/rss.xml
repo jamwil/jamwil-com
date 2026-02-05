@@ -87,10 +87,10 @@ lot. There is ample value in certainty, and you forego that at the outset. If
 you don’t have the expertise to identify its missteps (and there will be many),
 then you are firmly out over your skis. You can see how frustrating this is for
 everyone involved in real time: take a look at
-&lt;a href=&quot;https:&#x2F;&#x2F;github.com&#x2F;dotnet&#x2F;runtime&#x2F;pull&#x2F;115762&quot;&gt;Microsoft’s own engineers losing their minds trying to get AI to write correct code for them&lt;&#x2F;a&gt;
-(also &lt;a href=&quot;https:&#x2F;&#x2F;github.com&#x2F;dotnet&#x2F;runtime&#x2F;pull&#x2F;115743&quot;&gt;here&lt;&#x2F;a&gt;,
-&lt;a href=&quot;https:&#x2F;&#x2F;github.com&#x2F;dotnet&#x2F;runtime&#x2F;pull&#x2F;115733&quot;&gt;here&lt;&#x2F;a&gt; and
-&lt;a href=&quot;https:&#x2F;&#x2F;github.com&#x2F;dotnet&#x2F;runtime&#x2F;pull&#x2F;115732&quot;&gt;here&lt;&#x2F;a&gt;).&lt;&#x2F;p&gt;
+&lt;a rel=&quot;external&quot; href=&quot;https:&#x2F;&#x2F;github.com&#x2F;dotnet&#x2F;runtime&#x2F;pull&#x2F;115762&quot;&gt;Microsoft’s own engineers losing their minds trying to get AI to write correct code for them&lt;&#x2F;a&gt;
+(also &lt;a rel=&quot;external&quot; href=&quot;https:&#x2F;&#x2F;github.com&#x2F;dotnet&#x2F;runtime&#x2F;pull&#x2F;115743&quot;&gt;here&lt;&#x2F;a&gt;,
+&lt;a rel=&quot;external&quot; href=&quot;https:&#x2F;&#x2F;github.com&#x2F;dotnet&#x2F;runtime&#x2F;pull&#x2F;115733&quot;&gt;here&lt;&#x2F;a&gt; and
+&lt;a rel=&quot;external&quot; href=&quot;https:&#x2F;&#x2F;github.com&#x2F;dotnet&#x2F;runtime&#x2F;pull&#x2F;115732&quot;&gt;here&lt;&#x2F;a&gt;).&lt;&#x2F;p&gt;
 &lt;hr &#x2F;&gt;
 &lt;p&gt;Your boss has been sold a grand lie. It’s not their fault. They have been set
 adrift in a sea of misdirection, misaligned incentives, grift, absolutism,
@@ -191,7 +191,7 @@ alright.&lt;&#x2F;p&gt;</description>
           <link>https://jamwil.com/chat-gpt-wolfram-notes/</link>
           <guid>https://jamwil.com/chat-gpt-wolfram-notes/</guid>
           <description xml:base="https://jamwil.com/chat-gpt-wolfram-notes/">&lt;p&gt;&lt;strong&gt;Source Material:&lt;&#x2F;strong&gt;
-&lt;a href=&quot;https:&#x2F;&#x2F;writings.stephenwolfram.com&#x2F;2023&#x2F;02&#x2F;what-is-chatgpt-doing-and-why-does-it-work&#x2F;&quot;&gt;Stephen Wolfram, 2023-02-14&lt;&#x2F;a&gt;&lt;&#x2F;p&gt;
+&lt;a rel=&quot;external&quot; href=&quot;https:&#x2F;&#x2F;writings.stephenwolfram.com&#x2F;2023&#x2F;02&#x2F;what-is-chatgpt-doing-and-why-does-it-work&#x2F;&quot;&gt;Stephen Wolfram, 2023-02-14&lt;&#x2F;a&gt;&lt;&#x2F;p&gt;
 &lt;p&gt;ChatGPT is a large-scale transformer-based language model that is designed to
 predict the next word in a sentence given the context of what has been said. It
 is a neural network with 175 billion parameters that has been trained on a vast
@@ -271,13 +271,13 @@ notes as I work through the material.&lt;&#x2F;p&gt;
 Andrej Karpathy’s Zero to Hero lecture series.&lt;&#x2F;p&gt;
 &lt;ul&gt;
 &lt;li&gt;Stephen Wolfram:
-&lt;a href=&quot;https:&#x2F;&#x2F;writings.stephenwolfram.com&#x2F;2023&#x2F;02&#x2F;what-is-chatgpt-doing-and-why-does-it-work&#x2F;&quot;&gt;What Is ChatGPT Doing … and Why Does It Work?&lt;&#x2F;a&gt;
+&lt;a rel=&quot;external&quot; href=&quot;https:&#x2F;&#x2F;writings.stephenwolfram.com&#x2F;2023&#x2F;02&#x2F;what-is-chatgpt-doing-and-why-does-it-work&#x2F;&quot;&gt;What Is ChatGPT Doing … and Why Does It Work?&lt;&#x2F;a&gt;
 (2023-02-14)&lt;&#x2F;li&gt;
 &lt;li&gt;Andrej Karpathy:
-&lt;a href=&quot;https:&#x2F;&#x2F;karpathy.ai&#x2F;zero-to-hero.html&quot;&gt;Neural Networks: Zero to Hero&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
-&lt;li&gt;&lt;a href=&quot;https:&#x2F;&#x2F;platform.openai.com&#x2F;docs&#x2F;introduction&#x2F;overview&quot;&gt;OpenAI Documentation&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+&lt;a rel=&quot;external&quot; href=&quot;https:&#x2F;&#x2F;karpathy.ai&#x2F;zero-to-hero.html&quot;&gt;Neural Networks: Zero to Hero&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;a rel=&quot;external&quot; href=&quot;https:&#x2F;&#x2F;platform.openai.com&#x2F;docs&#x2F;introduction&#x2F;overview&quot;&gt;OpenAI Documentation&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
 &lt;li&gt;Rodrigo Girão Serrão:
-&lt;a href=&quot;https:&#x2F;&#x2F;mathspp.com&#x2F;blog&#x2F;your-first-recurrent-neural-network&quot;&gt;Your first recurrent neural network (RNN)&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+&lt;a rel=&quot;external&quot; href=&quot;https:&#x2F;&#x2F;mathspp.com&#x2F;blog&#x2F;your-first-recurrent-neural-network&quot;&gt;Your first recurrent neural network (RNN)&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
 &lt;&#x2F;ul&gt;</description>
       </item>
     </channel>

@@ -56,6 +56,80 @@
         <article class="post-list">
           <header>
             <h1>
+              <a href="https:&#x2F;&#x2F;jamwil.com&#x2F;fuck-microsoft&#x2F;"
+                >I can&#x27;t turn off my computer</a
+              >
+            </h1>
+          </header>
+
+          <div class="content post-summary">
+            <p>
+              I don’t mean that in the sense that I’m addicted to it.
+              <em>I literally can’t turn it off</em>. When I shut it down, it immediately boots up
+              again. When I tell it to hibernate, it immediately boots up again.
+            </p>
+            <p>
+              From
+              <a
+                rel="external"
+                href="https://support.microsoft.com/en-us/topic/january-24-2026-kb5078132-os-build-22631-6495-out-of-band-ae8525fd-a0a8-4b9b-bba9-c647ea5dc8dd#:~:text=Known%20issues%20in%20this%20update"
+                >Microsoft</a
+              >:
+            </p>
+            <blockquote>
+              <p><strong>Symptoms</strong></p>
+              <p>
+                After installing this update, some Secure Launch-capable PCs with Virtual Secure
+                Mode (VSM) enabled are unable to shut down or enter hibernation. Instead, the device
+                restarts.<sup class="footnote-reference"><a href="#1">1</a></sup>
+              </p>
+              <p><strong>Next step</strong></p>
+              <p>
+                This issue will be addressed in a future Windows update. Additional information will
+                be shared as soon as it becomes available.
+              </p>
+            </blockquote>
+            <p>
+              How has it come to this? Technology used to be a source of optimism. We used to dream
+              about all the ways it could improve our lives. Now we’re lucky if a system upgrade
+              doesn’t break the fucking power button.
+            </p>
+            <hr />
+            <div class="footnote-definition" id="1">
+              <sup class="footnote-definition-label">1</sup>
+              <p>
+                Translation: we fired all the engineers that know how computers work and set the
+                rest of the company on shoveling AI slop into your stupid, willing faces.
+              </p>
+            </div>
+          </div>
+
+          <div class="article-info">
+            <div class="article-date">2026-02-05</div>
+
+            <div class="article-taxonomies">
+              <ul class="article-categories">
+                <li>
+                  <a href="https://jamwil.com/categories/technology/"> Technology </a>
+                </li>
+              </ul>
+
+              <ul class="article-tags">
+                <li>
+                  <a href="https://jamwil.com/tags/microsoft/"> #microsoft </a>
+                </li>
+
+                <li>
+                  <a href="https://jamwil.com/tags/enshittification/"> #enshittification </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </article>
+
+        <article class="post-list">
+          <header>
+            <h1>
               <a href="https:&#x2F;&#x2F;jamwil.com&#x2F;the-lie-of-generative-ai&#x2F;"
                 >Your boss is being taken for a ride on Generative AI</a
               >
@@ -166,13 +240,13 @@
               identify its missteps (and there will be many), then you are firmly out over your
               skis. You can see how frustrating this is for everyone involved in real time: take a
               look at
-              <a href="https://github.com/dotnet/runtime/pull/115762"
+              <a rel="external" href="https://github.com/dotnet/runtime/pull/115762"
                 >Microsoft’s own engineers losing their minds trying to get AI to write correct code
                 for them</a
               >
-              (also <a href="https://github.com/dotnet/runtime/pull/115743">here</a>,
-              <a href="https://github.com/dotnet/runtime/pull/115733">here</a> and
-              <a href="https://github.com/dotnet/runtime/pull/115732">here</a>).
+              (also <a rel="external" href="https://github.com/dotnet/runtime/pull/115743">here</a>,
+              <a rel="external" href="https://github.com/dotnet/runtime/pull/115733">here</a> and
+              <a rel="external" href="https://github.com/dotnet/runtime/pull/115732">here</a>).
             </p>
             <hr />
             <p>
@@ -369,14 +443,14 @@
             </p>
             <p>
               In other news, I’ve migrated my primary social media presence from mastodon over to
-              <a href="https://bsky.app/profile/jamwil.com">bluesky</a>. A lot of ink has been
-              spilled on this topic, especially in the wake of the election, and I don’t have much
-              new to add. I believe they are two fundamentally different tools, with mastodon best
-              suited for small, niche communities and bluesky a suitable successor to twitter as a
-              general-purpose network. Sensible, top-down moderation of any social network at scale
-              is extremely difficult, and they’ve acknowledged that by building incredible tools for
-              community-first moderation and community-first algorithms. It’s a great community full
-              of kind people and I hope to see you there.
+              <a rel="external" href="https://bsky.app/profile/jamwil.com">bluesky</a>. A lot of ink
+              has been spilled on this topic, especially in the wake of the election, and I don’t
+              have much new to add. I believe they are two fundamentally different tools, with
+              mastodon best suited for small, niche communities and bluesky a suitable successor to
+              twitter as a general-purpose network. Sensible, top-down moderation of any social
+              network at scale is extremely difficult, and they’ve acknowledged that by building
+              incredible tools for community-first moderation and community-first algorithms. It’s a
+              great community full of kind people and I hope to see you there.
             </p>
           </div>
 
@@ -442,67 +516,67 @@
                 >Make sure to replace <code>$SHEET_ID</code> and <code>$BEARER_TOKEN</code></strong
               >. The query will bring in both your data and column headers.
             </p>
-            <pre style="background-color:#2e3440;color:#d8dee9;"><code><span>let
-</span><span>    Source = Json.Document(
-</span><span>        Web.Contents(&quot;https://api.smartsheet.com/2.0/sheets/$SHEET_ID&quot;, [
-</span><span>            Headers=[
-</span><span>                #&quot;Content-Type&quot;=&quot;application/json&quot;,
-</span><span>                Authorization=&quot;Bearer $BEARER_TOKEN&quot;
-</span><span>            ]
-</span><span>        ])
-</span><span>    ),
-</span><span>
-</span><span>    // Process rows
-</span><span>    RowsData = Source[rows],
-</span><span>    RowsTable = Table.FromList(RowsData, Splitter.SplitByNothing()),
-</span><span>    ExpandedRows = Table.ExpandRecordColumn(
-</span><span>        RowsTable,
-</span><span>        &quot;Column1&quot;,
-</span><span>        {&quot;id&quot;, &quot;rowNumber&quot;, &quot;expanded&quot;, &quot;createdAt&quot;, &quot;modifiedAt&quot;, &quot;cells&quot;, &quot;siblingId&quot;},
-</span><span>        {&quot;ID&quot;, &quot;RowNumber&quot;, &quot;Expanded&quot;, &quot;CreatedAt&quot;, &quot;ModifiedAt&quot;, &quot;Cells&quot;, &quot;SiblingId&quot;}
-</span><span>    ),
-</span><span>    ExpandCells = Table.ExpandListColumn(ExpandedRows, &quot;Cells&quot;),
-</span><span>    ExpandedCellsDetails = Table.ExpandRecordColumn(
-</span><span>        ExpandCells,
-</span><span>        &quot;Cells&quot;,
-</span><span>        {&quot;columnId&quot;, &quot;value&quot;, &quot;displayValue&quot;},
-</span><span>        {&quot;ColumnID&quot;, &quot;CellValue&quot;, &quot;CellDisplayValue&quot;}
-</span><span>    ),
-</span><span>    RemovedCellsMetaColumns = Table.RemoveColumns(
-</span><span>        ExpandedCellsDetails,
-</span><span>        {&quot;ID&quot;, &quot;Expanded&quot;, &quot;CreatedAt&quot;, &quot;ModifiedAt&quot;, &quot;CellDisplayValue&quot;, &quot;SiblingId&quot;}
-</span><span>    ),
-</span><span>    PivotedCellsByColumnId = Table.Pivot(
-</span><span>        Table.TransformColumnTypes(RemovedCellsMetaColumns, {{ &quot;ColumnID&quot;, type text }}),
-</span><span>        List.Distinct(Table.TransformColumnTypes(RemovedCellsMetaColumns, {{ &quot;ColumnID&quot;, type text }})[ColumnID]),
-</span><span>        &quot;ColumnID&quot;,
-</span><span>        &quot;CellValue&quot;
-</span><span>    ),
-</span><span>    CleanRowData = Table.RemoveColumns(PivotedCellsByColumnId, {&quot;RowNumber&quot;}),
-</span><span>
-</span><span>    // Process columns
-</span><span>    ColumnsData = Source[columns],
-</span><span>    ColumnsTable = Table.FromList(ColumnsData, Splitter.SplitByNothing()),
-</span><span>    ExpandedColumns = Table.ExpandRecordColumn(
-</span><span>        ColumnsTable,
-</span><span>        &quot;Column1&quot;,
-</span><span>        {&quot;id&quot;, &quot;title&quot;},
-</span><span>        {&quot;ColumnID&quot;, &quot;ColumnTitle&quot;}
-</span><span>    ),
-</span><span>    ColumnTitlesMapped = Table.Pivot(
-</span><span>        Table.TransformColumnTypes(ExpandedColumns, {{ &quot;ColumnID&quot;, type text }}),
-</span><span>        List.Distinct(Table.TransformColumnTypes(ExpandedColumns, {{ &quot;ColumnID&quot;, type text }})[ColumnID]),
-</span><span>        &quot;ColumnID&quot;,
-</span><span>        &quot;ColumnTitle&quot;
-</span><span>    ),
-</span><span>
-</span><span>    // Add headers
-</span><span>    CombinedDataTable = Table.Combine({ColumnTitlesMapped, CleanRowData}),
-</span><span>    FinalData = Table.PromoteHeaders(CombinedDataTable)
-</span><span>
-</span><span>in
-</span><span>    FinalData
-</span></code></pre>
+            <pre><code>let
+    Source = Json.Document(
+        Web.Contents(&quot;https://api.smartsheet.com/2.0/sheets/$SHEET_ID&quot;, [
+            Headers=[
+                #&quot;Content-Type&quot;=&quot;application/json&quot;,
+                Authorization=&quot;Bearer $BEARER_TOKEN&quot;
+            ]
+        ])
+    ),
+
+    // Process rows
+    RowsData = Source[rows],
+    RowsTable = Table.FromList(RowsData, Splitter.SplitByNothing()),
+    ExpandedRows = Table.ExpandRecordColumn(
+        RowsTable,
+        &quot;Column1&quot;,
+        {&quot;id&quot;, &quot;rowNumber&quot;, &quot;expanded&quot;, &quot;createdAt&quot;, &quot;modifiedAt&quot;, &quot;cells&quot;, &quot;siblingId&quot;},
+        {&quot;ID&quot;, &quot;RowNumber&quot;, &quot;Expanded&quot;, &quot;CreatedAt&quot;, &quot;ModifiedAt&quot;, &quot;Cells&quot;, &quot;SiblingId&quot;}
+    ),
+    ExpandCells = Table.ExpandListColumn(ExpandedRows, &quot;Cells&quot;),
+    ExpandedCellsDetails = Table.ExpandRecordColumn(
+        ExpandCells,
+        &quot;Cells&quot;,
+        {&quot;columnId&quot;, &quot;value&quot;, &quot;displayValue&quot;},
+        {&quot;ColumnID&quot;, &quot;CellValue&quot;, &quot;CellDisplayValue&quot;}
+    ),
+    RemovedCellsMetaColumns = Table.RemoveColumns(
+        ExpandedCellsDetails,
+        {&quot;ID&quot;, &quot;Expanded&quot;, &quot;CreatedAt&quot;, &quot;ModifiedAt&quot;, &quot;CellDisplayValue&quot;, &quot;SiblingId&quot;}
+    ),
+    PivotedCellsByColumnId = Table.Pivot(
+        Table.TransformColumnTypes(RemovedCellsMetaColumns, {{ &quot;ColumnID&quot;, type text }}),
+        List.Distinct(Table.TransformColumnTypes(RemovedCellsMetaColumns, {{ &quot;ColumnID&quot;, type text }})[ColumnID]),
+        &quot;ColumnID&quot;,
+        &quot;CellValue&quot;
+    ),
+    CleanRowData = Table.RemoveColumns(PivotedCellsByColumnId, {&quot;RowNumber&quot;}),
+
+    // Process columns
+    ColumnsData = Source[columns],
+    ColumnsTable = Table.FromList(ColumnsData, Splitter.SplitByNothing()),
+    ExpandedColumns = Table.ExpandRecordColumn(
+        ColumnsTable,
+        &quot;Column1&quot;,
+        {&quot;id&quot;, &quot;title&quot;},
+        {&quot;ColumnID&quot;, &quot;ColumnTitle&quot;}
+    ),
+    ColumnTitlesMapped = Table.Pivot(
+        Table.TransformColumnTypes(ExpandedColumns, {{ &quot;ColumnID&quot;, type text }}),
+        List.Distinct(Table.TransformColumnTypes(ExpandedColumns, {{ &quot;ColumnID&quot;, type text }})[ColumnID]),
+        &quot;ColumnID&quot;,
+        &quot;ColumnTitle&quot;
+    ),
+
+    // Add headers
+    CombinedDataTable = Table.Combine({ColumnTitlesMapped, CleanRowData}),
+    FinalData = Table.PromoteHeaders(CombinedDataTable)
+
+in
+    FinalData
+</code></pre>
             <span id="continue-reading"></span>
           </div>
 
@@ -549,18 +623,15 @@
           <div class="content post-summary">
             <p>
               Let’s say you have a dependabot pull request and Charlie Marsh has added a new check
-              to <a href="https://github.com/astral-sh/ruff">Ruff</a> that causes your lint check to
-              fail. You can fix the lint error and push the changes back to the pull request branch!
+              to <a rel="external" href="https://github.com/astral-sh/ruff">Ruff</a> that causes
+              your lint check to fail. You can fix the lint error and push the changes back to the
+              pull request branch!
             </p>
             <p>First, checkout the pull request locally:</p>
-            <pre
-              data-lang="bash"
-              style="background-color:#2e3440;color:#d8dee9;"
-              class="language-bash "
-            ><code class="language-bash" data-lang="bash"><span style="color:#616e88;"># In this case, I&#39;m updating ruff to v0.0.278
-</span><span style="color:#88c0d0;">git</span><span> fetch origin dependabot/pip/ruff-0.0.278
-</span><span style="color:#88c0d0;">git</span><span> switch --track origin/dependabot/pip/ruff-0.0.278
-</span></code></pre>
+            <pre><code data-lang="bash"># In this case, I&#39;m updating ruff to v0.0.278
+git fetch origin dependabot/pip/ruff-0.0.278
+git switch --track origin/dependabot/pip/ruff-0.0.278
+</code></pre>
             <p>
               We’ve now checked out the PR branch and set it to track the remote. We can use this
               pattern to keep tabs on long-running PRs, or as in this case, simply push an
@@ -576,18 +647,16 @@
               <code>requirements.txt</code>. I’ll make that change, commit and push back to the
               remote.
             </p>
-            <pre
-              data-lang="bash"
-              style="background-color:#2e3440;color:#d8dee9;"
-              class="language-bash "
-            ><code class="language-bash" data-lang="bash"><span style="color:#88c0d0;">git</span><span> add .pre-commit-config.yaml
-</span><span style="color:#88c0d0;">git</span><span> commit -m </span><span style="color:#a3be8c;">&quot;Update pre-commit config.&quot;
-</span><span style="color:#88c0d0;">git</span><span> push
-</span></code></pre>
+            <pre><code data-lang="bash">git add .pre-commit-config.yaml
+git commit -m &quot;Update pre-commit config.&quot;
+git push
+</code></pre>
             <p>
               At this point, your checks should fire again and you can merge using your preferred
               merge method into your trunk. Check out
-              <a href="https://github.com/jamwil/bulletproof-python/pull/129">real pull request</a>
+              <a rel="external" href="https://github.com/jamwil/bulletproof-python/pull/129"
+                >real pull request</a
+              >
               to see how this looks server side.
             </p>
             <span id="continue-reading"></span>
@@ -668,10 +737,10 @@
               </li>
             </ul>
             <p>
-              For local development I am using <a href="https://kind.sigs.k8s.io">Kind</a>, a tool
-              which allows you to run Kubernetes clusters in Docker containers. It is a lightweight
-              way to run docker containers inside kubernetes inside a docker container (pause for
-              effect).
+              For local development I am using
+              <a rel="external" href="https://kind.sigs.k8s.io">Kind</a>, a tool which allows you to
+              run Kubernetes clusters in Docker containers. It is a lightweight way to run docker
+              containers inside kubernetes inside a docker container (pause for effect).
             </p>
             <p>The command to create a cluster is: <code>kind create cluster</code></p>
             <p>
@@ -690,32 +759,28 @@
               kubernetes manifest files in your project directory. The simplest possible
               configuration is something like so:
             </p>
-            <pre
-              data-lang="yaml"
-              style="background-color:#2e3440;color:#d8dee9;"
-              class="language-yaml "
-            ><code class="language-yaml" data-lang="yaml"><span style="color:#616e88;"># deployment.yaml
-</span><span style="color:#8fbcbb;">apiVersion</span><span style="color:#eceff4;">: </span><span style="color:#a3be8c;">apps/v1
-</span><span style="color:#8fbcbb;">kind</span><span style="color:#eceff4;">: </span><span style="color:#a3be8c;">Deployment
-</span><span style="color:#8fbcbb;">metadata</span><span style="color:#eceff4;">:
-</span><span>  </span><span style="color:#8fbcbb;">name</span><span style="color:#eceff4;">: </span><span style="color:#a3be8c;">my-image-name-deployment
-</span><span style="color:#8fbcbb;">spec</span><span style="color:#eceff4;">:
-</span><span>  </span><span style="color:#8fbcbb;">replicas</span><span style="color:#eceff4;">: </span><span style="color:#b48ead;">1
-</span><span>  </span><span style="color:#8fbcbb;">selector</span><span style="color:#eceff4;">:
-</span><span>    </span><span style="color:#8fbcbb;">matchLabels</span><span style="color:#eceff4;">:
-</span><span>      </span><span style="color:#8fbcbb;">app</span><span style="color:#eceff4;">: </span><span style="color:#a3be8c;">my-image-name
-</span><span>  </span><span style="color:#8fbcbb;">template</span><span style="color:#eceff4;">:
-</span><span>    </span><span style="color:#8fbcbb;">metadata</span><span style="color:#eceff4;">:
-</span><span>      </span><span style="color:#8fbcbb;">labels</span><span style="color:#eceff4;">:
-</span><span>        </span><span style="color:#8fbcbb;">app</span><span style="color:#eceff4;">: </span><span style="color:#a3be8c;">my-image-name
-</span><span>    </span><span style="color:#8fbcbb;">spec</span><span style="color:#eceff4;">:
-</span><span>      </span><span style="color:#8fbcbb;">containers</span><span style="color:#eceff4;">:
-</span><span>        - </span><span style="color:#8fbcbb;">name</span><span style="color:#eceff4;">: </span><span style="color:#a3be8c;">my-image-name
-</span><span>          </span><span style="color:#8fbcbb;">image</span><span style="color:#eceff4;">: </span><span style="color:#a3be8c;">my-image-name
-</span><span>          </span><span style="color:#8fbcbb;">imagePullPolicy</span><span style="color:#eceff4;">: </span><span style="color:#a3be8c;">Never </span><span style="color:#616e88;"># Use for local image
-</span><span>          </span><span style="color:#8fbcbb;">ports</span><span style="color:#eceff4;">:
-</span><span>            - </span><span style="color:#8fbcbb;">containerPort</span><span style="color:#eceff4;">: </span><span style="color:#b48ead;">8000 </span><span style="color:#616e88;"># Use the port your application runs on
-</span></code></pre>
+            <pre><code data-lang="yaml"># deployment.yaml
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: my-image-name-deployment
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: my-image-name
+  template:
+    metadata:
+      labels:
+        app: my-image-name
+    spec:
+      containers:
+        - name: my-image-name
+          image: my-image-name
+          imagePullPolicy: Never # Use for local image
+          ports:
+            - containerPort: 8000 # Use the port your application runs on
+</code></pre>
             <p>
               Note that the <code>imagePullPolicy</code> is set to <code>Never</code> because we are
               using a local image with the implied tag <code>latest</code>. Specifying a specific
@@ -727,23 +792,19 @@
               In addition to matching the exposed port of the container, your application should be
               configured to bind to any incoming address (0.0.0.0), not just localhost.
             </p>
-            <pre
-              data-lang="yaml"
-              style="background-color:#2e3440;color:#d8dee9;"
-              class="language-yaml "
-            ><code class="language-yaml" data-lang="yaml"><span style="color:#616e88;"># service.yaml
-</span><span style="color:#8fbcbb;">apiVersion</span><span style="color:#eceff4;">: </span><span style="color:#a3be8c;">v1
-</span><span style="color:#8fbcbb;">kind</span><span style="color:#eceff4;">: </span><span style="color:#a3be8c;">Service
-</span><span style="color:#8fbcbb;">metadata</span><span style="color:#eceff4;">:
-</span><span>  </span><span style="color:#8fbcbb;">name</span><span style="color:#eceff4;">: </span><span style="color:#a3be8c;">my-image-name-service
-</span><span style="color:#8fbcbb;">spec</span><span style="color:#eceff4;">:
-</span><span>  </span><span style="color:#8fbcbb;">type</span><span style="color:#eceff4;">: </span><span style="color:#a3be8c;">NodePort
-</span><span>  </span><span style="color:#8fbcbb;">ports</span><span style="color:#eceff4;">:
-</span><span>    - </span><span style="color:#8fbcbb;">port</span><span style="color:#eceff4;">: </span><span style="color:#b48ead;">8000
-</span><span>      </span><span style="color:#8fbcbb;">nodePort</span><span style="color:#eceff4;">: </span><span style="color:#b48ead;">30080
-</span><span>  </span><span style="color:#8fbcbb;">selector</span><span style="color:#eceff4;">:
-</span><span>    </span><span style="color:#8fbcbb;">app</span><span style="color:#eceff4;">: </span><span style="color:#a3be8c;">my-image-name
-</span></code></pre>
+            <pre><code data-lang="yaml"># service.yaml
+apiVersion: v1
+kind: Service
+metadata:
+  name: my-image-name-service
+spec:
+  type: NodePort
+  ports:
+    - port: 8000
+      nodePort: 30080
+  selector:
+    app: my-image-name
+</code></pre>
             <p>
               With these files in place, we can create the deployment and service respectively using
               <code>kubectl apply -f &lt;file-name&gt;</code> for each. They can be verified using:
@@ -822,6 +883,7 @@
             <p>
               <strong>Source Material:</strong>
               <a
+                rel="external"
                 href="https://writings.stephenwolfram.com/2023/02/what-is-chatgpt-doing-and-why-does-it-work/"
                 >Stephen Wolfram, 2023-02-14</a
               >
@@ -954,6 +1016,7 @@
               <li>
                 Stephen Wolfram:
                 <a
+                  rel="external"
                   href="https://writings.stephenwolfram.com/2023/02/what-is-chatgpt-doing-and-why-does-it-work/"
                   >What Is ChatGPT Doing … and Why Does It Work?</a
                 >
@@ -961,16 +1024,20 @@
               </li>
               <li>
                 Andrej Karpathy:
-                <a href="https://karpathy.ai/zero-to-hero.html">Neural Networks: Zero to Hero</a>
+                <a rel="external" href="https://karpathy.ai/zero-to-hero.html"
+                  >Neural Networks: Zero to Hero</a
+                >
               </li>
               <li>
-                <a href="https://platform.openai.com/docs/introduction/overview"
+                <a rel="external" href="https://platform.openai.com/docs/introduction/overview"
                   >OpenAI Documentation</a
                 >
               </li>
               <li>
                 Rodrigo Girão Serrão:
-                <a href="https://mathspp.com/blog/your-first-recurrent-neural-network"
+                <a
+                  rel="external"
+                  href="https://mathspp.com/blog/your-first-recurrent-neural-network"
                   >Your first recurrent neural network (RNN)</a
                 >
               </li>
@@ -1011,22 +1078,18 @@
           </header>
 
           <div class="content post-summary">
-            <pre
-              data-lang="bash"
-              style="background-color:#2e3440;color:#d8dee9;"
-              class="language-bash "
-            ><code class="language-bash" data-lang="bash"><span style="color:#616e88;"># Make a clone of the repository
-</span><span style="color:#88c0d0;">git</span><span> clone </span><span style="color:#81a1c1;">&lt;</span><span>your_project</span><span style="color:#81a1c1;">&gt; &lt;</span><span>new_submodule</span><span style="color:#81a1c1;">&gt;
-</span><span>
-</span><span style="color:#616e88;"># CD into the new repository
-</span><span style="color:#88c0d0;">cd </span><span style="color:#81a1c1;">&lt;</span><span>new_submodule</span><span style="color:#81a1c1;">&gt;
-</span><span>
-</span><span style="color:#616e88;"># Use filter-branch to isolate the subdirectory
-</span><span style="color:#88c0d0;">git</span><span> filter-branch --subdirectory-filter </span><span style="color:#a3be8c;">&#39;path/to/subdirectory&#39;</span><span> --prune-empty</span><span style="color:#81a1c1;"> --</span><span> --all
-</span><span>
-</span><span style="color:#616e88;"># Remove the old remote
-</span><span style="color:#88c0d0;">git</span><span> remote rm </span><span style="color:#81a1c1;">&lt;</span><span>remote_name</span><span style="color:#81a1c1;">&gt;
-</span></code></pre>
+            <pre><code data-lang="bash"># Make a clone of the repository
+git clone &lt;your_project&gt; &lt;new_submodule&gt;
+
+# CD into the new repository
+cd &lt;new_submodule&gt;
+
+# Use filter-branch to isolate the subdirectory
+git filter-branch --subdirectory-filter &#39;path/to/subdirectory&#39; --prune-empty -- --all
+
+# Remove the old remote
+git remote rm &lt;remote_name&gt;
+</code></pre>
             <p>
               <code>git filter-branch</code> lets you rewrite Git revision history and apply custom
               filters on each revision. <strong>It should be used with caution!</strong> From the
@@ -1120,14 +1183,15 @@
             <p>
               <strong
                 >🔖 One for the bookmarks:
-                <a href="https://jugmac00.github.io/blog/gpg-all-i-need-to-know/"
+                <a rel="external" href="https://jugmac00.github.io/blog/gpg-all-i-need-to-know/"
                   >GPG - All I Need to Know</a
                 ></strong
               >
             </p>
             <span id="continue-reading"></span>
             <p>
-              For posterity: <a href="https://archive.ph/9S2YM">archive.today webpage capture</a>
+              For posterity:
+              <a rel="external" href="https://archive.ph/9S2YM">archive.today webpage capture</a>
             </p>
           </div>
 
@@ -1194,36 +1258,32 @@
               Change <code>args</code> to any python file if you’d like to run the same file each
               time.
             </p>
-            <pre
-              data-lang="json"
-              style="background-color:#2e3440;color:#d8dee9;"
-              class="language-json "
-            ><code class="language-json" data-lang="json"><span>{
-</span><span>  </span><span style="color:#616e88;">// See https://go.microsoft.com/fwlink/?LinkId=733558
-</span><span>  </span><span style="color:#616e88;">// for the documentation about the tasks.json format
-</span><span>  </span><span style="color:#a3be8c;">&quot;version&quot;</span><span style="color:#eceff4;">: </span><span style="color:#a3be8c;">&quot;2.0.0&quot;</span><span style="color:#eceff4;">,
-</span><span>  </span><span style="color:#a3be8c;">&quot;tasks&quot;</span><span style="color:#eceff4;">: </span><span>[
-</span><span>    {
-</span><span>      </span><span style="color:#a3be8c;">&quot;label&quot;</span><span style="color:#eceff4;">: </span><span style="color:#a3be8c;">&quot;Python: current file&quot;</span><span style="color:#eceff4;">,
-</span><span>      </span><span style="color:#a3be8c;">&quot;type&quot;</span><span style="color:#eceff4;">: </span><span style="color:#a3be8c;">&quot;shell&quot;</span><span style="color:#eceff4;">,
-</span><span>      </span><span style="color:#a3be8c;">&quot;command&quot;</span><span style="color:#eceff4;">: </span><span style="color:#a3be8c;">&quot;${command:python.interpreterPath}&quot;</span><span style="color:#eceff4;">,
-</span><span>      </span><span style="color:#a3be8c;">&quot;args&quot;</span><span style="color:#eceff4;">: </span><span>[</span><span style="color:#a3be8c;">&quot;${file}&quot;</span><span>]</span><span style="color:#eceff4;">,
-</span><span>      </span><span style="color:#a3be8c;">&quot;problemMatcher&quot;</span><span style="color:#eceff4;">: </span><span>[]</span><span style="color:#eceff4;">,
-</span><span>      </span><span style="color:#a3be8c;">&quot;group&quot;</span><span style="color:#eceff4;">: </span><span>{
-</span><span>        </span><span style="color:#a3be8c;">&quot;kind&quot;</span><span style="color:#eceff4;">: </span><span style="color:#a3be8c;">&quot;build&quot;</span><span style="color:#eceff4;">,
-</span><span>        </span><span style="color:#a3be8c;">&quot;isDefault&quot;</span><span style="color:#eceff4;">: </span><span style="color:#81a1c1;">true
-</span><span>      }</span><span style="color:#eceff4;">,
-</span><span>      </span><span style="color:#a3be8c;">&quot;presentation&quot;</span><span style="color:#eceff4;">: </span><span>{
-</span><span>        </span><span style="color:#a3be8c;">&quot;focus&quot;</span><span style="color:#eceff4;">: </span><span style="color:#81a1c1;">true</span><span style="color:#eceff4;">,
-</span><span>        </span><span style="color:#a3be8c;">&quot;reveal&quot;</span><span style="color:#eceff4;">: </span><span style="color:#a3be8c;">&quot;always&quot;
-</span><span>      }</span><span style="color:#eceff4;">,
-</span><span>      </span><span style="color:#a3be8c;">&quot;options&quot;</span><span style="color:#eceff4;">: </span><span>{
-</span><span>        </span><span style="color:#a3be8c;">&quot;cwd&quot;</span><span style="color:#eceff4;">: </span><span style="color:#a3be8c;">&quot;${workspaceFolder}&quot;
-</span><span>      }
-</span><span>    }
-</span><span>  ]
-</span><span>}
-</span></code></pre>
+            <pre><code data-lang="json">{
+  // See https://go.microsoft.com/fwlink/?LinkId=733558
+  // for the documentation about the tasks.json format
+  &quot;version&quot;: &quot;2.0.0&quot;,
+  &quot;tasks&quot;: [
+    {
+      &quot;label&quot;: &quot;Python: current file&quot;,
+      &quot;type&quot;: &quot;shell&quot;,
+      &quot;command&quot;: &quot;${command:python.interpreterPath}&quot;,
+      &quot;args&quot;: [&quot;${file}&quot;],
+      &quot;problemMatcher&quot;: [],
+      &quot;group&quot;: {
+        &quot;kind&quot;: &quot;build&quot;,
+        &quot;isDefault&quot;: true
+      },
+      &quot;presentation&quot;: {
+        &quot;focus&quot;: true,
+        &quot;reveal&quot;: &quot;always&quot;
+      },
+      &quot;options&quot;: {
+        &quot;cwd&quot;: &quot;${workspaceFolder}&quot;
+      }
+    }
+  ]
+}
+</code></pre>
             <span id="continue-reading"></span>
           </div>
 
@@ -1282,22 +1342,23 @@
           <div class="content post-summary">
             <p>
               I owe a debt of gratitude to
-              <a href="https://github.com/cjolowicz/">Claudio Jolowicz</a>
+              <a rel="external" href="https://github.com/cjolowicz/">Claudio Jolowicz</a>
               for introducing me to modern python tooling. His
-              <a href="https://github.com/cjolowicz/cookiecutter-hypermodern-python"
+              <a rel="external" href="https://github.com/cjolowicz/cookiecutter-hypermodern-python"
                 >Hypermodern Python</a
               >
               template and associated blog series are a great resource.
             </p>
             <p>
               The Hypermodern system is built around
-              <a href="https://nox.thea.codes/en/stable/">nox</a> and
-              <a href="https://python-poetry.org">poetry</a>.
+              <a rel="external" href="https://nox.thea.codes/en/stable/">nox</a> and
+              <a rel="external" href="https://python-poetry.org">poetry</a>.
             </p>
             <ul>
               <li>
-                nox is similar in spirit to <a href="https://tox.wiki/en/latest/">tox</a> but uses
-                python scripts instead of configuration files.
+                nox is similar in spirit to
+                <a rel="external" href="https://tox.wiki/en/latest/">tox</a> but uses python scripts
+                instead of configuration files.
               </li>
               <li>
                 It’s very powerful, but since I’m not particularly clever, I find the hypermodern
@@ -1310,13 +1371,17 @@
             </p>
             <ul>
               <li>
-                <a href="https://docs.pytest.org/en/7.2.x/">pytest</a> and
-                <a href="https://coverage.readthedocs.io/en/latest/">coverage.py</a> for testing,
+                <a rel="external" href="https://docs.pytest.org/en/7.2.x/">pytest</a> and
+                <a rel="external" href="https://coverage.readthedocs.io/en/latest/">coverage.py</a>
+                for testing,
               </li>
               <li>
-                <a href="https://black.readthedocs.io/en/stable/">black</a> for formatting, and
+                <a rel="external" href="https://black.readthedocs.io/en/stable/">black</a> for
+                formatting, and
               </li>
-              <li><a href="https://github.com/charliermarsh/ruff">ruff</a> for linting.</li>
+              <li>
+                <a rel="external" href="https://github.com/charliermarsh/ruff">ruff</a> for linting.
+              </li>
             </ul>
             <p>
               It strives to be clean, simple and hard to break, albeit incomplete and likely
@@ -1326,7 +1391,7 @@
               🌱
               <strong
                 >The template is available here:
-                <a href="https://github.com/jamwil/bulletproof-python"
+                <a rel="external" href="https://github.com/jamwil/bulletproof-python"
                   >bulletproof-python</a
                 ></strong
               >.
@@ -1399,10 +1464,11 @@
               tends to stay at 100%, which is not great for my battery.
             </p>
             <p>
-              I recently discovered <a href="https://apphousekitchen.com">AlDente</a> by
-              AppHouseKitchen. It’s a paid app that allows you to set a maximum charge level for
-              your battery. There is a free tier I believe, but I almost always eat the paid
-              versions of apps that I like and use.
+              I recently discovered
+              <a rel="external" href="https://apphousekitchen.com">AlDente</a> by AppHouseKitchen.
+              It’s a paid app that allows you to set a maximum charge level for your battery. There
+              is a free tier I believe, but I almost always eat the paid versions of apps that I
+              like and use.
             </p>
             <p>
               I’ve been using it for a few days now and it’s been working great. If you’re similarly
@@ -1441,7 +1507,7 @@
       </main>
       <footer>
         <p>
-          © James Williams 2025<br />
+          © James Williams 2026<br />
           <a href="https://jamwil.com/subscribe">Subscribe via email</a><br />
         </p>
         <script src="https://cdn.jsdelivr.net/npm/vanilla-lazyload@19.1.3/dist/lazyload.min.js"></script>

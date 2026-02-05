@@ -71,67 +71,67 @@
                 >Make sure to replace <code>$SHEET_ID</code> and <code>$BEARER_TOKEN</code></strong
               >. The query will bring in both your data and column headers.
             </p>
-            <pre style="background-color:#2e3440;color:#d8dee9;"><code><span>let
-</span><span>    Source = Json.Document(
-</span><span>        Web.Contents(&quot;https://api.smartsheet.com/2.0/sheets/$SHEET_ID&quot;, [
-</span><span>            Headers=[
-</span><span>                #&quot;Content-Type&quot;=&quot;application/json&quot;,
-</span><span>                Authorization=&quot;Bearer $BEARER_TOKEN&quot;
-</span><span>            ]
-</span><span>        ])
-</span><span>    ),
-</span><span>
-</span><span>    // Process rows
-</span><span>    RowsData = Source[rows],
-</span><span>    RowsTable = Table.FromList(RowsData, Splitter.SplitByNothing()),
-</span><span>    ExpandedRows = Table.ExpandRecordColumn(
-</span><span>        RowsTable,
-</span><span>        &quot;Column1&quot;,
-</span><span>        {&quot;id&quot;, &quot;rowNumber&quot;, &quot;expanded&quot;, &quot;createdAt&quot;, &quot;modifiedAt&quot;, &quot;cells&quot;, &quot;siblingId&quot;},
-</span><span>        {&quot;ID&quot;, &quot;RowNumber&quot;, &quot;Expanded&quot;, &quot;CreatedAt&quot;, &quot;ModifiedAt&quot;, &quot;Cells&quot;, &quot;SiblingId&quot;}
-</span><span>    ),
-</span><span>    ExpandCells = Table.ExpandListColumn(ExpandedRows, &quot;Cells&quot;),
-</span><span>    ExpandedCellsDetails = Table.ExpandRecordColumn(
-</span><span>        ExpandCells,
-</span><span>        &quot;Cells&quot;,
-</span><span>        {&quot;columnId&quot;, &quot;value&quot;, &quot;displayValue&quot;},
-</span><span>        {&quot;ColumnID&quot;, &quot;CellValue&quot;, &quot;CellDisplayValue&quot;}
-</span><span>    ),
-</span><span>    RemovedCellsMetaColumns = Table.RemoveColumns(
-</span><span>        ExpandedCellsDetails,
-</span><span>        {&quot;ID&quot;, &quot;Expanded&quot;, &quot;CreatedAt&quot;, &quot;ModifiedAt&quot;, &quot;CellDisplayValue&quot;, &quot;SiblingId&quot;}
-</span><span>    ),
-</span><span>    PivotedCellsByColumnId = Table.Pivot(
-</span><span>        Table.TransformColumnTypes(RemovedCellsMetaColumns, {{ &quot;ColumnID&quot;, type text }}),
-</span><span>        List.Distinct(Table.TransformColumnTypes(RemovedCellsMetaColumns, {{ &quot;ColumnID&quot;, type text }})[ColumnID]),
-</span><span>        &quot;ColumnID&quot;,
-</span><span>        &quot;CellValue&quot;
-</span><span>    ),
-</span><span>    CleanRowData = Table.RemoveColumns(PivotedCellsByColumnId, {&quot;RowNumber&quot;}),
-</span><span>
-</span><span>    // Process columns
-</span><span>    ColumnsData = Source[columns],
-</span><span>    ColumnsTable = Table.FromList(ColumnsData, Splitter.SplitByNothing()),
-</span><span>    ExpandedColumns = Table.ExpandRecordColumn(
-</span><span>        ColumnsTable,
-</span><span>        &quot;Column1&quot;,
-</span><span>        {&quot;id&quot;, &quot;title&quot;},
-</span><span>        {&quot;ColumnID&quot;, &quot;ColumnTitle&quot;}
-</span><span>    ),
-</span><span>    ColumnTitlesMapped = Table.Pivot(
-</span><span>        Table.TransformColumnTypes(ExpandedColumns, {{ &quot;ColumnID&quot;, type text }}),
-</span><span>        List.Distinct(Table.TransformColumnTypes(ExpandedColumns, {{ &quot;ColumnID&quot;, type text }})[ColumnID]),
-</span><span>        &quot;ColumnID&quot;,
-</span><span>        &quot;ColumnTitle&quot;
-</span><span>    ),
-</span><span>
-</span><span>    // Add headers
-</span><span>    CombinedDataTable = Table.Combine({ColumnTitlesMapped, CleanRowData}),
-</span><span>    FinalData = Table.PromoteHeaders(CombinedDataTable)
-</span><span>
-</span><span>in
-</span><span>    FinalData
-</span></code></pre>
+            <pre><code>let
+    Source = Json.Document(
+        Web.Contents(&quot;https://api.smartsheet.com/2.0/sheets/$SHEET_ID&quot;, [
+            Headers=[
+                #&quot;Content-Type&quot;=&quot;application/json&quot;,
+                Authorization=&quot;Bearer $BEARER_TOKEN&quot;
+            ]
+        ])
+    ),
+
+    // Process rows
+    RowsData = Source[rows],
+    RowsTable = Table.FromList(RowsData, Splitter.SplitByNothing()),
+    ExpandedRows = Table.ExpandRecordColumn(
+        RowsTable,
+        &quot;Column1&quot;,
+        {&quot;id&quot;, &quot;rowNumber&quot;, &quot;expanded&quot;, &quot;createdAt&quot;, &quot;modifiedAt&quot;, &quot;cells&quot;, &quot;siblingId&quot;},
+        {&quot;ID&quot;, &quot;RowNumber&quot;, &quot;Expanded&quot;, &quot;CreatedAt&quot;, &quot;ModifiedAt&quot;, &quot;Cells&quot;, &quot;SiblingId&quot;}
+    ),
+    ExpandCells = Table.ExpandListColumn(ExpandedRows, &quot;Cells&quot;),
+    ExpandedCellsDetails = Table.ExpandRecordColumn(
+        ExpandCells,
+        &quot;Cells&quot;,
+        {&quot;columnId&quot;, &quot;value&quot;, &quot;displayValue&quot;},
+        {&quot;ColumnID&quot;, &quot;CellValue&quot;, &quot;CellDisplayValue&quot;}
+    ),
+    RemovedCellsMetaColumns = Table.RemoveColumns(
+        ExpandedCellsDetails,
+        {&quot;ID&quot;, &quot;Expanded&quot;, &quot;CreatedAt&quot;, &quot;ModifiedAt&quot;, &quot;CellDisplayValue&quot;, &quot;SiblingId&quot;}
+    ),
+    PivotedCellsByColumnId = Table.Pivot(
+        Table.TransformColumnTypes(RemovedCellsMetaColumns, {{ &quot;ColumnID&quot;, type text }}),
+        List.Distinct(Table.TransformColumnTypes(RemovedCellsMetaColumns, {{ &quot;ColumnID&quot;, type text }})[ColumnID]),
+        &quot;ColumnID&quot;,
+        &quot;CellValue&quot;
+    ),
+    CleanRowData = Table.RemoveColumns(PivotedCellsByColumnId, {&quot;RowNumber&quot;}),
+
+    // Process columns
+    ColumnsData = Source[columns],
+    ColumnsTable = Table.FromList(ColumnsData, Splitter.SplitByNothing()),
+    ExpandedColumns = Table.ExpandRecordColumn(
+        ColumnsTable,
+        &quot;Column1&quot;,
+        {&quot;id&quot;, &quot;title&quot;},
+        {&quot;ColumnID&quot;, &quot;ColumnTitle&quot;}
+    ),
+    ColumnTitlesMapped = Table.Pivot(
+        Table.TransformColumnTypes(ExpandedColumns, {{ &quot;ColumnID&quot;, type text }}),
+        List.Distinct(Table.TransformColumnTypes(ExpandedColumns, {{ &quot;ColumnID&quot;, type text }})[ColumnID]),
+        &quot;ColumnID&quot;,
+        &quot;ColumnTitle&quot;
+    ),
+
+    // Add headers
+    CombinedDataTable = Table.Combine({ColumnTitlesMapped, CleanRowData}),
+    FinalData = Table.PromoteHeaders(CombinedDataTable)
+
+in
+    FinalData
+</code></pre>
             <span id="continue-reading"></span>
           </div>
 
@@ -168,7 +168,7 @@
       </main>
       <footer>
         <p>
-          © James Williams 2025<br />
+          © James Williams 2026<br />
           <a href="https://jamwil.com/subscribe">Subscribe via email</a><br />
         </p>
         <script src="https://cdn.jsdelivr.net/npm/vanilla-lazyload@19.1.3/dist/lazyload.min.js"></script>

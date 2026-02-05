@@ -87,10 +87,10 @@ lot. There is ample value in certainty, and you forego that at the outset. If
 you don’t have the expertise to identify its missteps (and there will be many),
 then you are firmly out over your skis. You can see how frustrating this is for
 everyone involved in real time: take a look at
-&lt;a href=&quot;https:&#x2F;&#x2F;github.com&#x2F;dotnet&#x2F;runtime&#x2F;pull&#x2F;115762&quot;&gt;Microsoft’s own engineers losing their minds trying to get AI to write correct code for them&lt;&#x2F;a&gt;
-(also &lt;a href=&quot;https:&#x2F;&#x2F;github.com&#x2F;dotnet&#x2F;runtime&#x2F;pull&#x2F;115743&quot;&gt;here&lt;&#x2F;a&gt;,
-&lt;a href=&quot;https:&#x2F;&#x2F;github.com&#x2F;dotnet&#x2F;runtime&#x2F;pull&#x2F;115733&quot;&gt;here&lt;&#x2F;a&gt; and
-&lt;a href=&quot;https:&#x2F;&#x2F;github.com&#x2F;dotnet&#x2F;runtime&#x2F;pull&#x2F;115732&quot;&gt;here&lt;&#x2F;a&gt;).&lt;&#x2F;p&gt;
+&lt;a rel=&quot;external&quot; href=&quot;https:&#x2F;&#x2F;github.com&#x2F;dotnet&#x2F;runtime&#x2F;pull&#x2F;115762&quot;&gt;Microsoft’s own engineers losing their minds trying to get AI to write correct code for them&lt;&#x2F;a&gt;
+(also &lt;a rel=&quot;external&quot; href=&quot;https:&#x2F;&#x2F;github.com&#x2F;dotnet&#x2F;runtime&#x2F;pull&#x2F;115743&quot;&gt;here&lt;&#x2F;a&gt;,
+&lt;a rel=&quot;external&quot; href=&quot;https:&#x2F;&#x2F;github.com&#x2F;dotnet&#x2F;runtime&#x2F;pull&#x2F;115733&quot;&gt;here&lt;&#x2F;a&gt; and
+&lt;a rel=&quot;external&quot; href=&quot;https:&#x2F;&#x2F;github.com&#x2F;dotnet&#x2F;runtime&#x2F;pull&#x2F;115732&quot;&gt;here&lt;&#x2F;a&gt;).&lt;&#x2F;p&gt;
 &lt;hr &#x2F;&gt;
 &lt;p&gt;Your boss has been sold a grand lie. It’s not their fault. They have been set
 adrift in a sea of misdirection, misaligned incentives, grift, absolutism,
@@ -208,7 +208,7 @@ spoken at the natural pace of a native speaker.&lt;&#x2F;p&gt;
 found two complementary tools that work for me. Neither of them are duolingo.
 Both are based on spaced repetition, which I now recognize is &lt;em&gt;the&lt;&#x2F;em&gt; way to
 memorize anything.&lt;&#x2F;p&gt;
-&lt;p&gt;From &lt;a href=&quot;https:&#x2F;&#x2F;en.wikipedia.org&#x2F;wiki&#x2F;Spaced_repetition&quot;&gt;Wikipedia&lt;&#x2F;a&gt;:&lt;&#x2F;p&gt;
+&lt;p&gt;From &lt;a rel=&quot;external&quot; href=&quot;https:&#x2F;&#x2F;en.wikipedia.org&#x2F;wiki&#x2F;Spaced_repetition&quot;&gt;Wikipedia&lt;&#x2F;a&gt;:&lt;&#x2F;p&gt;
 &lt;blockquote&gt;
 &lt;p&gt;Spaced repetition is an evidence-based learning technique that is usually
 performed with flashcards. Newly introduced and more difficult flashcards are
@@ -219,23 +219,23 @@ of spaced repetition has been proven to increase the rate of learning.&lt;&#x2F;
 &lt;h2 id=&quot;anki&quot;&gt;Anki&lt;&#x2F;h2&gt;
 &lt;p&gt;There are all sorts of ways to go about this, ranging from hand-written notes to
 enshittified SAAS offerings. For my money, there is nothing better than
-&lt;a href=&quot;https:&#x2F;&#x2F;apps.ankiweb.net&quot;&gt;Anki&lt;&#x2F;a&gt;. I will die for Anki.&lt;&#x2F;p&gt;
+&lt;a rel=&quot;external&quot; href=&quot;https:&#x2F;&#x2F;apps.ankiweb.net&quot;&gt;Anki&lt;&#x2F;a&gt;. I will die for Anki.&lt;&#x2F;p&gt;
 &lt;p&gt;Anki is a power tool that requires a little bit of elbow grease to become
 productive with. It offers a lot of settings which can be overwhelming, however
 it has sane defaults to get you started, and the documentation is excellent.&lt;&#x2F;p&gt;
 &lt;p&gt;Here are the two community-made card decks that have become foundational for me:&lt;&#x2F;p&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;a href=&quot;https:&#x2F;&#x2F;ankiweb.net&#x2F;shared&#x2F;info&#x2F;1099422617&quot;&gt;Spanish 9000 Sentences&lt;&#x2F;a&gt; contains,
+&lt;li&gt;&lt;a rel=&quot;external&quot; href=&quot;https:&#x2F;&#x2F;ankiweb.net&#x2F;shared&#x2F;info&#x2F;1099422617&quot;&gt;Spanish 9000 Sentences&lt;&#x2F;a&gt; contains,
 well, 9000 spanish phrases along with native audio samples for each. It’s a
 ‘cloze’ type card, which presents each phrase in Spanish on the front of the
 card and makes you fill in the missing word. The front might say something
 like &lt;code&gt;Eso [...] muy bueno. (That would be great.)&lt;&#x2F;code&gt;, and the back would say
 &lt;code&gt;Eso sería muy bueno.&lt;&#x2F;code&gt; along with a spoken audio track. There are 9000 of
 these ranked and sorted by difficulty. Seriously.&lt;&#x2F;li&gt;
-&lt;li&gt;&lt;a href=&quot;https:&#x2F;&#x2F;ankiweb.net&#x2F;shared&#x2F;info&#x2F;638411848&quot;&gt;Ultimate Spanish Conjugation&lt;&#x2F;a&gt;
+&lt;li&gt;&lt;a rel=&quot;external&quot; href=&quot;https:&#x2F;&#x2F;ankiweb.net&#x2F;shared&#x2F;info&#x2F;638411848&quot;&gt;Ultimate Spanish Conjugation&lt;&#x2F;a&gt;
 contains full conjugations for 72 of the most important verbs (approximately
 59 cards per verb). This one comes with a
-&lt;a href=&quot;https:&#x2F;&#x2F;www.asiteaboutnothing.net&#x2F;w_ultimate_spanish_conjugation.php&quot;&gt;comprehensive manual&lt;&#x2F;a&gt;
+&lt;a rel=&quot;external&quot; href=&quot;https:&#x2F;&#x2F;www.asiteaboutnothing.net&#x2F;w_ultimate_spanish_conjugation.php&quot;&gt;comprehensive manual&lt;&#x2F;a&gt;
 for how to use it optimally, which I highly recommend internalizing before
 getting started.&lt;&#x2F;li&gt;
 &lt;&#x2F;ul&gt;
@@ -264,7 +264,7 @@ aren’t able to train your ear either.&lt;&#x2F;p&gt;
 competency before they become an option.&lt;&#x2F;p&gt;
 &lt;p&gt;So how do you practice speaking and listening, short of moving to a Latin
 American country? For me, nothing beats the old-school
-&lt;a href=&quot;https:&#x2F;&#x2F;www.pimsleur.com&#x2F;learn-spanish-latin-american&#x2F;subscription-audio&#x2F;&quot;&gt;Pimsleur Audiobooks&lt;&#x2F;a&gt;.
+&lt;a rel=&quot;external&quot; href=&quot;https:&#x2F;&#x2F;www.pimsleur.com&#x2F;learn-spanish-latin-american&#x2F;subscription-audio&#x2F;&quot;&gt;Pimsleur Audiobooks&lt;&#x2F;a&gt;.
 These are also based on spaced repetition, and force you to quickly synthesize
 responses within hypothetical conversations, closely mimicking real-world
 experience. Each day you’ll do a 30-minute session where you’ll be speaking, out
@@ -283,7 +283,7 @@ practice-based approach to learning, and is in stark contrast to the academic
 approach of reading textbooks and completing exercises. Once you embrace it, you
 may never look back.&lt;&#x2F;p&gt;
 &lt;h2 id=&quot;bonus-cheatsheets&quot;&gt;Bonus: Cheatsheets&lt;&#x2F;h2&gt;
-&lt;p&gt;&lt;a href=&quot;https:&#x2F;&#x2F;www.spanishdict.com&quot;&gt;SpanishDictionary.com&lt;&#x2F;a&gt; has an absurdly overpriced
+&lt;p&gt;&lt;a rel=&quot;external&quot; href=&quot;https:&#x2F;&#x2F;www.spanishdict.com&quot;&gt;SpanishDictionary.com&lt;&#x2F;a&gt; has an absurdly overpriced
 subscription tier which gives you access to a collection of excellent PDF-based
 cheatsheets and reference material. I’ve found the verb conjugation reference
 valuable as a supplement to the flash cards described above. You can sign up for

@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
+    <channel>
+      <title>James Williams - microsoft</title>
+      <link>https://jamwil.com</link>
+      <description>The eponymous world wide webpage containing various hoots and hollers.</description>
+      <generator>Zola</generator>
+      <language>en</language>
+      <atom:link href="https://jamwil.com/tags/microsoft/rss.xml" rel="self" type="application/rss+xml"/>
+      <lastBuildDate>Thu, 05 Feb 2026 11:35:46 +0000</lastBuildDate>
+      <item>
+          <title>I can&#x27;t turn off my computer</title>
+          <pubDate>Thu, 05 Feb 2026 11:35:46 +0000</pubDate>
+          <author>James Williams</author>
+          <link>https://jamwil.com/fuck-microsoft/</link>
+          <guid>https://jamwil.com/fuck-microsoft/</guid>
+          <description xml:base="https://jamwil.com/fuck-microsoft/">&lt;p&gt;I don’t mean that in the sense that I’m addicted to it. &lt;em&gt;I literally can’t turn
+it off&lt;&#x2F;em&gt;. When I shut it down, it immediately boots up again. When I tell it to
+hibernate, it immediately boots up again.&lt;&#x2F;p&gt;
+&lt;p&gt;From
+&lt;a rel=&quot;external&quot; href=&quot;https:&#x2F;&#x2F;support.microsoft.com&#x2F;en-us&#x2F;topic&#x2F;january-24-2026-kb5078132-os-build-22631-6495-out-of-band-ae8525fd-a0a8-4b9b-bba9-c647ea5dc8dd#:~:text=Known%20issues%20in%20this%20update&quot;&gt;Microsoft&lt;&#x2F;a&gt;:&lt;&#x2F;p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;&lt;strong&gt;Symptoms&lt;&#x2F;strong&gt;&lt;&#x2F;p&gt;
+&lt;p&gt;After installing this update, some Secure Launch-capable PCs with Virtual
+Secure Mode (VSM) enabled are unable to shut down or enter hibernation.
+Instead, the device restarts.&lt;sup class=&quot;footnote-reference&quot;&gt;&lt;a href=&quot;#1&quot;&gt;1&lt;&#x2F;a&gt;&lt;&#x2F;sup&gt;&lt;&#x2F;p&gt;
+&lt;p&gt;&lt;strong&gt;Next step&lt;&#x2F;strong&gt;&lt;&#x2F;p&gt;
+&lt;p&gt;This issue will be addressed in a future Windows update. Additional
+information will be shared as soon as it becomes available.&lt;&#x2F;p&gt;
+&lt;&#x2F;blockquote&gt;
+&lt;p&gt;How has it come to this? Technology used to be a source of optimism. We used to
+dream about all the ways it could improve our lives. Now we’re lucky if a system
+upgrade doesn’t break the fucking power button.&lt;&#x2F;p&gt;
+&lt;hr &#x2F;&gt;
+&lt;div class=&quot;footnote-definition&quot; id=&quot;1&quot;&gt;&lt;sup class=&quot;footnote-definition-label&quot;&gt;1&lt;&#x2F;sup&gt;
+&lt;p&gt;Translation: we fired all the engineers that know how computers work and set
+the rest of the company on shoveling AI slop into your stupid, willing
+faces.&lt;&#x2F;p&gt;
+&lt;&#x2F;div&gt;
+</description>
+      </item>
+    </channel>
+</rss>

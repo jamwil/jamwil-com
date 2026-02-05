@@ -31,7 +31,7 @@ between two and fifteen orca whales.&lt;&#x2F;li&gt;
 &lt;li&gt;A &lt;strong&gt;Service&lt;&#x2F;strong&gt; is an abstraction which provides a single network entry point to
 distribute traffic across the cluster.&lt;&#x2F;li&gt;
 &lt;&#x2F;ul&gt;
-&lt;p&gt;For local development I am using &lt;a href=&quot;https:&#x2F;&#x2F;kind.sigs.k8s.io&quot;&gt;Kind&lt;&#x2F;a&gt;, a tool which
+&lt;p&gt;For local development I am using &lt;a rel=&quot;external&quot; href=&quot;https:&#x2F;&#x2F;kind.sigs.k8s.io&quot;&gt;Kind&lt;&#x2F;a&gt;, a tool which
 allows you to run Kubernetes clusters in Docker containers. It is a lightweight
 way to run docker containers inside kubernetes inside a docker container (pause
 for effect).&lt;&#x2F;p&gt;
@@ -46,28 +46,28 @@ similar, though it requires you to set up a container registry.&lt;&#x2F;p&gt;
 &lt;p&gt;The next step is creating a deployment and a service for the application by
 creating kubernetes manifest files in your project directory. The simplest
 possible configuration is something like so:&lt;&#x2F;p&gt;
-&lt;pre data-lang=&quot;yaml&quot; style=&quot;background-color:#2e3440;color:#d8dee9;&quot; class=&quot;language-yaml &quot;&gt;&lt;code class=&quot;language-yaml&quot; data-lang=&quot;yaml&quot;&gt;&lt;span style=&quot;color:#616e88;&quot;&gt;# deployment.yaml
-&lt;&#x2F;span&gt;&lt;span style=&quot;color:#8fbcbb;&quot;&gt;apiVersion&lt;&#x2F;span&gt;&lt;span style=&quot;color:#eceff4;&quot;&gt;: &lt;&#x2F;span&gt;&lt;span style=&quot;color:#a3be8c;&quot;&gt;apps&#x2F;v1
-&lt;&#x2F;span&gt;&lt;span style=&quot;color:#8fbcbb;&quot;&gt;kind&lt;&#x2F;span&gt;&lt;span style=&quot;color:#eceff4;&quot;&gt;: &lt;&#x2F;span&gt;&lt;span style=&quot;color:#a3be8c;&quot;&gt;Deployment
-&lt;&#x2F;span&gt;&lt;span style=&quot;color:#8fbcbb;&quot;&gt;metadata&lt;&#x2F;span&gt;&lt;span style=&quot;color:#eceff4;&quot;&gt;:
-&lt;&#x2F;span&gt;&lt;span&gt;  &lt;&#x2F;span&gt;&lt;span style=&quot;color:#8fbcbb;&quot;&gt;name&lt;&#x2F;span&gt;&lt;span style=&quot;color:#eceff4;&quot;&gt;: &lt;&#x2F;span&gt;&lt;span style=&quot;color:#a3be8c;&quot;&gt;my-image-name-deployment
-&lt;&#x2F;span&gt;&lt;span style=&quot;color:#8fbcbb;&quot;&gt;spec&lt;&#x2F;span&gt;&lt;span style=&quot;color:#eceff4;&quot;&gt;:
-&lt;&#x2F;span&gt;&lt;span&gt;  &lt;&#x2F;span&gt;&lt;span style=&quot;color:#8fbcbb;&quot;&gt;replicas&lt;&#x2F;span&gt;&lt;span style=&quot;color:#eceff4;&quot;&gt;: &lt;&#x2F;span&gt;&lt;span style=&quot;color:#b48ead;&quot;&gt;1
-&lt;&#x2F;span&gt;&lt;span&gt;  &lt;&#x2F;span&gt;&lt;span style=&quot;color:#8fbcbb;&quot;&gt;selector&lt;&#x2F;span&gt;&lt;span style=&quot;color:#eceff4;&quot;&gt;:
-&lt;&#x2F;span&gt;&lt;span&gt;    &lt;&#x2F;span&gt;&lt;span style=&quot;color:#8fbcbb;&quot;&gt;matchLabels&lt;&#x2F;span&gt;&lt;span style=&quot;color:#eceff4;&quot;&gt;:
-&lt;&#x2F;span&gt;&lt;span&gt;      &lt;&#x2F;span&gt;&lt;span style=&quot;color:#8fbcbb;&quot;&gt;app&lt;&#x2F;span&gt;&lt;span style=&quot;color:#eceff4;&quot;&gt;: &lt;&#x2F;span&gt;&lt;span style=&quot;color:#a3be8c;&quot;&gt;my-image-name
-&lt;&#x2F;span&gt;&lt;span&gt;  &lt;&#x2F;span&gt;&lt;span style=&quot;color:#8fbcbb;&quot;&gt;template&lt;&#x2F;span&gt;&lt;span style=&quot;color:#eceff4;&quot;&gt;:
-&lt;&#x2F;span&gt;&lt;span&gt;    &lt;&#x2F;span&gt;&lt;span style=&quot;color:#8fbcbb;&quot;&gt;metadata&lt;&#x2F;span&gt;&lt;span style=&quot;color:#eceff4;&quot;&gt;:
-&lt;&#x2F;span&gt;&lt;span&gt;      &lt;&#x2F;span&gt;&lt;span style=&quot;color:#8fbcbb;&quot;&gt;labels&lt;&#x2F;span&gt;&lt;span style=&quot;color:#eceff4;&quot;&gt;:
-&lt;&#x2F;span&gt;&lt;span&gt;        &lt;&#x2F;span&gt;&lt;span style=&quot;color:#8fbcbb;&quot;&gt;app&lt;&#x2F;span&gt;&lt;span style=&quot;color:#eceff4;&quot;&gt;: &lt;&#x2F;span&gt;&lt;span style=&quot;color:#a3be8c;&quot;&gt;my-image-name
-&lt;&#x2F;span&gt;&lt;span&gt;    &lt;&#x2F;span&gt;&lt;span style=&quot;color:#8fbcbb;&quot;&gt;spec&lt;&#x2F;span&gt;&lt;span style=&quot;color:#eceff4;&quot;&gt;:
-&lt;&#x2F;span&gt;&lt;span&gt;      &lt;&#x2F;span&gt;&lt;span style=&quot;color:#8fbcbb;&quot;&gt;containers&lt;&#x2F;span&gt;&lt;span style=&quot;color:#eceff4;&quot;&gt;:
-&lt;&#x2F;span&gt;&lt;span&gt;        - &lt;&#x2F;span&gt;&lt;span style=&quot;color:#8fbcbb;&quot;&gt;name&lt;&#x2F;span&gt;&lt;span style=&quot;color:#eceff4;&quot;&gt;: &lt;&#x2F;span&gt;&lt;span style=&quot;color:#a3be8c;&quot;&gt;my-image-name
-&lt;&#x2F;span&gt;&lt;span&gt;          &lt;&#x2F;span&gt;&lt;span style=&quot;color:#8fbcbb;&quot;&gt;image&lt;&#x2F;span&gt;&lt;span style=&quot;color:#eceff4;&quot;&gt;: &lt;&#x2F;span&gt;&lt;span style=&quot;color:#a3be8c;&quot;&gt;my-image-name
-&lt;&#x2F;span&gt;&lt;span&gt;          &lt;&#x2F;span&gt;&lt;span style=&quot;color:#8fbcbb;&quot;&gt;imagePullPolicy&lt;&#x2F;span&gt;&lt;span style=&quot;color:#eceff4;&quot;&gt;: &lt;&#x2F;span&gt;&lt;span style=&quot;color:#a3be8c;&quot;&gt;Never &lt;&#x2F;span&gt;&lt;span style=&quot;color:#616e88;&quot;&gt;# Use for local image
-&lt;&#x2F;span&gt;&lt;span&gt;          &lt;&#x2F;span&gt;&lt;span style=&quot;color:#8fbcbb;&quot;&gt;ports&lt;&#x2F;span&gt;&lt;span style=&quot;color:#eceff4;&quot;&gt;:
-&lt;&#x2F;span&gt;&lt;span&gt;            - &lt;&#x2F;span&gt;&lt;span style=&quot;color:#8fbcbb;&quot;&gt;containerPort&lt;&#x2F;span&gt;&lt;span style=&quot;color:#eceff4;&quot;&gt;: &lt;&#x2F;span&gt;&lt;span style=&quot;color:#b48ead;&quot;&gt;8000 &lt;&#x2F;span&gt;&lt;span style=&quot;color:#616e88;&quot;&gt;# Use the port your application runs on
-&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;pre&gt;&lt;code data-lang=&quot;yaml&quot;&gt;# deployment.yaml
+apiVersion: apps&#x2F;v1
+kind: Deployment
+metadata:
+  name: my-image-name-deployment
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: my-image-name
+  template:
+    metadata:
+      labels:
+        app: my-image-name
+    spec:
+      containers:
+        - name: my-image-name
+          image: my-image-name
+          imagePullPolicy: Never # Use for local image
+          ports:
+            - containerPort: 8000 # Use the port your application runs on
+&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
 &lt;p&gt;Note that the &lt;code&gt;imagePullPolicy&lt;&#x2F;code&gt; is set to &lt;code&gt;Never&lt;&#x2F;code&gt; because we are using a local
 image with the implied tag &lt;code&gt;latest&lt;&#x2F;code&gt;. Specifying a specific tag should make this
 unnecessary, otherwise the default behaviour is to try to pull the image from
@@ -75,19 +75,19 @@ Docker Hub, which will fail each time (or worse, deploy something unexpected).&l
 &lt;p&gt;In addition to matching the exposed port of the container, your application
 should be configured to bind to any incoming address (0.0.0.0), not just
 localhost.&lt;&#x2F;p&gt;
-&lt;pre data-lang=&quot;yaml&quot; style=&quot;background-color:#2e3440;color:#d8dee9;&quot; class=&quot;language-yaml &quot;&gt;&lt;code class=&quot;language-yaml&quot; data-lang=&quot;yaml&quot;&gt;&lt;span style=&quot;color:#616e88;&quot;&gt;# service.yaml
-&lt;&#x2F;span&gt;&lt;span style=&quot;color:#8fbcbb;&quot;&gt;apiVersion&lt;&#x2F;span&gt;&lt;span style=&quot;color:#eceff4;&quot;&gt;: &lt;&#x2F;span&gt;&lt;span style=&quot;color:#a3be8c;&quot;&gt;v1
-&lt;&#x2F;span&gt;&lt;span style=&quot;color:#8fbcbb;&quot;&gt;kind&lt;&#x2F;span&gt;&lt;span style=&quot;color:#eceff4;&quot;&gt;: &lt;&#x2F;span&gt;&lt;span style=&quot;color:#a3be8c;&quot;&gt;Service
-&lt;&#x2F;span&gt;&lt;span style=&quot;color:#8fbcbb;&quot;&gt;metadata&lt;&#x2F;span&gt;&lt;span style=&quot;color:#eceff4;&quot;&gt;:
-&lt;&#x2F;span&gt;&lt;span&gt;  &lt;&#x2F;span&gt;&lt;span style=&quot;color:#8fbcbb;&quot;&gt;name&lt;&#x2F;span&gt;&lt;span style=&quot;color:#eceff4;&quot;&gt;: &lt;&#x2F;span&gt;&lt;span style=&quot;color:#a3be8c;&quot;&gt;my-image-name-service
-&lt;&#x2F;span&gt;&lt;span style=&quot;color:#8fbcbb;&quot;&gt;spec&lt;&#x2F;span&gt;&lt;span style=&quot;color:#eceff4;&quot;&gt;:
-&lt;&#x2F;span&gt;&lt;span&gt;  &lt;&#x2F;span&gt;&lt;span style=&quot;color:#8fbcbb;&quot;&gt;type&lt;&#x2F;span&gt;&lt;span style=&quot;color:#eceff4;&quot;&gt;: &lt;&#x2F;span&gt;&lt;span style=&quot;color:#a3be8c;&quot;&gt;NodePort
-&lt;&#x2F;span&gt;&lt;span&gt;  &lt;&#x2F;span&gt;&lt;span style=&quot;color:#8fbcbb;&quot;&gt;ports&lt;&#x2F;span&gt;&lt;span style=&quot;color:#eceff4;&quot;&gt;:
-&lt;&#x2F;span&gt;&lt;span&gt;    - &lt;&#x2F;span&gt;&lt;span style=&quot;color:#8fbcbb;&quot;&gt;port&lt;&#x2F;span&gt;&lt;span style=&quot;color:#eceff4;&quot;&gt;: &lt;&#x2F;span&gt;&lt;span style=&quot;color:#b48ead;&quot;&gt;8000
-&lt;&#x2F;span&gt;&lt;span&gt;      &lt;&#x2F;span&gt;&lt;span style=&quot;color:#8fbcbb;&quot;&gt;nodePort&lt;&#x2F;span&gt;&lt;span style=&quot;color:#eceff4;&quot;&gt;: &lt;&#x2F;span&gt;&lt;span style=&quot;color:#b48ead;&quot;&gt;30080
-&lt;&#x2F;span&gt;&lt;span&gt;  &lt;&#x2F;span&gt;&lt;span style=&quot;color:#8fbcbb;&quot;&gt;selector&lt;&#x2F;span&gt;&lt;span style=&quot;color:#eceff4;&quot;&gt;:
-&lt;&#x2F;span&gt;&lt;span&gt;    &lt;&#x2F;span&gt;&lt;span style=&quot;color:#8fbcbb;&quot;&gt;app&lt;&#x2F;span&gt;&lt;span style=&quot;color:#eceff4;&quot;&gt;: &lt;&#x2F;span&gt;&lt;span style=&quot;color:#a3be8c;&quot;&gt;my-image-name
-&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;pre&gt;&lt;code data-lang=&quot;yaml&quot;&gt;# service.yaml
+apiVersion: v1
+kind: Service
+metadata:
+  name: my-image-name-service
+spec:
+  type: NodePort
+  ports:
+    - port: 8000
+      nodePort: 30080
+  selector:
+    app: my-image-name
+&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
 &lt;p&gt;With these files in place, we can create the deployment and service respectively
 using &lt;code&gt;kubectl apply -f &amp;lt;file-name&amp;gt;&lt;&#x2F;code&gt; for each. They can be verified using:
 &lt;code&gt;kubectl get deployments&lt;&#x2F;code&gt; and &lt;code&gt;kubectl get services&lt;&#x2F;code&gt;.&lt;&#x2F;p&gt;

@@ -51,6 +51,76 @@
         <article class="post-list">
           <header>
             <h1>
+              <a href="https:&#x2F;&#x2F;jamwil.com&#x2F;gpg-field-guide&#x2F;">GPG Field Guide</a>
+            </h1>
+          </header>
+
+          <div class="content post-summary">
+            <p>Jürgen Gmach on his personal blog:</p>
+            <blockquote>
+              <p>
+                While I need to use GPG pretty regularly, I always have to look up the commands -
+                they just don’t stick :-)
+              </p>
+              <p>Over the last couple of months I collected every command I had to use. Enjoy!</p>
+            </blockquote>
+            <p>
+              <strong
+                >🔖 One for the bookmarks:
+                <a rel="external" href="https://jugmac00.github.io/blog/gpg-all-i-need-to-know/"
+                  >GPG - All I Need to Know</a
+                ></strong
+              >
+            </p>
+            <span id="continue-reading"></span>
+            <p>
+              For posterity:
+              <a rel="external" href="https://archive.ph/9S2YM">archive.today webpage capture</a>
+            </p>
+          </div>
+
+          <div class="article-info">
+            <div class="article-date">2023-01-06</div>
+
+            <div class="article-taxonomies">
+              <ul class="article-categories">
+                <li>
+                  <a href="https://jamwil.com/categories/technology/"> Technology </a>
+                </li>
+              </ul>
+
+              <ul class="article-tags">
+                <li>
+                  <a href="https://jamwil.com/tags/encryption/"> #encryption </a>
+                </li>
+
+                <li>
+                  <a href="https://jamwil.com/tags/gpg/"> #gpg </a>
+                </li>
+
+                <li>
+                  <a href="https://jamwil.com/tags/privacy/"> #privacy </a>
+                </li>
+
+                <li>
+                  <a href="https://jamwil.com/tags/security/"> #security </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </article>
+
+        <p>
+          P.S. I'm not active on social media. If you liked this, add this page to your RSS reader
+          or
+          <a href="https://jamwil.com/subscribe">subscribe via email</a> and I'll send you a quick
+          note when I post something new.
+        </p>
+        <hr style="margin-bottom: 3em;" />
+
+        <article class="post-list">
+          <header>
+            <h1>
               <a href="https:&#x2F;&#x2F;jamwil.com&#x2F;python-vscode-build-task&#x2F;"
                 >How to configure a python script as the default build task in VS Code</a
               >
@@ -80,36 +150,32 @@
               Change <code>args</code> to any python file if you’d like to run the same file each
               time.
             </p>
-            <pre
-              data-lang="json"
-              style="background-color:#2e3440;color:#d8dee9;"
-              class="language-json "
-            ><code class="language-json" data-lang="json"><span>{
-</span><span>  </span><span style="color:#616e88;">// See https://go.microsoft.com/fwlink/?LinkId=733558
-</span><span>  </span><span style="color:#616e88;">// for the documentation about the tasks.json format
-</span><span>  </span><span style="color:#a3be8c;">&quot;version&quot;</span><span style="color:#eceff4;">: </span><span style="color:#a3be8c;">&quot;2.0.0&quot;</span><span style="color:#eceff4;">,
-</span><span>  </span><span style="color:#a3be8c;">&quot;tasks&quot;</span><span style="color:#eceff4;">: </span><span>[
-</span><span>    {
-</span><span>      </span><span style="color:#a3be8c;">&quot;label&quot;</span><span style="color:#eceff4;">: </span><span style="color:#a3be8c;">&quot;Python: current file&quot;</span><span style="color:#eceff4;">,
-</span><span>      </span><span style="color:#a3be8c;">&quot;type&quot;</span><span style="color:#eceff4;">: </span><span style="color:#a3be8c;">&quot;shell&quot;</span><span style="color:#eceff4;">,
-</span><span>      </span><span style="color:#a3be8c;">&quot;command&quot;</span><span style="color:#eceff4;">: </span><span style="color:#a3be8c;">&quot;${command:python.interpreterPath}&quot;</span><span style="color:#eceff4;">,
-</span><span>      </span><span style="color:#a3be8c;">&quot;args&quot;</span><span style="color:#eceff4;">: </span><span>[</span><span style="color:#a3be8c;">&quot;${file}&quot;</span><span>]</span><span style="color:#eceff4;">,
-</span><span>      </span><span style="color:#a3be8c;">&quot;problemMatcher&quot;</span><span style="color:#eceff4;">: </span><span>[]</span><span style="color:#eceff4;">,
-</span><span>      </span><span style="color:#a3be8c;">&quot;group&quot;</span><span style="color:#eceff4;">: </span><span>{
-</span><span>        </span><span style="color:#a3be8c;">&quot;kind&quot;</span><span style="color:#eceff4;">: </span><span style="color:#a3be8c;">&quot;build&quot;</span><span style="color:#eceff4;">,
-</span><span>        </span><span style="color:#a3be8c;">&quot;isDefault&quot;</span><span style="color:#eceff4;">: </span><span style="color:#81a1c1;">true
-</span><span>      }</span><span style="color:#eceff4;">,
-</span><span>      </span><span style="color:#a3be8c;">&quot;presentation&quot;</span><span style="color:#eceff4;">: </span><span>{
-</span><span>        </span><span style="color:#a3be8c;">&quot;focus&quot;</span><span style="color:#eceff4;">: </span><span style="color:#81a1c1;">true</span><span style="color:#eceff4;">,
-</span><span>        </span><span style="color:#a3be8c;">&quot;reveal&quot;</span><span style="color:#eceff4;">: </span><span style="color:#a3be8c;">&quot;always&quot;
-</span><span>      }</span><span style="color:#eceff4;">,
-</span><span>      </span><span style="color:#a3be8c;">&quot;options&quot;</span><span style="color:#eceff4;">: </span><span>{
-</span><span>        </span><span style="color:#a3be8c;">&quot;cwd&quot;</span><span style="color:#eceff4;">: </span><span style="color:#a3be8c;">&quot;${workspaceFolder}&quot;
-</span><span>      }
-</span><span>    }
-</span><span>  ]
-</span><span>}
-</span></code></pre>
+            <pre><code data-lang="json">{
+  // See https://go.microsoft.com/fwlink/?LinkId=733558
+  // for the documentation about the tasks.json format
+  &quot;version&quot;: &quot;2.0.0&quot;,
+  &quot;tasks&quot;: [
+    {
+      &quot;label&quot;: &quot;Python: current file&quot;,
+      &quot;type&quot;: &quot;shell&quot;,
+      &quot;command&quot;: &quot;${command:python.interpreterPath}&quot;,
+      &quot;args&quot;: [&quot;${file}&quot;],
+      &quot;problemMatcher&quot;: [],
+      &quot;group&quot;: {
+        &quot;kind&quot;: &quot;build&quot;,
+        &quot;isDefault&quot;: true
+      },
+      &quot;presentation&quot;: {
+        &quot;focus&quot;: true,
+        &quot;reveal&quot;: &quot;always&quot;
+      },
+      &quot;options&quot;: {
+        &quot;cwd&quot;: &quot;${workspaceFolder}&quot;
+      }
+    }
+  ]
+}
+</code></pre>
             <span id="continue-reading"></span>
           </div>
 
@@ -156,14 +222,6 @@
           </div>
         </article>
 
-        <p>
-          P.S. I'm not active on social media. If you liked this, add this page to your RSS reader
-          or
-          <a href="https://jamwil.com/subscribe">subscribe via email</a> and I'll send you a quick
-          note when I post something new.
-        </p>
-        <hr style="margin-bottom: 3em;" />
-
         <article class="post-list">
           <header>
             <h1>
@@ -176,22 +234,23 @@
           <div class="content post-summary">
             <p>
               I owe a debt of gratitude to
-              <a href="https://github.com/cjolowicz/">Claudio Jolowicz</a>
+              <a rel="external" href="https://github.com/cjolowicz/">Claudio Jolowicz</a>
               for introducing me to modern python tooling. His
-              <a href="https://github.com/cjolowicz/cookiecutter-hypermodern-python"
+              <a rel="external" href="https://github.com/cjolowicz/cookiecutter-hypermodern-python"
                 >Hypermodern Python</a
               >
               template and associated blog series are a great resource.
             </p>
             <p>
               The Hypermodern system is built around
-              <a href="https://nox.thea.codes/en/stable/">nox</a> and
-              <a href="https://python-poetry.org">poetry</a>.
+              <a rel="external" href="https://nox.thea.codes/en/stable/">nox</a> and
+              <a rel="external" href="https://python-poetry.org">poetry</a>.
             </p>
             <ul>
               <li>
-                nox is similar in spirit to <a href="https://tox.wiki/en/latest/">tox</a> but uses
-                python scripts instead of configuration files.
+                nox is similar in spirit to
+                <a rel="external" href="https://tox.wiki/en/latest/">tox</a> but uses python scripts
+                instead of configuration files.
               </li>
               <li>
                 It’s very powerful, but since I’m not particularly clever, I find the hypermodern
@@ -204,13 +263,17 @@
             </p>
             <ul>
               <li>
-                <a href="https://docs.pytest.org/en/7.2.x/">pytest</a> and
-                <a href="https://coverage.readthedocs.io/en/latest/">coverage.py</a> for testing,
+                <a rel="external" href="https://docs.pytest.org/en/7.2.x/">pytest</a> and
+                <a rel="external" href="https://coverage.readthedocs.io/en/latest/">coverage.py</a>
+                for testing,
               </li>
               <li>
-                <a href="https://black.readthedocs.io/en/stable/">black</a> for formatting, and
+                <a rel="external" href="https://black.readthedocs.io/en/stable/">black</a> for
+                formatting, and
               </li>
-              <li><a href="https://github.com/charliermarsh/ruff">ruff</a> for linting.</li>
+              <li>
+                <a rel="external" href="https://github.com/charliermarsh/ruff">ruff</a> for linting.
+              </li>
             </ul>
             <p>
               It strives to be clean, simple and hard to break, albeit incomplete and likely
@@ -220,7 +283,7 @@
               🌱
               <strong
                 >The template is available here:
-                <a href="https://github.com/jamwil/bulletproof-python"
+                <a rel="external" href="https://github.com/jamwil/bulletproof-python"
                   >bulletproof-python</a
                 ></strong
               >.
@@ -293,10 +356,11 @@
               tends to stay at 100%, which is not great for my battery.
             </p>
             <p>
-              I recently discovered <a href="https://apphousekitchen.com">AlDente</a> by
-              AppHouseKitchen. It’s a paid app that allows you to set a maximum charge level for
-              your battery. There is a free tier I believe, but I almost always eat the paid
-              versions of apps that I like and use.
+              I recently discovered
+              <a rel="external" href="https://apphousekitchen.com">AlDente</a> by AppHouseKitchen.
+              It’s a paid app that allows you to set a maximum charge level for your battery. There
+              is a free tier I believe, but I almost always eat the paid versions of apps that I
+              like and use.
             </p>
             <p>
               I’ve been using it for a few days now and it’s been working great. If you’re similarly
@@ -348,13 +412,9 @@
               expect more meaningful content in 2023 as I embark on my open source journey.
             </p>
             <span id="continue-reading"></span>
-            <pre
-              data-lang="python"
-              style="background-color:#2e3440;color:#d8dee9;"
-              class="language-python "
-            ><code class="language-python" data-lang="python"><span style="color:#616e88;"># Here&#39;s some code
-</span><span style="font-style:italic;color:#88c0d0;">print</span><span>(</span><span style="color:#a3be8c;">&quot;Hello World&quot;</span><span>)
-</span></code></pre>
+            <pre><code data-lang="python"># Here&#39;s some code
+print(&quot;Hello World&quot;)
+</code></pre>
           </div>
 
           <div class="article-info">
@@ -379,7 +439,7 @@
       </main>
       <footer>
         <p>
-          © James Williams 2025<br />
+          © James Williams 2026<br />
           <a href="https://jamwil.com/subscribe">Subscribe via email</a><br />
         </p>
         <script src="https://cdn.jsdelivr.net/npm/vanilla-lazyload@19.1.3/dist/lazyload.min.js"></script>

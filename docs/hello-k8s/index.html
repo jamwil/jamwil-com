@@ -80,10 +80,10 @@
               </li>
             </ul>
             <p>
-              For local development I am using <a href="https://kind.sigs.k8s.io">Kind</a>, a tool
-              which allows you to run Kubernetes clusters in Docker containers. It is a lightweight
-              way to run docker containers inside kubernetes inside a docker container (pause for
-              effect).
+              For local development I am using
+              <a rel="external" href="https://kind.sigs.k8s.io">Kind</a>, a tool which allows you to
+              run Kubernetes clusters in Docker containers. It is a lightweight way to run docker
+              containers inside kubernetes inside a docker container (pause for effect).
             </p>
             <p>The command to create a cluster is: <code>kind create cluster</code></p>
             <p>
@@ -102,32 +102,28 @@
               kubernetes manifest files in your project directory. The simplest possible
               configuration is something like so:
             </p>
-            <pre
-              data-lang="yaml"
-              style="background-color:#2e3440;color:#d8dee9;"
-              class="language-yaml "
-            ><code class="language-yaml" data-lang="yaml"><span style="color:#616e88;"># deployment.yaml
-</span><span style="color:#8fbcbb;">apiVersion</span><span style="color:#eceff4;">: </span><span style="color:#a3be8c;">apps/v1
-</span><span style="color:#8fbcbb;">kind</span><span style="color:#eceff4;">: </span><span style="color:#a3be8c;">Deployment
-</span><span style="color:#8fbcbb;">metadata</span><span style="color:#eceff4;">:
-</span><span>  </span><span style="color:#8fbcbb;">name</span><span style="color:#eceff4;">: </span><span style="color:#a3be8c;">my-image-name-deployment
-</span><span style="color:#8fbcbb;">spec</span><span style="color:#eceff4;">:
-</span><span>  </span><span style="color:#8fbcbb;">replicas</span><span style="color:#eceff4;">: </span><span style="color:#b48ead;">1
-</span><span>  </span><span style="color:#8fbcbb;">selector</span><span style="color:#eceff4;">:
-</span><span>    </span><span style="color:#8fbcbb;">matchLabels</span><span style="color:#eceff4;">:
-</span><span>      </span><span style="color:#8fbcbb;">app</span><span style="color:#eceff4;">: </span><span style="color:#a3be8c;">my-image-name
-</span><span>  </span><span style="color:#8fbcbb;">template</span><span style="color:#eceff4;">:
-</span><span>    </span><span style="color:#8fbcbb;">metadata</span><span style="color:#eceff4;">:
-</span><span>      </span><span style="color:#8fbcbb;">labels</span><span style="color:#eceff4;">:
-</span><span>        </span><span style="color:#8fbcbb;">app</span><span style="color:#eceff4;">: </span><span style="color:#a3be8c;">my-image-name
-</span><span>    </span><span style="color:#8fbcbb;">spec</span><span style="color:#eceff4;">:
-</span><span>      </span><span style="color:#8fbcbb;">containers</span><span style="color:#eceff4;">:
-</span><span>        - </span><span style="color:#8fbcbb;">name</span><span style="color:#eceff4;">: </span><span style="color:#a3be8c;">my-image-name
-</span><span>          </span><span style="color:#8fbcbb;">image</span><span style="color:#eceff4;">: </span><span style="color:#a3be8c;">my-image-name
-</span><span>          </span><span style="color:#8fbcbb;">imagePullPolicy</span><span style="color:#eceff4;">: </span><span style="color:#a3be8c;">Never </span><span style="color:#616e88;"># Use for local image
-</span><span>          </span><span style="color:#8fbcbb;">ports</span><span style="color:#eceff4;">:
-</span><span>            - </span><span style="color:#8fbcbb;">containerPort</span><span style="color:#eceff4;">: </span><span style="color:#b48ead;">8000 </span><span style="color:#616e88;"># Use the port your application runs on
-</span></code></pre>
+            <pre><code data-lang="yaml"># deployment.yaml
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: my-image-name-deployment
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: my-image-name
+  template:
+    metadata:
+      labels:
+        app: my-image-name
+    spec:
+      containers:
+        - name: my-image-name
+          image: my-image-name
+          imagePullPolicy: Never # Use for local image
+          ports:
+            - containerPort: 8000 # Use the port your application runs on
+</code></pre>
             <p>
               Note that the <code>imagePullPolicy</code> is set to <code>Never</code> because we are
               using a local image with the implied tag <code>latest</code>. Specifying a specific
@@ -139,23 +135,19 @@
               In addition to matching the exposed port of the container, your application should be
               configured to bind to any incoming address (0.0.0.0), not just localhost.
             </p>
-            <pre
-              data-lang="yaml"
-              style="background-color:#2e3440;color:#d8dee9;"
-              class="language-yaml "
-            ><code class="language-yaml" data-lang="yaml"><span style="color:#616e88;"># service.yaml
-</span><span style="color:#8fbcbb;">apiVersion</span><span style="color:#eceff4;">: </span><span style="color:#a3be8c;">v1
-</span><span style="color:#8fbcbb;">kind</span><span style="color:#eceff4;">: </span><span style="color:#a3be8c;">Service
-</span><span style="color:#8fbcbb;">metadata</span><span style="color:#eceff4;">:
-</span><span>  </span><span style="color:#8fbcbb;">name</span><span style="color:#eceff4;">: </span><span style="color:#a3be8c;">my-image-name-service
-</span><span style="color:#8fbcbb;">spec</span><span style="color:#eceff4;">:
-</span><span>  </span><span style="color:#8fbcbb;">type</span><span style="color:#eceff4;">: </span><span style="color:#a3be8c;">NodePort
-</span><span>  </span><span style="color:#8fbcbb;">ports</span><span style="color:#eceff4;">:
-</span><span>    - </span><span style="color:#8fbcbb;">port</span><span style="color:#eceff4;">: </span><span style="color:#b48ead;">8000
-</span><span>      </span><span style="color:#8fbcbb;">nodePort</span><span style="color:#eceff4;">: </span><span style="color:#b48ead;">30080
-</span><span>  </span><span style="color:#8fbcbb;">selector</span><span style="color:#eceff4;">:
-</span><span>    </span><span style="color:#8fbcbb;">app</span><span style="color:#eceff4;">: </span><span style="color:#a3be8c;">my-image-name
-</span></code></pre>
+            <pre><code data-lang="yaml"># service.yaml
+apiVersion: v1
+kind: Service
+metadata:
+  name: my-image-name-service
+spec:
+  type: NodePort
+  ports:
+    - port: 8000
+      nodePort: 30080
+  selector:
+    app: my-image-name
+</code></pre>
             <p>
               With these files in place, we can create the deployment and service respectively using
               <code>kubectl apply -f &lt;file-name&gt;</code> for each. They can be verified using:
@@ -223,7 +215,7 @@
       </main>
       <footer>
         <p>
-          © James Williams 2025<br />
+          © James Williams 2026<br />
           <a href="https://jamwil.com/subscribe">Subscribe via email</a><br />
         </p>
         <script src="https://cdn.jsdelivr.net/npm/vanilla-lazyload@19.1.3/dist/lazyload.min.js"></script>

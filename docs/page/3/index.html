@@ -51,6 +51,187 @@
         <article class="post-list">
           <header>
             <h1>
+              <a href="https:&#x2F;&#x2F;jamwil.com&#x2F;hello-k8s&#x2F;"
+                >Running a local Kubernetes cluster with Kind: A step-by-step guide</a
+              >
+            </h1>
+          </header>
+
+          <div class="content post-summary">
+            <p>
+              It has happened. I thought I could avoid it, but here we are. As if getting your
+              program to run on one computer wasn’t hard enough, now we have to run it on multiple
+              computers at the same time? They have played us for absolute fools.
+            </p>
+            <p>
+              Anyway, assuming we have some shared experience with Docker, let’s introduce some
+              terminology:
+            </p>
+            <ul>
+              <li>
+                A <strong>Pod</strong> is the smallest deployable unit in Kubernetes, often a single
+                instance of an application. As I understand it, a pod is the logical equivalent of a
+                container.
+              </li>
+              <li>
+                <strong>Nodes</strong> are the machines that host these pods. More nodes allow for
+                more redundancy.
+              </li>
+              <li>
+                A <strong>Cluster</strong> is a set of nodes with the same job. A cluster can run
+                multiple nodes, and a node can run multiple pods, and a pod typically consists of
+                between two and fifteen orca whales.
+              </li>
+              <li>
+                A <strong>Service</strong> is an abstraction which provides a single network entry
+                point to distribute traffic across the cluster.
+              </li>
+            </ul>
+            <p>
+              For local development I am using
+              <a rel="external" href="https://kind.sigs.k8s.io">Kind</a>, a tool which allows you to
+              run Kubernetes clusters in Docker containers. It is a lightweight way to run docker
+              containers inside kubernetes inside a docker container (pause for effect).
+            </p>
+            <p>The command to create a cluster is: <code>kind create cluster</code></p>
+            <p>
+              To deploy the application, it needs to be packaged as a Docker image. After creating
+              the Dockerfile, the image is built and loaded into the Kind cluster with the following
+              commands:
+            </p>
+            <p><code>docker build -t my-image-name .</code></p>
+            <p><code>kind load docker-image my-image-name</code></p>
+            <p>
+              I should note that in addition to Kind, there is a tool called minikube which is
+              similar, though it requires you to set up a container registry.
+            </p>
+            <p>
+              The next step is creating a deployment and a service for the application by creating
+              kubernetes manifest files in your project directory. The simplest possible
+              configuration is something like so:
+            </p>
+            <pre><code data-lang="yaml"># deployment.yaml
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: my-image-name-deployment
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: my-image-name
+  template:
+    metadata:
+      labels:
+        app: my-image-name
+    spec:
+      containers:
+        - name: my-image-name
+          image: my-image-name
+          imagePullPolicy: Never # Use for local image
+          ports:
+            - containerPort: 8000 # Use the port your application runs on
+</code></pre>
+            <p>
+              Note that the <code>imagePullPolicy</code> is set to <code>Never</code> because we are
+              using a local image with the implied tag <code>latest</code>. Specifying a specific
+              tag should make this unnecessary, otherwise the default behaviour is to try to pull
+              the image from Docker Hub, which will fail each time (or worse, deploy something
+              unexpected).
+            </p>
+            <p>
+              In addition to matching the exposed port of the container, your application should be
+              configured to bind to any incoming address (0.0.0.0), not just localhost.
+            </p>
+            <pre><code data-lang="yaml"># service.yaml
+apiVersion: v1
+kind: Service
+metadata:
+  name: my-image-name-service
+spec:
+  type: NodePort
+  ports:
+    - port: 8000
+      nodePort: 30080
+  selector:
+    app: my-image-name
+</code></pre>
+            <p>
+              With these files in place, we can create the deployment and service respectively using
+              <code>kubectl apply -f &lt;file-name&gt;</code> for each. They can be verified using:
+              <code>kubectl get deployments</code> and <code>kubectl get services</code>.
+            </p>
+            <p>
+              If there are any issues, logs can be checked using:
+              <code>kubectl logs &lt;pod-name&gt;</code>, and the pod name can be found using
+              <code>kubectl get pods</code>.
+            </p>
+            <p>
+              Remember to specify environment variables in the <code>deployment.yaml</code> file
+              under <code>env</code> in the <code>containers</code> specification if your
+              application requires them.
+            </p>
+            <p>
+              If you’re running docker inside a linux virtual machine, port 30080 should already be
+              exposed. If you’re running using Docker Desktop, there’s one more step which requires
+              forwarding a local port to the service port. This can be done using:
+            </p>
+            <p><code>kubectl port-forward service/my-image-name-service 30080:8000</code></p>
+            <p>
+              This will map the service to <code>localhost:30080</code> on your local machine.
+              Launch it in tmux or append the command with an ampersand as it will block the
+              terminal otherwise.
+            </p>
+            <p>Fin. Now deploy to prod on a Friday afternoon and you’re done!</p>
+            <span id="continue-reading"></span>
+          </div>
+
+          <div class="article-info">
+            <div class="article-date">2023-06-20</div>
+
+            <div class="article-taxonomies">
+              <ul class="article-categories">
+                <li>
+                  <a href="https://jamwil.com/categories/technology/"> Technology </a>
+                </li>
+              </ul>
+
+              <ul class="article-tags">
+                <li>
+                  <a href="https://jamwil.com/tags/development/"> #development </a>
+                </li>
+
+                <li>
+                  <a href="https://jamwil.com/tags/docker/"> #docker </a>
+                </li>
+
+                <li>
+                  <a href="https://jamwil.com/tags/kubernetes/"> #kubernetes </a>
+                </li>
+
+                <li>
+                  <a href="https://jamwil.com/tags/kind/"> #kind </a>
+                </li>
+
+                <li>
+                  <a href="https://jamwil.com/tags/tooling/"> #tooling </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </article>
+
+        <p>
+          P.S. I'm not active on social media. If you liked this, add this page to your RSS reader
+          or
+          <a href="https://jamwil.com/subscribe">subscribe via email</a> and I'll send you a quick
+          note when I post something new.
+        </p>
+        <hr style="margin-bottom: 3em;" />
+
+        <article class="post-list">
+          <header>
+            <h1>
               <a href="https:&#x2F;&#x2F;jamwil.com&#x2F;chat-gpt-wolfram-notes&#x2F;"
                 >Notes from Stephen Wolfram&#x27;s ChatGPT primer</a
               >
@@ -61,6 +242,7 @@
             <p>
               <strong>Source Material:</strong>
               <a
+                rel="external"
                 href="https://writings.stephenwolfram.com/2023/02/what-is-chatgpt-doing-and-why-does-it-work/"
                 >Stephen Wolfram, 2023-02-14</a
               >
@@ -153,14 +335,6 @@
           </div>
         </article>
 
-        <p>
-          P.S. I'm not active on social media. If you liked this, add this page to your RSS reader
-          or
-          <a href="https://jamwil.com/subscribe">subscribe via email</a> and I'll send you a quick
-          note when I post something new.
-        </p>
-        <hr style="margin-bottom: 3em;" />
-
         <article class="post-list">
           <header>
             <h1>
@@ -201,6 +375,7 @@
               <li>
                 Stephen Wolfram:
                 <a
+                  rel="external"
                   href="https://writings.stephenwolfram.com/2023/02/what-is-chatgpt-doing-and-why-does-it-work/"
                   >What Is ChatGPT Doing … and Why Does It Work?</a
                 >
@@ -208,16 +383,20 @@
               </li>
               <li>
                 Andrej Karpathy:
-                <a href="https://karpathy.ai/zero-to-hero.html">Neural Networks: Zero to Hero</a>
+                <a rel="external" href="https://karpathy.ai/zero-to-hero.html"
+                  >Neural Networks: Zero to Hero</a
+                >
               </li>
               <li>
-                <a href="https://platform.openai.com/docs/introduction/overview"
+                <a rel="external" href="https://platform.openai.com/docs/introduction/overview"
                   >OpenAI Documentation</a
                 >
               </li>
               <li>
                 Rodrigo Girão Serrão:
-                <a href="https://mathspp.com/blog/your-first-recurrent-neural-network"
+                <a
+                  rel="external"
+                  href="https://mathspp.com/blog/your-first-recurrent-neural-network"
                   >Your first recurrent neural network (RNN)</a
                 >
               </li>
@@ -367,22 +546,18 @@
           </header>
 
           <div class="content post-summary">
-            <pre
-              data-lang="bash"
-              style="background-color:#2e3440;color:#d8dee9;"
-              class="language-bash "
-            ><code class="language-bash" data-lang="bash"><span style="color:#616e88;"># Make a clone of the repository
-</span><span style="color:#88c0d0;">git</span><span> clone </span><span style="color:#81a1c1;">&lt;</span><span>your_project</span><span style="color:#81a1c1;">&gt; &lt;</span><span>new_submodule</span><span style="color:#81a1c1;">&gt;
-</span><span>
-</span><span style="color:#616e88;"># CD into the new repository
-</span><span style="color:#88c0d0;">cd </span><span style="color:#81a1c1;">&lt;</span><span>new_submodule</span><span style="color:#81a1c1;">&gt;
-</span><span>
-</span><span style="color:#616e88;"># Use filter-branch to isolate the subdirectory
-</span><span style="color:#88c0d0;">git</span><span> filter-branch --subdirectory-filter </span><span style="color:#a3be8c;">&#39;path/to/subdirectory&#39;</span><span> --prune-empty</span><span style="color:#81a1c1;"> --</span><span> --all
-</span><span>
-</span><span style="color:#616e88;"># Remove the old remote
-</span><span style="color:#88c0d0;">git</span><span> remote rm </span><span style="color:#81a1c1;">&lt;</span><span>remote_name</span><span style="color:#81a1c1;">&gt;
-</span></code></pre>
+            <pre><code data-lang="bash"># Make a clone of the repository
+git clone &lt;your_project&gt; &lt;new_submodule&gt;
+
+# CD into the new repository
+cd &lt;new_submodule&gt;
+
+# Use filter-branch to isolate the subdirectory
+git filter-branch --subdirectory-filter &#39;path/to/subdirectory&#39; --prune-empty -- --all
+
+# Remove the old remote
+git remote rm &lt;remote_name&gt;
+</code></pre>
             <p>
               <code>git filter-branch</code> lets you rewrite Git revision history and apply custom
               filters on each revision. <strong>It should be used with caution!</strong> From the
@@ -457,67 +632,6 @@
           </div>
         </article>
 
-        <article class="post-list">
-          <header>
-            <h1>
-              <a href="https:&#x2F;&#x2F;jamwil.com&#x2F;gpg-field-guide&#x2F;">GPG Field Guide</a>
-            </h1>
-          </header>
-
-          <div class="content post-summary">
-            <p>Jürgen Gmach on his personal blog:</p>
-            <blockquote>
-              <p>
-                While I need to use GPG pretty regularly, I always have to look up the commands -
-                they just don’t stick :-)
-              </p>
-              <p>Over the last couple of months I collected every command I had to use. Enjoy!</p>
-            </blockquote>
-            <p>
-              <strong
-                >🔖 One for the bookmarks:
-                <a href="https://jugmac00.github.io/blog/gpg-all-i-need-to-know/"
-                  >GPG - All I Need to Know</a
-                ></strong
-              >
-            </p>
-            <span id="continue-reading"></span>
-            <p>
-              For posterity: <a href="https://archive.ph/9S2YM">archive.today webpage capture</a>
-            </p>
-          </div>
-
-          <div class="article-info">
-            <div class="article-date">2023-01-06</div>
-
-            <div class="article-taxonomies">
-              <ul class="article-categories">
-                <li>
-                  <a href="https://jamwil.com/categories/technology/"> Technology </a>
-                </li>
-              </ul>
-
-              <ul class="article-tags">
-                <li>
-                  <a href="https://jamwil.com/tags/encryption/"> #encryption </a>
-                </li>
-
-                <li>
-                  <a href="https://jamwil.com/tags/gpg/"> #gpg </a>
-                </li>
-
-                <li>
-                  <a href="https://jamwil.com/tags/privacy/"> #privacy </a>
-                </li>
-
-                <li>
-                  <a href="https://jamwil.com/tags/security/"> #security </a>
-                </li>
-              </ul>
-            </div>
-          </div>
-        </article>
-
         <div class="pagination">
           <div class="left pagination-item ">
             <a href="https:&#x2F;&#x2F;jamwil.com&#x2F;page&#x2F;2&#x2F;">To newer posts</a>
@@ -529,7 +643,7 @@
       </main>
       <footer>
         <p>
-          © James Williams 2025<br />
+          © James Williams 2026<br />
           <a href="https://jamwil.com/subscribe">Subscribe via email</a><br />
         </p>
         <script src="https://cdn.jsdelivr.net/npm/vanilla-lazyload@19.1.3/dist/lazyload.min.js"></script>
