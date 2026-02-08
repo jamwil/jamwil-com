@@ -19,14 +19,42 @@ geotag-images-from-track track dir:
 geotag-image lat lon img:
     exiftool -GPSLatitude={{lat}} -GPSLatitudeRef={{lat}} -GPSLongitude={{lon}} -GPSLongitudeRef={{lon}} {{img}}
 
-fix:
-    npx prettier --ignore-path .prettierignore --ignore-unknown --write content docs docs_sdf sass templates
+# Install JS tooling used by fmt/ci
+deps:
+    npm install
 
-build: && fix
+# Local formatting (writes changes)
+fmt:
+    npm exec -- prettier --ignore-path .prettierignore --ignore-unknown --write \
+        config.toml content sass static templates
+
+# Backwards-compatible name
+fix: fmt
+
+# CI formatting (fails if changes needed)
+fmt-check:
+    npm exec -- prettier --ignore-path .prettierignore --ignore-unknown --check \
+        config.toml content sass static templates
+
+# Lint/validate
+check:
+    zola check --skip-external-links
+
+# Build targets
+build: fmt
     zola build
-    zola build -u 'http://jamwil.sdf.org' --drafts -o docs_sdf -f
+
+build-sdf: fmt
+    zola build -u 'http://jamwil.sdf.org' -o docs_sdf -f
+
+# CI entrypoint: never includes drafts
+ci: fmt-check check
+    zola build
+
+# CI entrypoint for preview deployments (override base_url)
+ci-preview base_url: fmt-check check
+    zola build -u "{{base_url}}"
 
 publish:
     ssh jamwil@tty.sdf.org -t "rm -rf html/*"
     scp -r docs_sdf/* jamwil@tty.sdf.org:html/
-

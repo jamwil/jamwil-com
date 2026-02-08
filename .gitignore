@@ -4,5 +4,6 @@ node_modules
 .venv
 .aider*
 .env
+docs/
 docs_sdf/
 .nvim.lua

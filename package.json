@@ -1,0 +1,9 @@
+{
+  "name": "jamwil.com",
+  "private": true,
+  "devDependencies": {
+    "prettier": "3.8.1",
+    "prettier-plugin-jinja-template": "2.1.0",
+    "wrangler": "3.114.17"
+  }
+}
