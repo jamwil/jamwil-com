@@ -11,8 +11,8 @@ Distance traveled: 6,846 kilometres
 Posts: {{ link(path='/tags/far-west-2024', text='#far-west-2024') }}
 
 RSS: {{ link(path='/tags/far-west-2024/rss.xml',
-text='Open in default RSS reader') }} (For Apple devices I recommend the free and
-excellent [NetNewsWire](https://netnewswire.com))
+text='Open in default RSS reader') }} (For Apple devices I recommend the free
+and excellent [NetNewsWire](https://netnewswire.com))
 
 ---
 

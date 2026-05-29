@@ -147,8 +147,7 @@ level of your most proficient colleague. It is as true in 2025 as it was in 2020
 as it was in 1820: you cannot do great things without great people. What you
 _can_ now accomplish are more middling things with the same amount of great
 people. That has business value, to be sure. There is plenty of middling work
-that needs to be done. To quote my man Alec, "world needs plenty of
-bartenders!"[^alec]
+that needs to be done.
 
 Now, I have no empirical basis for these numbers aside from my own experience
 and intuition, but if I'm being VERY generous I would peg my own efficiency
@@ -214,8 +213,3 @@ alright.
     own output (runs in a loop) and use tools. Personally, I define an agent by
     its correct definition of something or someone that acts on behalf of
     something or someone else. The agent works for you, not in place of you.
-
-<br />
-
-[^alec]:
-    <iframe width="560" height="315" src="https://www.youtube.com/embed/dJ1FeBF_1p0?si=xOUuh5-_ck-bOFX0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>

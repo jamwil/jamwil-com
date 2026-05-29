@@ -17,7 +17,8 @@ through the American west.
 
 <!-- more -->
 
-<noscript><i>Note: Inline images are hyper-compressed with javascript disabled.</i></noscript>
+<noscript><i>Note: Inline images are hyper-compressed with javascript
+disabled.</i></noscript>
 
 ## British Columbia
 

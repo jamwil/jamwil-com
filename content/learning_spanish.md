@@ -69,8 +69,8 @@ including accents and correct gendering which often can fall aside if you're
 just doing pure mental checks in your head.
 
 I've also had great success using an LLM to create supplemental cards for
-knowledge gaps. When you take beginner language classes, you learn all sorts
-of important vocabularly, like colours, body parts, rooms in the house, telling
+knowledge gaps. When you take beginner language classes, you learn all sorts of
+important vocabularly, like colours, body parts, rooms in the house, telling
 time, numbers, etc. that tends to get skipped over by the above methods and
 often as well in real-world immersion. I asked ChatGPT to prepare me several
 hundred cards containing words and phrases that would typically be covered in
