@@ -17,6 +17,11 @@ taxonomies = [
 render_emoji = true
 smart_punctuation = true
 
+[markdown.highlighting]
+error_on_missing_language = true
+style = "inline"
+theme = "everforest-dark"
+
 [extra]
 katex_enable = true
 anpu_menu_links = [
