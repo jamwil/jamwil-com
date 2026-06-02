@@ -371,9 +371,10 @@ article img {
 }
 
 figcaption {
-  font-size: 0.75em;
+  font-size: 0.9em;
   color: $secondary-text;
   font-style: italic;
+  margin-top: 0.9em;
 }
 
 article .content table {
@@ -410,10 +411,15 @@ video {
   width: 100%;
 }
 
-img.thumbnail {
+figure.thumbnail {
   float: left;
-  margin-right: 1em;
-  margin-bottom: 1em;
+  margin: 0 1em 1em 0;
+  max-width: 100%;
+}
+
+figure.thumbnail img {
+  display: block;
+  margin: 0;
 }
 
 .read-more {

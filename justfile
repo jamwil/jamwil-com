@@ -11,13 +11,13 @@ new-post slug:
 
 # Update the date on a post to now
 update-date file:
-    @-sed -i 's/^date = ".*"/date = "'"$(date -u +"%Y-%m-%dT%H:%M:%SZ")"'"/' {{ file }}
+    @-sed -i '' 's/^date = ".*"/date = "'"$(date -u +"%Y-%m-%dT%H:%M:%SZ")"'"/' {{ file }}
 
 # Prepare the tags and add a copyright
 prepare-image img:
     exiftool -c "%.6f" -Make -Model -LensModel -ExposureTime -FNumber -ISO -FocalLength \
         -GPSPosition -GPSAltitude -ImageSize -FileSize -h {{ img }}
-    exiftool -All= -IPTC:CopyrightNotice="© James Williams" -TagsFromFile @ -ColorSpaceTags -Orientation {{ img }}
+    exiftool -All= -IPTC:CopyrightNotice="© James Williams" -TagsFromFile @ -ColorSpaceTags -ICC_Profile -Orientation {{ img }}
 
 # Geotag images based on a track, offset should be like '-07:00'
 geotag-images-from-track track offset dir:
@@ -45,22 +45,13 @@ fmt-check:
 check:
     zola check --skip-external-links
 
-# Serve over tailscale (run `sudo tailscale serve 1111` in another terminal)
-preview:
-    #!/usr/bin/env bash
-    set -euo pipefail
-    trap 'kill 0' SIGINT
-    sudo tailscale serve 1111 &
-    zola serve --drafts --base-url https://dedi2028.cuttlefish-daggertooth.ts.net --no-port-append &
-    wait
-
 # Build targets
 build: fmt
     zola build
-    npm exec -- prettier --ignore-unknown --write public
+    npm exec -- prettier --ignore-path .prettierignore --ignore-unknown --write public
 
 # Publish the site
 publish: build
-    sudo rsync -a --delete "public/" "/srv/jamwil.com/"
-    sudo chown -R root:caddy "/srv/jamwil.com"
-    sudo chmod -R 750 "/srv/jamwil.com"
+    rsync -a --delete "public/" ubuntu@dedi2028:/srv/jamwil.com/
+    ssh ubuntu@dedi2028 sudo chown -R root:caddy "/srv/jamwil.com"
+    ssh ubuntu@dedi2028 sudo chmod -R 750 "/srv/jamwil.com"

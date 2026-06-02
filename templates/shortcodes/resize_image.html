@@ -18,21 +18,25 @@
     quality=10
   )
 %}
-<img
-  data-src="{{ image.url | safe }}"
-  alt="{{ alt }}"
-  title="{{ alt }}"
-  width="{{ width }}"
-  height="{{ height }}"
-  class="thumbnail lazy"
-/>
-<noscript>
+<figure class="thumbnail" style="width: {{ width }}px;">
   <img
-    src="{{ fallback_image.url | safe }}"
-    alt="{{ alt }} Note: image is hyper-compressed with javascript disabled."
-    title="{{ alt }} Note: image is hyper-compressed with javascript disabled."
+    data-src="{{ image.url | safe }}"
+    alt="{{ alt }}"
+    title="{{ alt }}"
     width="{{ width }}"
     height="{{ height }}"
-    class="thumbnail"
+    class="lazy"
   />
-</noscript>
+  <noscript>
+    <img
+      src="{{ fallback_image.url | safe }}"
+      alt="{{ alt }} Note: image is hyper-compressed with javascript disabled."
+      title="{{ alt }} Note: image is hyper-compressed with javascript disabled."
+      width="{{ width }}"
+      height="{{ height }}"
+    />
+  </noscript>
+  {% if alt %}
+    <figcaption>{{ alt }}</figcaption>
+  {% endif %}
+</figure>
