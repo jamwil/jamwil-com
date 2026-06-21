@@ -12,6 +12,11 @@ all my things into a storage unit in Squamish and set off solo for South
 America. I spent three months in Buenos Aires and one month in Bariloche
 (Northern Patagonia).
 
+<!-- more -->
+
+<noscript><i>Note: Inline images are hyper-compressed with javascript
+disabled.</i></noscript>
+
 ## Buenos Aires
 
 <!-- content/argentina/IMG_6748.jpg -->
