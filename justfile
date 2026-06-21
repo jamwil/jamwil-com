@@ -52,6 +52,6 @@ build: fmt
 
 # Publish the site
 publish: build
-    rsync -a --delete "public/" ubuntu@dedi2028:/srv/jamwil.com/
+    rsync -a --delete --rsync-path="sudo rsync" "public/" ubuntu@dedi2028:/srv/jamwil.com/
     ssh ubuntu@dedi2028 sudo chown -R root:caddy "/srv/jamwil.com"
     ssh ubuntu@dedi2028 sudo chmod -R 750 "/srv/jamwil.com"
