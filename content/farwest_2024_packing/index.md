@@ -21,8 +21,7 @@ America, so a CAA/AMA membership should negate the need for spare parts, but I
 would want to bring spare shift/clutch/brake levers, oil filters and other
 model-specific items if venturing further.
 
-{{ resize_image(path='content/farwest_2024_packing/packlist.jpeg',
-width=840, height=840, op='fit_width', alt="Behold, lots of shit on a rugh.") }}
+{{<site_photo path='content/farwest_2024_packing/packlist.jpeg' width={840} height={840} op='fit_width' alt="Behold, lots of shit on a rugh." />}}
 
 <figcaption>Behold, lots of shit on a rug.</figcaption>
 

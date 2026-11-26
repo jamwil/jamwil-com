@@ -8,10 +8,9 @@ Last known location: Okotoks, AB on May 28, 2024. Mission complete.
 
 Distance traveled: 6,846 kilometres
 
-Posts: {{ link(path='/tags/far-west-2024', text='#far-west-2024') }}
+Posts: {{<site_link path='/tags/far-west-2024' text='#far-west-2024' />}}
 
-RSS: {{ link(path='/tags/far-west-2024/rss.xml',
-text='Open in default RSS reader') }} (For Apple devices I recommend the free
+RSS: {{<site_link path='/tags/far-west-2024/rss.xml' text='Open in default RSS reader' />}} (For Apple devices I recommend the free
 and excellent [NetNewsWire](https://netnewswire.com))
 
 ---
@@ -47,13 +46,13 @@ allows for only ~225 kilometres between fuel ups, but such is the price to pay
 for that sweet retro profile.
 
 <p>
-{{ resize_image(path="content/pages/farwest/lucia1.jpg", width=840, height=840, op="fit_width", alt="Lucia and I the day I bought her.") }}
+{{<site_photo path="content/pages/farwest/lucia1.jpg" width={840} height={840} op="fit_width" alt="Lucia and I the day I bought her." />}}
 
 <figcaption>Lucia and I the day I bought her in June 2022.</figcaption>
 </p>
 
 <p>
-{{ resize_image(path="content/pages/farwest/lucia2.jpg", width=840, height=840, op="fit_width", alt="Lucia with her lil' bike backpack in July 2023. Since then I've added saddlebags to bring my total waterproofed luggage capacity to 84 litres.") }}
+{{<site_photo path="content/pages/farwest/lucia2.jpg" width={840} height={840} op="fit_width" alt="Lucia with her lil' bike backpack in July 2023. Since then I've added saddlebags to bring my total waterproofed luggage capacity to 84 litres." />}}
 
 <figcaption>Lucia with her lil' bike backpack in July 2023. Since then I've added saddlebags to bring my total waterproofed luggage capacity to 84 litres.</figcaption>
 </p>

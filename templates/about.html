@@ -1,4 +1,4 @@
-{% import "macros/page.html" as page_macros %} {% extends "index.html" %}
+{% extends "index.html" %}
 {% block title %}{{ page.title }}{% endblock %}
 {% block content %}
   <article class="post">
@@ -22,6 +22,6 @@
       {% if data %}{{ data | markdown | safe }}{% else %}No data found{% endif %}
     </div>
 
-    {{ page_macros::page_info(page=page) }}
+    {{<site.page_info page={page} config={config} />}}
   </article>
 {% endblock content %}

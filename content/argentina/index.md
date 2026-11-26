@@ -21,7 +21,7 @@ disabled.</i></noscript>
 
 <!-- content/argentina/IMG_6748.jpg -->
 
-{{ resize_image(path="content/argentina/IMG_6748.jpg", width=500, height=500, op="fit_width", alt="The view from my apartment in Palermo Soho.") }}
+{{<site_photo path="content/argentina/IMG_6748.jpg" width={500} height={500} op="fit_width" alt="The view from my apartment in Palermo Soho." />}}
 
 <table>
 <tr><td>Make</td><td>Apple</td></tr>
@@ -35,14 +35,14 @@ disabled.</i></noscript>
 <tr><td>GPS Altitude</td><td>18.3 m Above Sea Level</td></tr>
 <tr><td>Image Size</td><td>4032x3024</td></tr>
 <tr><td>File Size</td><td>10 MB</td></tr>
-<tr><td colspan=2>{{ image_link(path='argentina/IMG_6748.jpg', text='View full resolution') }}</td></tr>
+<tr><td colspan=2>{{<site_image_link path='argentina/IMG_6748.jpg' text='View full resolution' />}}</td></tr>
 </table>
 
 <div style="clear:both;"></div>
 
 <!-- content/argentina/IMG_6756.jpg -->
 
-{{ resize_image(path="content/argentina/IMG_6756.jpg", width=500, height=500, op="fit_width", alt="Plaza Lavalle (realizing I'm in Paris with palm trees).") }}
+{{<site_photo path="content/argentina/IMG_6756.jpg" width={500} height={500} op="fit_width" alt="Plaza Lavalle (realizing I'm in Paris with palm trees)." />}}
 
 <table>
 <tr><td>Make</td><td>Apple</td></tr>
@@ -56,14 +56,14 @@ disabled.</i></noscript>
 <tr><td>GPS Altitude</td><td>23.5 m Above Sea Level</td></tr>
 <tr><td>Image Size</td><td>4032x3024</td></tr>
 <tr><td>File Size</td><td>16 MB</td></tr>
-<tr><td colspan=2>{{ image_link(path='argentina/IMG_6756.jpg', text='View full resolution') }}</td></tr>
+<tr><td colspan=2>{{<site_image_link path='argentina/IMG_6756.jpg' text='View full resolution' />}}</td></tr>
 </table>
 
 <div style="clear:both;"></div>
 
 <!-- content/argentina/IMG_6762.jpg -->
 
-{{ resize_image(path="content/argentina/IMG_6762.jpg", width=500, height=500, op="fit_width", alt="The west edge of Plaza de Mayo.") }}
+{{<site_photo path="content/argentina/IMG_6762.jpg" width={500} height={500} op="fit_width" alt="The west edge of Plaza de Mayo." />}}
 
 <table>
 <tr><td>Make</td><td>Apple</td></tr>
@@ -77,14 +77,14 @@ disabled.</i></noscript>
 <tr><td>GPS Altitude</td><td>25.3 m Above Sea Level</td></tr>
 <tr><td>Image Size</td><td>4032x3024</td></tr>
 <tr><td>File Size</td><td>10 MB</td></tr>
-<tr><td colspan=2>{{ image_link(path='argentina/IMG_6762.jpg', text='View full resolution') }}</td></tr>
+<tr><td colspan=2>{{<site_image_link path='argentina/IMG_6762.jpg' text='View full resolution' />}}</td></tr>
 </table>
 
 <div style="clear:both;"></div>
 
 <!-- content/argentina/IMG_6763.jpg -->
 
-{{ resize_image(path="content/argentina/IMG_6763.jpg", width=500, height=500, op="fit_width", alt="The Obelisco in the distance. I had some nice light for this one.") }}
+{{<site_photo path="content/argentina/IMG_6763.jpg" width={500} height={500} op="fit_width" alt="The Obelisco in the distance. I had some nice light for this one." />}}
 
 <table>
 <tr><td>Make</td><td>Apple</td></tr>
@@ -98,14 +98,14 @@ disabled.</i></noscript>
 <tr><td>GPS Altitude</td><td>24.5 m Above Sea Level</td></tr>
 <tr><td>Image Size</td><td>4032x3024</td></tr>
 <tr><td>File Size</td><td>8.9 MB</td></tr>
-<tr><td colspan=2>{{ image_link(path='argentina/IMG_6763.jpg', text='View full resolution') }}</td></tr>
+<tr><td colspan=2>{{<site_image_link path='argentina/IMG_6763.jpg' text='View full resolution' />}}</td></tr>
 </table>
 
 <div style="clear:both;"></div>
 
 <!-- content/argentina/IMG_6766.jpg -->
 
-{{ resize_image(path="content/argentina/IMG_6766.jpg", width=500, height=500, op="fit_width", alt="Floralis Genérica. A gift to the city from Argentine architect Eduardo Catalano in 2002. The petals close at night and open again in the morning.") }}
+{{<site_photo path="content/argentina/IMG_6766.jpg" width={500} height={500} op="fit_width" alt="Floralis Genérica. A gift to the city from Argentine architect Eduardo Catalano in 2002. The petals close at night and open again in the morning." />}}
 
 <table>
 <tr><td>Make</td><td>Apple</td></tr>
@@ -119,14 +119,14 @@ disabled.</i></noscript>
 <tr><td>GPS Altitude</td><td>12.1 m Above Sea Level</td></tr>
 <tr><td>Image Size</td><td>4032x3024</td></tr>
 <tr><td>File Size</td><td>11 MB</td></tr>
-<tr><td colspan=2>{{ image_link(path='argentina/IMG_6766.jpg', text='View full resolution') }}</td></tr>
+<tr><td colspan=2>{{<site_image_link path='argentina/IMG_6766.jpg' text='View full resolution' />}}</td></tr>
 </table>
 
 <div style="clear:both;"></div>
 
 <!-- content/argentina/IMG_6770.jpg -->
 
-{{ resize_image(path="content/argentina/IMG_6770.jpg", width=500, height=500, op="fit_width", alt="The Faculty of Law building at University of Buenos Aires. They don't make'em like they used to.") }}
+{{<site_photo path="content/argentina/IMG_6770.jpg" width={500} height={500} op="fit_width" alt="The Faculty of Law building at University of Buenos Aires. They don't make'em like they used to." />}}
 
 <table>
 <tr><td>Make</td><td>Apple</td></tr>
@@ -140,14 +140,14 @@ disabled.</i></noscript>
 <tr><td>GPS Altitude</td><td>11.7 m Above Sea Level</td></tr>
 <tr><td>Image Size</td><td>4032x3024</td></tr>
 <tr><td>File Size</td><td>12 MB</td></tr>
-<tr><td colspan=2>{{ image_link(path='argentina/IMG_6770.jpg', text='View full resolution') }}</td></tr>
+<tr><td colspan=2>{{<site_image_link path='argentina/IMG_6770.jpg' text='View full resolution' />}}</td></tr>
 </table>
 
 <div style="clear:both;"></div>
 
 <!-- content/argentina/IMG_6826.jpg -->
 
-{{ resize_image(path="content/argentina/IMG_6826.jpg", width=500, height=500, op="fit_width", alt="A cool photo of a wall in a club taken at an unholy hour.") }}
+{{<site_photo path="content/argentina/IMG_6826.jpg" width={500} height={500} op="fit_width" alt="A cool photo of a wall in a club taken at an unholy hour." />}}
 
 <table>
 <tr><td>Make</td><td>Apple</td></tr>
@@ -161,14 +161,14 @@ disabled.</i></noscript>
 <tr><td>GPS Altitude</td><td>19.1 m Above Sea Level</td></tr>
 <tr><td>Image Size</td><td>4032x3024</td></tr>
 <tr><td>File Size</td><td>13 MB</td></tr>
-<tr><td colspan=2>{{ image_link(path='argentina/IMG_6826.jpg', text='View full resolution') }}</td></tr>
+<tr><td colspan=2>{{<site_image_link path='argentina/IMG_6826.jpg' text='View full resolution' />}}</td></tr>
 </table>
 
 <div style="clear:both;"></div>
 
 <!-- content/argentina/IMG_6839.jpg -->
 
-{{ resize_image(path="content/argentina/IMG_6839.jpg", width=500, height=500, op="fit_width", alt="Ciudad Cultural Konex—an amazing live music venue.") }}
+{{<site_photo path="content/argentina/IMG_6839.jpg" width={500} height={500} op="fit_width" alt="Ciudad Cultural Konex—an amazing live music venue." />}}
 
 <table>
 <tr><td>Make</td><td>Apple</td></tr>
@@ -182,14 +182,14 @@ disabled.</i></noscript>
 <tr><td>GPS Altitude</td><td>27.6 m Above Sea Level</td></tr>
 <tr><td>Image Size</td><td>2978x3970</td></tr>
 <tr><td>File Size</td><td>11 MB</td></tr>
-<tr><td colspan=2>{{ image_link(path='argentina/IMG_6839.jpg', text='View full resolution') }}</td></tr>
+<tr><td colspan=2>{{<site_image_link path='argentina/IMG_6839.jpg' text='View full resolution' />}}</td></tr>
 </table>
 
 <div style="clear:both;"></div>
 
 <!-- content/argentina/IMG_6854.jpg -->
 
-{{ resize_image(path="content/argentina/IMG_6854.jpg", width=500, height=500, op="fit_width", alt="The church down the street from my apartment in Palermo Soho.") }}
+{{<site_photo path="content/argentina/IMG_6854.jpg" width={500} height={500} op="fit_width" alt="The church down the street from my apartment in Palermo Soho." />}}
 
 <table>
 <tr><td>Make</td><td>Apple</td></tr>
@@ -203,14 +203,14 @@ disabled.</i></noscript>
 <tr><td>GPS Altitude</td><td>17.3 m Above Sea Level</td></tr>
 <tr><td>Image Size</td><td>3954x2966</td></tr>
 <tr><td>File Size</td><td>9.3 MB</td></tr>
-<tr><td colspan=2>{{ image_link(path='argentina/IMG_6854.jpg', text='View full resolution') }}</td></tr>
+<tr><td colspan=2>{{<site_image_link path='argentina/IMG_6854.jpg' text='View full resolution' />}}</td></tr>
 </table>
 
 <div style="clear:both;"></div>
 
 <!-- content/argentina/IMG_6867.jpg -->
 
-{{ resize_image(path="content/argentina/IMG_6867.jpg", width=500, height=500, op="fit_width", alt="The street art in Palermo's narrow alleyways is incredible.") }}
+{{<site_photo path="content/argentina/IMG_6867.jpg" width={500} height={500} op="fit_width" alt="The street art in Palermo's narrow alleyways is incredible." />}}
 
 <table>
 <tr><td>Make</td><td>Apple</td></tr>
@@ -224,14 +224,14 @@ disabled.</i></noscript>
 <tr><td>GPS Altitude</td><td>10.5 m Above Sea Level</td></tr>
 <tr><td>Image Size</td><td>3024x4032</td></tr>
 <tr><td>File Size</td><td>15 MB</td></tr>
-<tr><td colspan=2>{{ image_link(path='argentina/IMG_6867.jpg', text='View full resolution') }}</td></tr>
+<tr><td colspan=2>{{<site_image_link path='argentina/IMG_6867.jpg' text='View full resolution' />}}</td></tr>
 </table>
 
 <div style="clear:both;"></div>
 
 <!-- content/argentina/IMG_6868.jpg -->
 
-{{ resize_image(path="content/argentina/IMG_6868.jpg", width=500, height=500, op="fit_width", alt="You can do a walking tour just to see all the murals on the walls in Soho.") }}
+{{<site_photo path="content/argentina/IMG_6868.jpg" width={500} height={500} op="fit_width" alt="You can do a walking tour just to see all the murals on the walls in Soho." />}}
 
 <table>
 <tr><td>Make</td><td>Apple</td></tr>
@@ -245,14 +245,14 @@ disabled.</i></noscript>
 <tr><td>GPS Altitude</td><td>10.4 m Above Sea Level</td></tr>
 <tr><td>Image Size</td><td>3024x4032</td></tr>
 <tr><td>File Size</td><td>14 MB</td></tr>
-<tr><td colspan=2>{{ image_link(path='argentina/IMG_6868.jpg', text='View full resolution') }}</td></tr>
+<tr><td colspan=2>{{<site_image_link path='argentina/IMG_6868.jpg' text='View full resolution' />}}</td></tr>
 </table>
 
 <div style="clear:both;"></div>
 
 <!-- content/argentina/IMG_6871.jpg -->
 
-{{ resize_image(path="content/argentina/IMG_6871.jpg", width=500, height=500, op="fit_width", alt="And of course, the third coming of Christ is omnipresent.") }}
+{{<site_photo path="content/argentina/IMG_6871.jpg" width={500} height={500} op="fit_width" alt="And of course, the third coming of Christ is omnipresent." />}}
 
 <table>
 <tr><td>Make</td><td>Apple</td></tr>
@@ -266,14 +266,14 @@ disabled.</i></noscript>
 <tr><td>GPS Altitude</td><td>10.7 m Above Sea Level</td></tr>
 <tr><td>Image Size</td><td>4018x3014</td></tr>
 <tr><td>File Size</td><td>8.8 MB</td></tr>
-<tr><td colspan=2>{{ image_link(path='argentina/IMG_6871.jpg', text='View full resolution') }}</td></tr>
+<tr><td colspan=2>{{<site_image_link path='argentina/IMG_6871.jpg' text='View full resolution' />}}</td></tr>
 </table>
 
 <div style="clear:both;"></div>
 
 <!-- content/argentina/IMG_6893.jpg -->
 
-{{ resize_image(path="content/argentina/IMG_6893.jpg", width=500, height=500, op="fit_width", alt="Edificio Kavanagh. This was the tallest tower in Latin America when it was built in 1936.") }}
+{{<site_photo path="content/argentina/IMG_6893.jpg" width={500} height={500} op="fit_width" alt="Edificio Kavanagh. This was the tallest tower in Latin America when it was built in 1936." />}}
 
 <table>
 <tr><td>Make</td><td>Apple</td></tr>
@@ -287,14 +287,14 @@ disabled.</i></noscript>
 <tr><td>GPS Altitude</td><td>14.4 m Above Sea Level</td></tr>
 <tr><td>Image Size</td><td>3024x4032</td></tr>
 <tr><td>File Size</td><td>13 MB</td></tr>
-<tr><td colspan=2>{{ image_link(path='argentina/IMG_6893.jpg', text='View full resolution') }}</td></tr>
+<tr><td colspan=2>{{<site_image_link path='argentina/IMG_6893.jpg' text='View full resolution' />}}</td></tr>
 </table>
 
 <div style="clear:both;"></div>
 
 <!-- content/argentina/IMG_6895.jpg -->
 
-{{ resize_image(path="content/argentina/IMG_6895.jpg", width=500, height=500, op="fit_width", alt="Palacio Libertad. Another cultural center and outwardly my favourite building in the city. Probably inwardly as well, however I didn't realize that this was a cultural center and not a government facility until I was researching this post. It was formerly the central post office, which is why it says 'Secretaría de Comunicaciones' on the side.") }}
+{{<site_photo path="content/argentina/IMG_6895.jpg" width={500} height={500} op="fit_width" alt="Palacio Libertad. Another cultural center and outwardly my favourite building in the city. Probably inwardly as well, however I didn't realize that this was a cultural center and not a government facility until I was researching this post. It was formerly the central post office, which is why it says 'Secretaría de Comunicaciones' on the side." />}}
 
 <table>
 <tr><td>Make</td><td>Apple</td></tr>
@@ -308,14 +308,14 @@ disabled.</i></noscript>
 <tr><td>GPS Altitude</td><td>16.3 m Above Sea Level</td></tr>
 <tr><td>Image Size</td><td>3986x2988</td></tr>
 <tr><td>File Size</td><td>10 MB</td></tr>
-<tr><td colspan=2>{{ image_link(path='argentina/IMG_6895.jpg', text='View full resolution') }}</td></tr>
+<tr><td colspan=2>{{<site_image_link path='argentina/IMG_6895.jpg' text='View full resolution' />}}</td></tr>
 </table>
 
 <div style="clear:both;"></div>
 
 <!-- content/argentina/IMG_6897.jpg -->
 
-{{ resize_image(path="content/argentina/IMG_6897.jpg", width=500, height=500, op="fit_width", alt="Riot barricades surrounding Casa Rosada, the presidential palace. No explanation necessary.") }}
+{{<site_photo path="content/argentina/IMG_6897.jpg" width={500} height={500} op="fit_width" alt="Riot barricades surrounding Casa Rosada, the presidential palace. No explanation necessary." />}}
 
 <table>
 <tr><td>Make</td><td>Apple</td></tr>
@@ -329,14 +329,14 @@ disabled.</i></noscript>
 <tr><td>GPS Altitude</td><td>24.3 m Above Sea Level</td></tr>
 <tr><td>Image Size</td><td>4032x3024</td></tr>
 <tr><td>File Size</td><td>11 MB</td></tr>
-<tr><td colspan=2>{{ image_link(path='argentina/IMG_6897.jpg', text='View full resolution') }}</td></tr>
+<tr><td colspan=2>{{<site_image_link path='argentina/IMG_6897.jpg' text='View full resolution' />}}</td></tr>
 </table>
 
 <div style="clear:both;"></div>
 
 <!-- content/argentina/IMG_6914.jpg -->
 
-{{ resize_image(path="content/argentina/IMG_6914.jpg", width=500, height=500, op="fit_width", alt="A public hospital.") }}
+{{<site_photo path="content/argentina/IMG_6914.jpg" width={500} height={500} op="fit_width" alt="A public hospital." />}}
 
 <table>
 <tr><td>Make</td><td>Apple</td></tr>
@@ -350,14 +350,14 @@ disabled.</i></noscript>
 <tr><td>GPS Altitude</td><td>24.6 m Above Sea Level</td></tr>
 <tr><td>Image Size</td><td>4032x3024</td></tr>
 <tr><td>File Size</td><td>8.6 MB</td></tr>
-<tr><td colspan=2>{{ image_link(path='argentina/IMG_6914.jpg', text='View full resolution') }}</td></tr>
+<tr><td colspan=2>{{<site_image_link path='argentina/IMG_6914.jpg' text='View full resolution' />}}</td></tr>
 </table>
 
 <div style="clear:both;"></div>
 
 <!-- content/argentina/IMG_6936.jpg -->
 
-{{ resize_image(path="content/argentina/IMG_6936.jpg", width=500, height=500, op="fit_width", alt="More incredible street art on a bar in Palermo.") }}
+{{<site_photo path="content/argentina/IMG_6936.jpg" width={500} height={500} op="fit_width" alt="More incredible street art on a bar in Palermo." />}}
 
 <table>
 <tr><td>Make</td><td>Apple</td></tr>
@@ -371,14 +371,14 @@ disabled.</i></noscript>
 <tr><td>GPS Altitude</td><td>13.7 m Above Sea Level</td></tr>
 <tr><td>Image Size</td><td>4032x3024</td></tr>
 <tr><td>File Size</td><td>14 MB</td></tr>
-<tr><td colspan=2>{{ image_link(path='argentina/IMG_6936.jpg', text='View full resolution') }}</td></tr>
+<tr><td colspan=2>{{<site_image_link path='argentina/IMG_6936.jpg' text='View full resolution' />}}</td></tr>
 </table>
 
 <div style="clear:both;"></div>
 
 <!-- content/argentina/IMG_6941.jpg -->
 
-{{ resize_image(path="content/argentina/IMG_6941.jpg", width=500, height=500, op="fit_width", alt="The blue collar neighbourhood of Boca.") }}
+{{<site_photo path="content/argentina/IMG_6941.jpg" width={500} height={500} op="fit_width" alt="The blue collar neighbourhood of Boca." />}}
 
 <table>
 <tr><td>Make</td><td>Apple</td></tr>
@@ -392,14 +392,14 @@ disabled.</i></noscript>
 <tr><td>GPS Altitude</td><td>7.4 m Above Sea Level</td></tr>
 <tr><td>Image Size</td><td>4032x3024</td></tr>
 <tr><td>File Size</td><td>11 MB</td></tr>
-<tr><td colspan=2>{{ image_link(path='argentina/IMG_6941.jpg', text='View full resolution') }}</td></tr>
+<tr><td colspan=2>{{<site_image_link path='argentina/IMG_6941.jpg' text='View full resolution' />}}</td></tr>
 </table>
 
 <div style="clear:both;"></div>
 
 <!-- content/argentina/IMG_6946.jpg -->
 
-{{ resize_image(path="content/argentina/IMG_6946.jpg", width=500, height=500, op="fit_width", alt="El Caminito (the little walk) in Boca is known for it's colourful buildings.") }}
+{{<site_photo path="content/argentina/IMG_6946.jpg" width={500} height={500} op="fit_width" alt="El Caminito (the little walk) in Boca is known for it's colourful buildings." />}}
 
 <table>
 <tr><td>Make</td><td>Apple</td></tr>
@@ -413,14 +413,14 @@ disabled.</i></noscript>
 <tr><td>GPS Altitude</td><td>10.6 m Above Sea Level</td></tr>
 <tr><td>Image Size</td><td>4032x3024</td></tr>
 <tr><td>File Size</td><td>12 MB</td></tr>
-<tr><td colspan=2>{{ image_link(path='argentina/IMG_6946.jpg', text='View full resolution') }}</td></tr>
+<tr><td colspan=2>{{<site_image_link path='argentina/IMG_6946.jpg' text='View full resolution' />}}</td></tr>
 </table>
 
 <div style="clear:both;"></div>
 
 <!-- content/argentina/IMG_6950.jpg -->
 
-{{ resize_image(path="content/argentina/IMG_6950.jpg", width=500, height=500, op="fit_width", alt="La Bombonera. I was fortunate to explore this area on game day. I didn't go to the match but I joined in the tailgate. Many Fernets were consumed.") }}
+{{<site_photo path="content/argentina/IMG_6950.jpg" width={500} height={500} op="fit_width" alt="La Bombonera. I was fortunate to explore this area on game day. I didn't go to the match but I joined in the tailgate. Many Fernets were consumed." />}}
 
 <table>
 <tr><td>Make</td><td>Apple</td></tr>
@@ -434,14 +434,14 @@ disabled.</i></noscript>
 <tr><td>GPS Altitude</td><td>9.6 m Above Sea Level</td></tr>
 <tr><td>Image Size</td><td>4032x3024</td></tr>
 <tr><td>File Size</td><td>16 MB</td></tr>
-<tr><td colspan=2>{{ image_link(path='argentina/IMG_6950.jpg', text='View full resolution') }}</td></tr>
+<tr><td colspan=2>{{<site_image_link path='argentina/IMG_6950.jpg' text='View full resolution' />}}</td></tr>
 </table>
 
 <div style="clear:both;"></div>
 
 <!-- content/argentina/IMG_6951.jpg -->
 
-{{ resize_image(path="content/argentina/IMG_6951.jpg", width=500, height=500, op="fit_width", alt="There's only one Parrilla I trust on game day.") }}
+{{<site_photo path="content/argentina/IMG_6951.jpg" width={500} height={500} op="fit_width" alt="There's only one Parrilla I trust on game day." />}}
 
 <table>
 <tr><td>Make</td><td>Apple</td></tr>
@@ -455,14 +455,14 @@ disabled.</i></noscript>
 <tr><td>GPS Altitude</td><td>10.2 m Above Sea Level</td></tr>
 <tr><td>Image Size</td><td>3024x4032</td></tr>
 <tr><td>File Size</td><td>12 MB</td></tr>
-<tr><td colspan=2>{{ image_link(path='argentina/IMG_6951.jpg', text='View full resolution') }}</td></tr>
+<tr><td colspan=2>{{<site_image_link path='argentina/IMG_6951.jpg' text='View full resolution' />}}</td></tr>
 </table>
 
 <div style="clear:both;"></div>
 
 <!-- content/argentina/IMG_6953.jpg -->
 
-{{ resize_image(path="content/argentina/IMG_6953.jpg", width=500, height=500, op="fit_width", alt="There are two futbol teams that matter in Buenos Aires. River Plate aka Los Millonarios in the North, and the Boca Juniors in Boca. Boca fans call themselves El Doce (the twelve), so as a Seahawks fan it was easy to choose my side. Plus, Sandra.") }}
+{{<site_photo path="content/argentina/IMG_6953.jpg" width={500} height={500} op="fit_width" alt="There are two futbol teams that matter in Buenos Aires. River Plate aka Los Millonarios in the North, and the Boca Juniors in Boca. Boca fans call themselves El Doce (the twelve), so as a Seahawks fan it was easy to choose my side. Plus, Sandra." />}}
 
 <table>
 <tr><td>Make</td><td>Apple</td></tr>
@@ -476,7 +476,7 @@ disabled.</i></noscript>
 <tr><td>GPS Altitude</td><td>7.2 m Above Sea Level</td></tr>
 <tr><td>Image Size</td><td>3966x2974</td></tr>
 <tr><td>File Size</td><td>8.2 MB</td></tr>
-<tr><td colspan=2>{{ image_link(path='argentina/IMG_6953.jpg', text='View full resolution') }}</td></tr>
+<tr><td colspan=2>{{<site_image_link path='argentina/IMG_6953.jpg' text='View full resolution' />}}</td></tr>
 </table>
 
 <div style="clear:both;"></div>
@@ -485,7 +485,7 @@ disabled.</i></noscript>
 
 <!-- content/argentina/IMG_6970.jpg -->
 
-{{ resize_image(path="content/argentina/IMG_6970.jpg", width=500, height=500, op="fit_width", alt="Bariloche is a mountain town in Northern Patagonia. It is home to South America's largest ski resort, and is a place of great historical mystery and intrigue. I highly recommend going down the  Wikipedia rabbit hole.") }}
+{{<site_photo path="content/argentina/IMG_6970.jpg" width={500} height={500} op="fit_width" alt="Bariloche is a mountain town in Northern Patagonia. It is home to South America's largest ski resort, and is a place of great historical mystery and intrigue. I highly recommend going down the  Wikipedia rabbit hole." />}}
 
 <table>
 <tr><td>Make</td><td>Apple</td></tr>
@@ -499,14 +499,14 @@ disabled.</i></noscript>
 <tr><td>GPS Altitude</td><td>777.8 m Above Sea Level</td></tr>
 <tr><td>Image Size</td><td>4032x3024</td></tr>
 <tr><td>File Size</td><td>11 MB</td></tr>
-<tr><td colspan=2>{{ image_link(path='argentina/IMG_6970.jpg', text='View full resolution') }}</td></tr>
+<tr><td colspan=2>{{<site_image_link path='argentina/IMG_6970.jpg' text='View full resolution' />}}</td></tr>
 </table>
 
 <div style="clear:both;"></div>
 
 <!-- content/argentina/IMG_6990.jpg -->
 
-{{ resize_image(path="content/argentina/IMG_6990.jpg", width=500, height=500, op="fit_width", alt="The vibe was... Banff and Kelowna in a blender.") }}
+{{<site_photo path="content/argentina/IMG_6990.jpg" width={500} height={500} op="fit_width" alt="The vibe was... Banff and Kelowna in a blender." />}}
 
 <table>
 <tr><td>Make</td><td>Apple</td></tr>
@@ -520,14 +520,14 @@ disabled.</i></noscript>
 <tr><td>GPS Altitude</td><td>772.7 m Above Sea Level</td></tr>
 <tr><td>Image Size</td><td>3024x4032</td></tr>
 <tr><td>File Size</td><td>11 MB</td></tr>
-<tr><td colspan=2>{{ image_link(path='argentina/IMG_6990.jpg', text='View full resolution') }}</td></tr>
+<tr><td colspan=2>{{<site_image_link path='argentina/IMG_6990.jpg' text='View full resolution' />}}</td></tr>
 </table>
 
 <div style="clear:both;"></div>
 
 <!-- content/argentina/IMG_6996.jpg -->
 
-{{ resize_image(path="content/argentina/IMG_6996.jpg", width=500, height=500, op="fit_width", alt="Oh it's also the most beautiful place in the world... I hiked up Cerro Camapanario and this is the view looking north at Lago Nahuel Huapi.") }}
+{{<site_photo path="content/argentina/IMG_6996.jpg" width={500} height={500} op="fit_width" alt="Oh it's also the most beautiful place in the world... I hiked up Cerro Camapanario and this is the view looking north at Lago Nahuel Huapi." />}}
 
 <table>
 <tr><td>Make</td><td>Apple</td></tr>
@@ -541,14 +541,14 @@ disabled.</i></noscript>
 <tr><td>GPS Altitude</td><td>1052.1 m Above Sea Level</td></tr>
 <tr><td>Image Size</td><td>4032x3024</td></tr>
 <tr><td>File Size</td><td>13 MB</td></tr>
-<tr><td colspan=2>{{ image_link(path='argentina/IMG_6996.jpg', text='View full resolution') }}</td></tr>
+<tr><td colspan=2>{{<site_image_link path='argentina/IMG_6996.jpg' text='View full resolution' />}}</td></tr>
 </table>
 
 <div style="clear:both;"></div>
 
 <!-- content/argentina/IMG_6999.jpg -->
 
-{{ resize_image(path="content/argentina/IMG_6999.jpg", width=500, height=500, op="fit_width", alt="Looking west toward the Chilean Andes from Cerro Campanario.") }}
+{{<site_photo path="content/argentina/IMG_6999.jpg" width={500} height={500} op="fit_width" alt="Looking west toward the Chilean Andes from Cerro Campanario." />}}
 
 <table>
 <tr><td>Make</td><td>Apple</td></tr>
@@ -562,14 +562,14 @@ disabled.</i></noscript>
 <tr><td>GPS Altitude</td><td>1057.4 m Above Sea Level</td></tr>
 <tr><td>Image Size</td><td>4032x3024</td></tr>
 <tr><td>File Size</td><td>14 MB</td></tr>
-<tr><td colspan=2>{{ image_link(path='argentina/IMG_6999.jpg', text='View full resolution') }}</td></tr>
+<tr><td colspan=2>{{<site_image_link path='argentina/IMG_6999.jpg' text='View full resolution' />}}</td></tr>
 </table>
 
 <div style="clear:both;"></div>
 
 <!-- content/argentina/IMG_7003.jpg -->
 
-{{ resize_image(path="content/argentina/IMG_7003.jpg", width=500, height=500, op="fit_width", alt="The same view looking northwest.") }}
+{{<site_photo path="content/argentina/IMG_7003.jpg" width={500} height={500} op="fit_width" alt="The same view looking northwest." />}}
 
 <table>
 <tr><td>Make</td><td>Apple</td></tr>
@@ -583,14 +583,14 @@ disabled.</i></noscript>
 <tr><td>GPS Altitude</td><td>1056.1 m Above Sea Level</td></tr>
 <tr><td>Image Size</td><td>4032x3024</td></tr>
 <tr><td>File Size</td><td>14 MB</td></tr>
-<tr><td colspan=2>{{ image_link(path='argentina/IMG_7003.jpg', text='View full resolution') }}</td></tr>
+<tr><td colspan=2>{{<site_image_link path='argentina/IMG_7003.jpg' text='View full resolution' />}}</td></tr>
 </table>
 
 <div style="clear:both;"></div>
 
 <!-- content/argentina/IMG_7023.jpg -->
 
-{{ resize_image(path="content/argentina/IMG_7023.jpg", width=500, height=500, op="fit_width", alt="The Llao Llao Hotel.") }}
+{{<site_photo path="content/argentina/IMG_7023.jpg" width={500} height={500} op="fit_width" alt="The Llao Llao Hotel." />}}
 
 <table>
 <tr><td>Make</td><td>Apple</td></tr>
@@ -604,14 +604,14 @@ disabled.</i></noscript>
 <tr><td>GPS Altitude</td><td>876.8 m Above Sea Level</td></tr>
 <tr><td>Image Size</td><td>4032x3024</td></tr>
 <tr><td>File Size</td><td>13 MB</td></tr>
-<tr><td colspan=2>{{ image_link(path='argentina/IMG_7023.jpg', text='View full resolution') }}</td></tr>
+<tr><td colspan=2>{{<site_image_link path='argentina/IMG_7023.jpg' text='View full resolution' />}}</td></tr>
 </table>
 
 <div style="clear:both;"></div>
 
 <!-- content/argentina/IMG_7028.jpg -->
 
-{{ resize_image(path="content/argentina/IMG_7028.jpg", width=500, height=500, op="fit_width", alt="This is actually the shortest river in the world. Check out the coordinates map.") }}
+{{<site_photo path="content/argentina/IMG_7028.jpg" width={500} height={500} op="fit_width" alt="This is actually the shortest river in the world. Check out the coordinates map." />}}
 
 <table>
 <tr><td>Make</td><td>Apple</td></tr>
@@ -625,14 +625,14 @@ disabled.</i></noscript>
 <tr><td>GPS Altitude</td><td>781.2 m Above Sea Level</td></tr>
 <tr><td>Image Size</td><td>3024x4032</td></tr>
 <tr><td>File Size</td><td>16 MB</td></tr>
-<tr><td colspan=2>{{ image_link(path='argentina/IMG_7028.jpg', text='View full resolution') }}</td></tr>
+<tr><td colspan=2>{{<site_image_link path='argentina/IMG_7028.jpg' text='View full resolution' />}}</td></tr>
 </table>
 
 <div style="clear:both;"></div>
 
 <!-- content/argentina/IMG_7035.jpg -->
 
-{{ resize_image(path="content/argentina/IMG_7035.jpg", width=500, height=500, op="fit_width", alt="San Martín de los Andes. I rented a motorcycle for a weekend and did la ruta de los siete lagos.") }}
+{{<site_photo path="content/argentina/IMG_7035.jpg" width={500} height={500} op="fit_width" alt="San Martín de los Andes. I rented a motorcycle for a weekend and did la ruta de los siete lagos." />}}
 
 <table>
 <tr><td>Make</td><td>Apple</td></tr>
@@ -646,14 +646,14 @@ disabled.</i></noscript>
 <tr><td>GPS Altitude</td><td>672 m Above Sea Level</td></tr>
 <tr><td>Image Size</td><td>4032x3024</td></tr>
 <tr><td>File Size</td><td>13 MB</td></tr>
-<tr><td colspan=2>{{ image_link(path='argentina/IMG_7035.jpg', text='View full resolution') }}</td></tr>
+<tr><td colspan=2>{{<site_image_link path='argentina/IMG_7035.jpg' text='View full resolution' />}}</td></tr>
 </table>
 
 <div style="clear:both;"></div>
 
 <!-- content/argentina/IMG_7039.jpg -->
 
-{{ resize_image(path="content/argentina/IMG_7039.jpg", width=500, height=500, op="fit_width", alt="The absolute highlight of my trip. Including the part where I took a wrong turn and nearly ended up in Chile.") }}
+{{<site_photo path="content/argentina/IMG_7039.jpg" width={500} height={500} op="fit_width" alt="The absolute highlight of my trip. Including the part where I took a wrong turn and nearly ended up in Chile." />}}
 
 <table>
 <tr><td>Make</td><td>Apple</td></tr>
@@ -667,14 +667,14 @@ disabled.</i></noscript>
 <tr><td>GPS Altitude</td><td>873.5 m Above Sea Level</td></tr>
 <tr><td>Image Size</td><td>4032x3024</td></tr>
 <tr><td>File Size</td><td>14 MB</td></tr>
-<tr><td colspan=2>{{ image_link(path='argentina/IMG_7039.jpg', text='View full resolution') }}</td></tr>
+<tr><td colspan=2>{{<site_image_link path='argentina/IMG_7039.jpg' text='View full resolution' />}}</td></tr>
 </table>
 
 <div style="clear:both;"></div>
 
 <!-- content/argentina/IMG_7047.jpg -->
 
-{{ resize_image(path="content/argentina/IMG_7047.jpg", width=500, height=500, op="fit_width", alt="Yea. Thanks for viewing!") }}
+{{<site_photo path="content/argentina/IMG_7047.jpg" width={500} height={500} op="fit_width" alt="Yea. Thanks for viewing!" />}}
 
 <table>
 <tr><td>Make</td><td>Apple</td></tr>
@@ -688,7 +688,7 @@ disabled.</i></noscript>
 <tr><td>GPS Altitude</td><td>1309.2 m Above Sea Level</td></tr>
 <tr><td>Image Size</td><td>4032x3024</td></tr>
 <tr><td>File Size</td><td>14 MB</td></tr>
-<tr><td colspan=2>{{ image_link(path='argentina/IMG_7047.jpg', text='View full resolution') }}</td></tr>
+<tr><td colspan=2>{{<site_image_link path='argentina/IMG_7047.jpg' text='View full resolution' />}}</td></tr>
 </table>
 
 <div style="clear:both;"></div>

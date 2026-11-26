@@ -1,3 +1,4 @@
+{% component site_photo(path, width, height, op, alt) %}
 {%
   set image = resize_image(
     path=path,
@@ -36,7 +37,10 @@
       height="{{ height }}"
     />
   </noscript>
-  {% if alt %}
-    <figcaption>{{ alt }}</figcaption>
-  {% endif %}
+  {% if alt %}<figcaption>{{ alt }}</figcaption>{% endif %}
 </figure>
+{% endcomponent site_photo %}
+
+{% component site_image_link(path, text) %}<a href="{{ get_url(path=path) }}" target="_blank">{{ text }} ⤴︎</a>{% endcomponent site_image_link %}
+
+{% component site_link(path, text) %}<a href="{{ get_url(path=path) }}">{{ text }}</a>{% endcomponent site_link %}

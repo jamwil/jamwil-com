@@ -5,7 +5,7 @@
   <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
   <link rel="icon" type="image/png" href="/favicon-192.png" sizes="192x192" />
 
-  {% if page.title %}
+  {% if page?.title %}
     <meta property="og:description" content="by James Williams" />
   {% else %}
     <meta property="og:description" content="{{ config.description }}" />
@@ -15,9 +15,9 @@
   <meta property="og:image:height" content="800" />
 {% endblock %}
 
-{% block content %}{% if paginator.pages %}
+{% block content %}{% if paginator?.pages %}
   {% for page in paginator.pages %}
-    {{ page_macros::page_listing(page=page) }}
+    {{<site.page_listing page={page} config={config} />}}
     {% if loop.index == 1 %}
       <p>
         P.S. I'm not active on social media. If you liked this, add this page to your RSS reader or
@@ -27,10 +27,10 @@
       <hr style="margin-bottom: 3em;" />
     {% endif %}
   {% endfor %}
-  {{ page_macros::page_pagination(paginator=paginator) }}
+  {{<site.page_pagination paginator={paginator} />}}
 {% else %}
   {% for page in section.pages %}
-    {{ page_macros::page_listing(page=page) }}
+    {{<site.page_listing page={page} config={config} />}}
     {% if loop.index == 1 %}
       <p>
         P.S. I'm not active on social media. If you liked this, add this page to your RSS reader or

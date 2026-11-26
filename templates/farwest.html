@@ -1,4 +1,4 @@
-{% import "macros/page.html" as page_macros %} {% extends "index.html" %}
+{% extends "index.html" %}
 {% block title %}{{ page.title }}{% endblock %}
 {% block extra_head %}
   <link rel="me" href="https://mastodon.sdf.org/@jamwil" />
@@ -42,7 +42,7 @@
       ).addTo(map);
 
       async function addGeoJson(file, color) {
-        const response = await fetch("{{ get_url(path='" + file + "') }}");
+        const response = await fetch("{{ get_url(path='/') }}" + file);
         const data = await response.json();
         var myStyle = {
           color: color,
@@ -77,6 +77,6 @@
 
     <div class="content">{{ page.content | safe }}</div>
 
-    {{ page_macros::page_info(page=page) }}
+    {{<site.page_info page={page} config={config} />}}
   </article>
 {% endblock content %}

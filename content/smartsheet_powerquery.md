@@ -23,6 +23,7 @@ In Excel, open Power Query and create a new query using the advanced editor.
 **Make sure to replace `$SHEET_ID` and `$BEARER_TOKEN`**. The query will bring
 in both your data and column headers.
 
+{% raw %}
 ```
 let
     Source = Json.Document(
@@ -85,5 +86,6 @@ let
 in
     FinalData
 ```
+{% endraw %}
 
 <!-- more -->

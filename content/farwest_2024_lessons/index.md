@@ -66,8 +66,7 @@ mileage on a riding day would be higher.
 I did alright in this department. You can see my packout in my earlier post:
 [Packing Lucia for a four-season motorcycle camping trip](@/farwest_2024_packing/index.md).
 
-{{ resize_image(path='content/farwest_2024_photos/IMG_4335.jpg',
-width=840, height=840, op='fit_width', alt="Lucia on day one, packed with gear.") }}
+{{<site_photo path='content/farwest_2024_photos/IMG_4335.jpg' width={840} height={840} op='fit_width' alt="Lucia on day one, packed with gear." />}}
 
 <figcaption>Lucia on day one. The tail bag setup was tilted too far forward but I got it sorted for
 day two.</figcaption>

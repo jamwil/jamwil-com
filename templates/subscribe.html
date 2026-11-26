@@ -1,4 +1,4 @@
-{% import "macros/page.html" as page_macros %} {% extends "index.html" %}
+{% extends "index.html" %}
 {% block title %}{{ page.title }}{% endblock %}
 {% block extra_head %}
 {% endblock %}
@@ -6,7 +6,7 @@
   <article class="post">
     <div class="content">{{ page.content | safe }}</div>
 
-    {{ page_macros::page_info(page=page) }}
+    {{<site.page_info page={page} config={config} />}}
 
     <form
       action="https://buttondown.com/api/emails/embed-subscribe/jamwil"

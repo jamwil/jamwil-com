@@ -1,31 +1,31 @@
-{% macro page_info(page) %}
+{% component site.page_info(page, config) %}
   <div class="article-info">
     {% if page.date %}
       <div class="article-date">{{ page.date | date(format=config.extra.anpu_date_format) }}</div>
     {% endif %}
     <div class="article-taxonomies">
-      {% if page.taxonomies.categories %}
+      {% if page.taxonomies?.categories %}
         <ul class="article-categories">
           {% for cat in page.taxonomies.categories %}
             <li>
-              <a href="{{ get_taxonomy_url(kind='categories', name=cat) | safe }}"> {{ cat }} </a>
+              <a href="{{ get_taxonomy_url(kind='categories', term=cat, lang=page.lang) | safe }}"> {{ cat }} </a>
             </li>
           {% endfor %}
         </ul>
       {% endif %}
-      {% if page.taxonomies.tags %}
+      {% if page.taxonomies?.tags %}
         <ul class="article-tags">
           {% for tag in page.taxonomies.tags %}
             <li>
-              <a href="{{ get_taxonomy_url(kind='tags', name=tag) | safe }}"> #{{ tag }} </a>
+              <a href="{{ get_taxonomy_url(kind='tags', term=tag, lang=page.lang) | safe }}"> #{{ tag }} </a>
             </li>
           {% endfor %}
         </ul>
       {% endif %}
     </div>
   </div>
-{% endmacro page_info %}
-{% macro page_listing(page) %}
+{% endcomponent site.page_info %}
+{% component site.page_listing(page, config) %}
   <article class="post-list">
     <header>
       <h1>
@@ -34,16 +34,16 @@
     </header>
 
     <div class="content post-summary">{{ page.content | safe }}</div>
-    {{ self::page_info(page=page) }}
+    {{<site.page_info page={page} config={config} />}}
   </article>
-{% endmacro page_listing %}
-{% macro page_brief(page) %}
+{% endcomponent site.page_listing %}
+{% component site.page_brief(page, config) %}
   <p>
     {{ page.date | date(format=config.extra.anpu_date_format) }}:
     <a href="{{ page.permalink }}">{{ page.title }}</a>
   </p>
-{% endmacro page_brief %}
-{% macro page_pagination(paginator) %}
+{% endcomponent site.page_brief %}
+{% component site.page_pagination(paginator) %}
   <div class="pagination">
     <div class="left pagination-item {% if not paginator.previous %}disabled{% endif %}">
       {% if paginator.previous %}
@@ -56,4 +56,4 @@
       {% endif %}
     </div>
   </div>
-{% endmacro page_pagination %}
+{% endcomponent site.page_pagination %}
